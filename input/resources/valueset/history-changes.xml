@@ -1,0 +1,15 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+   <id value="history-changes"/>
+   <url value="http://hcisolutions.ch/ig/analyzer/ValueSet/history-changes"/>
+   <version value="0.1.0"/>
+   <name value="HistoryChanges"/>
+   <title value="History Changes"/>
+   <status value="active"/>
+   <publisher value="HCI Solutions AG"/>
+   <description value="Type of changes in the history"/>
+   <compose>
+      <include>
+         <system value="http://hcisolutions.ch/ig/analyzer/CodeSystem/history-changes"/>
+      </include>
+   </compose>
+</ValueSet>

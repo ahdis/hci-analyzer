@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ch.hcisolutions.ig.analyzer"/>
+  <url value="http://hcisolutions.ch/ig/analyzer/ImplementationGuide/ch.hcisolutions.ig.analyzer"/>
+  <version value="0.1.0"/>
+  <name value="ANALYZER"/>
+  <title value="Analyzer (R4)"/>
+  <status value="draft"/>
+  <date value="2021-11-29"/>
+  <publisher value="HCI Solutions AG"/>
+  <contact>
+    <name value="HCI Solutions AG"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hcisolutions.ch"/>
+    </telecom>
+  </contact>
+  <description value="FHIR Implementation Guide for the Analyzer, a product of HCI Solutions AG"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CH"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
+  <packageId value="ch.hcisolutions.ig.analyzer"/>
+  <license value="CC-BY-SA-4.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="chmed20af">
+    <uri value="http://chmed20af.emediplan.ch/fhir/ImplementationGuide/ch.chmed20af.emediplan"/>
+    <packageId value="ch.chmed20af.emediplan"/>
+    <version value="2.0.0"/>
+  </dependsOn>
+  <definition>
+
+    <!-- Analyzer: Examples for Medication Card document (included then in Parameters => Input Analzyer)-->
+    <resource>
+      <reference>
+        <reference value="Bundle/A1-MedicationCard-Simcora"/>
+      </reference>
+      <name value="Medication Card document"/>
+      <description value="Example for Medication Card document"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A1-MedicationCard-Zocor"/>
+      </reference>
+      <name value="Medication Card document"/>
+      <description value="Example for Medication Card document"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A2-MedicationCard-1x10mg"/>
+      </reference>
+      <name value="Medication Card document"/>
+      <description value="Example for Medication Card document"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A2-MedicationCard-2x5mg"/>
+      </reference>
+      <name value="Medication Card document"/>
+      <description value="Example for Medication Card document"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A3-MedicationCard-Reniten-1x"/>
+      </reference>
+      <name value="Medication Card document"/>
+      <description value="Example for Medication Card document"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A3-MedicationCard-Reniten-2x"/>
+      </reference>
+      <name value="Medication Card document"/>
+      <description value="Example for Medication Card document"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A4-MedicationCard-DrDupont"/>
+      </reference>
+      <name value="Medication Card document"/>
+      <description value="Example for Medication Card document"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A4-MedicationCard-DrMonney"/>
+      </reference>
+      <name value="Medication Card document"/>
+      <description value="Example for Medication Card document"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A5-MedicationCard-Reniten"/>
+      </reference>
+      <name value="Medication Card document"/>
+      <description value="Example for Medication Card document"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A5-MedicationCard-Exforge"/>
+      </reference>
+      <name value="Medication Card document"/>
+      <description value="Example for Medication Card document"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A6-MedicationCard-Tbl"/>
+      </reference>
+      <name value="Medication Card document"/>
+      <description value="Example for Medication Card document"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A6-MedicationCard-TblSpray"/>
+      </reference>
+      <name value="Medication Card document"/>
+      <description value="Example for Medication Card document"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A7-MedicationCard-Brufen"/>
+      </reference>
+      <name value="Medication Card document"/>
+      <description value="Example for Medication Card document"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A7-MedicationCard-BrufenBrufenretard"/>
+      </reference>
+      <name value="Medication Card document"/>
+      <description value="Example for Medication Card document"/>
+    </resource>
+
+    <!-- Analyzer: Example for Parameters (=> Input Analyzer) -->
+    <resource>
+      <reference>
+        <reference value="Parameters/A1-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example A1 Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/A2-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example A2 Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/A3-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example A3 Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/A4-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example A4 Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/A5-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example A5 Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/A6-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example A6 Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/A7-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example A7 Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/1-1-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example 1-1 Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/1-2-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example 1-2 Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/2-2-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example 2-2 Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/2-3-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example 2-3 Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/2-4-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example 2-4 Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/2-5-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example 2-5 Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/2-6-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example 2-6 Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/2-7-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example 2-7 Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/BeloczokMTP-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/BeloczokDIS-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/NorvascMTP-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/NorvascPRE-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example Input Analyzer"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/NorvascCard-Input-Analyzer"/>
+      </reference>
+      <name value="Parameters"/>
+      <description value="Example Input Analyzer"/>
+    </resource>
+
+    <!-- Analyzer: Examples for Consolidated Medication Card document (=> Output Analyzer) -->
+    <resource>
+      <reference>
+        <reference value="Bundle/1-1-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example 1-1 for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/1-2-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example 1-2 for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/2-2-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example 2-2 for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/2-3-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example 2-3 for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/2-4-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example 2-4 for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/2-5-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example 2-5 for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/2-6-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example 2-6 for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/2-7-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example 2-7 for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/BeloczokMTP-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/BeloczokDIS-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/NorvascMTP-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/NorvascPRE-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/NorvascCard-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A1-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A2-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A3-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A4-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A5-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A6-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example for Medication Card document (Output Analyzer)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/A7-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="Consolidated Medication Card document (Analyzer)"/>
+      <description value="Example for Medication Card document (Output Analyzer)"/>
+    </resource>
+
+    <!-- Analyzer: StructureDefinition -->
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/analyzer-bundle"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/analyzer-composition"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/analyzer-medicationstatement-header"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/analyzer-medicationstatementcard"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/analyzer-medicationstatementmtp"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/analyzer-medicationrequest"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/analyzer-medicationdispense"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/analyzer-observationpadv"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/analyzer-observationhistory"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/analyzer-patient"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/analyzer-practitioner"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/inputdocumentdate"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/inputdocumentsource"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/inputdocumenttype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/infoinputdocument"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+
+    <!-- Analyzer: OperationDefinition -->
+    <resource>
+      <reference>
+        <reference value="OperationDefinition/analyzer"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+
+    <!-- Analyzer: CodeSystem -->
+    <resource>
+      <reference>
+        <reference value="CodeSystem/history-changes"/>
+      </reference>
+      <name value="CodeSystem History Changes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+
+    <!-- Analyzer: ValueSet -->
+    <resource>
+      <reference>
+        <reference value="ValueSet/history-changes"/>
+      </reference>
+      <name value="ValueSet History Changes"/>
+      <description value="ValueSet History Changes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+
+    <!-- pages -->
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="operations.html"/>
+        <title value="Operations"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="extensions.html"/>
+        <title value="Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminology"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+
+    <!-- parameters -->
+    <parameter>
+      <code value="releaselabel"/>
+      <value value="CI build"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages" />
+      <value value="input/pages"/>
+    </parameter>
+    <parameter>
+      <code value="copyrightyear"/>
+      <value value="2020+"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>
