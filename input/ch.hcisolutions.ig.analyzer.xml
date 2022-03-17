@@ -19,7 +19,7 @@
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
-      <code value="CH"/>
+      <code value="CHE"/>
     </coding>
   </jurisdiction>
   <copyright value="CC-BY-SA-4.0"/>
