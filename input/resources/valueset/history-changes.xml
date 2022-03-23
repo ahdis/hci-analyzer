@@ -6,7 +6,7 @@
    <title value="History Changes"/>
    <status value="active"/>
    <publisher value="HCI Solutions AG"/>
-   <description value="Type of changes in the history"/>
+   <description value="ValueSet with codes for the different type of changes in the medication history, defined in the CodeSystem of the same name"/>
    <compose>
       <include>
          <system value="http://hcisolutions.ch/ig/analyzer/CodeSystem/history-changes"/>

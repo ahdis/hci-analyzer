@@ -1,2 +1,2 @@
 
-{% include list-simple-operationdefinitions.xhtml %}
+{% include list-operationdefinitions.xhtml %}

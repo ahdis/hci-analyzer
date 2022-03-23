@@ -3,8 +3,8 @@
   <id value="inputdocumentdate"/>
   <url value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate"/>
   <version value="0.1.0"/>
-  <name value="ExtInputDocumentDate"/>
-  <title value="Extension Input Document Date"/>
+  <name value="InputDocumentDate"/>
+  <title value="Input Document Date"/>
   <status value="draft"/>
   <description value="Extension for representing the date of the input document"/>
   <fhirVersion value="4.0.1"/>

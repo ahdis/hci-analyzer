@@ -15,7 +15,7 @@
       <value value="http://hcisolutions.ch"/>
     </telecom>
   </contact>
-  <description value="FHIR Implementation Guide for the Analyzer, a product of HCI Solutions AG"/>
+  <description value="FHIR implementation guide for the Analyzer, a product of HCI Solutions AG"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -549,6 +549,11 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <nameUrl value="usecases.html"/>
+        <title value="Use Cases"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="operations.html"/>
         <title value="Operations"/>
         <generation value="markdown"/>
@@ -566,6 +571,11 @@
       <page>
         <nameUrl value="terminology.html"/>
         <title value="Terminology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="changelog.html"/>
+        <title value="Change Log"/>
         <generation value="markdown"/>
       </page>
     </page>

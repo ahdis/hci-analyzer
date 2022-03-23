@@ -3,10 +3,10 @@
   <id value="infoinputdocument"/>
   <url value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument"/>
   <version value="0.1.0"/>
-  <name value="ExtInfoInputDocument"/>
-  <title value="Extension Info Input Document"/>
+  <name value="InfoInputDocument"/>
+  <title value="Info Input Document"/>
   <status value="draft"/>
-  <description value="Extension for representing the information of the input document"/>
+  <description value="Extension for representing the information of the input document (source, type, date)"/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>

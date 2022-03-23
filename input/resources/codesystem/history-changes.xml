@@ -10,39 +10,39 @@
    <title value="History Changes"/>
    <status value="active"/>
    <publisher value="HCI Solutions AG"/>
-   <description value="Type of changes in the history"/>
+   <description value="CodeSystem with codes for the different type of changes in the medication history"/>
    <caseSensitive value="true"/>
    <content value="complete"/>
    <concept>
       <code value="sameMedication"/>
-      <definition value="Gleiche Medikation"/>
+      <display value="Gleiche Medikation"/>
    </concept>
    <concept>
       <code value="substitution"/>
-      <definition value="Substitution"/>
+      <display value="Substitution"/>
    </concept>
    <concept>
       <code value="changeDosage"/>
-      <definition value="Änderung Dosierung"/>
+      <display value="Änderung Dosierung"/>
    </concept>
    <concept>
       <code value="changePractitioner"/>
-      <definition value="Änderung Arzt"/>
+      <display value="Änderung Arzt"/>
    </concept>
    <concept>
       <code value="changeTherapy"/>
-      <definition value="Änderung Therapie"/>
+      <display value="Änderung Therapie"/>
    </concept>
    <concept>
       <code value="changeGalenic"/>
-      <definition value="Änderung Galenik"/>
+      <display value="Änderung Galenik"/>
    </concept>
    <concept>
       <code value="changeROA"/>
-      <definition value="Änderung ROA"/>
+      <display value="Änderung ROA"/>
    </concept>
    <concept>
       <code value="comment"/>
-      <definition value="Kommentar"/>
+      <display value="Kommentar"/>
    </concept>
 </CodeSystem>

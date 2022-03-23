@@ -6,7 +6,7 @@
   <title value="Input Output Parameters Analyzer"/>
   <status value="draft"/>
   <kind value="operation"/>
-  <description value="Definition Input and Output Parameters Analyzer"/>
+  <description value="Definition of the input and output Parameters for the Analyzer"/>
   <code value="analyze"/>
   <system value="false"/>
   <type value="true"/>

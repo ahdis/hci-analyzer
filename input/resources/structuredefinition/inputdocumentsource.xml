@@ -3,8 +3,8 @@
   <id value="inputdocumentsource"/>
   <url value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource"/>
   <version value="0.1.0"/>
-  <name value="ExtInputDocumentSource"/>
-  <title value="Extension Input Document Source"/>
+  <name value="InputDocumentSource"/>
+  <title value="Input Document Source"/>
   <status value="draft"/>
   <description value="Extension for representing the source of the input document"/>
   <fhirVersion value="4.0.1"/>

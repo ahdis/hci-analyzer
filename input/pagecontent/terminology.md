@@ -1,7 +1,7 @@
-### ValueSets
+### Value Sets
 
-{% include list-simple-valuesets.xhtml %}
+{% include list-valuesets.xhtml %}
 
 ### Code Systems
 
-{% include list-simple-codesystems.xhtml %}
+{% include list-codesystems.xhtml %}

@@ -3,8 +3,8 @@
   <id value="inputdocumenttype"/>
   <url value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype"/>
   <version value="0.1.0"/>
-  <name value="ExtInputDocumentType"/>
-  <title value="Extension Input Document Type"/>
+  <name value="InputDocumentType"/>
+  <title value="Input Document Type"/>
   <status value="draft"/>
   <description value="Extension for representing the type of the input document"/>
   <fhirVersion value="4.0.1"/>
