@@ -196,50 +196,50 @@
       <reference>
         <reference value="Parameters/1-2-Input-Analyzer"/>
       </reference>
-      <name value="Parameters"/>
-      <description value="Example 1-2 Input Analyzer"/>
+      <name value="1-2 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
     <resource>
       <reference>
         <reference value="Parameters/2-2-Input-Analyzer"/>
       </reference>
-      <name value="Parameters"/>
-      <description value="Example 2-2 Input Analyzer"/>
+      <name value="2-2 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
     <resource>
       <reference>
         <reference value="Parameters/2-3-Input-Analyzer"/>
       </reference>
-      <name value="Parameters"/>
-      <description value="Example 2-3 Input Analyzer"/>
+      <name value="2-3 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
     <resource>
       <reference>
         <reference value="Parameters/2-4-Input-Analyzer"/>
       </reference>
-      <name value="Parameters"/>
-      <description value="Example 2-4 Input Analyzer"/>
+      <name value="2-4 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
     <resource>
       <reference>
         <reference value="Parameters/2-5-Input-Analyzer"/>
       </reference>
-      <name value="Parameters"/>
-      <description value="Example 2-5 Input Analyzer"/>
+      <name value="2-5 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
     <resource>
       <reference>
         <reference value="Parameters/2-6-Input-Analyzer"/>
       </reference>
-      <name value="Parameters"/>
-      <description value="Example 2-6 Input Analyzer"/>
+      <name value="2-6 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
     <resource>
       <reference>
         <reference value="Parameters/2-7-Input-Analyzer"/>
       </reference>
-      <name value="Parameters"/>
-      <description value="Example 2-7 Input Analyzer"/>
+      <name value="2-7 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
     <resource>
       <reference>
