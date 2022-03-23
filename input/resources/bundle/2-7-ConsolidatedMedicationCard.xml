@@ -392,17 +392,6 @@
                 <dosageInstruction>
                     <text value="Morgens 1/2 Tablette nehmen"/>
                 </dosageInstruction>
-                <!-- substitution just as test case
-                <substitution>
-                    <wasSubstituted value="true"/>
-                    <type>
-                        <coding>
-                            <system value="http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"/>
-                            <code value="E"/>
-                            <display value="equivalent"/>
-                        </coding>
-                    </type>
-                </substitution> -->
             </MedicationDispense>
         </resource>
     </entry>
@@ -802,17 +791,6 @@
                         </doseQuantity>
                     </doseAndRate>
                 </dosageInstruction>
-                <!-- substitution just as test case
-                <substitution>
-                    <wasSubstituted value="true"/>
-                    <type>
-                        <coding>
-                            <system value="http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"/>
-                            <code value="E"/>
-                            <display value="equivalent"/>
-                        </coding>
-                    </type>
-                </substitution> -->
             </MedicationDispense>
         </resource>
     </entry>
@@ -1092,16 +1070,6 @@
                         <value value="1"/>
                     </quantity>
                 </dispenseRequest>
-                <!-- substitution just as test case
-                <substitution>
-                    <allowedCodeableConcept>
-                        <coding>
-                            <system value="http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"/>
-                            <code value="E"/>
-                            <display value="equivalent"/>
-                        </coding>
-                    </allowedCodeableConcept>
-                </substitution> -->
             </MedicationRequest>
         </resource>
     </entry>
