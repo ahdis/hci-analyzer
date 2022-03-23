@@ -245,36 +245,36 @@
       <reference>
         <reference value="Parameters/BeloczokMTP-Input-Analyzer"/>
       </reference>
-      <name value="Parameters"/>
-      <description value="Example Input Analyzer"/>
+      <name value="2-3 Input Analyzer (test case)"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
     <resource>
       <reference>
         <reference value="Parameters/BeloczokDIS-Input-Analyzer"/>
       </reference>
-      <name value="Parameters"/>
-      <description value="Example Input Analyzer"/>
+      <name value="2-4 Input Analyzer (test case)"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
     <resource>
       <reference>
         <reference value="Parameters/NorvascMTP-Input-Analyzer"/>
       </reference>
-      <name value="Parameters"/>
-      <description value="Example Input Analyzer"/>
+      <name value="2-5 Input Analyzer (test case)"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
     <resource>
       <reference>
         <reference value="Parameters/NorvascPRE-Input-Analyzer"/>
       </reference>
-      <name value="Parameters"/>
-      <description value="Example Input Analyzer"/>
+      <name value="2-6 Input Analyzer (test case)"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
     <resource>
       <reference>
         <reference value="Parameters/NorvascCard-Input-Analyzer"/>
       </reference>
-      <name value="Parameters"/>
-      <description value="Example Input Analyzer"/>
+      <name value="2-7 Input Analyzer (test case)"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
 
     <!-- Analyzer: Examples for Consolidated Medication Card document (=> Output Analyzer) -->
