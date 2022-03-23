@@ -23,37 +23,37 @@
          <short value="Medication inline resource"/>
          <min value="1"/>
          <max value="1"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationStatement.identifier">
          <path value="MedicationStatement.identifier"/>
          <min value="1"/>
          <max value="1"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationStatement.identifier.system">
          <path value="MedicationStatement.identifier.system"/>
          <min value="1"/>
          <fixedUri value="urn:ietf:rfc:3986"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationStatement.identifier.value">
          <path value="MedicationStatement.identifier.value"/>
          <short value="identifier value as uuid"/>
          <min value="1"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationStatement.status">
          <path value="MedicationStatement.status"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationStatement.category">
          <path value="MedicationStatement.category"/>
          <min value="1"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationStatement.category.coding">
@@ -65,38 +65,38 @@
             </discriminator>
             <rules value="open"/>
          </slicing>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationStatement.category.coding:ATC">
          <path value="MedicationStatement.category.coding"/>
          <sliceName value="ATC"/>
          <short value="ATC code (Level 1) if possible"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationStatement.category.coding:ATC.system">
          <path value="MedicationStatement.category.coding.system"/>
          <min value="1"/>
          <max value="1"/>
          <fixedUri value="http://www.whocc.no/atc"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationStatement.category.coding:ATC.code">
          <path value="MedicationStatement.category.coding.code"/>
          <min value="1"/>
          <max value="1"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationStatement.category.coding:ATC.display">
          <path value="MedicationStatement.category.coding.display"/>
          <min value="0"/>
          <max value="1"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationStatement.category.text">
          <path value="MedicationStatement.category.text"/>
          <short value="Note that no ATC Code is applied"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationStatement.medicationReference">
@@ -106,7 +106,7 @@
             <code value="Reference"/>
             <targetProfile value="http://chmed20af.emediplan.ch/fhir/StructureDefinition/chmed20af-medication"/>
          </type>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationStatement.subject">
@@ -116,7 +116,7 @@
             <code value="Reference"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>
          </type>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationStatement.informationSource">
@@ -128,7 +128,7 @@
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitioner"/>
          </type>
          <min value="1"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationStatement.derivedFrom">
@@ -143,25 +143,25 @@
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-observationpadv"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-observationhistory"/>
          </type>
-         <mustSupport value="true"/>
+         
       </element>
 
       <!--<element id="MedicationStatement.reasonCode">
          <path value="MedicationStatement.reasonCode"/>
          <short value="Treatment reason"/>
          <max value="1"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationStatement.reasonCode.text">
          <path value="MedicationStatement.reasonCode.text"/>
-         <mustSupport value="true"/>
+         
       </element>-->
 
       <!--<element id="MedicationStatement.note">
          <path value="MedicationStatement.note"/>
          <short value="Annoation"/>
          <max value="1"/>
-         <mustSupport value="true"/>
+         
       </element>-->
 
       <!--<element id="MedicationStatement.dosage">
@@ -175,7 +175,7 @@
          </slicing>
          <short value="How the medication should be taken"/>
          <min value="1"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationStatement.dosage:nonstructured">
@@ -188,7 +188,7 @@
          </type>
          <min value="0"/>
          <max value="1"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationStatement.dosage:structured">
@@ -199,7 +199,7 @@
             <code value="Dosage"/>
             <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-dosage-structured"/>
          </type>
-         <mustSupport value="true"/>
+         
       </element>-->
    </differential>
 </StructureDefinition>

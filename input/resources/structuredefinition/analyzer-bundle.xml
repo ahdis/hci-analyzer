@@ -22,31 +22,31 @@
       <path value="Bundle.identifier"/>
       <short value="Identification number of the document"/>
       <min value="1"/>
-      <mustSupport value="true"/>
+      
     </element>
     <element id="Bundle.identifier.system">
       <path value="Bundle.identifier.system"/>
       <fixedUri value="urn:ietf:rfc:3986" />
       <min value="1"/>
-      <mustSupport value="true"/>
+      
     </element>
     <element id="Bundle.identifier.value">
       <path value="Bundle.identifier.value"/>
       <min value="1"/>
-      <mustSupport value="true"/>
+      
     </element>
 
     <element id="Bundle.type">
       <path value="Bundle.type"/>
       <fixedCode value="document"/>
-      <mustSupport value="true"/>
+      
     </element>
 
     <element id="Bundle.timestamp">
       <path value="Bundle.timestamp" />
       <short value="The document's creation date and time"/>
       <min value="1"/>
-      <mustSupport value="true"/>
+      
     </element>
 
     <element id="Bundle.entry">
@@ -59,7 +59,7 @@
         <rules value="open"/>
       </slicing>
       <min value="1"/>
-      <mustSupport value="true"/>
+      
     </element>
 
     <element id="Bundle.entry:Composition">
@@ -67,7 +67,7 @@
       <sliceName value="Composition"/>
       <min value="1"/>
       <max value="1"/>
-      <mustSupport value="true"/>
+      
     </element>
     <element id="Bundle.entry.resource:Composition">
       <path value="Bundle.entry.resource"/>
@@ -77,7 +77,7 @@
         <code value="Composition"/>
         <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-composition"/>
       </type>
-      <mustSupport value="true"/>
+      
     </element>
   </differential>
 </StructureDefinition>

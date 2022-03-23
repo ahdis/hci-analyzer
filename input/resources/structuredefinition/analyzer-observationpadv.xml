@@ -21,19 +21,19 @@
       <element id="Observation.extension:treatmentPlan">
          <path value="Observation.extension" />
          <sliceName value="treatmentPlan"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="Observation.extension:prescription">
          <path value="Observation.extension" />
          <sliceName value="prescription"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="Observation.extension:dispense">
          <path value="Observation.extension" />
          <sliceName value="dispense"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="Observation.extension:infoInputDocument">
@@ -46,30 +46,30 @@
             <code value="Extension" />
             <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument" />
          </type>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="Observation.identifier">
          <path value="Observation.identifier"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="Observation.identifier.system">
          <path value="Observation.identifier.system"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="Observation.identifier.value">
          <path value="Observation.identifier.value"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="Observation.status">
          <path value="Observation.status"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="Observation.code">
          <path value="Observation.code"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="Observation.subject">
@@ -79,12 +79,12 @@
             <code value="Reference"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>
          </type>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="Observation.effectiveDateTime">
          <path value="Observation.effectiveDateTime"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="Observation.performer">
@@ -96,16 +96,16 @@
             <code value="Reference"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitioner"/>
          </type>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="Observation.note">
          <path value="Observation.note"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="Observation.note.text">
          <path value="Observation.note.text"/>
-         <mustSupport value="true"/>
+         
       </element>
    </differential>
 </StructureDefinition>

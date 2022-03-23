@@ -22,25 +22,25 @@
 			<path value="Composition.identifier"/>
 			<min value="1"/>
          	<max value="1"/>
-			<mustSupport value="true"/>
+			
 		</element>
 		<element id="Composition.identifier.system">
 			<path value="Composition.identifier.system"/>
 			<min value="1"/>
          	<fixedUri value="urn:ietf:rfc:3986"/>
-			<mustSupport value="true"/>
+			
 		</element>
 		<element id="Composition.identifier.value">
 			<path value="Composition.identifier.value"/>
 			<short value="identifier value as uuid"/>
          	<min value="1"/>
-			<mustSupport value="true"/>
+			
 		</element>
 
 		<element id="Composition.status">
 			<path value="Composition.status"/>
 			<fixedCode value="final"/>
-			<mustSupport value="true"/>
+			
 		</element>
 
 		<element id="Composition.type">
@@ -52,7 +52,7 @@
 					<code value="721912009"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
+			
 		</element>
 
 		<element id="Composition.subject">
@@ -63,12 +63,12 @@
 				<targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>
 			</type>
 			<min value="1"/>
-			<mustSupport value="true"/>
+			
 		</element>
 
 		<element id="Composition.date">
 			<path value="Composition.date"/>
-			<mustSupport value="true"/>
+			
 		</element>
 
 		<element id="Composition.author">
@@ -79,20 +79,20 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
 			</type>
 			<max value="1"/>
-			<mustSupport value="true"/>
+			
 		</element>
 
 		<element id="Composition.title">
 			<path value="Composition.title"/>
 			<short value="'Medikationsplan' in german or 'Plan de médication' in french or 'Piano farmacologico' in italian or 'Medication Card' in english
                         or titles in other languages are also allowed"/>
-			<mustSupport value="true"/>
+			
 		</element>
 
 		<element id="Composition.section">
 			<path value="Composition.section"/>
 			<min value="1"/>
-			<mustSupport value="true"/>
+			
 		</element>
 		<element id="Composition.section.entry">
 			<path value="Composition.section.entry"/>
@@ -101,7 +101,7 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-medicationstatement-header"/>
 			</type>
-			<mustSupport value="true"/>
+			
 		</element>
 
 		<element id="Composition.section.section">

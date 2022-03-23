@@ -34,7 +34,7 @@
         <code value="uri"/>
       </type>
       <fixedUri value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate"/>
-      <mustSupport value="true"/>
+      
     </element>
 
     <element id="Extension.valueDateTime">
@@ -45,7 +45,7 @@
       <type>
         <code value="dateTime"/>
       </type>
-      <mustSupport value="true"/>
+      
     </element>
   </differential>
 </StructureDefinition>

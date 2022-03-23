@@ -34,7 +34,7 @@
         <code value="uri"/>
       </type>
       <fixedUri value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype"/>
-      <mustSupport value="true"/>
+      
     </element>
 
     <element id="Extension.valueCodeableConcept">
@@ -50,7 +50,7 @@
           <system value="http://loinc.org"/>
         </coding>
       </patternCodeableConcept>
-      <mustSupport value="true"/>
+      
     </element>
   </differential>
 </StructureDefinition>

@@ -22,29 +22,29 @@
          <path value="Observation.identifier"/>
          <min value="1"/>
          <max value="1"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="Observation.identifier.system">
          <path value="Observation.identifier.system"/>
          <min value="1"/>
          <fixedUri value="urn:ietf:rfc:3986"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="Observation.identifier.value">
          <path value="Observation.identifier.value"/>
          <short value="identifier value as uuid"/>
          <min value="1"/>
-         <mustSupport value="true"/>
+         
       </element>
       
       <element id="Observation.status">
          <path value="Observation.status"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="Observation.code">
          <path value="Observation.code"/>
-         <mustSupport value="true"/>
+         
          <binding>
             <strength value="required"/>
             <valueSet value="http://fhir.ch/ig/ch-emed/ValueSet/ihe-pharmaceuticaladvicestatuslist"/>
@@ -55,7 +55,7 @@
          <path value="Observation.valueCodeableConcept"/>
          <short value="Code to specify the change in more details"/>
          <min value="1"/>
-         <mustSupport value="true"/>
+         
          <binding>
             <strength value="required"/>
             <valueSet value="http://hcisolutions.ch/ig/analyzer/ValueSet/history-changes"/>

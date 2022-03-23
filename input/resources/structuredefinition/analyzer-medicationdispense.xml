@@ -20,25 +20,25 @@
 
       <element id="MedicationDispense.contained">
          <path value="MedicationDispense.contained"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationDispense.extension:prescription">
          <path value="MedicationDispense.extension" />
          <sliceName value="prescription" />
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationDispense.extension:pharmaceuticalAdvice">
          <path value="MedicationDispense.extension" />
          <sliceName value="pharmaceuticalAdvice" />
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationDispense.extension:treatmentPlan">
          <path value="MedicationDispense.extension" />
          <sliceName value="treatmentPlan" />
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationDispense.extension:infoInputDocument">
@@ -51,25 +51,25 @@
             <code value="Extension" />
             <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument" />
          </type>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationDispense.identifier">
          <path value="MedicationDispense.identifier"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationDispense.identifier.system">
          <path value="MedicationDispense.identifier.system"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationDispense.identifier.value">
          <path value="MedicationDispense.identifier.value"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationDispense.status">
          <path value="MedicationDispense.status"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationDispense.medicationReference">
@@ -78,7 +78,7 @@
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationdispense"/>
          </type>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationDispense.subject">
@@ -88,7 +88,7 @@
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>
          </type>
          <min value="1"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationDispense.performer">
@@ -96,7 +96,7 @@
          <short value="Who performed event"/>
          <min value="1"/>
          <max value="1"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationDispense.performer.actor">
@@ -106,56 +106,56 @@
             <code value="Reference"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitioner"/>
          </type>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationDispense.quantity">
          <path value="MedicationDispense.quantity"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationDispense.whenHandedOver">
          <path value="MedicationDispense.whenHandedOver"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationDispense.note">
          <path value="MedicationDispense.note"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationDispense.dosageInstruction">
          <path value="MedicationDispense.dosageInstruction"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationDispense.dosageInstruction:nonstructured">
          <path value="MedicationDispense.dosageInstruction"/>
          <sliceName value="nonstructured"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationDispense.dosageInstruction:structurednormal">
          <path value="MedicationDispense.dosageInstruction"/>
          <sliceName value="structurednormal"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationDispense.dosageInstruction:structuredsplit">
          <path value="MedicationDispense.dosageInstruction"/>
          <sliceName value="structuredsplit"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationDispense.substitution">
          <path value="MedicationDispense.substitution"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationDispense.substitution.wasSubstituted">
          <path value="MedicationDispense.substitution.wasSubstituted"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationDispense.substitution.type">
          <path value="MedicationDispense.substitution.type"/>
-         <mustSupport value="true"/>
+         
       </element>
    </differential>
 </StructureDefinition>

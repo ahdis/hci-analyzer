@@ -45,7 +45,7 @@
         <code value="Extension"/>
         <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource"/>
       </type>
-      <mustSupport value="true"/>
+      
     </element>
 
     <element id="Extension.extension:documentType">
@@ -58,7 +58,7 @@
         <code value="Extension"/>
         <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype"/>
       </type>
-      <mustSupport value="true"/>
+      
     </element>
     
     <element id="Extension.extension:documentDate">
@@ -71,7 +71,7 @@
         <code value="Extension"/>
         <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate"/>
       </type>
-      <mustSupport value="true"/>
+      
     </element>
 
     <element id="Extension.url">
@@ -80,7 +80,7 @@
         <code value="uri"/>
       </type>
       <fixedUri value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument"/>
-      <mustSupport value="true"/>
+      
     </element>
     
     <element id="Extension.value[x]">

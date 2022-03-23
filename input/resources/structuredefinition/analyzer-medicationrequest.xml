@@ -20,13 +20,13 @@
 
       <element id="MedicationRequest.contained">
          <path value="MedicationRequest.contained"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationRequest.extension:treatmentplan">
          <path value="MedicationRequest.extension" />
          <sliceName value="treatmentplan" />
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationRequest.extension:infoInputDocument">
@@ -39,30 +39,30 @@
             <code value="Extension" />
             <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument" />
          </type>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationRequest.identifier">
          <path value="MedicationRequest.identifier"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationRequest.identifier.system">
          <path value="MedicationRequest.identifier.system"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationRequest.identifier.value">
          <path value="MedicationRequest.identifier.value"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationRequest.status">
          <path value="MedicationRequest.status"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationRequest.intent">
          <path value="MedicationRequest.intent"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationRequest.medicationReference">
@@ -71,7 +71,7 @@
             <code value="Reference"/>
             <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
          </type>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationRequest.subject">
@@ -80,7 +80,7 @@
             <code value="Reference"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>
          </type>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationRequest.performer">
@@ -91,63 +91,63 @@
             <code value="Reference"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitioner"/>
          </type>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationRequest.reasonCode">
          <path value="MedicationRequest.reasonCode"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationRequest.reasonCode.text">
          <path value="MedicationRequest.reasonCode.text"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationRequest.note">
          <path value="MedicationRequest.note"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationRequest.dosageInstruction">
          <path value="MedicationRequest.dosageInstruction"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationRequest.dosageInstruction:nonstructured">
          <path value="MedicationRequest.dosageInstruction"/>
          <sliceName value="nonstructured"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationRequest.dosageInstruction:structurednormal">
          <path value="MedicationRequest.dosageInstruction"/>
          <sliceName value="structurednormal"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationRequest.dosageInstruction:structuredsplit">
          <path value="MedicationRequest.dosageInstruction"/>
          <sliceName value="structuredsplit"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationRequest.dispenseRequest">
          <path value="MedicationRequest.dispenseRequest"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
          <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationRequest.dispenseRequest.quantity">
          <path value="MedicationRequest.dispenseRequest.quantity"/>
-         <mustSupport value="true"/>
+         
       </element>
 
       <element id="MedicationRequest.substitution">
          <path value="MedicationRequest.substitution"/>
-         <mustSupport value="true"/>
+         
       </element>
       <element id="MedicationRequest.substitution.allowedCodeableConcept">
          <path value="MedicationRequest.substitution.allowedCodeableConcept"/>
-         <mustSupport value="true"/>
+         
       </element>
    </differential>
 </StructureDefinition>
