@@ -189,8 +189,8 @@
       <reference>
         <reference value="Parameters/1-1-Input-Analyzer"/>
       </reference>
-      <name value="Parameters"/>
-      <description value="Example 1-1 Input Analyzer"/>
+      <name value="1-1 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
     <resource>
       <reference>
