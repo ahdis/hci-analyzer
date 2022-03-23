@@ -23,9 +23,6 @@
                             <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
                                 <valueString value="EPD"/>
                             </extension>
-                            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
-                                <valueUnsignedInt value="1"/>
-                            </extension>
                             <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
                                 <valueReference>
                                     <reference value="Patient/MonikaWegmuellerRecipient"/>
@@ -77,7 +74,7 @@
                                 <reference value="Organization/Custodian"/>
                             </custodian>
                             <section>
-                                <title value="Medikamentöser Behandlungsplan"/>
+                                <title value="Medikamentöser Behandlungsplan"/>
                                 <code>
                                     <coding>
                                         <system value="http://loinc.org"/>
@@ -118,8 +115,8 @@
                                                     <td id="mtp.1.dosageevening">0.5</td>
                                                     <td id="mtp.1.dosagenight">0</td>
                                                     <td id="mtp.1.routecode">oral</td>
-                                                    <td id="mtp.1.note"></td>
-                                                    <td id="mtp.1.datefromto"></td>
+                                                    <td id="mtp.1.note"/>
+                                                    <td id="mtp.1.datefromto"/>
                                                     <td id="mtp.1.reason">Bluthochdruck</td>
                                                 </tr>
                                             </tbody>
@@ -176,6 +173,12 @@
                                 <family value="Hausarzt"/>
                                 <given value="Familien"/>
                             </name>
+                            <address>
+                                <line value="Krankenstrasse 2"/>
+                                <city value="Zürich"/>
+                                <postalCode value="8005"/>
+                                <country value="CH"/>
+                            </address>
                         </Practitioner>
                     </resource>
                 </entry>
@@ -341,7 +344,7 @@
                                 <doseAndRate>
                                     <doseQuantity>
                                         <value value="1"/>
-                                        <unit value="Tablet (unit of presentation)" />
+                                        <unit value="Tablet (unit of presentation)"/>
                                         <system value="http://snomed.info/sct"/>
                                         <code value="732936001"/>
                                     </doseQuantity>
@@ -367,7 +370,7 @@
                                 <doseAndRate>
                                     <doseQuantity>
                                         <value value="0.5"/>
-                                        <unit value="Tablet (unit of presentation)" />
+                                        <unit value="Tablet (unit of presentation)"/>
                                         <system value="http://snomed.info/sct"/>
                                         <code value="732936001"/>
                                     </doseQuantity>
