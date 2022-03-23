@@ -260,16 +260,6 @@
                             <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
                                 <valueUrl value="#mtp.1"/>
                             </extension>
-                            <!-- substitution just as test case
-                            <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-substitution">
-                                <valueCodeableConcept>
-                                    <coding>
-                                        <system value="http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"/>
-                                        <code value="E"/>
-                                        <display value="equivalent"/>
-                                    </coding>
-                                </valueCodeableConcept>
-                            </extension> -->
                             <identifier>
                                 <system value="urn:ietf:rfc:3986"/>
                                 <value value="urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"/>
@@ -327,7 +317,7 @@
     <parameter>
         <name value="ch-emed-doc"/>
         <resource>
-            <Bundle>
+            <Bundle xmlns="http://hl7.org/fhir">
                 <id value="1-2-MedicationDispense"/>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
@@ -343,9 +333,6 @@
                             <language value="de-CH"/>
                             <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
                                 <valueString value="EPD"/>
-                            </extension>
-                            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
-                                <valueUnsignedInt value="1"/>
                             </extension>
                             <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
                                 <valueReference>
@@ -427,7 +414,7 @@
                                                     <th>Kommentar</th>
                                                     <th>Behandlungsrund</th>
                                                     <th>Datum/Zeit der Abgabe/ Anwendung</th>
-                                                    <th>Identifikation des Empfängers</th>
+                                                    <th>Identifikation des Empfängers</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -504,6 +491,12 @@
                                 <family value="Hausarzt"/>
                                 <given value="Familien"/>
                             </name>
+                            <address>
+                                <line value="Krankenstrasse 2"/>
+                                <city value="Zürich"/>
+                                <postalCode value="8005"/>
+                                <country value="CH"/>
+                            </address>
                         </Practitioner>
                     </resource>
                 </entry>
@@ -673,7 +666,7 @@
                                 <doseAndRate>
                                     <doseQuantity>
                                         <value value="0.5"/>
-                                        <unit value="Tablet (unit of presentation)" />
+                                        <unit value="Tablet (unit of presentation)"/>
                                         <system value="http://snomed.info/sct"/>
                                         <code value="732936001"/>
                                     </doseQuantity>
@@ -685,17 +678,6 @@
                                 </extension>
                                 <text value="Morgens 1/2 Tablette nehmen"/>
                             </dosageInstruction>
-                            <!-- substitution just as test case
-                            <substitution>
-                                <wasSubstituted value="true"/>
-                                <type>
-                                    <coding>
-                                        <system value="http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"/>
-                                        <code value="E"/>
-                                        <display value="equivalent"/>
-                                    </coding>
-                                </type>
-                            </substitution> -->
                         </MedicationDispense>
                     </resource>
                 </entry>
