@@ -147,6 +147,12 @@
                     <family value="Apotheker"/>
                     <given value="Andreas"/>
                 </name>
+                <address>
+                    <line value="Apothekerstrasse"/>
+                    <city value="Bern"/>
+                    <postalCode value="3000"/>
+                    <country value="CH"/>
+                </address>
             </Practitioner>
         </resource>
     </entry>

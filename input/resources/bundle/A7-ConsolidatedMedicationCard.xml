@@ -113,6 +113,12 @@
                     <family value="Dupont"/>
                     <given value="Hausarzt"/>
                 </name>
+                <address>
+                    <line value="Dupontstrasse"/>
+                    <city value="Bern"/>
+                    <postalCode value="3000"/>
+                    <country value="CH"/>
+                </address>
             </Practitioner>
         </resource>
     </entry>

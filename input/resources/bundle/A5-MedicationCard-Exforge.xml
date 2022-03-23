@@ -147,6 +147,12 @@
                     <family value="Monney"/>
                     <given value="Spezialist"/>
                 </name>
+                <address>
+                    <line value="Monneystrasse"/>
+                    <city value="Bern"/>
+                    <postalCode value="3000"/>
+                    <country value="CH"/>
+                </address>
             </Practitioner>
         </resource>
     </entry>
