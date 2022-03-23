@@ -687,7 +687,7 @@
     <parameter>
         <name value="ch-emed-doc"/>
         <resource>
-            <Bundle>
+            <Bundle xmlns="http://hl7.org/fhir">
                 <id value="2-2-PharmaceuticalAdvice"/>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
@@ -703,9 +703,6 @@
                             <language value="de-CH"/>
                             <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
                                 <valueString value="EPD"/>
-                            </extension>
-                            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
-                                <valueUnsignedInt value="1"/>
                             </extension>
                             <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
                                 <valueReference>
@@ -799,7 +796,7 @@
                                                     <td id="padv.1.dosageevening">0</td>
                                                     <td id="padv.1.dosagenight">0</td>
                                                     <td id="padv.1.routecode">oral</td>
-                                                    <td id="padv.1.datefromto"></td>
+                                                    <td id="padv.1.datefromto"/>
                                                     <td id="padv.1.reason">Bluthochdruck</td>
                                                     <td id="padv.1.note">Abgesetzt aufgrund UAW trockener Husten</td>
                                                 </tr>
@@ -857,6 +854,12 @@
                                 <family value="Hausarzt"/>
                                 <given value="Familien"/>
                             </name>
+                            <address>
+                                <line value="Krankenstrasse 2"/>
+                                <city value="Zürich"/>
+                                <postalCode value="8005"/>
+                                <country value="CH"/>
+                            </address>
                         </Practitioner>
                     </resource>
                 </entry>
