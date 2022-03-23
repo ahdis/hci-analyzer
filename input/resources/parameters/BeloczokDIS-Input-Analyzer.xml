@@ -402,9 +402,6 @@
                             <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
                                 <valueString value="EPD"/>
                             </extension>
-                            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
-                                <valueUnsignedInt value="1"/>
-                            </extension>
                             <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
                                 <valueReference>
                                     <reference value="Patient/MonikaWegmuellerRecipient"/>
@@ -485,7 +482,7 @@
                                                     <th>Kommentar</th>
                                                     <th>Behandlungsrund</th>
                                                     <th>Datum/Zeit der Abgabe/ Anwendung</th>
-                                                    <th>Identifikation des Empfängers</th>
+                                                    <th>Identifikation des Empfängers</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -561,6 +558,12 @@
                                 <family value="Hausarzt"/>
                                 <given value="Familien"/>
                             </name>
+                            <address>
+                                <line value="Krankenstrasse 2"/>
+                                <city value="Zürich"/>
+                                <postalCode value="8005"/>
+                                <country value="CH"/>
+                            </address>
                         </Practitioner>
                     </resource>
                 </entry>
@@ -737,7 +740,7 @@
                                 <doseAndRate>
                                     <doseQuantity>
                                         <value value="1"/>
-                                        <unit value="Tablet (unit of presentation)" />
+                                        <unit value="Tablet (unit of presentation)"/>
                                         <system value="http://snomed.info/sct"/>
                                         <code value="732936001"/>
                                     </doseQuantity>
@@ -763,7 +766,7 @@
                                 <doseAndRate>
                                     <doseQuantity>
                                         <value value="0.5"/>
-                                        <unit value="Tablet (unit of presentation)" />
+                                        <unit value="Tablet (unit of presentation)"/>
                                         <system value="http://snomed.info/sct"/>
                                         <code value="732936001"/>
                                     </doseQuantity>
