@@ -6,10 +6,14 @@ Die in diesem Abschnitt abgebildeten Anwendungsfälle basieren auf dem Fallbeisp
    * Inputdokument: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html)
 * [1-1 Consolidated Medication Card document](Parameters-1-1-ConsolidatedMedicationCard.html) 
 
+{% include img.html img="uc_1-1.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
+
 #### 1-2 Abgabe (Medication Dispense document)
 * [1-2 Input Analyzer](Parameters-1-2-Input-Analyzer.html)
    * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html)
 * [1-2 Consolidated Medication Card document](Parameters-1-2-ConsolidatedMedicationCard.html)
+
+{% include img.html img="uc_1-2.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
 
 #### 2-1 Medikationsliste (Medication List document)
 Arbeitshypothese: Die Medikationsliste ist ein dynamisch generiertes Dokument und wird daher nicht als Inputdokument für den Analyzer auftreten.
@@ -20,10 +24,15 @@ Arbeitshypothese: Die Medikationsliste ist ein dynamisch generiertes Dokument un
    * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-2 PADV](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html)
 * [2-2 Consolidated Medication Card document](Parameters-2-2-ConsolidatedMedicationCard.html)
 
+{% include img.html img="uc_2-2.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
+
 #### 2-3 Therapieentscheid Medikation (Medication Treatment Plan document)
 * [2-3 Input Analyzer](Parameters-2-3-Input-Analyzer.html)
    * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-2 PADV](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html), [2-3 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-3-MedicationTreatmentPlan.html)
 * [2-3 Consolidated Medication Card document](Parameters-2-3-ConsolidatedMedicationCard.html)
+
+
+{% include img.html img="uc_2-3.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
 
 ##### Testfall Beloc Zok: Therapieentscheid Beloc Zok
 Abgesetztes Triatec wird für Testzwecke nicht aufgeführt.
@@ -36,6 +45,8 @@ Abgesetztes Triatec wird für Testzwecke nicht aufgeführt.
    * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-2 PADV](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html), [2-3 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-3-MedicationTreatmentPlan.html), [2-4 DIS](http://fhir.ch/ig/ch-emed/Bundle-2-4-MedicationDispense.html)
 * [2-4 Consolidated Medication Card document](Parameters-2-4-ConsolidatedMedicationCard.html)
 
+{% include img.html img="uc_2-4.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
+
 ##### Testfall Beloc Zok: Abgabe Beloc Zok
 Abgesetztes Triatec wird für Testzwecke nicht aufgeführt.
 * [Input Analyzer](Parameters-BeloczokDIS-Input-Analyzer.html)
@@ -46,6 +57,8 @@ Abgesetztes Triatec wird für Testzwecke nicht aufgeführt.
 * [2-5 Input Analyzer](Parameters-2-5-Input-Analyzer.html)
    * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-2 PADV](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html), [2-3 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-3-MedicationTreatmentPlan.html), [2-4 DIS](http://fhir.ch/ig/ch-emed/Bundle-2-4-MedicationDispense.html), [2-5 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-5-MedicationTreatmentPlan.html)
 * [2-5 Consolidated Medication Card document](Parameters-2-5-ConsolidatedMedicationCard.html)
+
+{% include img.html img="uc_2-5.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
 
 ##### Testfall Norvasc: Therapieentscheid Norvasc
 Abgesetztes Triatec und abgegebenes Beloc Zok werden für Testzwecke nicht aufgeführt.
@@ -58,6 +71,8 @@ Abgesetztes Triatec und abgegebenes Beloc Zok werden für Testzwecke nicht aufge
    * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-2 PADV](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html), [2-3 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-3-MedicationTreatmentPlan.html), [2-4 DIS](http://fhir.ch/ig/ch-emed/Bundle-2-4-MedicationDispense.html), [2-5 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-5-MedicationTreatmentPlan.html), [2-6 PRE](http://fhir.ch/ig/ch-emed/Bundle-2-6-MedicationPrescription.html)
 * [2-6 Consolidated Medication Card document](Parameters-2-6-ConsolidatedMedicationCard.html)
 
+{% include img.html img="uc_2-6.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
+
 ##### Testfall Norvasc: Rezept Norvasc
 Abgesetztes Triatec und abgegebenes Beloc Zok werden für Testzwecke nicht aufgeführt.
 * [Input Analyzer](Parameters-NorvascPRE-Input-Analyzer.html)
@@ -68,6 +83,8 @@ Abgesetztes Triatec und abgegebenes Beloc Zok werden für Testzwecke nicht aufge
 * [2-7 Input Analyzer](Parameters-2-7-Input-Analyzer.html)
    * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-2 PADV](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html), [2-3 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-3-MedicationTreatmentPlan.html), [2-4 DIS](http://fhir.ch/ig/ch-emed/Bundle-2-4-MedicationDispense.html), [2-5 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-5-MedicationTreatmentPlan.html), [2-6 PRE](http://fhir.ch/ig/ch-emed/Bundle-2-6-MedicationPrescription.html), [2-7 Card](http://fhir.ch/ig/ch-emed/Bundle-2-7-MedicationCard.html)
 * [2-7 Consolidated Medication Card document](Parameters-2-7-ConsolidatedMedicationCard.html)
+
+{% include img.html img="uc_2-7.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
 
 ##### Testfall Norvasc: Medikationsplan Norvasc
 Abgesetztes Triatec und abgegebenes Beloc Zok werden für Testzwecke nicht aufgeführt.
