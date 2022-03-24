@@ -3,6 +3,9 @@
 <Parameters xmlns="http://hl7.org/fhir">
     <!-- The parameter resource actually has no ID. Here the ID is used to show the resource in the IG. -->
     <id value="2-2-Input-Analyzer"/>
+    <meta>
+        <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
+    </meta>
     <parameter>
         <name value="ch-emed-doc"/>
         <resource>
@@ -82,6 +85,47 @@
                                         <display value="Medication treatment plan.brief"/>
                                     </coding>
                                 </code>
+                                <text>
+                                    <status value="generated"/>
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Präpartename</th>
+                                                    <th>Wirkstoffname</th>
+                                                    <th>Galenische Form</th>
+                                                    <th>Dosis pro Einheit</th>
+                                                    <th>Dosierung</th>
+                                                    <th>Dos.Morgen</th>
+                                                    <th>Dos.Mittag</th>
+                                                    <th>Dos.Abend</th>
+                                                    <th>Dos.Nacht</th>
+                                                    <th>Verabreichungsweg</th>
+                                                    <th>Kommentar</th>
+                                                    <th>Anwendungsdauer</th>
+                                                    <th>Behandlungsgrund</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr id="mtp.1">
+                                                    <td id="mtp.1.brandedmedication">Triatec</td>
+                                                    <td id="mtp.1.ingredient">Ramipril</td>
+                                                    <td id="mtp.1.packageform">Tbl</td>
+                                                    <td id="mtp.1.dosequantity">2.5 mg</td>
+                                                    <td id="mtp.1.dosageintakemode">Morgens 1/2 Tablette nehmen</td>
+                                                    <td id="mtp.1.dosagemorning">0.5</td>
+                                                    <td id="mtp.1.dosagelunch">0</td>
+                                                    <td id="mtp.1.dosageevening">0</td>
+                                                    <td id="mtp.1.dosagenight">0</td>
+                                                    <td id="mtp.1.routecode">oral</td>
+                                                    <td id="mtp.1.note"/>
+                                                    <td id="mtp.1.datefromto"/>
+                                                    <td id="mtp.1.reason">Bluthochdruck</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </text>
                                 <entry>
                                     <reference value="MedicationStatement/1-1-MedStatTriatec"/>
                                 </entry>
