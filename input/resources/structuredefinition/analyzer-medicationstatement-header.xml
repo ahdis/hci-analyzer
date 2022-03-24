@@ -104,7 +104,7 @@
          <short value="Reference to the contained medication"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://chmed20af.emediplan.ch/fhir/StructureDefinition/chmed20af-medication"/>
+            <targetProfile value="http://chmed.emediplan.ch/fhir/StructureDefinition/chmed-medication"/>
          </type>
          
       </element>

@@ -10,7 +10,7 @@
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="Practitioner"/>
-   <baseDefinition value="http://chmed20af.emediplan.ch/fhir/StructureDefinition/chmed20af-practitioner"/>
+   <baseDefinition value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner"/>
    <derivation value="constraint"/>
    <differential>
       <element id="Practitioner">
