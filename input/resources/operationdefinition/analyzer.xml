@@ -11,6 +11,8 @@
   <system value="false"/>
   <type value="true"/>
   <instance value="false"/>
+  <inputProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
+  <!--<outputProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-parameters"/>-->
   <parameter>
     <name value="ch-emed-doc"/>
     <use value="in"/>

@@ -1,0 +1,43 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<id value="analyzer-in-composition"/>
+	<url value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-composition"/>
+	<version value="0.1.0"/>
+	<name value="AnalyzerInComposition"/>
+	<title value="Analyzer IN Composition"/>
+	<status value="draft"/>
+	<description value="Profile for the Analyzer IN Composition"/>
+	<fhirVersion value="4.0.1"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Composition"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Composition">
+			<path value="Composition"/>
+			<short value="Analyzer IN Composition"/>
+		</element>
+
+		<element id="Composition.extension">
+			<path value="Composition.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Composition.extension:inputDocumentSource">
+			<path value="Composition.extension"/>
+			<sliceName value="inputDocumentSource"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource"/>
+			</type>
+		</element>
+		
+	</differential>
+</StructureDefinition>

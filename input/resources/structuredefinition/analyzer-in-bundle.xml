@@ -1,0 +1,59 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="analyzer-in-bundle"/>
+  <url value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-bundle"/>
+  <version value="0.1.0"/>
+  <name value="AnalyzerInBundle"/>
+  <title value="Analyzer IN Bundle"/>
+  <status value="draft"/>
+  <description value="Profile for the Analyzer IN Bundle"/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Bundle"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Bundle">
+      <path value="Bundle"/>
+      <short value="Analyzer IN Bundle"/>
+      <constraint>
+        <key value="analyzer-in-document"/>
+        <severity value="warning"/>
+        <human value="The Bundle needs to conform to the requirements of the CH EMED documents"/>
+        <expression value="
+          conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationtreatmentplan') or 
+          conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationprescription') or 
+          conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationdispense') or 
+          conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-pharmaceuticaladvice') or 
+          conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard')"/>
+      </constraint>
+    </element>
+
+    <element id="Bundle.entry">
+      <path value="Bundle.entry"/>
+      <slicing>
+        <discriminator>
+          <type value="profile"/>
+          <path value="resource"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="1"/>
+    </element>
+    <element id="Bundle.entry:composition">
+      <path value="Bundle.entry"/>
+      <sliceName value="composition"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Bundle.entry:composition.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Composition"/>
+        <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-composition"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
