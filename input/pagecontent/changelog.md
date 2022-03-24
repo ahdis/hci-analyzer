@@ -21,6 +21,7 @@ See also open issues on [GitHub](https://github.com/ahdis/hci-analyzer/issues).
 
 ### v0.2.0 (2021)
 * Adjustments to the current status of CH EMED (v1.0.0) and CHMED (v2.0.0).
+   * Update examples of input documents from EPD (CH EMED). 
 * This version was not published. The status at that time corresponds to this [commit](https://github.com/ahdis/chmed/tree/6abdc26b260d48246ddce5240606217c2766c81d) from June 2021.
 
 ### v0.1.0 (2020)
