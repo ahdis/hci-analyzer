@@ -1,6 +1,6 @@
 ### Introduction
 The Analyzer is a software product (medical device) from [HCI Solutions](https://www.hcisolutions.ch/de/). Integrated in [Documedis®](https://www.hcisolutions.ch/de/medication-solutions/documedis.php), it analyzes all medications from the EPR and the primary system and presents the medication clearly to the healthcare provider.   
-The Analyzer generates [consolidated Medication Card documents](StructureDefinition-analyzer-bundle.html) as output documents from input documents that are conformant to the specified [CH EMED exchange format](http://fhir.ch/ig/ch-emed/index.html).
+The Analyzer generates [consolidated Medication Card documents](StructureDefinition-analyzer-out-bundle.html) as output documents from input documents that are conformant to the specified [CH EMED exchange format](http://fhir.ch/ig/ch-emed/index.html).
 
 {% include img.html img="analyzer.png" caption="Fig.: Input and output documents Analyzer" width="70%" %}
 ### About this IG

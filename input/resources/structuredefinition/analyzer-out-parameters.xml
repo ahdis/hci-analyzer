@@ -1,0 +1,38 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="analyzer-out-parameters"/>
+  <url value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-parameters"/>
+  <version value="0.1.0"/>
+  <name value="AnalyzerOutParameters"/>
+  <title value="Analyzer OUT Parameters"/>
+  <status value="draft"/>
+  <description value="Profile for the Analyzer OUT Parameters for the 'InputOutputParametersAnalyzer' operation (Output: cons-medicationcard)"/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Parameters"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Parameters"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Parameters">
+      <path value="Parameters"/>
+      <short value="Analyzer OUT Parameters"/>
+    </element>
+    <element id="Parameters.parameter">
+      <path value="Parameters.parameter"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Parameters.parameter.name">
+      <path value="Parameters.parameter.name" />
+      <fixedString value="cons-medicationcard" />
+    </element>
+    <element id="Parameters.parameter.resource">
+      <path value="Parameters.parameter.resource" />
+      <min value="1" />
+      <type>
+        <code value="Resource"/>
+        <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

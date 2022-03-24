@@ -1,11 +1,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="analyzer-composition"/>
-	<url value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-composition"/>
+	<id value="analyzer-out-composition"/>
+	<url value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-composition"/>
 	<version value="0.1.0"/>
-	<name value="AnalyzerComposition"/>
-	<title value="Analyzer Composition"/>
+	<name value="AnalyzerOutComposition"/>
+	<title value="Analyzer OUT Composition"/>
 	<status value="draft"/>
-	<description value="Profile for the Analyzer Composition"/>
+	<description value="Profile for the Analyzer OUT Composition"/>
 	<fhirVersion value="4.0.1"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
