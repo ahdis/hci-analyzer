@@ -2,11 +2,11 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ch.hcisolutions.ig.analyzer"/>
   <url value="http://hcisolutions.ch/ig/analyzer/ImplementationGuide/ch.hcisolutions.ig.analyzer"/>
-  <version value="0.1.0"/>
+  <version value="0.9.0"/>
   <name value="ANALYZER"/>
   <title value="Analyzer (R4)"/>
   <status value="draft"/>
-  <date value="2021-11-29"/>
+  <date value="2022-03-24"/>
   <publisher value="HCI Solutions AG"/>
   <contact>
     <name value="HCI Solutions AG"/>
@@ -27,164 +27,15 @@
   <license value="CC-BY-SA-4.0"/>
   <fhirVersion value="4.0.1"/>
 
-  <dependsOn id="chmed20af">
-    <uri value="http://chmed20af.emediplan.ch/fhir/ImplementationGuide/ch.chmed20af.emediplan"/>
-    <packageId value="ch.chmed20af.emediplan"/>
-    <version value="2.0.0"/>
+  <dependsOn id="chmed">
+    <uri value="http://chmed.emediplan.ch/fhir/ImplementationGuide/ch.chmed.emediplan"/>
+    <packageId value="ch.chmed.emediplan"/>
+    <version value="current"/>
   </dependsOn>
-  
+
   <definition>
 
-    <!-- Analyzer: Examples for Medication Card document (included then in Parameters => Input Analzyer)-->
-    <resource>
-      <reference>
-        <reference value="Bundle/A1-MedicationCard-Simcora"/>
-      </reference>
-      <name value="Medication Card document"/>
-      <description value="Example for Medication Card document"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/A1-MedicationCard-Zocor"/>
-      </reference>
-      <name value="Medication Card document"/>
-      <description value="Example for Medication Card document"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/A2-MedicationCard-1x10mg"/>
-      </reference>
-      <name value="Medication Card document"/>
-      <description value="Example for Medication Card document"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/A2-MedicationCard-2x5mg"/>
-      </reference>
-      <name value="Medication Card document"/>
-      <description value="Example for Medication Card document"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/A3-MedicationCard-Reniten-1x"/>
-      </reference>
-      <name value="Medication Card document"/>
-      <description value="Example for Medication Card document"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/A3-MedicationCard-Reniten-2x"/>
-      </reference>
-      <name value="Medication Card document"/>
-      <description value="Example for Medication Card document"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/A4-MedicationCard-DrDupont"/>
-      </reference>
-      <name value="Medication Card document"/>
-      <description value="Example for Medication Card document"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/A4-MedicationCard-DrMonney"/>
-      </reference>
-      <name value="Medication Card document"/>
-      <description value="Example for Medication Card document"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/A5-MedicationCard-Reniten"/>
-      </reference>
-      <name value="Medication Card document"/>
-      <description value="Example for Medication Card document"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/A5-MedicationCard-Exforge"/>
-      </reference>
-      <name value="Medication Card document"/>
-      <description value="Example for Medication Card document"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/A6-MedicationCard-Tbl"/>
-      </reference>
-      <name value="Medication Card document"/>
-      <description value="Example for Medication Card document"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/A6-MedicationCard-TblSpray"/>
-      </reference>
-      <name value="Medication Card document"/>
-      <description value="Example for Medication Card document"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/A7-MedicationCard-Brufen"/>
-      </reference>
-      <name value="Medication Card document"/>
-      <description value="Example for Medication Card document"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/A7-MedicationCard-BrufenBrufenretard"/>
-      </reference>
-      <name value="Medication Card document"/>
-      <description value="Example for Medication Card document"/>
-    </resource>
-
     <!-- Analyzer: Example for Parameters (=> Input Analyzer) -->
-    <resource>
-      <reference>
-        <reference value="Parameters/A1-Input-Analyzer"/>
-      </reference>
-      <name value="Parameters"/>
-      <description value="Example A1 Input Analyzer"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/A2-Input-Analyzer"/>
-      </reference>
-      <name value="Parameters"/>
-      <description value="Example A2 Input Analyzer"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/A3-Input-Analyzer"/>
-      </reference>
-      <name value="Parameters"/>
-      <description value="Example A3 Input Analyzer"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/A4-Input-Analyzer"/>
-      </reference>
-      <name value="Parameters"/>
-      <description value="Example A4 Input Analyzer"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/A5-Input-Analyzer"/>
-      </reference>
-      <name value="Parameters"/>
-      <description value="Example A5 Input Analyzer"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/A6-Input-Analyzer"/>
-      </reference>
-      <name value="Parameters"/>
-      <description value="Example A6 Input Analyzer"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/A7-Input-Analyzer"/>
-      </reference>
-      <name value="Parameters"/>
-      <description value="Example A7 Input Analyzer"/>
-    </resource>
     <resource>
       <reference>
         <reference value="Parameters/1-1-Input-Analyzer"/>
@@ -215,37 +66,16 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/2-4-Input-Analyzer"/>
-      </reference>
-      <name value="2-4 Input Analyzer"/>
-      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/2-5-Input-Analyzer"/>
-      </reference>
-      <name value="2-5 Input Analyzer"/>
-      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/2-6-Input-Analyzer"/>
-      </reference>
-      <name value="2-6 Input Analyzer"/>
-      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/2-7-Input-Analyzer"/>
-      </reference>
-      <name value="2-7 Input Analyzer"/>
-      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="Parameters/BeloczokMTP-Input-Analyzer"/>
       </reference>
       <name value="2-3 Input Analyzer (test case)"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/2-4-Input-Analyzer"/>
+      </reference>
+      <name value="2-4 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
     <resource>
@@ -257,9 +87,23 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Parameters/2-5-Input-Analyzer"/>
+      </reference>
+      <name value="2-5 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Parameters/NorvascMTP-Input-Analyzer"/>
       </reference>
       <name value="2-5 Input Analyzer (test case)"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/2-6-Input-Analyzer"/>
+      </reference>
+      <name value="2-6 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
     <resource>
@@ -271,9 +115,66 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Parameters/2-7-Input-Analyzer"/>
+      </reference>
+      <name value="2-7 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Parameters/NorvascCard-Input-Analyzer"/>
       </reference>
       <name value="2-7 Input Analyzer (test case)"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="Parameters/A1-Input-Analyzer"/>
+      </reference>
+      <name value="A1 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/A2-Input-Analyzer"/>
+      </reference>
+      <name value="A2 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/A3-Input-Analyzer"/>
+      </reference>
+      <name value="A3 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/A4-Input-Analyzer"/>
+      </reference>
+      <name value="A4 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/A5-Input-Analyzer"/>
+      </reference>
+      <name value="A5 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/A6-Input-Analyzer"/>
+      </reference>
+      <name value="A6 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/A7-Input-Analyzer"/>
+      </reference>
+      <name value="A7 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
 
@@ -419,6 +320,26 @@
       <description value="Example for Medication Card document (Output Analyzer)"/>
     </resource>
 
+    <!-- Analyzer: IN StructureDefinition -->
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/analyzer-in-parameters"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/analyzer-in-bundle"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/analyzer-in-composition"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+
     <!-- Analyzer: StructureDefinition -->
     <resource>
       <reference>
@@ -524,7 +445,7 @@
       <reference>
         <reference value="CodeSystem/history-changes"/>
       </reference>
-      <name value="CodeSystem History Changes"/>
+      <name value="History Changes"/>
       <exampleBoolean value="false"/>
     </resource>
 
@@ -533,8 +454,7 @@
       <reference>
         <reference value="ValueSet/history-changes"/>
       </reference>
-      <name value="ValueSet History Changes"/>
-      <description value="ValueSet History Changes"/>
+      <name value="History Changes"/>
       <exampleBoolean value="false"/>
     </resource>
 
