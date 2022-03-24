@@ -20,8 +20,7 @@
         <key value="analyzer-in-document"/>
         <severity value="warning"/>
         <human value="The Bundle needs to conform to the requirements of the CH EMED documents"/>
-        <expression value="
-          conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationtreatmentplan') or 
+        <expression value="conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationtreatmentplan') or 
           conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationprescription') or 
           conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationdispense') or 
           conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-pharmaceuticaladvice') or 
