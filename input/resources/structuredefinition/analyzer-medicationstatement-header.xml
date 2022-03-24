@@ -3,7 +3,7 @@
    <url value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-medicationstatement-header"/>
    <version value="0.1.0"/>
    <name value="AnalyzerMedicationStatementHeader"/>
-   <title value="Analyzer MedicationStatementHeader"/>
+   <title value="Analyzer MedicationStatement Header"/>
    <status value="draft"/>
    <description value="Profile for the Analyzer MedicationStatement Header"/>
    <fhirVersion value="4.0.1"/>
