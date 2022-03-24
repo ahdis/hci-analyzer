@@ -1,5 +1,52 @@
-The following profiles define the requirements for a minimum data set for the Medication Card document consolidated by the Analyzer.
+### Analyzer Input
+These profiles define the requirements for a minimum data set for the medication documents as input for the Analyzer.
+* [Analyzer IN Parameters](StructureDefinition-analyzer-in-parameters.html)   
+Profile for the Analyzer IN Parameters for the 'InputOutputParametersAnalyzer' operation (Input: ch-emed-doc)
 
-**Remark:** The requirements for this Medication Card document consolidated by the Analyzer do **not** correspond to the requirements of the [CHMED20AF Medication Card document](https://chmed20af.emediplan.ch/fhir/StructureDefinition-chmed20af-card-bundle.html).
+* [Analyzer IN Bundle](StructureDefinition-analyzer-in-bundle.html)   
+Profile for the Analyzer IN Bundle
 
-{% include list-profiles.xhtml %}
+* [Analyzer IN Composition](StructureDefinition-analyzer-in-composition.html)   
+Profile for the Analyzer IN Composition
+
+### Analyzer Output
+These profiles define the requirements for a minimum data set for the Medication Card document consolidated by the Analyzer.   
+_**Remark:** The requirements for this Medication Card document consolidated by the Analyzer do **not** correspond to the requirements of the [CHMED Medication Card document](https://chmed.emediplan.ch/fhir/StructureDefinition-chmed-card-bundle.html)._
+
+* [Analyzer OUT Parameters](StructureDefinition-analyzer-out-parameters.html)   
+Profile for the Analyzer OUT Parameters for the 'InputOutputParametersAnalyzer' operation (Output: cons-medicationcard)
+
+* [Analyzer OUT Bundle](StructureDefinition-analyzer-out-bundle.html)   
+Profile for the Analyzer OUT Bundle
+
+* [Analyzer OUT Composition](StructureDefinition-analyzer-out-composition.html)   
+Profile for the Analyzer OUT Composition
+
+* [Analyzer MedicationStatement Header](StructureDefinition-analyzer-medicationstatement-header.html)   
+Profile for the Analyzer MedicationStatement Header
+
+* [Analyzer Patient](StructureDefinition-analyzer-patient.html)   
+Profile for the Analyzer Patient
+
+* [Analyzer Practitioner](StructureDefinition-analyzer-practitioner.html)   
+Profile for the Analyzer Practitioner
+
+Profiles to show the history of changes (MedicationStatement.derivedFrom):
+
+* [Analyzer MedicationStatement (Card)](StructureDefinition-analyzer-medicationstatementcard.html)   
+Profile for the Analyzer MedicationStatement (Card)
+
+* [Analyzer MedicationStatement (MTP)](StructureDefinition-analyzer-medicationstatementmtp.html)   
+Profile for the Analyzer MedicationStatement (MTP)
+
+* [Analyzer MedicationRequest](StructureDefinition-analyzer-medicationrequest.html)   
+Profile for the Analyzer MedicationStatement
+
+* [Analyzer MedicationDispense](StructureDefinition-analyzer-medicationdispense.html)   
+Profile for the Analyzer MedicationDispense
+
+* [Analyzer Observation PADV](StructureDefinition-analyzer-observationpadv.html)   
+Profile for the Analyzer Observation from a Pharmaceutical Advice document (PADV)
+
+* [Analyzer Observation History](StructureDefinition-analyzer-observationhistory.html)   
+Profile for the Analyzer Observation to represent changes of the history
