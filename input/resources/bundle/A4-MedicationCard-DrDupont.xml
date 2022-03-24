@@ -1,8 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="A4-MedicationCard-DrDupont"/>
     <meta>
-        <lastUpdated value="2020-04-20T11:00:00+01:00"/>
-        <profile value="http://chmed20af.emediplan.ch/fhir/StructureDefinition/chmed20af-card-bundle"/>
+        <profile value="http://chmed.emediplan.ch/fhir/StructureDefinition/chmed-card-bundle"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
