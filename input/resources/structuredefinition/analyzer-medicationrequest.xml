@@ -21,7 +21,7 @@
          <path value="MedicationRequest.extension" />
          <sliceName value="infoInputDocument" />
          <short value="Information about the input document"/>
-         <min value="0"/>
+         <min value="1"/>
          <max value="1"/>
          <type>
             <code value="Extension" />
