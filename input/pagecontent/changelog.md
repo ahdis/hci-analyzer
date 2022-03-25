@@ -10,11 +10,14 @@ All significant changes to this FHIR implementation guide will be documented on 
 See also open issues on [GitHub](https://github.com/ahdis/hci-analyzer/issues).
 
 #### Added
-
+* Add schematic illustrations for better understanding of the Analyzer process.
+* Add different profiles to support the validation.
 
 #### Changed / Updated
-* Create a separate implementation guide/GitHub repository for the Analyzer. Was before integrated in the CHMED IG as a hidden tab.
+* Create a separate implementation guide/GitHub repository for the Analyzer. Before it was integrated in the CHMED IG as a hidden tab.
 * Adjustments to the current status of CH EMED (v2.0.0) and CHMED (v3.0.0).
+   * Update examples of input documents from EPD (CH EMED).
+   * Update canonical URL of underlaying IG CHMED.
 
 #### Fixed
 
