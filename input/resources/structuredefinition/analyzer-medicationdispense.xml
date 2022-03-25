@@ -17,30 +17,6 @@
          <path value="MedicationDispense"/>
          <short value="Analyzer MedicationDispense"/>
       </element>
-
-      <element id="MedicationDispense.contained">
-         <path value="MedicationDispense.contained"/>
-         
-      </element>
-
-      <element id="MedicationDispense.extension:prescription">
-         <path value="MedicationDispense.extension" />
-         <sliceName value="prescription" />
-         
-      </element>
-
-      <element id="MedicationDispense.extension:pharmaceuticalAdvice">
-         <path value="MedicationDispense.extension" />
-         <sliceName value="pharmaceuticalAdvice" />
-         
-      </element>
-
-      <element id="MedicationDispense.extension:treatmentPlan">
-         <path value="MedicationDispense.extension" />
-         <sliceName value="treatmentPlan" />
-         
-      </element>
-
       <element id="MedicationDispense.extension:infoInputDocument">
          <path value="MedicationDispense.extension" />
          <sliceName value="infoInputDocument" />
@@ -51,36 +27,7 @@
             <code value="Extension" />
             <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument" />
          </type>
-         
       </element>
-
-      <element id="MedicationDispense.identifier">
-         <path value="MedicationDispense.identifier"/>
-         
-      </element>
-      <element id="MedicationDispense.identifier.system">
-         <path value="MedicationDispense.identifier.system"/>
-         
-      </element>
-      <element id="MedicationDispense.identifier.value">
-         <path value="MedicationDispense.identifier.value"/>
-         
-      </element>
-
-      <element id="MedicationDispense.status">
-         <path value="MedicationDispense.status"/>
-         
-      </element>
-
-      <element id="MedicationDispense.medicationReference">
-         <path value="MedicationDispense.medicationReference"/>
-         <type>
-            <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication-medicationdispense"/>
-         </type>
-         
-      </element>
-
       <element id="MedicationDispense.subject">
          <path value="MedicationDispense.subject"/>
          <type>
@@ -88,17 +35,13 @@
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>
          </type>
          <min value="1"/>
-         
       </element>
-
       <element id="MedicationDispense.performer">
          <path value="MedicationDispense.performer"/>
          <short value="Who performed event"/>
          <min value="1"/>
          <max value="1"/>
-         
       </element>
-
       <element id="MedicationDispense.performer.actor">
          <path value="MedicationDispense.performer.actor"/>
          <short value="Individual who was performing"/>
@@ -106,56 +49,6 @@
             <code value="Reference"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitioner"/>
          </type>
-         
-      </element>
-
-      <element id="MedicationDispense.quantity">
-         <path value="MedicationDispense.quantity"/>
-         
-      </element>
-
-      <element id="MedicationDispense.whenHandedOver">
-         <path value="MedicationDispense.whenHandedOver"/>
-         
-      </element>
-
-      <element id="MedicationDispense.note">
-         <path value="MedicationDispense.note"/>
-         
-      </element>
-
-      <element id="MedicationDispense.dosageInstruction">
-         <path value="MedicationDispense.dosageInstruction"/>
-         
-      </element>
-
-      <element id="MedicationDispense.dosageInstruction:nonstructured">
-         <path value="MedicationDispense.dosageInstruction"/>
-         <sliceName value="nonstructured"/>
-         
-      </element>
-      <element id="MedicationDispense.dosageInstruction:structurednormal">
-         <path value="MedicationDispense.dosageInstruction"/>
-         <sliceName value="structurednormal"/>
-         
-      </element>
-      <element id="MedicationDispense.dosageInstruction:structuredsplit">
-         <path value="MedicationDispense.dosageInstruction"/>
-         <sliceName value="structuredsplit"/>
-         
-      </element>
-
-      <element id="MedicationDispense.substitution">
-         <path value="MedicationDispense.substitution"/>
-         
-      </element>
-      <element id="MedicationDispense.substitution.wasSubstituted">
-         <path value="MedicationDispense.substitution.wasSubstituted"/>
-         
-      </element>
-      <element id="MedicationDispense.substitution.type">
-         <path value="MedicationDispense.substitution.type"/>
-         
       </element>
    </differential>
 </StructureDefinition>

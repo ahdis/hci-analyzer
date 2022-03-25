@@ -17,7 +17,6 @@
 			<path value="Composition"/>
 			<short value="Analyzer IN Composition"/>
 		</element>
-
 		<element id="Composition.extension">
 			<path value="Composition.extension"/>
 			<slicing>
@@ -38,6 +37,5 @@
 				<profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource"/>
 			</type>
 		</element>
-		
 	</differential>
 </StructureDefinition>

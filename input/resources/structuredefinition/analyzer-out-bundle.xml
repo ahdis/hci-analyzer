@@ -17,7 +17,6 @@
       <path value="Bundle"/>
       <short value="Analyzer Bundle"/>
     </element>
-
     <element id="Bundle.identifier">
       <path value="Bundle.identifier"/>
       <short value="Identification number of the document"/>
@@ -32,18 +31,15 @@
       <path value="Bundle.identifier.value"/>
       <min value="1"/>
     </element>
-
     <element id="Bundle.type">
       <path value="Bundle.type"/>
       <fixedCode value="document"/>
     </element>
-
     <element id="Bundle.timestamp">
       <path value="Bundle.timestamp" />
       <short value="The document's creation date and time"/>
       <min value="1"/>
     </element>
-
     <element id="Bundle.entry">
       <path value="Bundle.entry"/>
       <slicing>
@@ -70,6 +66,5 @@
         <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-composition"/>
       </type>
     </element>
-    
   </differential>
 </StructureDefinition>

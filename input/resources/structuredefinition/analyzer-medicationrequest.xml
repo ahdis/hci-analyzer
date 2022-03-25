@@ -17,18 +17,6 @@
          <path value="MedicationRequest"/>
          <short value="Analyzer MedicationRequest"/>
       </element>
-
-      <element id="MedicationRequest.contained">
-         <path value="MedicationRequest.contained"/>
-         
-      </element>
-
-      <element id="MedicationRequest.extension:treatmentplan">
-         <path value="MedicationRequest.extension" />
-         <sliceName value="treatmentplan" />
-         
-      </element>
-
       <element id="MedicationRequest.extension:infoInputDocument">
          <path value="MedicationRequest.extension" />
          <sliceName value="infoInputDocument" />
@@ -39,50 +27,14 @@
             <code value="Extension" />
             <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument" />
          </type>
-         
       </element>
-
-      <element id="MedicationRequest.identifier">
-         <path value="MedicationRequest.identifier"/>
-         
-      </element>
-      <element id="MedicationRequest.identifier.system">
-         <path value="MedicationRequest.identifier.system"/>
-         
-      </element>
-      <element id="MedicationRequest.identifier.value">
-         <path value="MedicationRequest.identifier.value"/>
-         
-      </element>
-
-      <element id="MedicationRequest.status">
-         <path value="MedicationRequest.status"/>
-         
-      </element>
-
-      <element id="MedicationRequest.intent">
-         <path value="MedicationRequest.intent"/>
-         
-      </element>
-
-      <element id="MedicationRequest.medicationReference">
-         <path value="MedicationRequest.medicationReference"/>
-         <type>
-            <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
-         </type>
-         
-      </element>
-
       <element id="MedicationRequest.subject">
          <path value="MedicationRequest.subject"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>
          </type>
-         
       </element>
-
       <element id="MedicationRequest.performer">
          <path value="MedicationRequest.performer"/>
          <short value="Practitioner"/>
@@ -91,63 +43,6 @@
             <code value="Reference"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitioner"/>
          </type>
-         
-      </element>
-
-      <element id="MedicationRequest.reasonCode">
-         <path value="MedicationRequest.reasonCode"/>
-         
-      </element>
-      <element id="MedicationRequest.reasonCode.text">
-         <path value="MedicationRequest.reasonCode.text"/>
-         
-      </element>
-
-      <element id="MedicationRequest.note">
-         <path value="MedicationRequest.note"/>
-         
-      </element>
-
-      <element id="MedicationRequest.dosageInstruction">
-         <path value="MedicationRequest.dosageInstruction"/>
-         
-      </element>
-      <element id="MedicationRequest.dosageInstruction:nonstructured">
-         <path value="MedicationRequest.dosageInstruction"/>
-         <sliceName value="nonstructured"/>
-         
-      </element>
-      <element id="MedicationRequest.dosageInstruction:structurednormal">
-         <path value="MedicationRequest.dosageInstruction"/>
-         <sliceName value="structurednormal"/>
-         
-      </element>
-      <element id="MedicationRequest.dosageInstruction:structuredsplit">
-         <path value="MedicationRequest.dosageInstruction"/>
-         <sliceName value="structuredsplit"/>
-         
-      </element>
-
-      <element id="MedicationRequest.dispenseRequest">
-         <path value="MedicationRequest.dispenseRequest"/>
-         
-      </element>
-      <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
-         <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed"/>
-         
-      </element>
-      <element id="MedicationRequest.dispenseRequest.quantity">
-         <path value="MedicationRequest.dispenseRequest.quantity"/>
-         
-      </element>
-
-      <element id="MedicationRequest.substitution">
-         <path value="MedicationRequest.substitution"/>
-         
-      </element>
-      <element id="MedicationRequest.substitution.allowedCodeableConcept">
-         <path value="MedicationRequest.substitution.allowedCodeableConcept"/>
-         
       </element>
    </differential>
 </StructureDefinition>

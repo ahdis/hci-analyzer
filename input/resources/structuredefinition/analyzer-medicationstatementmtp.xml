@@ -17,12 +17,6 @@
          <path value="MedicationStatement"/>
          <short value="Analyzer MedicationStatement (Treatment Plan)"/>
       </element>
-
-      <element id="MedicationStatement.contained">
-         <path value="MedicationStatement.contained"/>
-         
-      </element>
-
       <element id="MedicationStatement.extension:infoInputDocument">
          <path value="MedicationStatement.extension" />
          <sliceName value="infoInputDocument" />
@@ -33,33 +27,11 @@
             <code value="Extension" />
             <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument" />
          </type>
-         
       </element>
-
-      <element id="MedicationStatement.identifier">
-         <path value="MedicationStatement.identifier"/>
-         
-      </element>
-      <element id="MedicationStatement.identifier.system">
-         <path value="MedicationStatement.identifier.system"/>
-         
-      </element>
-      <element id="MedicationStatement.identifier.value">
-         <path value="MedicationStatement.identifier.value"/>
-         
-      </element>
-
-      <element id="MedicationStatement.status">
-         <path value="MedicationStatement.status"/>
-         
-      </element>
-
       <element id="MedicationStatement.category">
          <path value="MedicationStatement.category"/>
          <min value="1"/>
-         
       </element>
-
       <element id="MedicationStatement.category.coding">
          <path value="MedicationStatement.category.coding"/>
          <slicing>
@@ -69,58 +41,39 @@
             </discriminator>
             <rules value="open"/>
          </slicing>
-         
       </element>
-
       <element id="MedicationStatement.category.coding:ATC">
          <path value="MedicationStatement.category.coding"/>
          <sliceName value="ATC"/>
          <short value="ATC code (Level 1) if possible"/>
-         
       </element>
       <element id="MedicationStatement.category.coding:ATC.system">
          <path value="MedicationStatement.category.coding.system"/>
          <min value="1"/>
          <max value="1"/>
          <fixedUri value="http://www.whocc.no/atc"/>
-         
       </element>
       <element id="MedicationStatement.category.coding:ATC.code">
          <path value="MedicationStatement.category.coding.code"/>
          <min value="1"/>
          <max value="1"/>
-         
       </element>
       <element id="MedicationStatement.category.coding:ATC.display">
          <path value="MedicationStatement.category.coding.display"/>
          <min value="0"/>
          <max value="1"/>
-         
       </element>
       <element id="MedicationStatement.category.text">
          <path value="MedicationStatement.category.text"/>
          <short value="Note that no ATC Code is applied"/>
-         
       </element>
-
-      <element id="MedicationStatement.medicationReference">
-         <path value="MedicationStatement.medicationReference"/>
-         <type>
-            <code value="Reference"/>
-            <targetProfile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication"/>
-         </type>
-         
-      </element>
-
       <element id="MedicationStatement.subject">
          <path value="MedicationStatement.subject"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>
          </type>
-         
       </element>
-
       <element id="MedicationStatement.informationSource">
          <path value="MedicationStatement.informationSource"/>
          <short value="The author of the medical decision"/>
@@ -130,42 +83,6 @@
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitioner"/>
          </type>
          <min value="1"/>
-         
-      </element>
-
-      <element id="MedicationStatement.reasonCode">
-         <path value="MedicationStatement.reasonCode"/>
-         
-      </element>
-      <element id="MedicationStatement.reasonCode.text">
-         <path value="MedicationStatement.reasonCode.text"/>
-         
-      </element>
-
-      <element id="MedicationStatement.note">
-         <path value="MedicationStatement.note"/>
-         
-      </element>
-
-      <element id="MedicationStatement.dosage">
-         <path value="MedicationStatement.dosage"/>
-         
-      </element>
-
-      <element id="MedicationStatement.dosage:nonstructured">
-         <path value="MedicationStatement.dosage"/>
-         <sliceName value="nonstructured"/>
-         
-      </element>
-      <element id="MedicationStatement.dosage:structurednormal">
-         <path value="MedicationStatement.dosage"/>
-         <sliceName value="structurednormal"/>
-         
-      </element>
-      <element id="MedicationStatement.dosage:structuredsplit">
-         <path value="MedicationStatement.dosage"/>
-         <sliceName value="structuredsplit"/>
-         
       </element>
    </differential>
 </StructureDefinition>

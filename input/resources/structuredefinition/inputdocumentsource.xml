@@ -26,21 +26,17 @@
       <path value="Extension"/>
       <short value="Extension for Input Document Source"/>
     </element>
-
     <element id="Extension.extension">
       <path value="Extension.extension"/>
       <max value="0"/>
     </element>
-
     <element id="Extension.url">
       <path value="Extension.url"/>
       <type>
         <code value="uri"/>
       </type>
       <fixedUri value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource"/>
-      
     </element>
-
     <element id="Extension.valueString">
       <path value="Extension.valueString"/>
       <short value="Source of the input document"/>
@@ -49,7 +45,6 @@
       <type>
         <code value="string"/>
       </type>
-      
     </element>
   </differential>
 </StructureDefinition>

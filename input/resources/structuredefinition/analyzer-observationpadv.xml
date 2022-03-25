@@ -17,25 +17,6 @@
          <path value="Observation"/>
          <short value="Analyzer Observation (PADV)"/>
       </element>
-
-      <element id="Observation.extension:treatmentPlan">
-         <path value="Observation.extension" />
-         <sliceName value="treatmentPlan"/>
-         
-      </element>
-
-      <element id="Observation.extension:prescription">
-         <path value="Observation.extension" />
-         <sliceName value="prescription"/>
-         
-      </element>
-
-      <element id="Observation.extension:dispense">
-         <path value="Observation.extension" />
-         <sliceName value="dispense"/>
-         
-      </element>
-
       <element id="Observation.extension:infoInputDocument">
          <path value="Observation.extension" />
          <sliceName value="infoInputDocument" />
@@ -46,32 +27,7 @@
             <code value="Extension" />
             <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument" />
          </type>
-         
       </element>
-
-      <element id="Observation.identifier">
-         <path value="Observation.identifier"/>
-         
-      </element>
-      <element id="Observation.identifier.system">
-         <path value="Observation.identifier.system"/>
-         
-      </element>
-      <element id="Observation.identifier.value">
-         <path value="Observation.identifier.value"/>
-         
-      </element>
-
-      <element id="Observation.status">
-         <path value="Observation.status"/>
-         
-      </element>
-
-      <element id="Observation.code">
-         <path value="Observation.code"/>
-         
-      </element>
-
       <element id="Observation.subject">
          <path value="Observation.subject"/>
          <min value="1"/>
@@ -79,14 +35,7 @@
             <code value="Reference"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>
          </type>
-         
       </element>
-
-      <element id="Observation.effectiveDateTime">
-         <path value="Observation.effectiveDateTime"/>
-         
-      </element>
-
       <element id="Observation.performer">
          <path value="Observation.performer"/>
          <short value="Practitioner"/>
@@ -96,16 +45,6 @@
             <code value="Reference"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitioner"/>
          </type>
-         
-      </element>
-
-      <element id="Observation.note">
-         <path value="Observation.note"/>
-         
-      </element>
-      <element id="Observation.note.text">
-         <path value="Observation.note.text"/>
-         
       </element>
    </differential>
 </StructureDefinition>

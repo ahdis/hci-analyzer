@@ -17,7 +17,6 @@
          <path value="Practitioner"/>
          <short value="Analyzer Practitioner"/>
       </element>
-      
       <element id="Practitioner.name">
          <path value="Practitioner.name"/>
          <short value="The name(s) associated with the practitioner"/>

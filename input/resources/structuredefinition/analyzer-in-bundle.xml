@@ -27,7 +27,6 @@
           conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard')"/>
       </constraint>
     </element>
-
     <element id="Bundle.entry">
       <path value="Bundle.entry"/>
       <slicing>

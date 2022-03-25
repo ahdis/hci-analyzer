@@ -34,7 +34,6 @@
       <path value="Extension"/>
       <short value="Extension for Information about Input Document"/>
     </element>
-
     <element id="Extension.extension:documentSource">
       <path value="Extension.extension"/>
       <sliceName value="documentSource"/>
@@ -45,9 +44,7 @@
         <code value="Extension"/>
         <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource"/>
       </type>
-      
     </element>
-
     <element id="Extension.extension:documentType">
       <path value="Extension.extension"/>
       <sliceName value="documentType"/>
@@ -58,9 +55,7 @@
         <code value="Extension"/>
         <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype"/>
       </type>
-      
     </element>
-    
     <element id="Extension.extension:documentDate">
       <path value="Extension.extension"/>
       <sliceName value="documentDate"/>
@@ -71,18 +66,14 @@
         <code value="Extension"/>
         <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate"/>
       </type>
-      
     </element>
-
     <element id="Extension.url">
       <path value="Extension.url"/>
       <type>
         <code value="uri"/>
       </type>
       <fixedUri value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument"/>
-      
     </element>
-    
     <element id="Extension.value[x]">
       <path value="Extension.value[x]"/>
       <min value="0"/>
