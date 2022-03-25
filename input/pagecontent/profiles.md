@@ -31,6 +31,9 @@ Profile for the Analyzer Patient
 * [Analyzer Practitioner](StructureDefinition-analyzer-practitioner.html)   
 Profile for the Analyzer Practitioner
 
+* [Analyzer Device](StructureDefinition-analyzer-device.html)   
+Profile for the Analyzer Device
+
 Profiles to show the history of changes (MedicationStatement.derivedFrom):
 
 * [Analyzer MedicationStatement (Card)](StructureDefinition-analyzer-medicationstatementcard.html)   
