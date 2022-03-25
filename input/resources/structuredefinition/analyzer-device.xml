@@ -1,0 +1,39 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="analyzer-device"/>
+   <url value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-device"/>
+   <version value="0.1.0"/>
+   <name value="AnalyzerDevice"/>
+   <title value="Analyzer Device"/>
+   <status value="draft"/>
+   <description value="Profile for the Analyzer Device"/>
+   <fhirVersion value="4.0.1"/>
+   <kind value="resource"/>
+   <abstract value="false"/>
+   <type value="Device"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Device"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="Device">
+         <path value="Device"/>
+         <short value="Analyzer Device"/>
+      </element>
+      <element id="Device.deviceName">
+         <path value="Device.deviceName"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="Device.deviceName.name">
+         <path value="Device.deviceName.name"/>
+         <fixedString value="Documedis Medical Data Analyzer CE"/>
+      </element>
+      <element id="Device.deviceName.type">
+         <path value="Device.deviceName.type"/>
+         <fixedCode value="user-friendly-name"/>
+      </element>
+      <element id="Device.version">
+         <path value="Device.version"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>      
+   </differential>
+</StructureDefinition>

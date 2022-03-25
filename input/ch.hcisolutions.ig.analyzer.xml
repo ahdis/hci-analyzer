@@ -423,6 +423,12 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/analyzer-device"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
 
     <resource>
       <reference>

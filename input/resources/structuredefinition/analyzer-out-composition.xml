@@ -57,10 +57,10 @@
 		</element>
 		<element id="Composition.author">
 			<path value="Composition.author"/>
-			<short value="Analyzer (Device)"/>
+			<short value="Analyzer"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+				<targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-device"/>
 			</type>
 			<max value="1"/>
 		</element>
