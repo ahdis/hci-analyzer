@@ -56,6 +56,7 @@
          <path value="MedicationStatement.category.coding"/>
          <sliceName value="ATC"/>
          <short value="ATC code (Level 1) if possible"/>
+         <min value="1"/>
       </element>
       <element id="MedicationStatement.category.coding:ATC.system">
          <path value="MedicationStatement.category.coding.system"/>
@@ -83,6 +84,7 @@
          <type>
             <code value="Reference"/>
             <targetProfile value="http://chmed.emediplan.ch/fhir/StructureDefinition/chmed-medication"/>
+            <aggregation value="contained"/>
          </type>
       </element>
       <element id="MedicationStatement.subject">
