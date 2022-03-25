@@ -26,16 +26,15 @@
   <packageId value="ch.hcisolutions.ig.analyzer"/>
   <license value="CC-BY-SA-4.0"/>
   <fhirVersion value="4.0.1"/>
-
   <dependsOn id="chmed">
     <uri value="http://chmed.emediplan.ch/fhir/ImplementationGuide/ch.chmed.emediplan"/>
     <packageId value="ch.chmed.emediplan"/>
     <version value="current"/>
+    <!-- TBD: update to released version -->
   </dependsOn>
-
   <definition>
 
-    <!-- Analyzer: Example for Parameters (=> Input Analyzer) -->
+    <!-- IN/OUT Examples Parameters -->
     <resource>
       <reference>
         <reference value="Parameters/1-1-Input-Analyzer"/>
@@ -45,11 +44,27 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Parameters/1-1-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="1-1 Output Analyzer"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+    </resource>
+
+    <resource>
+      <reference>
         <reference value="Parameters/1-2-Input-Analyzer"/>
       </reference>
       <name value="1-2 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/1-2-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="1-2 Output Analyzer"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+    </resource>
+
     <resource>
       <reference>
         <reference value="Parameters/2-2-Input-Analyzer"/>
@@ -59,10 +74,25 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Parameters/2-2-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="2-2 Output Analyzer"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+    </resource>
+
+    <resource>
+      <reference>
         <reference value="Parameters/2-3-Input-Analyzer"/>
       </reference>
       <name value="2-3 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/2-3-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="2-3 Output Analyzer"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
     <resource>
       <reference>
@@ -73,10 +103,25 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Parameters/BeloczokMTP-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="2-3 Output Analyzer (test case)"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+    </resource>
+
+    <resource>
+      <reference>
         <reference value="Parameters/2-4-Input-Analyzer"/>
       </reference>
       <name value="2-4 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/2-4-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="2-4 Output Analyzer"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
     <resource>
       <reference>
@@ -87,10 +132,25 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Parameters/BeloczokDIS-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="2-4 Output Analyzer (test case)"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+    </resource>
+
+    <resource>
+      <reference>
         <reference value="Parameters/2-5-Input-Analyzer"/>
       </reference>
       <name value="2-5 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/2-5-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="2-5 Output Analyzer"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
     <resource>
       <reference>
@@ -101,10 +161,25 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Parameters/NorvascMTP-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="2-5 Output Analyzer (test case)"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+    </resource>
+
+    <resource>
+      <reference>
         <reference value="Parameters/2-6-Input-Analyzer"/>
       </reference>
       <name value="2-6 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/2-6-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="2-6 Output Analyzer"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
     <resource>
       <reference>
@@ -115,6 +190,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Parameters/NorvascPRE-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="2-6 Output Analyzer (test case)"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+    </resource>
+
+    <resource>
+      <reference>
         <reference value="Parameters/2-7-Input-Analyzer"/>
       </reference>
       <name value="2-7 Input Analyzer"/>
@@ -122,10 +205,24 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Parameters/2-7-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="2-7 Output Analyzer"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Parameters/NorvascCard-Input-Analyzer"/>
       </reference>
       <name value="2-7 Input Analyzer (test case)"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/NorvascCard-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="2-7 Output Analyzer (test case)"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -137,11 +234,27 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Parameters/A1-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="A1 Output Analyzer"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+    </resource>
+
+    <resource>
+      <reference>
         <reference value="Parameters/A2-Input-Analyzer"/>
       </reference>
       <name value="A2 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/A2-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="A2 Output Analyzer"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+    </resource>
+
     <resource>
       <reference>
         <reference value="Parameters/A3-Input-Analyzer"/>
@@ -151,11 +264,27 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Parameters/A3-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="A3 Output Analyzer"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+    </resource>
+
+    <resource>
+      <reference>
         <reference value="Parameters/A4-Input-Analyzer"/>
       </reference>
       <name value="A4 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/A4-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="A4 Output Analyzer"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+    </resource>
+
     <resource>
       <reference>
         <reference value="Parameters/A5-Input-Analyzer"/>
@@ -165,6 +294,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Parameters/A5-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="A5 Output Analyzer"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+    </resource>
+
+    <resource>
+      <reference>
         <reference value="Parameters/A6-Input-Analyzer"/>
       </reference>
       <name value="A6 Input Analyzer"/>
@@ -172,145 +309,18 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/A7-Input-Analyzer"/>
-      </reference>
-      <name value="A7 Input Analyzer"/>
-      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
-    </resource>
-
-    <!-- Analyzer: Examples for Consolidated Medication Card document (=> Output Analyzer) -->
-    <resource>
-      <reference>
-        <reference value="Parameters/1-1-ConsolidatedMedicationCard"/>
-      </reference>
-      <name value="1-1 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/1-2-ConsolidatedMedicationCard"/>
-      </reference>
-      <name value="1-2 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/2-2-ConsolidatedMedicationCard"/>
-      </reference>
-      <name value="2-2 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/2-3-ConsolidatedMedicationCard"/>
-      </reference>
-      <name value="2-3 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/2-4-ConsolidatedMedicationCard"/>
-      </reference>
-      <name value="2-4 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/2-5-ConsolidatedMedicationCard"/>
-      </reference>
-      <name value="2-5 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/2-6-ConsolidatedMedicationCard"/>
-      </reference>
-      <name value="2-6 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/2-7-ConsolidatedMedicationCard"/>
-      </reference>
-      <name value="2-7 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/BeloczokMTP-ConsolidatedMedicationCard"/>
-      </reference>
-      <name value="2-3 Output Analyzer (test case)"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/BeloczokDIS-ConsolidatedMedicationCard"/>
-      </reference>
-      <name value="2-4 Output Analyzer (test case)"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/NorvascMTP-ConsolidatedMedicationCard"/>
-      </reference>
-      <name value="2-5 Output Analyzer (test case)"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/NorvascPRE-ConsolidatedMedicationCard"/>
-      </reference>
-      <name value="2-6 Output Analyzer (test case)"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/NorvascCard-ConsolidatedMedicationCard"/>
-      </reference>
-      <name value="2-7 Output Analyzer (test case)"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/A1-ConsolidatedMedicationCard"/>
-      </reference>
-      <name value="A1 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/A2-ConsolidatedMedicationCard"/>
-      </reference>
-      <name value="A2 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/A3-ConsolidatedMedicationCard"/>
-      </reference>
-      <name value="A3 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/A4-ConsolidatedMedicationCard"/>
-      </reference>
-      <name value="A4 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/A5-ConsolidatedMedicationCard"/>
-      </reference>
-      <name value="A5 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="Parameters/A6-ConsolidatedMedicationCard"/>
       </reference>
       <name value="A6 Output Analyzer"/>
       <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="Parameters/A7-Input-Analyzer"/>
+      </reference>
+      <name value="A7 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
     <resource>
       <reference>
@@ -320,7 +330,7 @@
       <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
-    <!-- Analyzer: IN StructureDefinition -->
+    <!-- Analyzer: IN StructureDefinitions -->
     <resource>
       <reference>
         <reference value="StructureDefinition/analyzer-in-parameters"/>
@@ -340,7 +350,7 @@
       <exampleBoolean value="false"/>
     </resource>
 
-    <!-- Analyzer: OUT StructureDefinition -->
+    <!-- OUT StructureDefinitions -->
     <resource>
       <reference>
         <reference value="StructureDefinition/analyzer-out-parameters"/>
@@ -413,9 +423,10 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+
     <resource>
       <reference>
-        <reference value="StructureDefinition/inputdocumentdate"/>
+        <reference value="StructureDefinition/infoinputdocument"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -433,12 +444,12 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/infoinputdocument"/>
+        <reference value="StructureDefinition/inputdocumentdate"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
 
-    <!-- Analyzer: OperationDefinition -->
+    <!-- OperationDefinition -->
     <resource>
       <reference>
         <reference value="OperationDefinition/analyzer"/>
@@ -446,7 +457,7 @@
       <exampleBoolean value="false"/>
     </resource>
 
-    <!-- Analyzer: CodeSystem -->
+    <!-- CodeSystem -->
     <resource>
       <reference>
         <reference value="CodeSystem/history-changes"/>
@@ -455,7 +466,7 @@
       <exampleBoolean value="false"/>
     </resource>
 
-    <!-- Analyzer: ValueSet -->
+    <!-- ValueSet -->
     <resource>
       <reference>
         <reference value="ValueSet/history-changes"/>
@@ -464,7 +475,7 @@
       <exampleBoolean value="false"/>
     </resource>
 
-    <!-- pages -->
+    <!-- Pages -->
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
@@ -506,10 +517,10 @@
       </page>
     </page>
 
-    <!-- parameters -->
+    <!-- Parameter -->
     <parameter>
       <code value="releaselabel"/>
-      <value value="CI build"/>
+      <value value="CI Build"/>
     </parameter>
     <parameter>
       <code value="path-pages" />
