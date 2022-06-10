@@ -234,9 +234,6 @@
                                 <text value="Bluthochdruck"/>
                             </reasonCode>
                             <dosage>
-                                <text value="1 Tablette morgens"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -371,9 +368,6 @@
                                 <text value="Bluthochdruck"/>
                             </reasonCode>
                             <dosage>
-                                <text value="2 Tabletten morgens"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -498,11 +492,8 @@
                                 <reference value="MedicationStatement/A3-MedStatReniten-2x"/>
                             </derivedFrom>
                             <!--<reasonCode>
-                    <text value="Bluthochdruck"/>
-                </reasonCode>-->
-                            <dosage>
-                                <text value="2 Tabletten morgens"/>
-                            </dosage>
+                                <text value="Bluthochdruck"/>
+                            </reasonCode>-->
                             <dosage>
                                 <timing>
                                     <repeat>

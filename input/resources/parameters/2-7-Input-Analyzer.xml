@@ -346,12 +346,6 @@
                                     </doseQuantity>
                                 </doseAndRate>
                             </dosage>
-                            <dosage>
-                                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                                    <valueUrl value="#mtp.1.dosageintakemode"/>
-                                </extension>
-                                <text value="Morgens 1/2 Tablette nehmen"/>
-                            </dosage>
                         </MedicationStatement>
                     </resource>
                 </entry>
@@ -715,12 +709,6 @@
                                         <code value="732936001"/>
                                     </doseQuantity>
                                 </doseAndRate>
-                            </dosageInstruction>
-                            <dosageInstruction>
-                                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                                    <valueUrl value="#dis.1.dosageintakemode"/>
-                                </extension>
-                                <text value="Morgens 1/2 Tablette nehmen"/>
                             </dosageInstruction>
                         </MedicationDispense>
                     </resource>
@@ -1319,12 +1307,6 @@
                                 <text value="Bluthochdruck"/>
                             </reasonCode>
                             <dosage>
-                                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                                    <valueUrl value="#mtp.1.dosageintakemode"/>
-                                </extension>
-                                <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
-                            </dosage>
-                            <dosage>
                                 <sequence value="1"/>
                                 <timing>
                                     <repeat>
@@ -1714,12 +1696,6 @@
                             <quantity>
                                 <value value="1"/>
                             </quantity>
-                            <dosageInstruction>
-                                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                                    <valueUrl value="#dis.1.dosageintakemode"/>
-                                </extension>
-                                <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
-                            </dosageInstruction>
                             <dosageInstruction>
                                 <sequence value="1"/>
                                 <timing>
@@ -2119,12 +2095,6 @@
                                     </doseQuantity>
                                 </doseAndRate>
                             </dosage>
-                            <dosage>
-                                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                                    <valueUrl value="#mtp.1.dosageintakemode"/>
-                                </extension>
-                                <text value="Morgens und abends je 1 Tablette nehmen"/>
-                            </dosage>
                         </MedicationStatement>
                     </resource>
                 </entry>
@@ -2477,9 +2447,6 @@
                                     </doseQuantity>
                                 </doseAndRate>
                             </dosageInstruction>
-                            <dosageInstruction>
-                                <text value="Morgens und abends je 1 Tablette nehmen"/>
-                            </dosageInstruction>
                             <dispenseRequest>
                                 <validityPeriod>
                                     <start value="2012-02-04"/>
@@ -2826,9 +2793,6 @@
                                 <text value="-"/>
                             </note>
                             <dosage>
-                                <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
-                            </dosage>
-                            <dosage>
                                 <sequence value="1"/>
                                 <timing>
                                     <repeat>
@@ -3002,9 +2966,6 @@
                                         <code value="732936001"/>
                                     </doseQuantity>
                                 </doseAndRate>
-                            </dosage>
-                            <dosage>
-                                <text value="Morgens und abends je 1 Tablette nehmen"/>
                             </dosage>
                         </MedicationStatement>
                     </resource>

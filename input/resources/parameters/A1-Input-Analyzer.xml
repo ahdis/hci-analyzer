@@ -279,9 +279,6 @@
                                 <text value="Cholesterinsenker"/>
                             </reasonCode>
                             <dosage>
-                                <text value="1 Tablette abends"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -595,9 +592,6 @@
                             <reasonCode>
                                 <text value="Cholesterinsenker"/>
                             </reasonCode>
-                            <dosage>
-                                <text value="1 Tablette abends"/>
-                            </dosage>
                             <dosage>
                                 <timing>
                                     <repeat>

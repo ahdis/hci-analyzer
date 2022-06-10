@@ -241,9 +241,6 @@
                                     </coding>
                                 </route>
                             </dosage>
-                            <dosage>
-                                <text value="Morgens und abends je 1 Tablette nehmen"/>
-                            </dosage>
                         </MedicationStatement>
                     </resource>
                 </entry>
@@ -383,9 +380,6 @@
                                         <code value="732936001"/>
                                     </doseQuantity>
                                 </doseAndRate>
-                            </dosageInstruction>
-                            <dosageInstruction>
-                                <text value="Morgens und abends je 1 Tablette nehmen"/>
                             </dosageInstruction>
                             <dispenseRequest>
                                 <numberOfRepeatsAllowed value="2"/>
@@ -542,9 +536,6 @@
                                     </doseQuantity>
                                 </doseAndRate>
                             </dosage>
-                            <dosage>
-                                <text value="Morgens und abends je 1 Tablette nehmen"/>
-                            </dosage>
                         </MedicationStatement>
                     </resource>
                 </entry>
@@ -656,8 +647,8 @@
                                 <!-- 2-7 Erstellung Medication Card -->
                             </derivedFrom>
                             <!--<reasonCode>
-                    <text value="Bluthochdruck"/>
-                </reasonCode>-->
+                                <text value="Bluthochdruck"/>
+                            </reasonCode>-->
                             <dosage>
                                 <timing>
                                     <repeat>
@@ -683,9 +674,6 @@
                                         <code value="732936001"/>
                                     </doseQuantity>
                                 </doseAndRate>
-                            </dosage>
-                            <dosage>
-                                <text value="Morgens und abends je 1 Tablette nehmen"/>
                             </dosage>
                         </MedicationStatement>
                     </resource>

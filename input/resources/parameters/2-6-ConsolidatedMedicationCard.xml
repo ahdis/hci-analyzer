@@ -257,9 +257,6 @@
                                     </doseQuantity>
                                 </doseAndRate>
                             </dosage>
-                            <dosage>
-                                <text value="Morgens 1/2 Tablette nehmen"/>
-                            </dosage>
                         </MedicationStatement>
                     </resource>
                 </entry>
@@ -402,9 +399,6 @@
                                         <code value="732936001"/>
                                     </doseQuantity>
                                 </doseAndRate>
-                            </dosageInstruction>
-                            <dosageInstruction>
-                                <text value="Morgens 1/2 Tablette nehmen"/>
                             </dosageInstruction>
                         </MedicationDispense>
                     </resource>
@@ -578,9 +572,6 @@
                                 <text value="Bluthochdruck"/>
                             </reasonCode>
                             <dosage>
-                                <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
-                            </dosage>
-                            <dosage>
                                 <sequence value="1"/>
                                 <timing>
                                     <repeat>
@@ -750,9 +741,6 @@
                             <quantity>
                                 <value value="1"/>
                             </quantity>
-                            <dosageInstruction>
-                                <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
-                            </dosageInstruction>
                             <dosageInstruction>
                                 <sequence value="1"/>
                                 <timing>
@@ -932,9 +920,6 @@
                                     </coding>
                                 </route>
                             </dosage>
-                            <dosage>
-                                <text value="Morgens und abends je 1 Tablette nehmen"/>
-                            </dosage>
                         </MedicationStatement>
                     </resource>
                 </entry>
@@ -1075,9 +1060,6 @@
                                     </doseQuantity>
                                 </doseAndRate>
                             </dosageInstruction>
-                            <dosageInstruction>
-                                <text value="Morgens und abends je 1 Tablette nehmen"/>
-                            </dosageInstruction>
                             <dispenseRequest>
                                 <numberOfRepeatsAllowed value="2"/>
                                 <quantity>
@@ -1195,36 +1177,33 @@
                                 <!-- 1-2 Kommentar: Medikament absetzen (Triatec) -->
                             </derivedFrom>
                             <!--<reasonCode>
-                    <text value="Bluthochdruck"/>
-                </reasonCode>-->
+                                <text value="Bluthochdruck"/>
+                            </reasonCode>-->
                             <!--<dosage>
-                    <timing>
-                        <repeat>
-                            <boundsPeriod>
-                                <start value="2011-11-29"/>
-                            </boundsPeriod>
-                            <when value="MORN"/>
-                        </repeat>
-                    </timing>
-                    <route>
-                        <coding>
-                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                            <code value="20053000"/>
-                            <display value="Oral use"/>
-                        </coding>
-                    </route>
-                    <doseAndRate>
-                        <doseQuantity>
-                            <value value="0.5"/>
-                            <unit value="Tablet (unit of presentation)" />
-                            <system value="http://snomed.info/sct"/>
-                            <code value="732936001"/>
-                        </doseQuantity>
-                    </doseAndRate>
-                </dosage>-->
-                            <dosage>
-                                <text value="-"/>
-                            </dosage>
+                                <timing>
+                                    <repeat>
+                                        <boundsPeriod>
+                                            <start value="2011-11-29"/>
+                                        </boundsPeriod>
+                                        <when value="MORN"/>
+                                    </repeat>
+                                </timing>
+                                <route>
+                                    <coding>
+                                        <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                                        <code value="20053000"/>
+                                        <display value="Oral use"/>
+                                    </coding>
+                                </route>
+                                <doseAndRate>
+                                    <doseQuantity>
+                                        <value value="0.5"/>
+                                        <unit value="Tablet (unit of presentation)" />
+                                        <system value="http://snomed.info/sct"/>
+                                        <code value="732936001"/>
+                                    </doseQuantity>
+                                </doseAndRate>
+                            </dosage>-->
                         </MedicationStatement>
                     </resource>
                 </entry>
@@ -1382,11 +1361,8 @@
                                 <!-- 2-4 Abgabe (Beloc Zok) -->
                             </derivedFrom>
                             <!--<reasonCode>
-                    <text value="Bluthochdruck"/>
-                </reasonCode>-->
-                            <dosage>
-                                <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
-                            </dosage>
+                                <text value="Bluthochdruck"/>
+                            </reasonCode>-->
                             <dosage>
                                 <sequence value="1"/>
                                 <timing>
@@ -1569,8 +1545,8 @@
                                 <!-- 2-6 Rezept (Norvasc) -->
                             </derivedFrom>
                             <!--<reasonCode>
-                    <text value="Bluthochdruck"/>
-                </reasonCode>-->
+                                <text value="Bluthochdruck"/>
+                            </reasonCode>-->
                             <dosage>
                                 <timing>
                                     <repeat>
@@ -1596,9 +1572,6 @@
                                         <code value="732936001"/>
                                     </doseQuantity>
                                 </doseAndRate>
-                            </dosage>
-                            <dosage>
-                                <text value="Morgens und abends je 1 Tablette nehmen"/>
                             </dosage>
                         </MedicationStatement>
                     </resource>

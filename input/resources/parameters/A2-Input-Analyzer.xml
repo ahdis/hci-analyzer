@@ -279,9 +279,6 @@
                                 <text value="Beruhigung"/>
                             </reasonCode>
                             <dosage>
-                                <text value="2 Tabletten für die Nacht"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -595,9 +592,6 @@
                             <reasonCode>
                                 <text value="Beruhigung"/>
                             </reasonCode>
-                            <dosage>
-                                <text value="1 Tablette für die Nacht"/>
-                            </dosage>
                             <dosage>
                                 <timing>
                                     <repeat>

@@ -235,9 +235,6 @@
                                 <text value="Bluthochdruck"/>
                             </reasonCode>
                             <dosage>
-                                <text value="1 Tablette morgens"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -397,9 +394,6 @@
                                 <text value="Bluthochdruck"/>
                             </reasonCode>
                             <dosage>
-                                <text value="1 Tablette morgens"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -548,11 +542,8 @@
                                 <reference value="MedicationStatement/A5-MedStatExforge"/>
                             </derivedFrom>
                             <!--<reasonCode>
-                    <text value="Bluthochdruck"/>
-                </reasonCode>-->
-                            <dosage>
-                                <text value="1 Tablette morgens"/>
-                            </dosage>
+                                <text value="Bluthochdruck"/>
+                            </reasonCode>-->
                             <dosage>
                                 <timing>
                                     <repeat>

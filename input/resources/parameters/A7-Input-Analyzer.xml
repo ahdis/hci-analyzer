@@ -279,9 +279,6 @@
                                 <text value="Schmerzen"/>
                             </reasonCode>
                             <dosage>
-                                <text value="1 Tablette morgens"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -599,9 +596,6 @@
                                 <text value="Schmerzen"/>
                             </reasonCode>
                             <dosage>
-                                <text value="1 Tablette morgens"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -713,9 +707,6 @@
                             <reasonCode>
                                 <text value="Schmerzen"/>
                             </reasonCode>
-                            <dosage>
-                                <text value="1 Tablette morgens"/>
-                            </dosage>
                             <dosage>
                                 <timing>
                                     <repeat>

@@ -24,28 +24,8 @@ The display "Kardiovaskuläres System" is not a valid display for the code {http
 The display "Nervensystem" is not a valid display for the code {http://www.whocc.no/atc}N - should be one of ['NERVOUS SYSTEM'] (from http://tx.fhir.org/r4) for 'http://www.whocc.no/atc#N'
 The display "Muskel- und Skelettsystem" is not a valid display for the code {http://www.whocc.no/atc}M - should be one of ['MUSCULO-SKELETAL SYSTEM'] (from http://tx.fhir.org/r4) for 'http://www.whocc.no/atc#M'
 
-# ATC codes are used instead
-None of the codings provided are in the value set 'Medication usage category codes' (http://hl7.org/fhir/ValueSet/medication-statement-category), and a coding is recommended to come from this value set) (codes = http://www.whocc.no/atc#C)
-None of the codings provided are in the value set 'Medication usage category codes' (http://hl7.org/fhir/ValueSet/medication-statement-category), and a coding is recommended to come from this value set) (codes = http://www.whocc.no/atc#N)
-None of the codings provided are in the value set 'Medication usage category codes' (http://hl7.org/fhir/ValueSet/medication-statement-category), and a coding is recommended to come from this value set) (codes = http://www.whocc.no/atc#M)
-
-# Swiss specific codings are used, see http://fhir.ch/ig/ch-emed/StructureDefinition-ch-emed-composition-medicationcard.html
-None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#721912009)
-
 # The examples are included in the Bundle instances
 The Implementation Guide contains no explicitly linked examples for this profile
 
 # Problem of the derived IG
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-
-# Build errors
-The link '#Device_Analyzer' for "See above (Device/Analyzer)" cannot be resolved (valid targets: [segment-header, publish-box, bottom, segment-post-footer, ig-status, top, root, stripe, segment-footer, hl7-nav, logo, segment-navbar, segment-content, segment-breadcrumb, example-bundle-consolidated-medication-card-document-analyzer])
-The link '#Patient_MonikaWegmuellerRecipient' for "See above (Patient/MonikaWegmuellerRecipient)" cannot be resolved (valid targets: [segment-header, publish-box, bottom, segment-post-footer, ig-status, top, medikamentenliste, root, stripe, segment-footer, hl7-nav, logo, original-darstellung, segment-navbar, segment-content, segment-breadcrumb, bundle-medication-card-document])
-The link '#Practitioner_Apotheker' for "See above (Practitioner/Apotheker)" cannot be resolved (valid targets: [segment-header, publish-box, bottom, segment-post-footer, ig-status, top, medikamentenliste, root, stripe, segment-footer, hl7-nav, logo, original-darstellung, segment-navbar, segment-content, segment-breadcrumb, bundle-medication-card-document])
-The link '#Organization_ApothekeGare' for "See above (Organization/ApothekeGare)" cannot be resolved (valid targets: [segment-header, publish-box, bottom, segment-post-footer, ig-status, top, medikamentenliste, root, stripe, segment-footer, hl7-nav, logo, original-darstellung, segment-navbar, segment-content, segment-breadcrumb, bundle-medication-card-document])
-The link '#Practitioner_HausarztDupont' for "See above (Practitioner/HausarztDupont)" cannot be resolved (valid targets: [segment-header, publish-box, bottom, segment-post-footer, ig-status, top, medikamentenliste, root, stripe, segment-footer, hl7-nav, logo, original-darstellung, segment-navbar, segment-content, segment-breadcrumb, bundle-medication-card-document])
-The link '#Organization_Custodian' for "See above (Organization/Custodian)" cannot be resolved (valid targets: [segment-header, publish-box, bottom, segment-post-footer, ig-status, top, medikamentenliste, root, stripe, segment-footer, hl7-nav, logo, original-darstellung, segment-navbar, segment-content, segment-breadcrumb, bundle-medication-card-document])
-The link '#Practitioner_SpezialistMonney' for "See above (Practitioner/SpezialistMonney)" cannot be resolved (valid targets: [segment-header, publish-box, bottom, segment-post-footer, ig-status, top, medikamentenliste, root, stripe, segment-footer, hl7-nav, logo, original-darstellung, segment-navbar, segment-content, segment-breadcrumb, bundle-medication-card-document])
-The link '#Organization_Spezialist' for "See above (Organization/Spezialist)" cannot be resolved (valid targets: [segment-header, publish-box, bottom, segment-post-footer, ig-status, top, medikamentenliste, root, stripe, segment-footer, hl7-nav, logo, original-darstellung, segment-navbar, segment-content, segment-breadcrumb, bundle-medication-card-document])
-The link '#Practitioner_SpezialistMetzler' for "See above (Practitioner/SpezialistMetzler)" cannot be resolved (valid targets: [segment-header, publish-box, bottom, segment-post-footer, ig-status, top, medikamentenliste, root, stripe, segment-footer, hl7-nav, logo, original-darstellung, segment-navbar, segment-content, segment-breadcrumb, bundle-medication-card-document])
-The link '#Organization_SpezialistNeuro' for "See above (Organization/SpezialistNeuro)" cannot be resolved (valid targets: [segment-header, publish-box, bottom, segment-post-footer, ig-status, top, medikamentenliste, root, stripe, segment-footer, hl7-nav, logo, original-darstellung, segment-navbar, segment-content, segment-breadcrumb, bundle-medication-card-document])

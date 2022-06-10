@@ -344,12 +344,6 @@
                                     </doseQuantity>
                                 </doseAndRate>
                             </dosage>
-                            <dosage>
-                                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                                    <valueUrl value="#mtp.1.dosageintakemode"/>
-                                </extension>
-                                <text value="Morgens und abends je 1 Tablette nehmen"/>
-                            </dosage>
                         </MedicationStatement>
                     </resource>
                 </entry>

@@ -237,9 +237,6 @@
                                 <text value="Schmerzen"/>
                             </reasonCode>
                             <dosage>
-                                <text value="1 Tablette morgens"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -373,9 +370,6 @@
                                 <text value="Schmerzen"/>
                             </reasonCode>
                             <dosage>
-                                <text value="1 Tablette morgens"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -494,11 +488,8 @@
                                 <reference value="MedicationStatement/A7-MedStatBrufen-600"/>
                             </derivedFrom>
                             <!--<reasonCode>
-                    <text value="Schmerzen"/>
-                </reasonCode>-->
-                            <dosage>
-                                <text value="1 Tablette morgens"/>
-                            </dosage>
+                                <text value="Schmerzen"/>
+                            </reasonCode>-->
                             <dosage>
                                 <timing>
                                     <repeat>
@@ -624,11 +615,8 @@
                                 <reference value="MedicationStatement/A7-MedStatBrufenRetard-800"/>
                             </derivedFrom>
                             <!--<reasonCode>
-                    <text value="Schmerzen"/>
-                </reasonCode>-->
-                            <dosage>
-                                <text value="1 Tablette morgens"/>
-                            </dosage>
+                                <text value="Schmerzen"/>
+                            </reasonCode>-->
                             <dosage>
                                 <timing>
                                     <repeat>

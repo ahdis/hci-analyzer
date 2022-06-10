@@ -252,9 +252,6 @@
                                     </doseQuantity>
                                 </doseAndRate>
                             </dosage>
-                            <dosage>
-                                <text value="Morgens 1/2 Tablette nehmen"/>
-                            </dosage>
                         </MedicationStatement>
                     </resource>
                 </entry>
@@ -397,9 +394,6 @@
                                         <code value="732936001"/>
                                     </doseQuantity>
                                 </doseAndRate>
-                            </dosageInstruction>
-                            <dosageInstruction>
-                                <text value="Morgens 1/2 Tablette nehmen"/>
                             </dosageInstruction>
                         </MedicationDispense>
                     </resource>
@@ -573,9 +567,6 @@
                                 <text value="Bluthochdruck"/>
                             </reasonCode>
                             <dosage>
-                                <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
-                            </dosage>
-                            <dosage>
                                 <sequence value="1"/>
                                 <timing>
                                     <repeat>
@@ -745,9 +736,6 @@
                             <quantity>
                                 <value value="1"/>
                             </quantity>
-                            <dosageInstruction>
-                                <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
-                            </dosageInstruction>
                             <dosageInstruction>
                                 <sequence value="1"/>
                                 <timing>
@@ -938,9 +926,6 @@
                         </doseQuantity>
                     </doseAndRate>
                 </dosage>-->
-                            <dosage>
-                                <text value="-"/>
-                            </dosage>
                         </MedicationStatement>
                     </resource>
                 </entry>
@@ -1100,9 +1085,6 @@
                             <!--<reasonCode>
                     <text value="Bluthochdruck"/>
                 </reasonCode>-->
-                            <dosage>
-                                <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
-                            </dosage>
                             <dosage>
                                 <sequence value="1"/>
                                 <timing>

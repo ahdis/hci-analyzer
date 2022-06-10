@@ -319,12 +319,6 @@
                                 <text value="Bluthochdruck"/>
                             </reasonCode>
                             <dosage>
-                                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                                    <valueUrl value="#mtp.1.dosageintakemode"/>
-                                </extension>
-                                <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
-                            </dosage>
-                            <dosage>
                                 <sequence value="1"/>
                                 <timing>
                                     <repeat>

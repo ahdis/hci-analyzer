@@ -279,9 +279,6 @@
                                 <text value="Bluthochdruck"/>
                             </reasonCode>
                             <dosage>
-                                <text value="1 Tablette morgens"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -595,9 +592,6 @@
                             <reasonCode>
                                 <text value="Bluthochdruck"/>
                             </reasonCode>
-                            <dosage>
-                                <text value="1 Tablette morgens"/>
-                            </dosage>
                             <dosage>
                                 <timing>
                                     <repeat>

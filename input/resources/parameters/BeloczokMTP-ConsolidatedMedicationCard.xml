@@ -225,9 +225,6 @@
                                 <text value="Bluthochdruck"/>
                             </reasonCode>
                             <dosage>
-                                <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
-                            </dosage>
-                            <dosage>
                                 <sequence value="1"/>
                                 <timing>
                                     <repeat>
@@ -373,11 +370,8 @@
                                 <reference value="MedicationStatement/2-3-MedStatBeloczok"/>
                             </derivedFrom>
                             <!--<reasonCode>
-                    <text value="Bluthochdruck"/>
-                </reasonCode>-->
-                            <dosage>
-                                <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
-                            </dosage>
+                                <text value="Bluthochdruck"/>
+                            </reasonCode>-->
                             <dosage>
                                 <sequence value="1"/>
                                 <timing>

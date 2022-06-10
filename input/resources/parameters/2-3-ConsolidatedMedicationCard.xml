@@ -253,9 +253,6 @@
                                     </doseQuantity>
                                 </doseAndRate>
                             </dosage>
-                            <dosage>
-                                <text value="Morgens 1/2 Tablette nehmen"/>
-                            </dosage>
                         </MedicationStatement>
                     </resource>
                 </entry>
@@ -398,9 +395,6 @@
                                         <code value="732936001"/>
                                     </doseQuantity>
                                 </doseAndRate>
-                            </dosageInstruction>
-                            <dosageInstruction>
-                                <text value="Morgens 1/2 Tablette nehmen"/>
                             </dosageInstruction>
                         </MedicationDispense>
                     </resource>
@@ -573,9 +567,6 @@
                             <reasonCode>
                                 <text value="Bluthochdruck"/>
                             </reasonCode>
-                            <dosage>
-                                <text value="Morgens 1 und abends 1/2 Tablette nehmen"/>
-                            </dosage>
                             <dosage>
                                 <sequence value="1"/>
                                 <timing>

@@ -256,9 +256,6 @@
                                 <text value="Beruhigung"/>
                             </reasonCode>
                             <dosage>
-                                <text value="2 Tabletten für die Nacht"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -393,9 +390,6 @@
                                 <text value="Beruhigung"/>
                             </reasonCode>
                             <dosage>
-                                <text value="1 Tablette für die Nacht"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -523,11 +517,8 @@
                                 <reference value="MedicationStatement/A2-MedStatValium-1x10"/>
                             </derivedFrom>
                             <!--<reasonCode>
-                    <text value="Beruhigung"/>
-                </reasonCode>-->
-                            <dosage>
-                                <text value="1 Tablette für die Nacht"/>
-                            </dosage>
+                                <text value="Beruhigung"/>
+                            </reasonCode>-->
                             <dosage>
                                 <timing>
                                     <repeat>

@@ -237,9 +237,6 @@
                                 <text value="Migräne"/>
                             </reasonCode>
                             <dosage>
-                                <text value="2 Tabletten morgens"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -375,9 +372,6 @@
                                 <text value="Migräne"/>
                             </reasonCode>
                             <dosage>
-                                <text value="2 Hübe morgens"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -498,11 +492,8 @@
                                 <reference value="MedicationStatement/A6-MedStatImigran-Tbl"/>
                             </derivedFrom>
                             <!--<reasonCode>
-                    <text value="Migräne"/>
-                </reasonCode>-->
-                            <dosage>
-                                <text value="2 Tabletten morgens"/>
-                            </dosage>
+                                <text value="Migräne"/>
+                            </reasonCode>-->
                             <dosage>
                                 <timing>
                                     <repeat>
@@ -629,11 +620,8 @@
                                 <reference value="MedicationStatement/A6-MedStatImigran-Spray"/>
                             </derivedFrom>
                             <!--<reasonCode>
-                    <text value="Migräne"/>
-                </reasonCode>-->
-                            <dosage>
-                                <text value="2 Hübe morgens"/>
-                            </dosage>
+                                <text value="Migräne"/>
+                            </reasonCode>-->
                             <dosage>
                                 <timing>
                                     <repeat>

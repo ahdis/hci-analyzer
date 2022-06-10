@@ -256,9 +256,6 @@
                                 <text value="Cholesterinsenker"/>
                             </reasonCode>
                             <dosage>
-                                <text value="1 Tablette abends"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -393,9 +390,6 @@
                                 <text value="Cholesterinsenker"/>
                             </reasonCode>
                             <dosage>
-                                <text value="1 Tablette abends"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -523,11 +517,8 @@
                                 <reference value="MedicationStatement/A1-MedStatSimcora"/>
                             </derivedFrom>
                             <!--<reasonCode>
-                    <text value="Cholesterinsenker"/>
-                </reasonCode>-->
-                            <dosage>
-                                <text value="1 Tablette abends"/>
-                            </dosage>
+                                <text value="Cholesterinsenker"/>
+                            </reasonCode>-->
                             <dosage>
                                 <timing>
                                     <repeat>

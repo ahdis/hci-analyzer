@@ -248,9 +248,6 @@
                                     </doseQuantity>
                                 </doseAndRate>
                             </dosage>
-                            <dosage>
-                                <text value="Morgens 1/2 Tablette nehmen"/>
-                            </dosage>
                         </MedicationStatement>
                     </resource>
                 </entry>
@@ -394,9 +391,6 @@
                                     </doseQuantity>
                                 </doseAndRate>
                             </dosageInstruction>
-                            <dosageInstruction>
-                                <text value="Morgens 1/2 Tablette nehmen"/>
-                            </dosageInstruction>
                         </MedicationDispense>
                     </resource>
                 </entry>
@@ -526,9 +520,6 @@
                                         <code value="732936001"/>
                                     </doseQuantity>
                                 </doseAndRate>
-                            </dosage>
-                            <dosage>
-                                <text value="Morgens 1/2 Tablette nehmen"/>
                             </dosage>
                         </MedicationStatement>
                     </resource>

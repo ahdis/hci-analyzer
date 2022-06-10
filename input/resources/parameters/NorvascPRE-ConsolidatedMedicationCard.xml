@@ -241,9 +241,6 @@
                                     </coding>
                                 </route>
                             </dosage>
-                            <dosage>
-                                <text value="Morgens und abends je 1 Tablette nehmen"/>
-                            </dosage>
                         </MedicationStatement>
                     </resource>
                 </entry>
@@ -384,9 +381,6 @@
                                     </doseQuantity>
                                 </doseAndRate>
                             </dosageInstruction>
-                            <dosageInstruction>
-                                <text value="Morgens und abends je 1 Tablette nehmen"/>
-                            </dosageInstruction>
                             <dispenseRequest>
                                 <numberOfRepeatsAllowed value="2"/>
                                 <quantity>
@@ -496,8 +490,8 @@
                                 <!-- 2-6 Rezept (Norvasc) -->
                             </derivedFrom>
                             <!--<reasonCode>
-                    <text value="Bluthochdruck"/>
-                </reasonCode>-->
+                                <text value="Bluthochdruck"/>
+                            </reasonCode>-->
                             <dosage>
                                 <timing>
                                     <repeat>
@@ -523,9 +517,6 @@
                                         <code value="732936001"/>
                                     </doseQuantity>
                                 </doseAndRate>
-                            </dosage>
-                            <dosage>
-                                <text value="Morgens und abends je 1 Tablette nehmen"/>
                             </dosage>
                         </MedicationStatement>
                     </resource>

@@ -241,9 +241,6 @@
                                     </coding>
                                 </route>
                             </dosage>
-                            <dosage>
-                                <text value="Morgens und abends je 1 Tablette nehmen"/>
-                            </dosage>
                         </MedicationStatement>
                     </resource>
                 </entry>
@@ -338,8 +335,8 @@
                                 <reference value="MedicationStatement/2-5-MedStatNorvasc"/>
                             </derivedFrom>
                             <!--<reasonCode>
-                    <text value="Bluthochdruck"/>
-                </reasonCode>-->
+                                <text value="Bluthochdruck"/>
+                            </reasonCode>-->
                             <dosage>
                                 <timing>
                                     <repeat>
@@ -357,9 +354,6 @@
                                         <display value="Oral use"/>
                                     </coding>
                                 </route>
-                            </dosage>
-                            <dosage>
-                                <text value="Morgens und abends je 1 Tablette nehmen"/>
                             </dosage>
                         </MedicationStatement>
                     </resource>

@@ -279,9 +279,6 @@
                                 <text value="Migräne"/>
                             </reasonCode>
                             <dosage>
-                                <text value="2 Tabletten morgens"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -599,9 +596,6 @@
                                 <text value="Migräne"/>
                             </reasonCode>
                             <dosage>
-                                <text value="2 Tabletten morgens"/>
-                            </dosage>
-                            <dosage>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -714,9 +708,6 @@
                             <reasonCode>
                                 <text value="Migräne"/>
                             </reasonCode>
-                            <dosage>
-                                <text value="2 Hübe morgens"/>
-                            </dosage>
                             <dosage>
                                 <timing>
                                     <repeat>
