@@ -148,7 +148,7 @@
                             <id value="HausarztDupont"/>
                             <identifier>
                                 <system value="urn:oid:2.51.1.3"/>
-                                <value value="7601000234466"/>
+                                <value value="7601023234613"/>
                             </identifier>
                             <name>
                                 <family value="Dupont"/>
@@ -170,7 +170,7 @@
                             <id value="Custodian"/>
                             <identifier>
                                 <system value="urn:oid:2.51.1.3"/>
-                                <value value="7601000234466"/>
+                                <value value="7601023234613"/>
                             </identifier>
                             <name value="Hausarzt"/>
                         </Organization>
@@ -465,7 +465,7 @@
                             <id value="HausarztDupont"/>
                             <identifier>
                                 <system value="urn:oid:2.51.1.3"/>
-                                <value value="7601000234466"/>
+                                <value value="7601023234613"/>
                             </identifier>
                             <name>
                                 <family value="Dupont"/>
@@ -487,7 +487,7 @@
                             <id value="Custodian"/>
                             <identifier>
                                 <system value="urn:oid:2.51.1.3"/>
-                                <value value="7601000234466"/>
+                                <value value="7601023234613"/>
                             </identifier>
                             <name value="Hausarzt"/>
                         </Organization>
