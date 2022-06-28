@@ -20,9 +20,19 @@ Arbeitshypothese: Die Medikationsliste ist ein dynamisch generiertes Dokument un
 
 
 #### 2-2 Kommentar zur Medikation (Pharmaceutical Advice document)
+PADV = **CANCEL** (Abgesetzt aufgrund UAW trockener Husten)
 * [2-2 Input Analyzer](Parameters-2-2-Input-Analyzer.html)
-   * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-2 PADV](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html)
+   * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-2 PADV CANCEL](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html)
 * [2-2 Consolidated Medication Card document](Parameters-2-2-ConsolidatedMedicationCard.html)
+
+##### Tesfall Triatec: Kommentar
+PADV = **COMMENT** (Patientin verträgt das Medikament gut)   
+Für Testzwecke wird das PADV CANCEL mit diesem PADV COMMENT ersetzt. 
+Dieser Kommentar (PADV) wird im weiteren Verlauf des Use Cases nicht mehr verfolgt.
+* [2-2 COMMENT Input Analyzer](Parameters-2-2-Comment-Input-Analyzer.html)
+   * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), 2-2 PADV COMMENT
+* [2-2 COMMENT Consolidated Medication Card document](Parameters-2-2-Comment-ConsolidatedMedicationCard.html)
+
 
 {% include img.html img="uc_2-2.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
 
