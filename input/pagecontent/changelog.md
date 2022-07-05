@@ -18,7 +18,7 @@ See also open issues on [GitHub](https://github.com/ahdis/hci-analyzer/issues).
 
 
 ### v0.3.0 (until June 2022)
-* This version was not published. The status at that time corresponds to this Analyzer [commit]() from July 2022.
+* This version was not published. The status at that time corresponds to this Analyzer [commit](https://github.com/ahdis/hci-analyzer/commit/754f53612d81614c8beefd022bedffad10946222) from July 2022.
 #### Added
 * Add schematic illustrations for better understanding of the Analyzer process.
 * Add different profiles to support the validation.
