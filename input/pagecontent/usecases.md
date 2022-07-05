@@ -16,13 +16,17 @@ Die in diesem Abschnitt abgebildeten Anwendungsfälle basieren auf dem Fallbeisp
 {% include img.html img="uc_1-2.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
 
 #### 2-1 Medikationsliste (Medication List document)
-Arbeitshypothese: Die Medikationsliste ist ein dynamisch generiertes Dokument und wird daher nicht als Inputdokument für den Analyzer auftreten.
+* [2-1 Input Analyzer](Parameters-2-1-Input-Analyzer.html)
+   * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-1 LIST](https://fhir.ch/ig/ch-emed/Bundle-2-1-MedicationList.html)
+* [1-2 Consolidated Medication Card document](Parameters-1-2-ConsolidatedMedicationCard.html)
+
+{% include img.html img="uc_2-1.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
 
 
 #### 2-2 Kommentar zur Medikation (Pharmaceutical Advice document)
 PADV = **CANCEL** (Abgesetzt aufgrund UAW trockener Husten)
 * [2-2 Input Analyzer](Parameters-2-2-Input-Analyzer.html)
-   * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-2 PADV CANCEL](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html)
+   * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-1 LIST](https://fhir.ch/ig/ch-emed/Bundle-2-1-MedicationList.html), [2-2 PADV CANCEL](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html)
 * [2-2 Consolidated Medication Card document](Parameters-2-2-ConsolidatedMedicationCard.html)
 
 ##### Tesfall Triatec: Kommentar
@@ -30,7 +34,7 @@ PADV = **COMMENT** (Patientin verträgt das Medikament gut)
 Für Testzwecke wird das PADV CANCEL mit diesem PADV COMMENT ersetzt. 
 Dieser Kommentar (PADV) wird im weiteren Verlauf des Use Cases nicht mehr verfolgt.
 * [2-2 COMMENT Input Analyzer](Parameters-2-2-Comment-Input-Analyzer.html)
-   * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), 2-2 PADV COMMENT
+   * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-1 LIST](https://fhir.ch/ig/ch-emed/Bundle-2-1-MedicationList.html), 2-2 PADV COMMENT
 * [2-2 COMMENT Consolidated Medication Card document](Parameters-2-2-Comment-ConsolidatedMedicationCard.html)
 
 
@@ -38,7 +42,7 @@ Dieser Kommentar (PADV) wird im weiteren Verlauf des Use Cases nicht mehr verfol
 
 #### 2-3 Therapieentscheid Medikation (Medication Treatment Plan document)
 * [2-3 Input Analyzer](Parameters-2-3-Input-Analyzer.html)
-   * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-2 PADV](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html), [2-3 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-3-MedicationTreatmentPlan.html)
+   * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-1 LIST](https://fhir.ch/ig/ch-emed/Bundle-2-1-MedicationList.html), [2-2 PADV](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html), [2-3 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-3-MedicationTreatmentPlan.html)
 * [2-3 Consolidated Medication Card document](Parameters-2-3-ConsolidatedMedicationCard.html)
 
 
@@ -52,7 +56,7 @@ Abgesetztes Triatec wird für Testzwecke nicht aufgeführt.
 
 #### 2-4 Abgabe (Medication Dispense document)
 * [2-4 Input Analyzer](Parameters-2-4-Input-Analyzer.html)
-   * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-2 PADV](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html), [2-3 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-3-MedicationTreatmentPlan.html), [2-4 DIS](http://fhir.ch/ig/ch-emed/Bundle-2-4-MedicationDispense.html)
+   * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-1 LIST](https://fhir.ch/ig/ch-emed/Bundle-2-1-MedicationList.html), [2-2 PADV](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html), [2-3 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-3-MedicationTreatmentPlan.html), [2-4 DIS](http://fhir.ch/ig/ch-emed/Bundle-2-4-MedicationDispense.html)
 * [2-4 Consolidated Medication Card document](Parameters-2-4-ConsolidatedMedicationCard.html)
 
 {% include img.html img="uc_2-4.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
@@ -65,7 +69,7 @@ Abgesetztes Triatec wird für Testzwecke nicht aufgeführt.
 
 #### 2-5 Therapieentscheid Medikation (Medication Treatment Plan document)
 * [2-5 Input Analyzer](Parameters-2-5-Input-Analyzer.html)
-   * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-2 PADV](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html), [2-3 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-3-MedicationTreatmentPlan.html), [2-4 DIS](http://fhir.ch/ig/ch-emed/Bundle-2-4-MedicationDispense.html), [2-5 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-5-MedicationTreatmentPlan.html)
+   * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-1 LIST](https://fhir.ch/ig/ch-emed/Bundle-2-1-MedicationList.html), [2-2 PADV](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html), [2-3 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-3-MedicationTreatmentPlan.html), [2-4 DIS](http://fhir.ch/ig/ch-emed/Bundle-2-4-MedicationDispense.html), [2-5 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-5-MedicationTreatmentPlan.html)
 * [2-5 Consolidated Medication Card document](Parameters-2-5-ConsolidatedMedicationCard.html)
 
 {% include img.html img="uc_2-5.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
@@ -78,7 +82,7 @@ Abgesetztes Triatec und abgegebenes Beloc Zok werden für Testzwecke nicht aufge
 
 #### 2-6 Rezept (Medication Prescription document)
 * [2-6 Input Analyzer](Parameters-2-6-Input-Analyzer.html)
-   * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-2 PADV](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html), [2-3 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-3-MedicationTreatmentPlan.html), [2-4 DIS](http://fhir.ch/ig/ch-emed/Bundle-2-4-MedicationDispense.html), [2-5 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-5-MedicationTreatmentPlan.html), [2-6 PRE](http://fhir.ch/ig/ch-emed/Bundle-2-6-MedicationPrescription.html)
+   * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-1 LIST](https://fhir.ch/ig/ch-emed/Bundle-2-1-MedicationList.html), [2-2 PADV](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html), [2-3 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-3-MedicationTreatmentPlan.html), [2-4 DIS](http://fhir.ch/ig/ch-emed/Bundle-2-4-MedicationDispense.html), [2-5 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-5-MedicationTreatmentPlan.html), [2-6 PRE](http://fhir.ch/ig/ch-emed/Bundle-2-6-MedicationPrescription.html)
 * [2-6 Consolidated Medication Card document](Parameters-2-6-ConsolidatedMedicationCard.html)
 
 {% include img.html img="uc_2-6.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
@@ -91,7 +95,7 @@ Abgesetztes Triatec und abgegebenes Beloc Zok werden für Testzwecke nicht aufge
 
 #### 2-7 Medikationsplan (Medication Card document)
 * [2-7 Input Analyzer](Parameters-2-7-Input-Analyzer.html)
-   * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-2 PADV](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html), [2-3 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-3-MedicationTreatmentPlan.html), [2-4 DIS](http://fhir.ch/ig/ch-emed/Bundle-2-4-MedicationDispense.html), [2-5 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-5-MedicationTreatmentPlan.html), [2-6 PRE](http://fhir.ch/ig/ch-emed/Bundle-2-6-MedicationPrescription.html), [2-7 Card](http://fhir.ch/ig/ch-emed/Bundle-2-7-MedicationCard.html)
+   * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-1 LIST](https://fhir.ch/ig/ch-emed/Bundle-2-1-MedicationList.html), [2-2 PADV](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html), [2-3 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-3-MedicationTreatmentPlan.html), [2-4 DIS](http://fhir.ch/ig/ch-emed/Bundle-2-4-MedicationDispense.html), [2-5 MTP](http://fhir.ch/ig/ch-emed/Bundle-2-5-MedicationTreatmentPlan.html), [2-6 PRE](http://fhir.ch/ig/ch-emed/Bundle-2-6-MedicationPrescription.html), [2-7 Card](http://fhir.ch/ig/ch-emed/Bundle-2-7-MedicationCard.html)
 * [2-7 Consolidated Medication Card document](Parameters-2-7-ConsolidatedMedicationCard.html)
 
 {% include img.html img="uc_2-7.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
