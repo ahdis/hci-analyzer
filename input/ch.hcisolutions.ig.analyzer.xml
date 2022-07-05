@@ -2,11 +2,11 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ch.hcisolutions.ig.analyzer"/>
   <url value="http://hcisolutions.ch/ig/analyzer/ImplementationGuide/ch.hcisolutions.ig.analyzer"/>
-  <version value="0.3.0"/>
+  <version value="0.4.0"/>
   <name value="ANALYZER"/>
   <title value="Analyzer (R4)"/>
   <status value="draft"/>
-  <date value="2022-06-29"/>
+  <date value="2022-07-05"/>
   <publisher value="HCI Solutions AG"/>
   <contact>
     <name value="HCI Solutions AG"/>

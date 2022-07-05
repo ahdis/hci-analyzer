@@ -6,7 +6,7 @@ The Analyzer generates [consolidated Medication Card documents](StructureDefinit
 ### About this IG
 
 The purpose of this implementation guide (IG) is to specify the consolidated Medication Card document based on the [FHIR®](https://www.hl7.org/fhir/) standard from [HL7®](https://www.hl7.org/).   
-This specification is based on [CH EMED](https://fhir.ch/ig/ch-emed), which defines the documents for the exchange of medication information in the context of the EPR (Electronic Patient Record) in Switzerland. It is also based on the [eMediplan CHMED Implementation Guide](https://chmed.emediplan.ch/fhir/), where the FHIR-based definition of the 'eMedication Plan CHMED21A' specification is depicted.
+This specification is based on [CH EMED](https://fhir.ch/ig/ch-emed), which defines the documents for the exchange of medication information in the context of the EPR (Electronic Patient Record) in Switzerland. It is also based on the [eMediplan CHMED Implementation Guide](https://chmed.emediplan.ch/fhir/), where the FHIR-based definition of the 'eMedication Plan CHMED23A' specification is depicted.
 
 If you have questions or want more information about the Analyzer please contact <hotline@hcisolutions.ch> directly.
 
