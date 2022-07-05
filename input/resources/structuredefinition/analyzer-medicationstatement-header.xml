@@ -110,13 +110,13 @@
          <short value="History of changes"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-medicationstatementcard"/>
-            <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-medicationstatementmtp"/>
+            <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-medicationstatement"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-medicationrequest"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-medicationdispense"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-observationpadv"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-observationhistory"/>
          </type>
+         <min value="1"/>
       </element>
    </differential>
 </StructureDefinition>

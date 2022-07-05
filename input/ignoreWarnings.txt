@@ -32,3 +32,10 @@ The Implementation Guide contains no explicitly linked examples for this profile
 
 # Problem of the derived IG
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+
+# Slicing information about Extensions from CH EMED/CH Core
+This element does not match any known slice defined in the profile http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-composition
+This element does not match any known slice defined in the profile http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-medicationstatement
+
+# Pattern defined in CH EMED / CH Core
+The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)

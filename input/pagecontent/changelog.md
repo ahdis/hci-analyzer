@@ -9,6 +9,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 See also open issues on [GitHub](https://github.com/ahdis/hci-analyzer/issues).
 
 #### Added
+* Add slices for different entries in the Bundle to simplify the validation.
 
 #### Changed / Updated
 * The working hypothesis until v0.3.0 was that the Medication List document as a dynamically generated document will not appear as an input document for the analyzer. This hypothesis was disproved and the implementation guide adapted accordingly (graphics, use case, examples, profiles). 

@@ -24,6 +24,7 @@
           conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationprescription') or 
           conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationdispense') or 
           conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-pharmaceuticaladvice') or 
+          conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard') or 
           conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard')"/>
       </constraint>
     </element>
@@ -38,20 +39,148 @@
       </slicing>
       <min value="1"/>
     </element>
-    <element id="Bundle.entry:composition">
+
+    <element id="Bundle.entry:Composition">
       <path value="Bundle.entry"/>
-      <sliceName value="composition"/>
+      <sliceName value="Composition"/>
       <min value="1"/>
       <max value="1"/>
     </element>
-    <element id="Bundle.entry:composition.resource">
+    <element id="Bundle.entry:Composition.resource">
       <path value="Bundle.entry.resource"/>
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="Composition"/>
+        <code value="Resource"/>
         <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-composition"/>
       </type>
     </element>
+
+    <element id="Bundle.entry:Patient">
+      <path value="Bundle.entry"/>
+      <sliceName value="Patient"/>
+    </element>
+    <element id="Bundle.entry:Patient.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Resource"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+    </element>
+
+    <element id="Bundle.entry:Organization">
+      <path value="Bundle.entry"/>
+      <sliceName value="Organization"/>
+    </element>
+    <element id="Bundle.entry:Organization.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Resource"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+      </type>
+    </element>
+
+    <element id="Bundle.entry:Practitioner">
+      <path value="Bundle.entry"/>
+      <sliceName value="Practitioner"/>
+    </element>
+    <element id="Bundle.entry:Practitioner.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Resource"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+      </type>
+    </element>
+
+    <element id="Bundle.entry:Device">
+      <path value="Bundle.entry"/>
+      <sliceName value="Device"/>
+    </element>
+    <element id="Bundle.entry:Device.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Resource"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+      </type>
+    </element>
+
+    <element id="Bundle.entry:MedicationStatement">
+      <path value="Bundle.entry"/>
+      <sliceName value="MedicationStatement"/>
+    </element>
+    <element id="Bundle.entry:MedicationStatement.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Resource"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement"/>
+      </type>
+    </element>
+
+    <element id="Bundle.entry:MedicationDispense">
+      <path value="Bundle.entry"/>
+      <sliceName value="MedicationDispense"/>
+    </element>
+    <element id="Bundle.entry:MedicationDispense.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Resource"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/MedicationDispense"/>
+      </type>
+    </element>
+
+    <element id="Bundle.entry:MedicationRequest">
+      <path value="Bundle.entry"/>
+      <sliceName value="MedicationRequest"/>
+    </element>
+    <element id="Bundle.entry:MedicationRequest.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Resource"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
+      </type>
+    </element>
+
+    <element id="Bundle.entry:Observation">
+      <path value="Bundle.entry"/>
+      <sliceName value="Observation"/>
+    </element>
+    <element id="Bundle.entry:Observation.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Resource"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+      </type>
+    </element>
+
+    <element id="Bundle.entry:Binary">
+      <path value="Bundle.entry"/>
+      <sliceName value="Binary"/>
+    </element>
+    <element id="Bundle.entry:Binary.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Resource"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Binary"/>
+      </type>
+    </element>
+
   </differential>
 </StructureDefinition>

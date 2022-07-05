@@ -36,17 +36,14 @@ Profile for the Analyzer Device
 
 Profiles to show the history of changes (MedicationStatement.derivedFrom):
 
-* [Analyzer MedicationStatement (Card)](StructureDefinition-analyzer-medicationstatementcard.html)   
-Profile for the Analyzer MedicationStatement (Card)
-
-* [Analyzer MedicationStatement (MTP)](StructureDefinition-analyzer-medicationstatementmtp.html)   
-Profile for the Analyzer MedicationStatement (MTP)
+* [Analyzer MedicationStatement](StructureDefinition-analyzer-medicationstatement.html)   
+Profile for the Analyzer MedicationStatement (CARD & MTP)
 
 * [Analyzer MedicationRequest](StructureDefinition-analyzer-medicationrequest.html)   
-Profile for the Analyzer MedicationStatement
+Profile for the Analyzer MedicationRequest (PRE)
 
 * [Analyzer MedicationDispense](StructureDefinition-analyzer-medicationdispense.html)   
-Profile for the Analyzer MedicationDispense
+Profile for the Analyzer MedicationDispense (DIS)
 
 * [Analyzer Observation PADV](StructureDefinition-analyzer-observationpadv.html)   
 Profile for the Analyzer Observation from a Pharmaceutical Advice document (PADV)
