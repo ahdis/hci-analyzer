@@ -18,7 +18,7 @@ Die in diesem Abschnitt abgebildeten Anwendungsfälle basieren auf dem Fallbeisp
 #### 2-1 Medikationsliste (Medication List document)
 * [2-1 Input Analyzer](Parameters-2-1-Input-Analyzer.html)
    * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-1 LIST](https://fhir.ch/ig/ch-emed/Bundle-2-1-MedicationList.html)
-* [1-2 Consolidated Medication Card document](Parameters-1-2-ConsolidatedMedicationCard.html)
+* [2-1 Consolidated Medication Card document](Parameters-2-1-ConsolidatedMedicationCard.html)
 
 {% include img.html img="uc_2-1.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
 

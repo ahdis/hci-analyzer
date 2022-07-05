@@ -72,13 +72,13 @@
       <name value="2-1 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
-    <!--<resource>
+    <resource>
       <reference>
         <reference value="Parameters/2-1-ConsolidatedMedicationCard"/>
       </reference>
       <name value="2-1 Output Analyzer"/>
       <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
-    </resource>-->
+    </resource>
 
     <resource>
       <reference>
