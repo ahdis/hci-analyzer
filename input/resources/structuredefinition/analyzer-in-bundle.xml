@@ -24,7 +24,7 @@
           conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationprescription') or 
           conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationdispense') or 
           conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-pharmaceuticaladvice') or 
-          conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard') or 
+          conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationlist') or 
           conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard')"/>
       </constraint>
     </element>
