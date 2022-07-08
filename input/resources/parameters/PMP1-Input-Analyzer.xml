@@ -169,6 +169,7 @@
                         <Organization>
                             <identifier>
                                 <system value="urn:oid:2.51.1.3"/>
+                                <!--valid format-->
                                 <value value="7601000121219"/>
                             </identifier>
                             <name value="Hausarzt"/>
