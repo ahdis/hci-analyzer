@@ -151,3 +151,33 @@ Arzt Dr. Dupont verordnet zusätzlich zu den Brufen Tabletten (600 mg) die Brufe
 * [A7 Input Analyzer](Parameters-A7-Input-Analyzer.html)
    * Inputdokumente: Medication Card Brufen (600 mg), Medication Card Brufen (600 mg) und Brufen retard (800 mg)
 * [A7 Consolidated Medication Card document](Parameters-A7-ConsolidatedMedicationCard.html)
+
+
+### Anwendungsfälle CH EMED PMP
+Die in diesem Abschnitt abgebildeten Anwendungsfälle basieren auf Elementen des Fallbeispiels ([fr](http://build.fhir.org/ig/ahdis/ch-emed-pmp/usecase-french.html)), welches im CH EMED PMP Implementierungsleitfaden abgebildet ist. Die Inputdokumente für den Analyzer (Medication List document) kommen vom PMP.
+
+#### CHANGE
+Cetirizine: 0-0-1-0 => 1-0-1-0
+* [PMP1 Input Analyzer](Parameters-PMP1-Input-Analyzer.html)
+   * Inputdokument: Medication List document vom PMP
+* [PMP1 Consolidated Medication Card document](Parameters-PMP1-ConsolidatedMedicationCard.html) 
+
+{% include img.html img="uc_pmp-1.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
+
+#### CANCEL
+Temesta: stoppen der Medikation
+* [PMP2 Input Analyzer](Parameters-PMP2-Input-Analyzer.html)
+   * Inputdokument: Medication List document vom PMP
+* [PMP2 Consolidated Medication Card document](Parameters-PMP2-ConsolidatedMedicationCard.html) 
+
+{% include img.html img="uc_pmp-2.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
+
+#### COMMENT
+Dafalgan: Kommentar hinzufügen
+* [PMP3 Input Analyzer](Parameters-PMP3-Input-Analyzer.html)
+   * Inputdokument: Medication List document vom PMP
+* [PMP3 Consolidated Medication Card document](Parameters-PMP3-ConsolidatedMedicationCard.html) 
+
+{% include img.html img="uc_pmp-3.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
+
+
