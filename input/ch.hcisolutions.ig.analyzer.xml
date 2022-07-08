@@ -368,6 +368,14 @@
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
 
+    <resource>
+      <reference>
+        <reference value="Parameters/PMP3-Input-Analyzer"/>
+      </reference>
+      <name value="PMP3 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+    </resource>
+
     <!-- Analyzer: IN StructureDefinitions -->
     <resource>
       <reference>
