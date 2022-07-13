@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+    <!-- The parameter resource actually has no ID. Here the ID is used to show the resource in the IG. -->
+    <id value="PMP3-ConsolidatedMedicationCard"/>
+    <meta>
+        <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-parameters"/>
+    </meta>
+    <parameter>
+        <name value="cons-medicationcard"/>
+        <resource>
+            <Bundle xmlns="http://hl7.org/fhir">
+                <id value="PMP3-ConsolidatedMedicationCard"/>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:66e38e9e-e5c1-471d-9ade-43edb5924720"/>
+                </identifier>
+                <type value="document"/>
+                <timestamp value="2022-06-12T12:00:00.000+00:00"/>
+                <entry>
+                    <fullUrl value="http://test.fhir.ch/r4/Composition/PMP3-Analyzer"/>
+                    <resource>
+                        <Composition>
+                            <id value="PMP3-Analyzer"/>
+                            <identifier>
+                                <system value="urn:ietf:rfc:3986"/>
+                                <value value="urn:66e38e9e-e5c1-471d-9ade-43edb5924720"/>
+                            </identifier>
+                            <status value="final"/>
+                            <type>
+                                <coding>
+                                    <system value="http://snomed.info/sct"/>
+                                    <code value="721912009"/>
+                                    <display value="Medication summary document (record artifact)"/>
+                                </coding>
+                            </type>
+                            <subject>
+                                <reference value="Patient/TrongSangNeffWingeier"/>
+                            </subject>
+                            <date value="2022-06-12T12:00:00.000+00:00"/>
+                            <author>
+                                <reference value="Device/Analyzer"/>
+                            </author>
+                            <title value="Medikationsplan"/>
+                            <section>
+                                <!-- MTP -->
+                                <entry>
+                                    <reference value="MedicationStatement/Header1-MedStat-Analyzer"/>
+                                </entry>
+                            </section>
+                        </Composition>
+                    </resource>
+                </entry>
+
+                <!-- Composition.author -->
+                <entry>
+                    <fullUrl value="http://test.fhir.ch/r4/Device/Analyzer"/>
+                    <resource>
+                        <Device>
+                            <id value="Analyzer"/>
+                            <deviceName>
+                                <name value="Documedis Medical Data Analyzer CE"/>
+                                <type value="user-friendly-name"/>
+                            </deviceName>
+                            <version>
+                                <value value="1.0.0.0"/>
+                            </version>
+                        </Device>
+                    </resource>
+                </entry>
+
+                <!-- Composition.subject -->
+                <entry>
+                    <fullUrl value="http://test.fhir.ch/r4/Patient/TrongSangNeffWingeier"/>
+                    <resource>
+                        <Patient>
+                            <id value="TrongSangNeffWingeier"/>
+                            <identifier>
+                                <type>
+                                    <coding>
+                                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                                        <code value="MR"/>
+                                    </coding>
+                                </type>
+                                <system value="urn:oid:2.16.756.5.30.1.191.1.0.2.1"/>
+                                <value value="e7963774-9098-445f-9cab-5d52234b52c3"/>
+                            </identifier>
+                            <name>
+                                <family value="NEFF-WINGEIER"/>
+                                <given value="Trong Sang"/>
+                            </name>
+                            <gender value="male"/>
+                            <birthDate value="1987-10-08"/>
+                        </Patient>
+                    </resource>
+                </entry>
+
+                <!-- =============================== Section 1 =============================== -->
+                <!-- MTP: MedicationStatement/Header1-MedStat-Analyzer -->
+                <entry>
+                    <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/Header1-MedStat-Analyzer"/>
+                    <resource>
+                        <MedicationStatement>
+                            <id value="Header1-MedStat-Analyzer"/>
+                            <contained>
+                                <Medication>
+                                    <id value="med"/>
+                                    <code>
+                                        <coding>
+                                            <system value="urn:oid:2.51.1.1"/>
+                                            <code value="7680563180079"/>
+                                            <display value="DAFALGAN cpr pell 1 g blister 40 pce"/>
+                                        </coding>
+                                        <text value="DAFALGAN cpr pell 1 g blister 40 pce"/>
+                                    </code>
+                                    <form>
+                                        <coding>
+                                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                                            <code value="10221000"/>
+                                            <display value="Film-coated tablet"/>
+                                        </coding>
+                                    </form>
+                                    <amount>
+                                        <numerator>
+                                            <value value="40"/>
+                                            <unit value="Piece"/>
+                                            <system value="http://unitsofmeasure.org"/>
+                                            <code value="{Piece}"/>
+                                        </numerator>
+                                        <denominator>
+                                            <value value="1"/>
+                                            <unit value="Package"/>
+                                            <system value="http://unitsofmeasure.org"/>
+                                            <code value="{Package}"/>
+                                        </denominator>
+                                    </amount>
+                                    <ingredient>
+                                        <itemCodeableConcept>
+                                            <coding>
+                                                <system value="http://snomed.info/sct"/>
+                                                <code value="387517004"/>
+                                                <display value="Paracetamol (substance)"/>
+                                            </coding>
+                                            <text value="Paracétamol"/>
+                                        </itemCodeableConcept>
+                                        <strength>
+                                            <numerator>
+                                                <value value="1"/>
+                                                <unit value="gram"/>
+                                                <system value="http://unitsofmeasure.org"/>
+                                                <code value="g"/>
+                                            </numerator>
+                                            <denominator>
+                                                <value value="1"/>
+                                                <unit value="Tablet (unit of presentation)"/>
+                                                <system value="http://snomed.info/sct"/>
+                                                <code value="732936001"/>
+                                            </denominator>
+                                        </strength>
+                                    </ingredient>
+                                </Medication>
+                            </contained>
+                            <identifier>
+                                <system value="urn:ietf:rfc:3986"/>
+                                <value value="urn:uuid:efc8cfe3-9458-4a57-98ba-a44d6e335daf"/>
+                            </identifier>
+                            <status value="completed"/>
+                            <category>
+                                <coding>
+                                    <system value="http://www.whocc.no/atc"/>
+                                    <code value="N"/>
+                                    <display value="Nervensystem"/>
+                                </coding>
+                            </category>
+                            <medicationReference>
+                                <reference value="#med"/>
+                            </medicationReference>
+                            <subject>
+                                <reference value="Patient/TrongSangNeffWingeier"/>
+                            </subject>
+                            <!-- History -->
+                            <derivedFrom>
+                                <reference value="MedicationStatement/1-MedStat-MTP"/>
+                            </derivedFrom>
+                            <derivedFrom>
+                                <reference value="Observation/1-Obs-History"/>
+                            </derivedFrom>
+                            <derivedFrom>
+                                <reference value="Observation/1-Obs-COMMENT"/>
+                            </derivedFrom>
+                            <dosage>
+                                <timing>
+                                    <repeat>
+                                        <when value="MORN"/>
+                                        <when value="NOON"/>
+                                        <when value="EVE"/>
+                                    </repeat>
+                                </timing>
+                                <route>
+                                    <coding>
+                                        <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                                        <code value="20053000"/>
+                                        <display value="Oral use"/>
+                                    </coding>
+                                </route>
+                                <doseAndRate>
+                                    <doseQuantity>
+                                        <value value="1"/>
+                                        <unit value="Tablet (unit of presentation)"/>
+                                        <system value="http://snomed.info/sct"/>
+                                        <code value="732936001"/>
+                                    </doseQuantity>
+                                </doseAndRate>
+                            </dosage>
+                        </MedicationStatement>
+                    </resource>
+                </entry>
+
+                <!-- Header1-MedStat-Analyzer.derivedFrom -->
+                <entry>
+                    <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/1-MedStat-MTP"/>
+                    <resource>
+                        <MedicationStatement>
+                            <id value="1-MedStat-MTP"/>
+                            <contained>
+                                <Medication>
+                                    <id value="med"/>
+                                    <code>
+                                        <coding>
+                                            <system value="urn:oid:2.51.1.1"/>
+                                            <code value="7680563180079"/>
+                                            <display value="DAFALGAN cpr pell 1 g blister 40 pce"/>
+                                        </coding>
+                                        <text value="DAFALGAN cpr pell 1 g blister 40 pce"/>
+                                    </code>
+                                    <form>
+                                        <coding>
+                                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                                            <code value="10221000"/>
+                                            <display value="Film-coated tablet"/>
+                                        </coding>
+                                    </form>
+                                    <amount>
+                                        <numerator>
+                                            <value value="40"/>
+                                            <unit value="Piece"/>
+                                            <system value="http://unitsofmeasure.org"/>
+                                            <code value="{Piece}"/>
+                                        </numerator>
+                                        <denominator>
+                                            <value value="1"/>
+                                            <unit value="Package"/>
+                                            <system value="http://unitsofmeasure.org"/>
+                                            <code value="{Package}"/>
+                                        </denominator>
+                                    </amount>
+                                    <ingredient>
+                                        <itemCodeableConcept>
+                                            <coding>
+                                                <system value="http://snomed.info/sct"/>
+                                                <code value="387517004"/>
+                                                <display value="Paracetamol (substance)"/>
+                                            </coding>
+                                            <text value="Paracétamol"/>
+                                        </itemCodeableConcept>
+                                        <strength>
+                                            <numerator>
+                                                <value value="1"/>
+                                                <unit value="gram"/>
+                                                <system value="http://unitsofmeasure.org"/>
+                                                <code value="g"/>
+                                            </numerator>
+                                            <denominator>
+                                                <value value="1"/>
+                                                <unit value="Tablet (unit of presentation)"/>
+                                                <system value="http://snomed.info/sct"/>
+                                                <code value="732936001"/>
+                                            </denominator>
+                                        </strength>
+                                    </ingredient>
+                                </Medication>
+                            </contained>
+                            <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument">
+                                <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
+                                    <valueString value="PMP"/>
+                                </extension>
+                                <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype">
+                                    <valueCodeableConcept>
+                                        <coding>
+                                            <system value="http://loinc.org"/>
+                                            <code value="56445-0"/>
+                                            <display value="Medication summary"/>
+                                        </coding>
+                                    </valueCodeableConcept>
+                                </extension>
+                                <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
+                                    <valueDateTime value="2022-07-08T07:00:08+00:00"/>
+                                </extension>
+                            </extension>
+                            <identifier>
+                                <system value="urn:ietf:rfc:3986"/>
+                                <value value="urn:uuid:ce620825-baf3-4c6c-813f-4c5ad9a85a55"/>
+                            </identifier>
+                            <status value="completed"/>
+                            <category>
+                                <coding>
+                                    <system value="http://www.whocc.no/atc"/>
+                                    <code value="N"/>
+                                    <display value="Nervensystem"/>
+                                </coding>
+                            </category>
+                            <medicationReference>
+                                <reference value="#med"/>
+                            </medicationReference>
+                            <subject>
+                                <reference value="Patient/TrongSangNeffWingeier"/>
+                            </subject>
+                            <reasonCode>
+                                <text value="douleurs"/>
+                            </reasonCode>
+                            <dosage>
+                                <timing>
+                                    <repeat>
+                                        <when value="MORN"/>
+                                        <when value="NOON"/>
+                                        <when value="EVE"/>
+                                    </repeat>
+                                </timing>
+                                <route>
+                                    <coding>
+                                        <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                                        <code value="20053000"/>
+                                        <display value="Oral use"/>
+                                    </coding>
+                                </route>
+                                <doseAndRate>
+                                    <doseQuantity>
+                                        <value value="1"/>
+                                        <unit value="Tablet (unit of presentation)"/>
+                                        <system value="http://snomed.info/sct"/>
+                                        <code value="732936001"/>
+                                    </doseQuantity>
+                                </doseAndRate>
+                            </dosage>
+                        </MedicationStatement>
+                    </resource>
+                </entry>
+
+                <!-- Header1-MedStat-Analyzer.derivedFrom -->
+                <entry>
+                    <fullUrl value="http://test.fhir.ch/r4/Observation/1-Obs-History"/>
+                    <resource>
+                        <Observation>
+                            <id value="1-Obs-History"/>
+                            <identifier>
+                                <system value="urn:ietf:rfc:3986"/>
+                                <value value="urn:uuid:9508f0e9-d2da-46ef-8fdb-642bffd66383"/>
+                            </identifier>
+                            <status value="final"/>
+                            <code>
+                                <coding>
+                                    <system value="urn:oid:1.3.6.1.4.1.19376.1.9.2.1"/>
+                                    <code value="COMMENT"/>
+                                </coding>
+                            </code>
+                            <valueCodeableConcept>
+                                <coding>
+                                    <system value="http://hcisolutions.ch/ig/analyzer/CodeSystem/history-changes"/>
+                                    <code value="comment"/>
+                                </coding>
+                            </valueCodeableConcept>
+                        </Observation>
+                    </resource>
+                </entry>
+                
+                <!-- Header1-MedStat-Analyzer.derivedFrom -->
+                <entry>
+                    <fullUrl value="http://test.fhir.ch/r4/Observation/1-Obs-COMMENT"/>
+                    <resource>
+                        <Observation>
+                            <id value="1-Obs-COMMENT"/>
+                            <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument">
+                                <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
+                                    <valueString value="PMP"/>
+                                </extension>
+                                <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype">
+                                    <valueCodeableConcept>
+                                        <coding>
+                                            <system value="http://loinc.org"/>
+                                            <code value="61356-2"/>
+                                            <display value="Medication pharmaceutical advice.extended"/>
+                                        </coding>
+                                    </valueCodeableConcept>
+                                </extension>
+                                <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
+                                    <valueDateTime value="2022-07-08T07:00:08+00:00"/>
+                                </extension>
+                            </extension>
+                            <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
+                                <extension url="id">
+                                    <valueIdentifier>
+                                        <system value="urn:ietf:rfc:3986"/>
+                                        <value value="urn:uuid:ce620825-baf3-4c6c-813f-4c5ad9a85a55"/>
+                                    </valueIdentifier>
+                                </extension>
+                                <extension url="externalDocumentId">
+                                    <valueIdentifier>
+                                        <system value="urn:ietf:rfc:3986"/>
+                                        <value value="urn:uuid:4cde7903-eb2d-4fc6-aa81-81b4ebb5805e"/>
+                                    </valueIdentifier>
+                                </extension>
+                            </extension>
+                            <identifier>
+                                <system value="urn:ietf:rfc:3986"/>
+                                <value value="urn:uuid:a60ec70c-3089-47b2-84bc-41f0d26f6ff1"/>
+                            </identifier>
+                            <status value="final"/>
+                            <code>
+                                <coding>
+                                    <system value="urn:oid:1.3.6.1.4.1.19376.1.9.2.1"/>
+                                    <code value="COMMENT"/>
+                                </coding>
+                            </code>
+                            <subject>
+                                <reference value="Patient/TrongSangNeffWingeier"/>
+                            </subject>
+                            <effectiveDateTime value="2019-02-15T11:00:00+01:00"/>
+                            <note>
+                                <text value="la patiente n’a pas pris le médicament car pas nécessaire, le Voltarène émulgel a fait son effet"/>
+                            </note>
+                        </Observation>
+                    </resource>
+                </entry>
+                
+            </Bundle>
+        </resource>
+    </parameter>
+</Parameters>
