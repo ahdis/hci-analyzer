@@ -1,0 +1,40 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+   <id value="document-type"/>
+   <url value="http://hcisolutions.ch/ig/analyzer/ValueSet/document-type"/>
+   <version value="0.4.0"/>
+   <name value="DocumentType"/>
+   <title value="Document Type"/>
+   <status value="active"/>
+   <publisher value="HCI Solutions AG"/>
+   <description value="ValueSet with codes for the different type of documents (Input Documents according to CH EMED)"/>
+   <compose>
+      <include>
+         <system value="http://loinc.org"/>
+         <!-- MTP -->
+         <concept>
+            <code value="77603-9"/>
+            <display value="Medication treatment plan.extended"/>
+         </concept>
+         <!-- PRE -->
+         <concept>
+            <code value="57833-6"/>
+            <display value="Prescription for medication"/>
+         </concept>
+         <!-- DIS -->
+         <concept>
+            <code value="60593-1"/>
+            <display value="Medication dispensed.extended"/>
+         </concept>
+         <!-- PADV -->
+         <concept>
+            <code value="61356-2"/>
+            <display value="Medication pharmaceutical advice.extended"/>
+         </concept>
+         <!-- CARD/LIST -->
+         <concept>
+            <code value="56445-0"/>
+            <display value="Medication summary"/>
+         </concept>
+      </include>
+   </compose>
+</ValueSet>

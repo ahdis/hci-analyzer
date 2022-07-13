@@ -534,6 +534,13 @@
       <name value="History Changes"/>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/document-type"/>
+      </reference>
+      <name value="Document Type"/>
+      <exampleBoolean value="false"/>
+    </resource>
 
     <!-- Pages -->
     <page>

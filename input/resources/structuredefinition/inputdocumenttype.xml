@@ -41,11 +41,10 @@
       <type>
         <code value="CodeableConcept"/>
       </type>
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://loinc.org"/>
-        </coding>
-      </patternCodeableConcept>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hcisolutions.ch/ig/analyzer/ValueSet/document-type"/>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

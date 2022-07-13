@@ -10,10 +10,11 @@ See also open issues on [GitHub](https://github.com/ahdis/hci-analyzer/issues).
 
 #### Added
 * Add slices for different entries in the Bundle to simplify the validation.
+* Add [ValueSet Document Type](ValueSet-document-type.html) incl. binding to [Extension Input Document Type](StructureDefinition-inputdocumenttype.html) to improve the validation.
 
 #### Changed / Updated
 * The working hypothesis until v0.3.0 was that the Medication List document as a dynamically generated document will not appear as an input document for the analyzer. This hypothesis was disproved and the implementation guide adapted accordingly (graphics, use case, examples, profiles). 
-* Profiles Output Document: Remove the minimum cardinality from following elements (for author medical decision) for the case, that the Composition.author from the Input Document is a Device
+* Profiles Output Document: Reduce the minimum cardinality from 1 to 0 of following elements (for author medical decision) for the case, that the Composition.author from the Input Document is a Device:
    * [Analyzer MedicationStatement Header](StructureDefinition-analyzer-medicationstatement-header.html):  informationSource -> Reference(Analyzer Patient \| Analyzer Practitioner)
    * [Analyzer MedicationStatement](StructureDefinition-analyzer-medicationstatement.html): informationSource	-> Reference(Analyzer Patient \| Analyzer Practitioner)
    * [Analyzer MedicationRequest](StructureDefinition-analyzer-medicationrequest.html):  performer -> Reference(Analyzer Practitioner)
