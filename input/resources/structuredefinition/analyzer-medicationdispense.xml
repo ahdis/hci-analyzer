@@ -39,7 +39,6 @@
       <element id="MedicationDispense.performer">
          <path value="MedicationDispense.performer"/>
          <short value="Who performed event"/>
-         <min value="1"/>
          <max value="1"/>
       </element>
       <element id="MedicationDispense.performer.actor">

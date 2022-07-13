@@ -103,7 +103,6 @@
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitioner"/>
          </type>
-         <min value="1"/>
       </element>
       <element id="MedicationStatement.derivedFrom">
          <path value="MedicationStatement.derivedFrom"/>
