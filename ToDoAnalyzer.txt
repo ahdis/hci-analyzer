@@ -1,0 +1,41 @@
+To do's for a manually adapted Input Document
+------------------------------------------------------------------------------------------
+- Only for IG: change meta.profile: http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters
+- Only for IG: add bundle profile for validation: http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationlist
+- Put each Bundle in a Parameter (Parameters.parameter.name ="ch-emed-doc")
+- Add Composition.extension:inputdocumentsource
+
+
+
+
+To do's for a manually adapted consolidated Medciation Card document (from Input Document)
+------------------------------------------------------------------------------------------
+- Only for IG: change meta.profile: http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-parameters
+- Only for IG: update id's 
+- Set a new Bundle.identifier & Composition.identifier
+- Set a new Bundle.timestamp & Composition.date
+- Remove from Composition: language, ext:infodocumentsource, ext:informationRecipient, confidentiality, custodian
+- Change Composition.type to SCT#721912009 "Medication summary document (record artifact)"
+- Change Composition.author to Device/Analyzer
+- Change Composition.title to "Medikationsplan"
+- Change Composition.section -> only set the reference(s) to the 'Header MedicationStatement'
+- From Input Document: Composition.author/Composition.section.author if Patient/Practitioner (author of medical decision)
+  - Header MedicationStatement.informationSource
+  - Original MedicationStatement.informationSource
+  - Original MedicationDispense.performer.actor
+  - Original MedicationRequest.performer
+  - Original Observation.performer
+- Header MedicationStatement
+  - add category
+  - may add informationSource (see above)
+  - add derivedFrom (history)
+  - remove reasonCode
+  - remove narrativeLink extension
+  - change identifier
+  - stopped medication: remove dosage (add dosage[nonstructured].text = "-") 
+- Original entries
+  - add extension infoinputdocument
+  - add category (not for obs)
+  - may add informationSource (see above)
+  - remove narrativeLink extension
+- Observation History  
