@@ -367,6 +367,13 @@
       <name value="PMP1 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/PMP1-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="PMP1 Output Analyzer"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+    </resource>
 
     <resource>
       <reference>
