@@ -372,8 +372,8 @@
                                     <valueCodeableConcept>
                                         <coding>
                                             <system value="http://loinc.org"/>
-                                            <code value="61356-2"/>
-                                            <display value="Medication pharmaceutical advice.extended"/>
+                                            <code value="56445-0"/>
+                                            <display value="Medication summary"/>
                                         </coding>
                                     </valueCodeableConcept>
                                 </extension>
