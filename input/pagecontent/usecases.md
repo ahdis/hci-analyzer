@@ -165,7 +165,7 @@ Cetirizine: 0-0-1-0 => 1-0-1-0
 {% include img.html img="uc_pmp-1.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
 
 #### CANCEL
-_TBD: Mapping issue for PMP testing (see also [here](https://github.com/ahdis/ch-emed-pmp/wiki/Test-Cases#cancel))_    
+_TBD: Issue in example for testing (see also [here](https://github.com/ahdis/ch-emed-pmp/wiki/Test-Cases#cancel))_    
 _Use Case with CANCEL shown [here](usecases.html#2-2-kommentar-zur-medikation-pharmaceutical-advice-document)_    
 
 Temesta: stoppen der Medikation
