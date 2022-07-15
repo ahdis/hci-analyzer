@@ -6,7 +6,8 @@
   <name value="InputDocumentType"/>
   <title value="Input Document Type"/>
   <status value="draft"/>
-  <description value="Extension for representing the type of the input document"/>
+  <description value="Extension for representing the type of the input document 
+  (especially important for differentiation, from which document a MedicationStatement comes (MTP -> new medication, CARD/LIST -> no change))"/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
