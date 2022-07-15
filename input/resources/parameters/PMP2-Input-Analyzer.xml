@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Parameters xmlns="http://hl7.org/fhir">
+    <!-- The parameter resource actually has no ID. Here the ID is used to show the resource in the IG. -->
+    <id value="PMP2-Input-Analyzer"/>
+    <meta>
+        <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
+    </meta>
+    <parameter>
+        <name value="ch-emed-doc"/>
+        <resource>
+            <Bundle xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationlist"/>
+                </meta>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:a1d14bf1-95e4-43a1-b2e7-b603d62c23b5"/>
+                </identifier>
+                <type value="document"/>
+                <timestamp value="2022-07-15T10:47:24+00:00"/>
+                <entry>
+                    <fullUrl value="urn:uuid:ebbf56c3-205d-4e58-beca-b9d887fe6f00"/>
+                    <resource>
+                        <Composition>
+                            <language value="fr-CH"/>
+                            <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
+                                <valueString value="PMP"/>
+                            </extension>
+                            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
+                                <valueReference>
+                                    <reference value="urn:uuid:97c4988d-54d4-4dc0-b27b-971c7a39d8bd"/>
+                                </valueReference>
+                            </extension>
+                            <identifier>
+                                <system value="urn:ietf:rfc:3986"/>
+                                <value value="urn:uuid:a1d14bf1-95e4-43a1-b2e7-b603d62c23b5"/>
+                            </identifier>
+                            <status value="final"/>
+                            <type>
+                                <coding>
+                                    <system value="http://loinc.org"/>
+                                    <code value="56445-0"/>
+                                    <display value="Medication summary"/>
+                                </coding>
+                                <coding>
+                                    <system value="http://snomed.info/sct"/>
+                                    <code value="721912009"/>
+                                    <display value="Medication summary document (record artifact)"/>
+                                </coding>
+                            </type>
+                            <subject>
+                                <reference value="urn:uuid:73c49eea-31cc-42f3-9873-f13046a5e3bc"/>
+                            </subject>
+                            <date value="2022-07-15T10:47:24+00:00"/>
+                            <author>
+                                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
+                                    <valueDateTime value="2022-07-15T10:47:24+00:00"/>
+                                </extension>
+                                <reference value="urn:uuid:f4509d5c-8d91-4d51-b793-1c1150566ff3"/>
+                            </author>
+                            <title value="Liste de médication"/>
+                            <confidentiality value="N">
+                                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode">
+                                    <valueCodeableConcept>
+                                        <coding>
+                                            <system value="http://snomed.info/sct"/>
+                                            <code value="17621005"/>
+                                            <display value="Normal (qualifier value)"/>
+                                        </coding>
+                                    </valueCodeableConcept>
+                                </extension>
+                            </confidentiality>
+                            <custodian>
+                                <reference value="urn:uuid:84764e49-628e-412e-a359-cbcff037113d"/>
+                            </custodian>
+                            <section>
+                                <title value="Liste de médicaments"/>
+                                <code>
+                                    <coding>
+                                        <system value="http://loinc.org"/>
+                                        <code value="10160-0"/>
+                                        <display value="History of medication use"/>
+                                    </coding>
+                                </code>
+                                <text>
+                                    <status value="generated"/>
+                                    <div xmlns="http://www.w3.org/1999/xhtml">
+                                        <span id="generator_comment">
+                                Cette liste de médication a été générée automatiquement par le PMP le July 15, 2022 at 10:47:24 AM UTC. Les paramètres utilisés pour la génération du document sont : les éléments de type Medication Treatment Plan Item, Prescription Item, Dispense Item et PADV sont inclus ; tous les traitements sont considérés.
+                                        </span>
+                                        <span id="pflny.">
+                                Texte narratif pour l'item 5a6ae511-8544-48ae-8990-57339eacb0bd
+                                        </span>
+                                        <p id="pflny.refpdf">
+                                Temesta Expidet cpr orodisp 1 mg, 0-0-0-1, durant 3 jours, raison: pour dormir
+                                        </p>
+                                        <span id="qqnuf.">
+                                Texte narratif pour l'item 55a6f7fa-2bf6-4c33-8716-e39d04b5c8b4
+                                        </span>
+                                        <p id="qqnuf.refpdf">
+                                selon téléphone avec le médecin, arrêter le traitement car inefficace
+                                        </p>
+                                    </div>
+                                </text>
+                                <entry>
+                                    <reference value="urn:uuid:3381e940-2f71-48ff-8892-7b7e9692d5f7"/>
+                                </entry>
+                                <entry>
+                                    <reference value="urn:uuid:8e51092e-94c2-4bbd-8606-e8cdc553a237"/>
+                                </entry>
+                            </section>
+                        </Composition>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:73c49eea-31cc-42f3-9873-f13046a5e3bc"/>
+                    <resource>
+                        <Patient>
+                            <identifier>
+                                <type>
+                                    <coding>
+                                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                                        <code value="MR"/>
+                                    </coding>
+                                </type>
+                                <system value="urn:oid:2.16.756.5.30.1.191.1.0.2.1"/>
+                                <value value="e7963774-9098-445f-9cab-5d52234b52c3"/>
+                            </identifier>
+                            <name>
+                                <family value="NEFF-WINGEIER"/>
+                                <given value="Trong Sang"/>
+                            </name>
+                            <gender value="male"/>
+                            <birthDate value="1987-10-08"/>
+                        </Patient>
+                    </resource>
+                </entry>
+                <!-- Composition.author -->
+                <!--<entry>
+                    <fullUrl value="urn:uuid:f4509d5c-8d91-4d51-b793-1c1150566ff3"/>
+                    <resource>
+                        <Practitioner>
+                            <identifier>
+                                <system value="urn:oid:2.51.1.3"/>
+                                <value value="7601002860123"/>
+                            </identifier>
+                        </Practitioner>
+                    </resource>
+                </entry>-->
+                <entry>
+                    <fullUrl value="urn:uuid:f4509d5c-8d91-4d51-b793-1c1150566ff3"/>
+                    <resource>
+                        <Device>
+                            <deviceName>
+                                <name value="CARA's PMP"/>
+                                <type value="model-name"/>
+                            </deviceName>
+                        </Device>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:84764e49-628e-412e-a359-cbcff037113d"/>
+                    <resource>
+                        <Organization>
+                            <identifier>
+                                <system value="urn:oid:2.51.1.3"/>
+                                <!--valid format-->
+                                <value value="7601000121219"/>
+                            </identifier>
+                            <name value="Hausarzt"/>
+                        </Organization>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:97c4988d-54d4-4dc0-b27b-971c7a39d8bd"/>
+                    <resource>
+                        <Organization>
+                            <name value="Hausarzt"/>
+                        </Organization>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:3381e940-2f71-48ff-8892-7b7e9692d5f7"/>
+                    <resource>
+                        <MedicationStatement>
+                            <contained>
+                                <Medication>
+                                    <id value="med"/>
+                                    <code>
+                                        <coding>
+                                            <system value="urn:oid:2.51.1.1"/>
+                                            <code value="7680471020733"/>
+                                            <display value="TEMESTA Expidet cpr orodisp 1 mg blister 20 pce"/>
+                                        </coding>
+                                        <text value="TEMESTA Expidet cpr orodisp 1 mg blister 20 pce"/>
+                                    </code>
+                                    <form>
+                                        <coding>
+                                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                                            <code value="10221000"/>
+                                            <display value="Film-coated tablet"/>
+                                        </coding>
+                                    </form>
+                                    <amount>
+                                        <numerator>
+                                            <value value="20"/>
+                                            <unit value="Piece"/>
+                                            <system value="http://unitsofmeasure.org"/>
+                                            <code value="{Piece}"/>
+                                        </numerator>
+                                        <denominator>
+                                            <value value="1"/>
+                                            <unit value="Package"/>
+                                            <system value="http://unitsofmeasure.org"/>
+                                            <code value="{Package}"/>
+                                        </denominator>
+                                    </amount>
+                                    <ingredient>
+                                        <itemCodeableConcept>
+                                            <coding>
+                                                <system value="http://snomed.info/sct"/>
+                                                <code value="387106007"/>
+                                                <display value="Lorazepam (substance)"/>
+                                            </coding>
+                                            <text value="Lorazépam"/>
+                                        </itemCodeableConcept>
+                                        <strength>
+                                            <numerator>
+                                                <value value="1"/>
+                                                <unit value="milligram"/>
+                                                <system value="http://unitsofmeasure.org"/>
+                                                <code value="mg"/>
+                                            </numerator>
+                                            <denominator>
+                                                <value value="1"/>
+                                                <unit value="Tablet (unit of presentation)"/>
+                                                <system value="http://snomed.info/sct"/>
+                                                <code value="732936001"/>
+                                            </denominator>
+                                        </strength>
+                                    </ingredient>
+                                </Medication>
+                            </contained>
+                            <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+                                <valueUrl value="#refpdf"/>
+                            </extension>
+                            <identifier>
+                                <system value="urn:ietf:rfc:3986"/>
+                                <value value="urn:uuid:5a6ae511-8544-48ae-8990-57339eacb0bd"/>
+                            </identifier>
+                            <status value="completed"/>
+                            <medicationReference>
+                                <reference value="#med"/>
+                            </medicationReference>
+                            <subject>
+                                <reference value="urn:uuid:73c49eea-31cc-42f3-9873-f13046a5e3bc"/>
+                            </subject>
+                            <reasonCode>
+                                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+                                    <valueUrl value="#pflny.refpdf"/>
+                                </extension>
+                                <text value="pour dormir"/>
+                            </reasonCode>
+                            <note>
+                                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+                                    <valueUrl value="#pflny.refpdf"/>
+                                </extension>
+                                <text value="laisser fondre 1 comprimé sous la langue ½ heure avant le coucher &#xA;(si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin)"/>
+                            </note>
+                            <dosage>
+                                <timing>
+                                    <repeat>
+                                        <boundsPeriod>
+                                            <start value="2019-02-12"/>
+                                            <end value="2019-02-15"/>
+                                        </boundsPeriod>
+                                        <when value="NIGHT"/>
+                                    </repeat>
+                                </timing>
+                                <route>
+                                    <coding>
+                                        <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                                        <code value="20053000"/>
+                                        <display value="Oral use"/>
+                                    </coding>
+                                </route>
+                                <doseAndRate>
+                                    <doseQuantity>
+                                        <value value="1"/>
+                                        <unit value="Tablet (unit of presentation)"/>
+                                        <system value="http://snomed.info/sct"/>
+                                        <code value="732936001"/>
+                                    </doseQuantity>
+                                </doseAndRate>
+                            </dosage>
+                        </MedicationStatement>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:8e51092e-94c2-4bbd-8606-e8cdc553a237"/>
+                    <resource>
+                        <Observation>
+                            <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
+                                <extension url="id">
+                                    <valueIdentifier>
+                                        <system value="urn:ietf:rfc:3986"/>
+                                        <value value="urn:uuid:5a6ae511-8544-48ae-8990-57339eacb0bd"/>
+                                    </valueIdentifier>
+                                </extension>
+                                <extension url="externalDocumentId">
+                                    <valueIdentifier>
+                                        <system value="urn:ietf:rfc:3986"/>
+                                        <value value="urn:uuid:5a6ae511-8544-48ae-8990-57339eacb0bd"/>
+                                    </valueIdentifier>
+                                </extension>
+                            </extension>
+                            <identifier>
+                                <system value="urn:ietf:rfc:3986"/>
+                                <value value="urn:uuid:55a6f7fa-2bf6-4c33-8716-e39d04b5c8b4"/>
+                            </identifier>
+                            <status value="final"/>
+                            <code>
+                                <coding>
+                                    <system value="urn:oid:1.3.6.1.4.1.19376.1.9.2.1"/>
+                                    <code value="CANCEL"/>
+                                </coding>
+                            </code>
+                            <subject>
+                                <reference value="urn:uuid:73c49eea-31cc-42f3-9873-f13046a5e3bc"/>
+                            </subject>
+                            <effectiveDateTime value="2019-02-15T11:00:00+01:00"/>
+                            <note>
+                                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
+                                    <valueUrl value="#refpdf"/>
+                                </extension>
+                                <text value="selon téléphone avec le médecin, arrêter le traitement car inefficace"/>
+                            </note>
+                        </Observation>
+                    </resource>
+                </entry>
+            </Bundle>
+        </resource>
+    </parameter>
+</Parameters>

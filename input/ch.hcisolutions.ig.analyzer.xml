@@ -6,7 +6,7 @@
   <name value="ANALYZER"/>
   <title value="Analyzer (R4)"/>
   <status value="draft"/>
-  <date value="2022-07-05"/>
+  <date value="2022-07-15"/>
   <publisher value="HCI Solutions AG"/>
   <contact>
     <name value="HCI Solutions AG"/>
@@ -372,6 +372,21 @@
         <reference value="Parameters/PMP1-ConsolidatedMedicationCard"/>
       </reference>
       <name value="PMP1 Output Analyzer"/>
+      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="Parameters/PMP2-Input-Analyzer"/>
+      </reference>
+      <name value="PMP2 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/PMP2-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="PMP2 Output Analyzer"/>
       <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
