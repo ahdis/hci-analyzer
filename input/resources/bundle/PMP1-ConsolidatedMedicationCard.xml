@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="PMP1-ConsolidatedMedicationCard"/>
+    <meta>
+        <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:d5065b47-6ec1-4088-b650-83a7f745c6c0"/>
+    </identifier>
+    <type value="document"/>
+    <timestamp value="2022-06-12T12:00:00.000+00:00"/>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Composition/PMP1-Analyzer"/>
+        <resource>
+            <Composition>
+                <id value="PMP1-Analyzer"/>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:d5065b47-6ec1-4088-b650-83a7f745c6c0"/>
+                </identifier>
+                <status value="final"/>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="721912009"/>
+                        <display value="Medication summary document (record artifact)"/>
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="Patient/TrongSangNeffWingeier"/>
+                </subject>
+                <date value="2022-06-12T12:00:00.000+00:00"/>
+                <author>
+                    <reference value="Device/Analyzer"/>
+                </author>
+                <title value="Medikationsplan"/>
+                <section>
+                    <!-- MTP: 1-0-1-0 (changed)-->
+                    <entry>
+                        <reference value="MedicationStatement/Header-MedStat-Analyzer"/>
+                    </entry>
+                </section>
+            </Composition>
+        </resource>
+    </entry>
+
+    <!-- Composition.author -->
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Device/Analyzer"/>
+        <resource>
+            <Device>
+                <id value="Analyzer"/>
+                <deviceName>
+                    <name value="Documedis Medical Data Analyzer CE"/>
+                    <type value="user-friendly-name"/>
+                </deviceName>
+                <version>
+                    <value value="1.0.0.0"/>
+                </version>
+            </Device>
+        </resource>
+    </entry>
+
+    <!-- Composition.subject -->
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Patient/TrongSangNeffWingeier"/>
+        <resource>
+            <Patient>
+                <id value="TrongSangNeffWingeier"/>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="MR"/>
+                        </coding>
+                    </type>
+                    <system value="urn:oid:2.16.756.5.30.1.191.1.0.2.1"/>
+                    <value value="e7963774-9098-445f-9cab-5d52234b52c3"/>
+                </identifier>
+                <name>
+                    <family value="NEFF-WINGEIER"/>
+                    <given value="Trong Sang"/>
+                </name>
+                <gender value="male"/>
+                <birthDate value="1987-10-08"/>
+            </Patient>
+        </resource>
+    </entry>
+
+    <!-- MTP: 0-0-1-0 MedicationStatement/Header-MedStat-Analyzer -->
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/Header-MedStat-Analyzer"/>
+        <resource>
+            <MedicationStatement>
+                <id value="Header-MedStat-Analyzer"/>
+                <contained>
+                    <Medication>
+                        <id value="med"/>
+                        <code>
+                            <coding>
+                                <system value="urn:oid:2.51.1.1"/>
+                                <code value="7680651190041"/>
+                                <display value="CETIRIZIN Mepha Lactab 10 mg blister 10 pce"/>
+                            </coding>
+                            <text value="CETIRIZIN Mepha Lactab 10 mg blister 10 pce"/>
+                        </code>
+                        <form>
+                            <coding>
+                                <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                                <code value="10221000"/>
+                                <display value="Film-coated tablet"/>
+                            </coding>
+                        </form>
+                        <amount>
+                            <numerator>
+                                <value value="10"/>
+                                <unit value="Piece"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="{Piece}"/>
+                            </numerator>
+                            <denominator>
+                                <value value="1"/>
+                                <unit value="Package"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="{Package}"/>
+                            </denominator>
+                        </amount>
+                        <ingredient>
+                            <itemCodeableConcept>
+                                <coding>
+                                    <system value="http://snomed.info/sct"/>
+                                    <code value="372523007"/>
+                                    <display value="Cetirizine (substance)"/>
+                                </coding>
+                                <text value="Cetirizine"/>
+                            </itemCodeableConcept>
+                            <strength>
+                                <numerator>
+                                    <value value="10"/>
+                                    <unit value="milligram"/>
+                                    <system value="http://unitsofmeasure.org"/>
+                                    <code value="mg"/>
+                                </numerator>
+                                <denominator>
+                                    <value value="1"/>
+                                    <unit value="Tablet (unit of presentation)"/>
+                                    <system value="http://snomed.info/sct"/>
+                                    <code value="732936001"/>
+                                </denominator>
+                            </strength>
+                        </ingredient>
+                    </Medication>
+                </contained>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:fb2f9fa1-544f-40b2-a4f6-a23641c08703"/>
+                </identifier>
+                <status value="completed"/>
+                <category>
+                    <coding>
+                        <system value="http://www.whocc.no/atc"/>
+                        <code value="N"/>
+                        <display value="Nervensystem"/>
+                    </coding>
+                </category>
+                <medicationReference>
+                    <reference value="#med"/>
+                </medicationReference>
+                <subject>
+                    <reference value="Patient/TrongSangNeffWingeier"/>
+                </subject>
+                <!-- History -->
+                <derivedFrom>
+                    <reference value="MedicationStatement/1-MedStat-MTP"/>
+                </derivedFrom>
+                <derivedFrom>
+                    <reference value="Observation/1-Obs-History"/>
+                </derivedFrom>
+                <derivedFrom>
+                    <reference value="Observation/1-Obs-CHANGE"/>
+                </derivedFrom>
+                <dosage>
+                    <timing>
+                        <repeat>
+                            <boundsPeriod>
+                                <start value="2019-02-27"/>
+                                <end value="2019-03-01"/>
+                            </boundsPeriod>
+                            <when value="MORN"/>
+                            <when value="EVE"/>
+                        </repeat>
+                    </timing>
+                    <route>
+                        <coding>
+                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                            <code value="20053000"/>
+                            <display value="Oral use"/>
+                        </coding>
+                    </route>
+                    <doseAndRate>
+                        <doseQuantity>
+                            <value value="1"/>
+                            <unit value="Tablet (unit of presentation)"/>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="732936001"/>
+                        </doseQuantity>
+                    </doseAndRate>
+                </dosage>
+            </MedicationStatement>
+        </resource>
+    </entry>
+
+    <!-- Header-MedStat-Analyzer.derivedFrom -->
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/1-MedStat-MTP"/>
+        <resource>
+            <MedicationStatement>
+                <id value="1-MedStat-MTP"/>
+                <contained>
+                    <Medication>
+                        <id value="med"/>
+                        <code>
+                            <coding>
+                                <system value="urn:oid:2.51.1.1"/>
+                                <code value="7680651190041"/>
+                                <display value="CETIRIZIN Mepha Lactab 10 mg blister 10 pce"/>
+                            </coding>
+                            <text value="CETIRIZIN Mepha Lactab 10 mg blister 10 pce"/>
+                        </code>
+                        <form>
+                            <coding>
+                                <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                                <code value="10221000"/>
+                                <display value="Film-coated tablet"/>
+                            </coding>
+                        </form>
+                        <amount>
+                            <numerator>
+                                <value value="10"/>
+                                <unit value="Piece"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="{Piece}"/>
+                            </numerator>
+                            <denominator>
+                                <value value="1"/>
+                                <unit value="Package"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="{Package}"/>
+                            </denominator>
+                        </amount>
+                        <ingredient>
+                            <itemCodeableConcept>
+                                <coding>
+                                    <system value="http://snomed.info/sct"/>
+                                    <code value="372523007"/>
+                                    <display value="Cetirizine (substance)"/>
+                                </coding>
+                                <text value="Cetirizine"/>
+                            </itemCodeableConcept>
+                            <strength>
+                                <numerator>
+                                    <value value="10"/>
+                                    <unit value="milligram"/>
+                                    <system value="http://unitsofmeasure.org"/>
+                                    <code value="mg"/>
+                                </numerator>
+                                <denominator>
+                                    <value value="1"/>
+                                    <unit value="Tablet (unit of presentation)"/>
+                                    <system value="http://snomed.info/sct"/>
+                                    <code value="732936001"/>
+                                </denominator>
+                            </strength>
+                        </ingredient>
+                    </Medication>
+                </contained>
+                <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument">
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
+                        <valueString value="PMP"/>
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="http://loinc.org"/>
+                                <code value="56445-0"/>
+                                <display value="Medication summary"/>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
+                        <valueDateTime value="2022-07-08T07:00:08+00:00"/>
+                    </extension>
+                </extension>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:4340fa56-50ac-4e90-ae3b-dcd35803ec38"/>
+                </identifier>
+                <status value="completed"/>
+                <category>
+                    <coding>
+                        <system value="http://www.whocc.no/atc"/>
+                        <code value="N"/>
+                        <display value="Nervensystem"/>
+                    </coding>
+                </category>
+                <medicationReference>
+                    <reference value="#med"/>
+                </medicationReference>
+                <subject>
+                    <reference value="Patient/TrongSangNeffWingeier"/>
+                </subject>
+                <reasonCode>
+                    <text value="allergie"/>
+                </reasonCode>
+                <dosage>
+                    <timing>
+                        <repeat>
+                            <boundsPeriod>
+                                <start value="2019-02-27"/>
+                                <end value="2019-03-01"/>
+                            </boundsPeriod>
+                            <when value="EVE"/>
+                        </repeat>
+                    </timing>
+                    <route>
+                        <coding>
+                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                            <code value="20053000"/>
+                            <display value="Oral use"/>
+                        </coding>
+                    </route>
+                    <doseAndRate>
+                        <doseQuantity>
+                            <value value="1"/>
+                            <unit value="Tablet (unit of presentation)"/>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="732936001"/>
+                        </doseQuantity>
+                    </doseAndRate>
+                </dosage>
+            </MedicationStatement>
+        </resource>
+    </entry>
+
+    <!-- Header-MedStat-Analyzer.derivedFrom -->
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Observation/1-Obs-History"/>
+        <resource>
+            <Observation>
+                <id value="1-Obs-History"/>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:46a99abb-5637-44fa-9215-e2090df775e5"/>
+                </identifier>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="urn:oid:1.3.6.1.4.1.19376.1.9.2.1"/>
+                        <code value="CHANGE"/>
+                    </coding>
+                </code>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://hcisolutions.ch/ig/analyzer/CodeSystem/history-changes"/>
+                        <code value="changeDosage"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+
+    <!-- Header-MedStat-Analyzer.derivedFrom -->
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Observation/1-Obs-CHANGE"/>
+        <resource>
+            <Observation>
+                <id value="1-Obs-CHANGE"/>
+                <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument">
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
+                        <valueString value="PMP"/>
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="http://loinc.org"/>
+                                <code value="56445-0"/>
+                                <display value="Medication summary"/>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
+                        <valueDateTime value="2022-07-08T07:00:08+00:00"/>
+                    </extension>
+                </extension>
+                <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
+                    <extension url="id">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:4340fa56-50ac-4e90-ae3b-dcd35803ec38"/>
+                        </valueIdentifier>
+                    </extension>
+                    <extension url="externalDocumentId">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:33c72b02-0b5e-499f-853f-d6b8594610e4"/>
+                        </valueIdentifier>
+                    </extension>
+                </extension>
+                <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-medicationstatement-changed">
+                    <valueReference>
+                        <!--<reference value="urn:uuid:6d684f1a-885b-4fe7-be01-56e1f9c4c2cd"/>-->
+                        <reference value="MedicationStatement/2-MedStat-changed"/>
+                    </valueReference>
+                </extension>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:1339a426-b61e-4c99-acac-450724fcf6d9"/>
+                </identifier>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="urn:oid:1.3.6.1.4.1.19376.1.9.2.1"/>
+                        <code value="CHANGE"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/TrongSangNeffWingeier"/>
+                </subject>
+                <effectiveDateTime value="2019-02-28T11:00:00+01:00"/>
+                <note>
+                    <text value="pas de réaction significative avec le traitement 1 x jour. -&gt; 2x/j."/>
+                </note>
+            </Observation>
+        </resource>
+    </entry>
+
+    <!-- MedicationStatement changed -->
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/2-MedStat-changed"/>
+        <resource>
+            <MedicationStatement>
+                <id value="2-MedStat-changed"/>
+                <contained>
+                    <Medication>
+                        <id value="med"/>
+                        <code>
+                            <coding>
+                                <system value="urn:oid:2.51.1.1"/>
+                                <code value="7680651190041"/>
+                                <display value="CETIRIZIN Mepha Lactab 10 mg blister 10 pce"/>
+                            </coding>
+                            <text value="CETIRIZIN Mepha Lactab 10 mg blister 10 pce"/>
+                        </code>
+                        <form>
+                            <coding>
+                                <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                                <code value="10221000"/>
+                                <display value="Film-coated tablet"/>
+                            </coding>
+                        </form>
+                        <amount>
+                            <numerator>
+                                <value value="10"/>
+                                <unit value="Piece"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="{Piece}"/>
+                            </numerator>
+                            <denominator>
+                                <value value="1"/>
+                                <unit value="Package"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="{Package}"/>
+                            </denominator>
+                        </amount>
+                        <ingredient>
+                            <itemCodeableConcept>
+                                <coding>
+                                    <system value="http://snomed.info/sct"/>
+                                    <code value="372523007"/>
+                                    <display value="Cetirizine (substance)"/>
+                                </coding>
+                                <text value="Cetirizine"/>
+                            </itemCodeableConcept>
+                            <strength>
+                                <numerator>
+                                    <value value="10"/>
+                                    <unit value="milligram"/>
+                                    <system value="http://unitsofmeasure.org"/>
+                                    <code value="mg"/>
+                                </numerator>
+                                <denominator>
+                                    <value value="1"/>
+                                    <unit value="Tablet (unit of presentation)"/>
+                                    <system value="http://snomed.info/sct"/>
+                                    <code value="732936001"/>
+                                </denominator>
+                            </strength>
+                        </ingredient>
+                    </Medication>
+                </contained>
+                <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument">
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
+                        <valueString value="PMP"/>
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="http://loinc.org"/>
+                                <code value="56445-0"/>
+                                <display value="Medication summary"/>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
+                        <valueDateTime value="2022-07-08T07:00:08+00:00"/>
+                    </extension>
+                </extension>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:0b015b1d-2e25-441a-bb4c-95c39e1de4ad"/>
+                </identifier>
+                <status value="completed"/>
+                <category>
+                    <coding>
+                        <system value="http://www.whocc.no/atc"/>
+                        <code value="N"/>
+                        <display value="Nervensystem"/>
+                    </coding>
+                </category>
+                <medicationReference>
+                    <reference value="#med"/>
+                </medicationReference>
+                <subject>
+                    <reference value="Patient/TrongSangNeffWingeier"/>
+                </subject>
+                <reasonCode>
+                    <text value="allergie"/>
+                </reasonCode>
+                <dosage>
+                    <timing>
+                        <repeat>
+                            <boundsPeriod>
+                                <start value="2019-02-27"/>
+                                <end value="2019-03-01"/>
+                            </boundsPeriod>
+                            <when value="MORN"/>
+                            <when value="EVE"/>
+                        </repeat>
+                    </timing>
+                    <route>
+                        <coding>
+                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                            <code value="20053000"/>
+                            <display value="Oral use"/>
+                        </coding>
+                    </route>
+                    <doseAndRate>
+                        <doseQuantity>
+                            <value value="1"/>
+                            <unit value="Tablet (unit of presentation)"/>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="732936001"/>
+                        </doseQuantity>
+                    </doseAndRate>
+                </dosage>
+            </MedicationStatement>
+        </resource>
+    </entry>
+
+</Bundle>

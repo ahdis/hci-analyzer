@@ -13,9 +13,6 @@ Profile for the Analyzer IN Composition
 These profiles define the requirements for a minimum data set for the Medication Card document consolidated by the Analyzer.   
 _**Remark:** The requirements for this Medication Card document consolidated by the Analyzer do **not** correspond to the requirements of the [CHMED Medication Card document](https://chmed.emediplan.ch/fhir/StructureDefinition-chmed-card-bundle.html)._
 
-* [Analyzer OUT Parameters](StructureDefinition-analyzer-out-parameters.html)   
-Profile for the Analyzer OUT Parameters for the 'InputOutputParametersAnalyzer' operation (Output: cons-medicationcard)
-
 * [Analyzer OUT Bundle](StructureDefinition-analyzer-out-bundle.html)   
 Profile for the Analyzer OUT Bundle
 

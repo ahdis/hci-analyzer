@@ -2,23 +2,23 @@
   <id value="analyzer"/>
   <url value="http://hcisolutions.ch/ig/analyzer/OperationDefinition/analyzer"/>
   <version value="0.1.0"/>
-  <name value="InputOutputParametersAnalyzer"/>
-  <title value="Input Output Parameters Analyzer"/>
+  <name value="InputOutputAnalyzer"/>
+  <title value="Input Output Analyzer"/>
   <status value="draft"/>
   <kind value="operation"/>
-  <description value="Definition of the input and output Parameters for the Analyzer"/>
+  <description value="Definition of the input (Parameters) and output (Bundle) for the Analyzer"/>
   <code value="analyze"/>
   <system value="false"/>
   <type value="true"/>
   <instance value="false"/>
   <inputProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
-  <outputProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-parameters"/>
+  <outputProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
   <parameter>
     <name value="ch-emed-doc"/>
     <use value="in"/>
     <min value="1"/>
     <max value="*"/>
-    <documentation value="eMedication documents according to CH EMED"/>
+    <documentation value="eMedication documents according to CH EMED (in a Parameters resource)"/>
     <type value="Bundle"/>
   </parameter>
   <parameter>
@@ -26,7 +26,7 @@
     <use value="out"/>
     <min value="1"/>
     <max value="1"/>
-    <documentation value="Consolidated Medication Card document"/>
+    <documentation value="Consolidated Medication Card document (NOT in a Parameters resource)"/>
     <type value="Bundle"/>
   </parameter>
 </OperationDefinition>
