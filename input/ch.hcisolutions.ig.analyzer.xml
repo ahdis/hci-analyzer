@@ -606,5 +606,9 @@
       <code value="copyrightyear"/>
       <value value="2020+"/>
     </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="*/*"/>
+    </parameter>
   </definition>
 </ImplementationGuide>
