@@ -44,10 +44,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/1-1-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/1-1-ConsolidatedMedicationCard"/>
       </reference>
       <name value="1-1 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -59,10 +59,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/1-2-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/1-2-ConsolidatedMedicationCard"/>
       </reference>
       <name value="1-2 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -74,10 +74,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/2-1-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/2-1-ConsolidatedMedicationCard"/>
       </reference>
       <name value="2-1 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -89,10 +89,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/2-2-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/2-2-ConsolidatedMedicationCard"/>
       </reference>
       <name value="2-2 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -104,10 +104,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/2-2-Comment-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/2-2-Comment-ConsolidatedMedicationCard"/>
       </reference>
       <name value="2-2 Comment Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -119,10 +119,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/2-3-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/2-3-ConsolidatedMedicationCard"/>
       </reference>
       <name value="2-3 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
     <resource>
       <reference>
@@ -133,10 +133,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/BeloczokMTP-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/BeloczokMTP-ConsolidatedMedicationCard"/>
       </reference>
       <name value="2-3 Output Analyzer (test case)"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -148,10 +148,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/2-4-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/2-4-ConsolidatedMedicationCard"/>
       </reference>
       <name value="2-4 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
     <resource>
       <reference>
@@ -162,10 +162,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/BeloczokDIS-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/BeloczokDIS-ConsolidatedMedicationCard"/>
       </reference>
       <name value="2-4 Output Analyzer (test case)"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -177,10 +177,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/2-5-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/2-5-ConsolidatedMedicationCard"/>
       </reference>
       <name value="2-5 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
     <resource>
       <reference>
@@ -191,10 +191,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/NorvascMTP-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/NorvascMTP-ConsolidatedMedicationCard"/>
       </reference>
       <name value="2-5 Output Analyzer (test case)"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -206,10 +206,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/2-6-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/2-6-ConsolidatedMedicationCard"/>
       </reference>
       <name value="2-6 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
     <resource>
       <reference>
@@ -220,10 +220,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/NorvascPRE-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/NorvascPRE-ConsolidatedMedicationCard"/>
       </reference>
       <name value="2-6 Output Analyzer (test case)"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -235,10 +235,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/2-7-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/2-7-ConsolidatedMedicationCard"/>
       </reference>
       <name value="2-7 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
     <resource>
       <reference>
@@ -249,10 +249,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/NorvascCard-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/NorvascCard-ConsolidatedMedicationCard"/>
       </reference>
       <name value="2-7 Output Analyzer (test case)"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -264,10 +264,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/A1-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/A1-ConsolidatedMedicationCard"/>
       </reference>
       <name value="A1 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -279,10 +279,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/A2-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/A2-ConsolidatedMedicationCard"/>
       </reference>
       <name value="A2 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -294,10 +294,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/A3-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/A3-ConsolidatedMedicationCard"/>
       </reference>
       <name value="A3 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -309,10 +309,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/A4-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/A4-ConsolidatedMedicationCard"/>
       </reference>
       <name value="A4 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -324,10 +324,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/A5-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/A5-ConsolidatedMedicationCard"/>
       </reference>
       <name value="A5 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -339,10 +339,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/A6-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/A6-ConsolidatedMedicationCard"/>
       </reference>
       <name value="A6 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -354,10 +354,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/A7-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/A7-ConsolidatedMedicationCard"/>
       </reference>
       <name value="A7 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -369,10 +369,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/PMP1-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/PMP1-ConsolidatedMedicationCard"/>
       </reference>
       <name value="PMP1 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -384,10 +384,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/PMP2-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/PMP2-ConsolidatedMedicationCard"/>
       </reference>
       <name value="PMP2 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <resource>
@@ -399,10 +399,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/PMP3-ConsolidatedMedicationCard"/>
+        <reference value="Bundle/PMP3-ConsolidatedMedicationCard"/>
       </reference>
       <name value="PMP3 Output Analyzer"/>
-      <description value="Example of OUT Parameters 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
     </resource>
 
     <!-- Analyzer: IN StructureDefinitions -->
@@ -426,12 +426,6 @@
     </resource>
 
     <!-- OUT StructureDefinitions -->
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/analyzer-out-parameters"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/analyzer-out-bundle"/>
