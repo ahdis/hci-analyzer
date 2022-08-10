@@ -77,6 +77,7 @@
       </element>
       <element id="MedicationStatement.informationSource">
          <path value="MedicationStatement.informationSource"/>
+         <min value="1"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>

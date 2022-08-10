@@ -98,6 +98,7 @@
       <element id="MedicationStatement.informationSource">
          <path value="MedicationStatement.informationSource"/>
          <short value="The author of the medical decision"/>
+         <min value="1"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>

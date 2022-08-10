@@ -14,12 +14,6 @@ See also open issues on [GitHub](https://github.com/ahdis/hci-analyzer/issues).
 
 #### Changed / Updated
 * The working hypothesis until v0.3.0 was that the Medication List document as a dynamically generated document will not appear as an input document for the analyzer. This hypothesis was disproved and the implementation guide adapted accordingly (graphics, use case, examples, profiles). 
-* Profiles Output Document: Reduce the minimum cardinality from 1 to 0 of following elements (for author medical decision) for the case, that the Composition.author from the Input Document is a Device:
-   * [Analyzer MedicationStatement Header](StructureDefinition-analyzer-medicationstatement-header.html):  informationSource -> Reference(Analyzer Patient \| Analyzer Practitioner)
-   * [Analyzer MedicationStatement](StructureDefinition-analyzer-medicationstatement.html): informationSource	-> Reference(Analyzer Patient \| Analyzer Practitioner)
-   * [Analyzer MedicationRequest](StructureDefinition-analyzer-medicationrequest.html):  performer -> Reference(Analyzer Practitioner)
-   * [Analyzer MedicationDispense](StructureDefinition-analyzer-medicationdispense.html): performer.actor -> Reference(Analyzer Practitioner)
-   * [Analyzer Observation PADV](StructureDefinition-analyzer-observationpadv.html): performer -> Reference(Analyzer Practitioner)
 
 #### Fixed
 

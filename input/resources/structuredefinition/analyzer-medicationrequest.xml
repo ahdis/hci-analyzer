@@ -38,6 +38,7 @@
       <element id="MedicationRequest.performer">
          <path value="MedicationRequest.performer"/>
          <short value="Practitioner"/>
+         <min value="1"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitioner"/>

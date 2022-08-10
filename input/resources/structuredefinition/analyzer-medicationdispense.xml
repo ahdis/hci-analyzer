@@ -44,6 +44,7 @@
       <element id="MedicationDispense.performer.actor">
          <path value="MedicationDispense.performer.actor"/>
          <short value="Individual who was performing"/>
+         <min value="1"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitioner"/>
