@@ -4,7 +4,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### v0.4.0 (from July 2022)
 
 #### Open Issues
-* ...
+* [#3](https://github.com/ahdis/hci-analyzer/issues/3): Missing author of medical decision
 
 See also open issues on [GitHub](https://github.com/ahdis/hci-analyzer/issues).
 

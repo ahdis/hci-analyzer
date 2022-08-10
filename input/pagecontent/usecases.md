@@ -156,6 +156,8 @@ Arzt Dr. Dupont verordnet zusätzlich zu den Brufen Tabletten (600 mg) die Brufe
 ### Anwendungsfälle CH EMED PMP
 Die in diesem Abschnitt abgebildeten Anwendungsfälle basieren auf Elementen des Fallbeispiels ([fr](http://build.fhir.org/ig/ahdis/ch-emed-pmp/usecase-french.html)), welches im CH EMED PMP Implementierungsleitfaden abgebildet ist. Die Inputdokumente für den Analyzer (Medication List document) kommen vom PMP.
 
+**Note**: [Open issue #3](https://github.com/ahdis/hci-analyzer/issues/3) -> Missing author of medical decision
+
 #### CHANGE
 Cetirizine: 0-0-1-0 => 1-0-1-0
 * [PMP1 Input Analyzer](Parameters-PMP1-Input-Analyzer.html)
