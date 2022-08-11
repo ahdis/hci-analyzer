@@ -340,6 +340,13 @@
                 </identifier>
                 <status value="completed"/>
                 <intent value="order"/>
+                <category>
+                    <coding>
+                        <system value="http://www.whocc.no/atc"/>
+                        <code value="C"/>
+                        <display value="Kardiovaskuläres System"/>
+                    </coding>
+                </category>
                 <medicationReference>
                     <reference value="#med"/>
                 </medicationReference>

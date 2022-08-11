@@ -373,6 +373,13 @@
                     <value value="urn:uuid:d8143fea-4778-11e6-beb8-9e71128cae77"/>
                 </identifier>
                 <status value="completed"/>
+                <category>
+                    <coding>
+                        <system value="http://www.whocc.no/atc"/>
+                        <code value="C"/>
+                        <display value="Kardiovaskuläres System"/>
+                    </coding>
+                </category>
                 <medicationReference>
                     <reference value="#med"/>
                 </medicationReference>

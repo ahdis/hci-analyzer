@@ -28,6 +28,48 @@
             <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument" />
          </type>
       </element>
+
+      <element id="MedicationDispense.category">
+         <path value="MedicationDispense.category"/>
+         <min value="1"/>
+      </element>
+      <element id="MedicationDispense.category.coding">
+         <path value="MedicationDispense.category.coding"/>
+         <slicing>
+            <discriminator>
+               <type value="value"/>
+               <path value="system"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
+      </element>
+      <element id="MedicationDispense.category.coding:ATC">
+         <path value="MedicationDispense.category.coding"/>
+         <sliceName value="ATC"/>
+         <short value="ATC code (Level 1) if possible"/>
+         <min value="1"/>
+      </element>
+      <element id="MedicationDispense.category.coding:ATC.system">
+         <path value="MedicationDispense.category.coding.system"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedUri value="http://www.whocc.no/atc"/>
+      </element>
+      <element id="MedicationDispense.category.coding:ATC.code">
+         <path value="MedicationDispense.category.coding.code"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="MedicationDispense.category.coding:ATC.display">
+         <path value="MedicationDispense.category.coding.display"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="MedicationDispense.category.text">
+         <path value="MedicationDispense.category.text"/>
+         <short value="Note that no ATC Code is applied"/>
+      </element>
+
       <element id="MedicationDispense.subject">
          <path value="MedicationDispense.subject"/>
          <type>

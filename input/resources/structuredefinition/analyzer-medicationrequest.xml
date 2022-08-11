@@ -5,7 +5,7 @@
    <name value="AnalyzerMedicationRequest"/>
    <title value="Analyzer MedicationRequest"/>
    <status value="draft"/>
-   <description value="Profile for the Analyzer MedicationStatement"/>
+   <description value="Profile for the Analyzer MedicationRequest"/>
    <fhirVersion value="4.0.1"/>
    <kind value="resource"/>
    <abstract value="false"/>
@@ -28,6 +28,48 @@
             <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument" />
          </type>
       </element>
+
+      <element id="MedicationRequest.category">
+         <path value="MedicationRequest.category"/>
+         <min value="1"/>
+      </element>
+      <element id="MedicationRequest.category.coding">
+         <path value="MedicationRequest.category.coding"/>
+         <slicing>
+            <discriminator>
+               <type value="value"/>
+               <path value="system"/>
+            </discriminator>
+            <rules value="open"/>
+         </slicing>
+      </element>
+      <element id="MedicationRequest.category.coding:ATC">
+         <path value="MedicationRequest.category.coding"/>
+         <sliceName value="ATC"/>
+         <short value="ATC code (Level 1) if possible"/>
+         <min value="1"/>
+      </element>
+      <element id="MedicationRequest.category.coding:ATC.system">
+         <path value="MedicationRequest.category.coding.system"/>
+         <min value="1"/>
+         <max value="1"/>
+         <fixedUri value="http://www.whocc.no/atc"/>
+      </element>
+      <element id="MedicationRequest.category.coding:ATC.code">
+         <path value="MedicationRequest.category.coding.code"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="MedicationRequest.category.coding:ATC.display">
+         <path value="MedicationRequest.category.coding.display"/>
+         <min value="0"/>
+         <max value="1"/>
+      </element>
+      <element id="MedicationRequest.category.text">
+         <path value="MedicationRequest.category.text"/>
+         <short value="Note that no ATC Code is applied"/>
+      </element>
+
       <element id="MedicationRequest.subject">
          <path value="MedicationRequest.subject"/>
          <type>
