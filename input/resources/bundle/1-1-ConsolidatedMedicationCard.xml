@@ -60,6 +60,7 @@
         <fullUrl value="http://test.fhir.ch/r4/Patient/MonikaWegmueller"/>
         <resource>
             <Patient>
+                <id value="MonikaWegmueller"/>
                 <identifier>
                     <type>
                         <coding>
