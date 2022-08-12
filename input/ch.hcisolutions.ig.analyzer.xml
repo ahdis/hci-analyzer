@@ -41,6 +41,7 @@
       </reference>
       <name value="1-1 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -48,6 +49,7 @@
       </reference>
       <name value="1-1 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -56,6 +58,7 @@
       </reference>
       <name value="1-2 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -63,6 +66,7 @@
       </reference>
       <name value="1-2 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -71,6 +75,7 @@
       </reference>
       <name value="2-1 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -78,6 +83,7 @@
       </reference>
       <name value="2-1 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -86,6 +92,7 @@
       </reference>
       <name value="2-2 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -93,6 +100,7 @@
       </reference>
       <name value="2-2 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -101,6 +109,7 @@
       </reference>
       <name value="2-2 Comment Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -108,6 +117,7 @@
       </reference>
       <name value="2-2 Comment Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -116,6 +126,7 @@
       </reference>
       <name value="2-3 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -123,6 +134,7 @@
       </reference>
       <name value="2-3 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
     <resource>
       <reference>
@@ -130,6 +142,7 @@
       </reference>
       <name value="2-3 Input Analyzer (test case)"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -137,6 +150,7 @@
       </reference>
       <name value="2-3 Output Analyzer (test case)"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -145,6 +159,7 @@
       </reference>
       <name value="2-4 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -152,6 +167,7 @@
       </reference>
       <name value="2-4 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
     <resource>
       <reference>
@@ -159,6 +175,7 @@
       </reference>
       <name value="2-4 Input Analyzer (test case)"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -166,6 +183,7 @@
       </reference>
       <name value="2-4 Output Analyzer (test case)"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -174,6 +192,7 @@
       </reference>
       <name value="2-5 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -181,6 +200,7 @@
       </reference>
       <name value="2-5 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
     <resource>
       <reference>
@@ -188,6 +208,7 @@
       </reference>
       <name value="2-5 Input Analyzer (test case)"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -195,6 +216,7 @@
       </reference>
       <name value="2-5 Output Analyzer (test case)"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -203,6 +225,7 @@
       </reference>
       <name value="2-6 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -210,6 +233,7 @@
       </reference>
       <name value="2-6 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
     <resource>
       <reference>
@@ -217,6 +241,7 @@
       </reference>
       <name value="2-6 Input Analyzer (test case)"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -224,6 +249,7 @@
       </reference>
       <name value="2-6 Output Analyzer (test case)"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -232,6 +258,7 @@
       </reference>
       <name value="2-7 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -239,6 +266,7 @@
       </reference>
       <name value="2-7 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
     <resource>
       <reference>
@@ -246,6 +274,7 @@
       </reference>
       <name value="2-7 Input Analyzer (test case)"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -253,6 +282,7 @@
       </reference>
       <name value="2-7 Output Analyzer (test case)"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -261,6 +291,7 @@
       </reference>
       <name value="A1 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -268,6 +299,7 @@
       </reference>
       <name value="A1 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -276,6 +308,7 @@
       </reference>
       <name value="A2 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -283,6 +316,7 @@
       </reference>
       <name value="A2 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -291,6 +325,7 @@
       </reference>
       <name value="A3 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -298,6 +333,7 @@
       </reference>
       <name value="A3 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -306,6 +342,7 @@
       </reference>
       <name value="A4 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -313,6 +350,7 @@
       </reference>
       <name value="A4 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -321,6 +359,7 @@
       </reference>
       <name value="A5 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -328,6 +367,7 @@
       </reference>
       <name value="A5 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -336,6 +376,7 @@
       </reference>
       <name value="A6 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -343,6 +384,7 @@
       </reference>
       <name value="A6 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -351,6 +393,7 @@
       </reference>
       <name value="A7 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -358,6 +401,7 @@
       </reference>
       <name value="A7 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -366,6 +410,7 @@
       </reference>
       <name value="PMP1 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -373,6 +418,7 @@
       </reference>
       <name value="PMP1 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -381,6 +427,7 @@
       </reference>
       <name value="PMP2 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -388,6 +435,7 @@
       </reference>
       <name value="PMP2 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <resource>
@@ -396,6 +444,7 @@
       </reference>
       <name value="PMP3 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>
     <resource>
       <reference>
@@ -403,6 +452,7 @@
       </reference>
       <name value="PMP3 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
     <!-- Analyzer: IN StructureDefinitions -->

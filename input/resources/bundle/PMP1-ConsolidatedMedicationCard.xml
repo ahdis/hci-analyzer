@@ -2,9 +2,6 @@
 
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="PMP1-ConsolidatedMedicationCard"/>
-    <meta>
-        <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
-    </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
         <value value="urn:uuid:d5065b47-6ec1-4088-b650-83a7f745c6c0"/>
