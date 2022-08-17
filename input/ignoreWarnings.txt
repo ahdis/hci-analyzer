@@ -1,5 +1,8 @@
 == Suppressed Messages ==
 
+# Error caused by this issue: https://github.com/hl7ch/ch-core/issues/150
+The modifier extension http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time is not allowed to be used at this point (allowed = e:Composition.extension, e:Composition.author, e:Composition.section.author, e:MedicationStatement.informationSource, e:MedicationStatement.extension; this element is [[Parameters.parameter.resource.entry.resource.ofType(Observation).performer, Bundle.entry.resource.performer, BackboneElement.resource.performer, Observation.performer, Reference])
+
 # IG publisher issue with jurisdiction code (CH -> CHE)
 Error parsing response message: This does not appear to be a FHIR resource (wrong namespace '') (@ /)
 

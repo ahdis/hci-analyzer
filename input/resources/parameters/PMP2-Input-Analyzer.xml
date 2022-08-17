@@ -12,12 +12,12 @@
                 </meta>-->
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:a1d14bf1-95e4-43a1-b2e7-b603d62c23b5"/>
+                    <value value="urn:uuid:917956eb-7ea7-4d81-925e-892cbb556d44"/>
                 </identifier>
                 <type value="document"/>
-                <timestamp value="2022-07-15T10:47:24+00:00"/>
+                <timestamp value="2022-08-17T08:21:04+00:00"/>
                 <entry>
-                    <fullUrl value="urn:uuid:ebbf56c3-205d-4e58-beca-b9d887fe6f00"/>
+                    <fullUrl value="urn:uuid:b3fd4851-1367-4784-9424-95fd9f210123"/>
                     <resource>
                         <Composition>
                             <language value="fr-CH"/>
@@ -26,12 +26,12 @@
                             </extension>
                             <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
                                 <valueReference>
-                                    <reference value="urn:uuid:97c4988d-54d4-4dc0-b27b-971c7a39d8bd"/>
+                                    <reference value="urn:uuid:206e9378-b456-4a58-9e1e-b72dcff4aa89"/>
                                 </valueReference>
                             </extension>
                             <identifier>
                                 <system value="urn:ietf:rfc:3986"/>
-                                <value value="urn:uuid:a1d14bf1-95e4-43a1-b2e7-b603d62c23b5"/>
+                                <value value="urn:uuid:917956eb-7ea7-4d81-925e-892cbb556d44"/>
                             </identifier>
                             <status value="final"/>
                             <type>
@@ -47,14 +47,14 @@
                                 </coding>
                             </type>
                             <subject>
-                                <reference value="urn:uuid:73c49eea-31cc-42f3-9873-f13046a5e3bc"/>
+                                <reference value="urn:uuid:17633005-e2c5-4ce2-b23c-a6d9d4fe45b9"/>
                             </subject>
-                            <date value="2022-07-15T10:47:24+00:00"/>
+                            <date value="2022-08-17T08:21:04+00:00"/>
                             <author>
                                 <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
-                                    <valueDateTime value="2022-07-15T10:47:24+00:00"/>
+                                    <valueDateTime value="2022-08-17T08:21:04+00:00"/>
                                 </extension>
-                                <reference value="urn:uuid:f4509d5c-8d91-4d51-b793-1c1150566ff3"/>
+                                <reference value="urn:uuid:97b2b649-749b-457a-94e2-6196d0992000"/>
                             </author>
                             <title value="Liste de médication"/>
                             <confidentiality value="N">
@@ -69,7 +69,7 @@
                                 </extension>
                             </confidentiality>
                             <custodian>
-                                <reference value="urn:uuid:84764e49-628e-412e-a359-cbcff037113d"/>
+                                <reference value="urn:uuid:be34cfa3-4454-4163-b1ea-5d74819a29b4"/>
                             </custodian>
                             <section>
                                 <title value="Liste de médicaments"/>
@@ -84,34 +84,34 @@
                                     <status value="generated"/>
                                     <div xmlns="http://www.w3.org/1999/xhtml">
                                         <span id="generator_comment">
-                                Cette liste de médication a été générée automatiquement par le PMP le July 15, 2022 at 10:47:24 AM UTC. Les paramètres utilisés pour la génération du document sont : les éléments de type Medication Treatment Plan Item, Prescription Item, Dispense Item et PADV sont inclus ; tous les traitements sont considérés.
+                                Cette liste de médication a été générée automatiquement par le PMP le August 17, 2022 at 8:21:04 AM UTC. Les paramètres utilisés pour la génération du document sont : les éléments de type Medication Treatment Plan Item, Prescription Item, Dispense Item et PADV sont inclus ; tous les traitements sont considérés.
                                         </span>
-                                        <span id="pflny.">
-                                Texte narratif pour l'item 5a6ae511-8544-48ae-8990-57339eacb0bd
+                                        <span id="kklqe.">
+                                Texte narratif pour l'item 8b1e35ec-0a5a-4d14-9913-45402e0ac8e4
                                         </span>
-                                        <p id="pflny.refpdf">
+                                        <p id="kklqe.refpdf">
                                 Temesta Expidet cpr orodisp 1 mg, 0-0-0-1, durant 3 jours, raison: pour dormir
                                         </p>
-                                        <span id="qqnuf.">
-                                Texte narratif pour l'item 55a6f7fa-2bf6-4c33-8716-e39d04b5c8b4
+                                        <span id="myaey.">
+                                Texte narratif pour l'item 70ef012c-4655-431c-a3bb-8d97edf8e130
                                         </span>
-                                        <p id="qqnuf.refpdf">
+                                        <p id="myaey.refpdf">
                                 selon téléphone avec le médecin, arrêter le traitement car inefficace
                                         </p>
                                     </div>
                                 </text>
                                 <entry>
-                                    <reference value="urn:uuid:3381e940-2f71-48ff-8892-7b7e9692d5f7"/>
+                                    <reference value="urn:uuid:4698be13-bd2c-4e4a-96e2-feda8f78f6fa"/>
                                 </entry>
                                 <entry>
-                                    <reference value="urn:uuid:8e51092e-94c2-4bbd-8606-e8cdc553a237"/>
+                                    <reference value="urn:uuid:3fef0764-e7e8-4c64-a08c-56c17b8b8513"/>
                                 </entry>
                             </section>
                         </Composition>
                     </resource>
                 </entry>
                 <entry>
-                    <fullUrl value="urn:uuid:73c49eea-31cc-42f3-9873-f13046a5e3bc"/>
+                    <fullUrl value="urn:uuid:17633005-e2c5-4ce2-b23c-a6d9d4fe45b9"/>
                     <resource>
                         <Patient>
                             <identifier>
@@ -133,44 +133,36 @@
                         </Patient>
                     </resource>
                 </entry>
-                <!-- Composition.author -->
-                <!--<entry>
-                    <fullUrl value="urn:uuid:f4509d5c-8d91-4d51-b793-1c1150566ff3"/>
-                    <resource>
-                        <Practitioner>
-                            <identifier>
-                                <system value="urn:oid:2.51.1.3"/>
-                                <value value="7601002860123"/>
-                            </identifier>
-                        </Practitioner>
-                    </resource>
-                </entry>-->
                 <entry>
-                    <fullUrl value="urn:uuid:f4509d5c-8d91-4d51-b793-1c1150566ff3"/>
+                    <fullUrl value="urn:uuid:97b2b649-749b-457a-94e2-6196d0992000"/>
                     <resource>
                         <Device>
+                            <identifier>
+                                <system value="urn:oid:2.51.1.3"/>
+                                <value value="7601001407428"/>
+                            </identifier>
                             <deviceName>
-                                <name value="CARA's PMP"/>
-                                <type value="model-name"/>
+                                <name value="f7dafc8"/>
+                                <type value="manufacturer-name"/>
                             </deviceName>
+                            <modelNumber value="PMP CARA v0.1"/>
                         </Device>
                     </resource>
                 </entry>
                 <entry>
-                    <fullUrl value="urn:uuid:84764e49-628e-412e-a359-cbcff037113d"/>
+                    <fullUrl value="urn:uuid:be34cfa3-4454-4163-b1ea-5d74819a29b4"/>
                     <resource>
                         <Organization>
                             <identifier>
                                 <system value="urn:oid:2.51.1.3"/>
-                                <!--valid format-->
-                                <value value="7601000121219"/>
+                                <value value="7601001407428"/>
                             </identifier>
                             <name value="Hausarzt"/>
                         </Organization>
                     </resource>
                 </entry>
                 <entry>
-                    <fullUrl value="urn:uuid:97c4988d-54d4-4dc0-b27b-971c7a39d8bd"/>
+                    <fullUrl value="urn:uuid:206e9378-b456-4a58-9e1e-b72dcff4aa89"/>
                     <resource>
                         <Organization>
                             <name value="Hausarzt"/>
@@ -178,7 +170,7 @@
                     </resource>
                 </entry>
                 <entry>
-                    <fullUrl value="urn:uuid:3381e940-2f71-48ff-8892-7b7e9692d5f7"/>
+                    <fullUrl value="urn:uuid:4698be13-bd2c-4e4a-96e2-feda8f78f6fa"/>
                     <resource>
                         <MedicationStatement>
                             <contained>
@@ -244,24 +236,30 @@
                             </extension>
                             <identifier>
                                 <system value="urn:ietf:rfc:3986"/>
-                                <value value="urn:uuid:5a6ae511-8544-48ae-8990-57339eacb0bd"/>
+                                <value value="urn:uuid:8b1e35ec-0a5a-4d14-9913-45402e0ac8e4"/>
                             </identifier>
                             <status value="completed"/>
                             <medicationReference>
                                 <reference value="#med"/>
                             </medicationReference>
                             <subject>
-                                <reference value="urn:uuid:73c49eea-31cc-42f3-9873-f13046a5e3bc"/>
+                                <reference value="urn:uuid:17633005-e2c5-4ce2-b23c-a6d9d4fe45b9"/>
                             </subject>
+                            <informationSource>
+                                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
+                                    <valueDateTime value="2019-02-12T10:00:00+00:00"/>
+                                </extension>
+                                <reference value="urn:uuid:c1cedc5e-719c-44f6-9f3f-2b47cbef1420"/>
+                            </informationSource>
                             <reasonCode>
                                 <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                                    <valueUrl value="#pflny.refpdf"/>
+                                    <valueUrl value="#kklqe.refpdf"/>
                                 </extension>
                                 <text value="pour dormir"/>
                             </reasonCode>
                             <note>
                                 <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                                    <valueUrl value="#pflny.refpdf"/>
+                                    <valueUrl value="#kklqe.refpdf"/>
                                 </extension>
                                 <text value="laisser fondre 1 comprimé sous la langue ½ heure avant le coucher &#xA;(si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin)"/>
                             </note>
@@ -295,26 +293,56 @@
                     </resource>
                 </entry>
                 <entry>
-                    <fullUrl value="urn:uuid:8e51092e-94c2-4bbd-8606-e8cdc553a237"/>
+                    <fullUrl value="urn:uuid:c1cedc5e-719c-44f6-9f3f-2b47cbef1420"/>
+                    <resource>
+                        <PractitionerRole>
+                            <practitioner>
+                                <reference value="urn:uuid:3d2a0fb8-786d-4c92-a82a-dff7bd038d7a"/>
+                            </practitioner>
+                        </PractitionerRole>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:3d2a0fb8-786d-4c92-a82a-dff7bd038d7a"/>
+                    <resource>
+                        <Practitioner>
+                            <identifier>
+                                <system value="urn:oid:2.51.1.3"/>
+                                <value value="7601000201041"/>
+                            </identifier>
+                            <name>
+                                <family value="Rochat"/>
+                                <given value="Dr"/>
+                            </name>
+                            <address>
+                                <city value="Zürich"/>
+                                <postalCode value="8005"/>
+                                <country value="CH"/>
+                            </address>
+                        </Practitioner>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:3fef0764-e7e8-4c64-a08c-56c17b8b8513"/>
                     <resource>
                         <Observation>
                             <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
                                 <extension url="id">
                                     <valueIdentifier>
                                         <system value="urn:ietf:rfc:3986"/>
-                                        <value value="urn:uuid:5a6ae511-8544-48ae-8990-57339eacb0bd"/>
+                                        <value value="urn:uuid:8b1e35ec-0a5a-4d14-9913-45402e0ac8e4"/>
                                     </valueIdentifier>
                                 </extension>
                                 <extension url="externalDocumentId">
                                     <valueIdentifier>
                                         <system value="urn:ietf:rfc:3986"/>
-                                        <value value="urn:uuid:5a6ae511-8544-48ae-8990-57339eacb0bd"/>
+                                        <value value="urn:uuid:8b1e35ec-0a5a-4d14-9913-45402e0ac8e4"/>
                                     </valueIdentifier>
                                 </extension>
                             </extension>
                             <identifier>
                                 <system value="urn:ietf:rfc:3986"/>
-                                <value value="urn:uuid:55a6f7fa-2bf6-4c33-8716-e39d04b5c8b4"/>
+                                <value value="urn:uuid:70ef012c-4655-431c-a3bb-8d97edf8e130"/>
                             </identifier>
                             <status value="final"/>
                             <code>
@@ -324,9 +352,15 @@
                                 </coding>
                             </code>
                             <subject>
-                                <reference value="urn:uuid:73c49eea-31cc-42f3-9873-f13046a5e3bc"/>
+                                <reference value="urn:uuid:17633005-e2c5-4ce2-b23c-a6d9d4fe45b9"/>
                             </subject>
                             <effectiveDateTime value="2019-02-15T11:00:00+01:00"/>
+                            <performer>
+                                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
+                                    <valueDateTime value="2019-02-15T10:00:00+00:00"/>
+                                </extension>
+                                <reference value="urn:uuid:9822ac56-7cc4-4540-aa0a-45f66756595e"/>
+                            </performer>
                             <note>
                                 <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
                                     <valueUrl value="#refpdf"/>
@@ -334,6 +368,36 @@
                                 <text value="selon téléphone avec le médecin, arrêter le traitement car inefficace"/>
                             </note>
                         </Observation>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:9822ac56-7cc4-4540-aa0a-45f66756595e"/>
+                    <resource>
+                        <PractitionerRole>
+                            <practitioner>
+                                <reference value="urn:uuid:e1fc359f-0e8f-43f9-ae9d-2a26cadcd762"/>
+                            </practitioner>
+                        </PractitionerRole>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:e1fc359f-0e8f-43f9-ae9d-2a26cadcd762"/>
+                    <resource>
+                        <Practitioner>
+                            <identifier>
+                                <system value="urn:oid:2.51.1.3"/>
+                                <value value="7601000876546"/>
+                            </identifier>
+                            <name>
+                                <family value="Pharm"/>
+                                <given value="Pharmacien"/>
+                            </name>
+                            <address>
+                                <city value="Zürich"/>
+                                <postalCode value="8005"/>
+                                <country value="CH"/>
+                            </address>
+                        </Practitioner>
                     </resource>
                 </entry>
             </Bundle>

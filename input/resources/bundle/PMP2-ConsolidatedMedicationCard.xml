@@ -4,10 +4,10 @@
     <id value="PMP2-ConsolidatedMedicationCard"/>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
-        <value value="urn:uuid:befcabe5-18e8-4e7d-9f06-091c9f1f612c"/>
+        <value value="urn:uuid:0b6d46ce-c735-4389-bc04-113d815d3d8b"/>
     </identifier>
     <type value="document"/>
-    <timestamp value="2022-07-15T15:00:00+00:00"/>
+    <timestamp value="2022-08-17T09:00:00+00:00"/>
     <entry>
         <fullUrl value="http://test.fhir.ch/r4/Composition/PMP2-Analyzer"/>
         <resource>
@@ -15,7 +15,7 @@
                 <id value="PMP2-Analyzer"/>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:befcabe5-18e8-4e7d-9f06-091c9f1f612c"/>
+                    <value value="urn:uuid:0b6d46ce-c735-4389-bc04-113d815d3d8b"/>
                 </identifier>
                 <status value="final"/>
                 <type>
@@ -28,7 +28,7 @@
                 <subject>
                     <reference value="Patient/TrongSangNeffWingeier"/>
                 </subject>
-                <date value="2022-07-15T15:00:00+00:00"/>
+                <date value="2022-08-17T09:00:00+00:00"/>
                 <author>
                     <reference value="Device/Analyzer"/>
                 </author>
@@ -59,7 +59,6 @@
         </resource>
     </entry>
 
-
     <!-- Composition.subject -->
     <entry>
         <fullUrl value="http://test.fhir.ch/r4/Patient/TrongSangNeffWingeier"/>
@@ -86,8 +85,75 @@
         </resource>
     </entry>
 
+    <!-- Medical decision 1. document -->
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/Hausarzt"/>
+        <resource>
+            <PractitionerRole>
+                <id value="Hausarzt"/>
+                <practitioner>
+                    <reference value="Practitioner/DrRochat"/>
+                </practitioner>
+            </PractitionerRole>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Practitioner/DrRochat"/>
+        <resource>
+            <Practitioner>
+                <id value="DrRochat"/>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601000201041"/>
+                </identifier>
+                <name>
+                    <family value="Rochat"/>
+                    <given value="Dr"/>
+                </name>
+                <address>
+                    <city value="Zürich"/>
+                    <postalCode value="8005"/>
+                    <country value="CH"/>
+                </address>
+            </Practitioner>
+        </resource>
+    </entry>
 
-    <!-- MedStat Header -->
+    <!-- Medical decision 2. document -->
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/Pharmacy"/>
+        <resource>
+            <PractitionerRole>
+                <id value="Pharmacy"/>
+                <practitioner>
+                    <reference value="Practitioner/PharmacienPharm"/>
+                </practitioner>
+            </PractitionerRole>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Practitioner/PharmacienPharm"/>
+        <resource>
+            <Practitioner>
+                <id value="PharmacienPharm"/>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601000876546"/>
+                </identifier>
+                <name>
+                    <family value="Pharm"/>
+                    <given value="Pharmacien"/>
+                </name>
+                <address>
+                    <city value="Zürich"/>
+                    <postalCode value="8005"/>
+                    <country value="CH"/>
+                </address>
+            </Practitioner>
+        </resource>
+    </entry>
+
+    <!-- MedicationStatement/Header-MedStat-Analyzer -->
     <entry>
         <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/Header-MedStat-Analyzer"/>
         <resource>
@@ -169,6 +235,9 @@
                 <subject>
                     <reference value="Patient/TrongSangNeffWingeier"/>
                 </subject>
+                <informationSource>
+                    <reference value="PractitionerRole/Pharmacy"/>
+                </informationSource>
                 <!-- History -->
                 <derivedFrom>
                     <reference value="MedicationStatement/MedStat-MTP"/>
@@ -179,14 +248,11 @@
                 <derivedFrom>
                     <reference value="Observation/Obs-CANCEL"/>
                 </derivedFrom>
-                <dosage>
-                    <text value="-"/>
-                </dosage>
             </MedicationStatement>
         </resource>
     </entry>
 
-    <!-- MedStat MTP -->
+    <!-- derivedFrom: MedicationStatement/MedStat-MTP -->
     <entry>
         <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/MedStat-MTP"/>
         <resource>
@@ -269,7 +335,7 @@
                 </extension>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:5a6ae511-8544-48ae-8990-57339eacb0bd"/>
+                    <value value="urn:uuid:8b1e35ec-0a5a-4d14-9913-45402e0ac8e4"/>
                 </identifier>
                 <status value="completed"/>
                 <category>
@@ -285,6 +351,9 @@
                 <subject>
                     <reference value="Patient/TrongSangNeffWingeier"/>
                 </subject>
+                <informationSource>
+                    <reference value="PractitionerRole/Hausarzt"/>
+                </informationSource>
                 <reasonCode>
                     <text value="pour dormir"/>
                 </reasonCode>
@@ -321,7 +390,7 @@
         </resource>
     </entry>
 
-    <!-- Obs History -->
+    <!-- derivedFrom: Observation/Obs-History -->
     <entry>
         <fullUrl value="http://test.fhir.ch/r4/Observation/Obs-History"/>
         <resource>
@@ -348,7 +417,7 @@
         </resource>
     </entry>
 
-    <!-- Obs PADV -->
+    <!-- derivedFrom: Observation/Obs-CANCEL -->
     <entry>
         <fullUrl value="http://test.fhir.ch/r4/Observation/Obs-CANCEL"/>
         <resource>
@@ -375,19 +444,19 @@
                     <extension url="id">
                         <valueIdentifier>
                             <system value="urn:ietf:rfc:3986"/>
-                            <value value="urn:uuid:5a6ae511-8544-48ae-8990-57339eacb0bd"/>
+                            <value value="urn:uuid:8b1e35ec-0a5a-4d14-9913-45402e0ac8e4"/>
                         </valueIdentifier>
                     </extension>
                     <extension url="externalDocumentId">
                         <valueIdentifier>
                             <system value="urn:ietf:rfc:3986"/>
-                            <value value="urn:uuid:5a6ae511-8544-48ae-8990-57339eacb0bd"/>
+                            <value value="urn:uuid:8b1e35ec-0a5a-4d14-9913-45402e0ac8e4"/>
                         </valueIdentifier>
                     </extension>
                 </extension>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:55a6f7fa-2bf6-4c33-8716-e39d04b5c8b4"/>
+                    <value value="urn:uuid:70ef012c-4655-431c-a3bb-8d97edf8e130"/>
                 </identifier>
                 <status value="final"/>
                 <code>
@@ -400,6 +469,9 @@
                     <reference value="Patient/TrongSangNeffWingeier"/>
                 </subject>
                 <effectiveDateTime value="2019-02-15T11:00:00+01:00"/>
+                <performer>
+                    <reference value="PractitionerRole/Pharmacy"/>
+                </performer>
                 <note>
                     <text value="selon téléphone avec le médecin, arrêter le traitement car inefficace"/>
                 </note>
