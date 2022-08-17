@@ -532,6 +532,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/analyzer-practitionerrole"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/analyzer-practitioner"/>
       </reference>
       <exampleBoolean value="false"/>

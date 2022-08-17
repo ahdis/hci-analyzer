@@ -1,0 +1,36 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="analyzer-practitionerrole"/>
+   <url value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitionerrole"/>
+   <version value="0.1.0"/>
+   <name value="AnalyzerPractitionerRole"/>
+   <title value="Analyzer PractitionerRoele"/>
+   <status value="draft"/>
+   <description value="Profile for the Analyzer PractitionerRole"/>
+   <fhirVersion value="4.0.1"/>
+   <kind value="resource"/>
+   <abstract value="false"/>
+   <type value="PractitionerRole"/>
+   <baseDefinition value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole"/>
+   <derivation value="constraint"/>
+   <differential>
+      <element id="PractitionerRole">
+         <path value="PractitionerRole"/>
+         <short value="Analyzer PractitionerRole"/>
+      </element>
+      <element id="PractitionerRole.practitioner">
+         <path value="PractitionerRole.practitioner"/>
+         <short value="The author of the medical decision"/>
+         <type>
+            <code value="Reference"/>
+            <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitioner"/>
+         </type>
+      </element>
+      <element id="PractitionerRole.organization">
+         <path value="PractitionerRole.organization"/>
+         <short value="The organization of the author of the medical decision"/>
+         <type>
+            <code value="Reference"/>
+         </type>
+      </element>
+   </differential>
+</StructureDefinition>

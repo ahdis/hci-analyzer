@@ -82,6 +82,7 @@
             <code value="Reference"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitioner"/>
+            <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitionerrole"/>
          </type>
       </element>
    </differential>

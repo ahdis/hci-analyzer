@@ -25,6 +25,9 @@ Profile for the Analyzer MedicationStatement Header
 * [Analyzer Patient](StructureDefinition-analyzer-patient.html)   
 Profile for the Analyzer Patient
 
+* [Analyzer PractitionerRole](StructureDefinition-analyzer-practitionerrole.html)   
+Profile for the Analyzer PractitionerRole
+
 * [Analyzer Practitioner](StructureDefinition-analyzer-practitioner.html)   
 Profile for the Analyzer Practitioner
 

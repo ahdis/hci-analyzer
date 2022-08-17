@@ -83,6 +83,20 @@
       </type>
     </element>
 
+    <element id="Bundle.entry:AnalyzerPractitionerRole">
+      <path value="Bundle.entry"/>
+      <sliceName value="AnalyzerPractitionerRole"/>
+    </element>
+    <element id="Bundle.entry:AnalyzerPractitionerRole.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Resource"/>
+        <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitionerrole"/>
+      </type>
+    </element>
+
     <element id="Bundle.entry:AnalyzerPractitioner">
       <path value="Bundle.entry"/>
       <sliceName value="AnalyzerPractitioner"/>

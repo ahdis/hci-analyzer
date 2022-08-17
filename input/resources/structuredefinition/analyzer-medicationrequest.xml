@@ -79,11 +79,12 @@
       </element>
       <element id="MedicationRequest.performer">
          <path value="MedicationRequest.performer"/>
-         <short value="Practitioner"/>
+         <short value="The author (and its organization) of the medical decision"/>
          <min value="1"/>
          <type>
             <code value="Reference"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitioner"/>
+            <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitionerrole"/>
          </type>
       </element>
    </differential>
