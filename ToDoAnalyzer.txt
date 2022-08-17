@@ -10,8 +10,7 @@ To do's for a manually adapted Input Document
 
 To do's for a manually adapted consolidated Medciation Card document (from Input Document)
 ------------------------------------------------------------------------------------------
-- Only for IG: change meta.profile: http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-parameters
-- Only for IG: update id's 
+- Only for IG: update fullUrls/id's 
 - Set a new Bundle.identifier & Composition.identifier
 - Set a new Bundle.timestamp & Composition.date
 - Remove from Composition: language, ext:inputdocumentsource, ext:informationRecipient, confidentiality, custodian
