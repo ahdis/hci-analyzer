@@ -157,7 +157,7 @@
                                 <system value="urn:oid:2.51.1.3"/>
                                 <value value="7601001407428"/>
                             </identifier>
-                            <name value="Hausarzt"/>
+                            <name value="CARA"/>
                         </Organization>
                     </resource>
                 </entry>
