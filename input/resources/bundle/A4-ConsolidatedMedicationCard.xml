@@ -505,8 +505,8 @@
                     <reference value="MedicationStatement/A4-MedStatReniten-Monney"/>
                 </derivedFrom>
                 <!--<reasonCode>
-                                <text value="Bluthochdruck"/>
-                            </reasonCode>-->
+                    <text value="Bluthochdruck"/>
+                </reasonCode>-->
                 <dosage>
                     <timing>
                         <repeat>

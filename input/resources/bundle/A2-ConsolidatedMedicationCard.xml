@@ -508,8 +508,8 @@
                     <reference value="MedicationStatement/A2-MedStatValium-1x10"/>
                 </derivedFrom>
                 <!--<reasonCode>
-                                <text value="Beruhigung"/>
-                            </reasonCode>-->
+                    <text value="Beruhigung"/>
+                </reasonCode>-->
                 <dosage>
                     <timing>
                         <repeat>

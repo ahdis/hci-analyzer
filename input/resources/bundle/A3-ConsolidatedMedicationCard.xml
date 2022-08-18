@@ -483,8 +483,8 @@
                     <reference value="MedicationStatement/A3-MedStatReniten-2x"/>
                 </derivedFrom>
                 <!--<reasonCode>
-                                <text value="Bluthochdruck"/>
-                            </reasonCode>-->
+                    <text value="Bluthochdruck"/>
+                </reasonCode>-->
                 <dosage>
                     <timing>
                         <repeat>

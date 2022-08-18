@@ -643,6 +643,11 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <nameUrl value="development.html"/>
+        <title value="Development"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="changelog.html"/>
         <title value="Change Log"/>
         <generation value="markdown"/>

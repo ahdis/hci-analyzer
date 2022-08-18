@@ -326,8 +326,8 @@
                     <reference value="MedicationStatement/2-5-MedStatNorvasc"/>
                 </derivedFrom>
                 <!--<reasonCode>
-                                <text value="Bluthochdruck"/>
-                            </reasonCode>-->
+                    <text value="Bluthochdruck"/>
+                </reasonCode>-->
                 <dosage>
                     <timing>
                         <repeat>

@@ -564,6 +564,9 @@
                 <!--<reasonCode>
                     <text value="Bluthochdruck"/>
                 </reasonCode>-->
+                <dosage>
+                    <text value="-"/>
+                </dosage>
                 <!--<dosage>
                     <timing>
                         <repeat>

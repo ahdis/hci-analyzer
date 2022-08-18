@@ -119,5 +119,9 @@
          </type>
          <min value="1"/>
       </element>
+      <element id="MedicationStatement.dosage">
+         <path value="MedicationStatement.dosage"/>
+         <min value="1"/>
+      </element>
    </differential>
 </StructureDefinition>

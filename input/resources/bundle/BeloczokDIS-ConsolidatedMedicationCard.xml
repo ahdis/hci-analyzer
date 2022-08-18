@@ -546,8 +546,8 @@
                     <!-- 2-4 Abgabe (Beloc Zok) -->
                 </derivedFrom>
                 <!--<reasonCode>
-                                <text value="Bluthochdruck"/>
-                            </reasonCode>-->
+                    <text value="Bluthochdruck"/>
+                </reasonCode>-->
                 <dosage>
                     <sequence value="1"/>
                     <timing>

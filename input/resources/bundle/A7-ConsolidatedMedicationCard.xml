@@ -479,8 +479,8 @@
                     <reference value="MedicationStatement/A7-MedStatBrufen-600"/>
                 </derivedFrom>
                 <!--<reasonCode>
-                                <text value="Schmerzen"/>
-                            </reasonCode>-->
+                    <text value="Schmerzen"/>
+                </reasonCode>-->
                 <dosage>
                     <timing>
                         <repeat>
@@ -606,8 +606,8 @@
                     <reference value="MedicationStatement/A7-MedStatBrufenRetard-800"/>
                 </derivedFrom>
                 <!--<reasonCode>
-                                <text value="Schmerzen"/>
-                            </reasonCode>-->
+                    <text value="Schmerzen"/>
+                </reasonCode>-->
                 <dosage>
                     <timing>
                         <repeat>

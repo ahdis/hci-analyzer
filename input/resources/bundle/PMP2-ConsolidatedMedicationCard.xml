@@ -248,6 +248,9 @@
                 <derivedFrom>
                     <reference value="Observation/Obs-CANCEL"/>
                 </derivedFrom>
+                <dosage>
+                    <text value="-"/>
+                </dosage>
             </MedicationStatement>
         </resource>
     </entry>

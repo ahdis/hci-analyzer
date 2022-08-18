@@ -361,8 +361,8 @@
                     <reference value="MedicationStatement/2-3-MedStatBeloczok"/>
                 </derivedFrom>
                 <!--<reasonCode>
-                                <text value="Bluthochdruck"/>
-                            </reasonCode>-->
+                    <text value="Bluthochdruck"/>
+                </reasonCode>-->
                 <dosage>
                     <sequence value="1"/>
                     <timing>

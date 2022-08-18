@@ -1513,33 +1513,36 @@
                     <!-- 1-2 Kommentar: Medikament absetzen (Triatec) -->
                 </derivedFrom>
                 <!--<reasonCode>
-                                <text value="Bluthochdruck"/>
-                            </reasonCode>-->
+                    <text value="Bluthochdruck"/>
+                </reasonCode>-->
+                <dosage>
+                    <text value="-"/>
+                </dosage>
                 <!--<dosage>
-                                <timing>
-                                    <repeat>
-                                        <boundsPeriod>
-                                            <start value="2011-11-29"/>
-                                        </boundsPeriod>
-                                        <when value="MORN"/>
-                                    </repeat>
-                                </timing>
-                                <route>
-                                    <coding>
-                                        <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                                        <code value="20053000"/>
-                                        <display value="Oral use"/>
-                                    </coding>
-                                </route>
-                                <doseAndRate>
-                                    <doseQuantity>
-                                        <value value="0.5"/>
-                                        <unit value="Tablet (unit of presentation)" />
-                                        <system value="http://snomed.info/sct"/>
-                                        <code value="732936001"/>
-                                    </doseQuantity>
-                                </doseAndRate>
-                            </dosage>-->
+                    <timing>
+                        <repeat>
+                            <boundsPeriod>
+                                <start value="2011-11-29"/>
+                            </boundsPeriod>
+                            <when value="MORN"/>
+                        </repeat>
+                    </timing>
+                    <route>
+                        <coding>
+                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                            <code value="20053000"/>
+                            <display value="Oral use"/>
+                        </coding>
+                    </route>
+                    <doseAndRate>
+                        <doseQuantity>
+                            <value value="0.5"/>
+                            <unit value="Tablet (unit of presentation)" />
+                            <system value="http://snomed.info/sct"/>
+                            <code value="732936001"/>
+                        </doseQuantity>
+                    </doseAndRate>
+                </dosage>-->
             </MedicationStatement>
         </resource>
     </entry>
@@ -1705,8 +1708,8 @@
                     <!-- 2-7 Erstellung Medication Card -->
                 </derivedFrom>
                 <!--<reasonCode>
-                                <text value="Bluthochdruck"/>
-                            </reasonCode>-->
+                    <text value="Bluthochdruck"/>
+                </reasonCode>-->
                 <dosage>
                     <sequence value="1"/>
                     <timing>

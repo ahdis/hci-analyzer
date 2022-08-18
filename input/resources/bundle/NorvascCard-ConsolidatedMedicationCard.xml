@@ -645,8 +645,8 @@
                     <!-- 2-7 Erstellung Medication Card -->
                 </derivedFrom>
                 <!--<reasonCode>
-                                <text value="Bluthochdruck"/>
-                            </reasonCode>-->
+                    <text value="Bluthochdruck"/>
+                </reasonCode>-->
                 <dosage>
                     <timing>
                         <repeat>

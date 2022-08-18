@@ -508,8 +508,8 @@
                     <reference value="MedicationStatement/A1-MedStatSimcora"/>
                 </derivedFrom>
                 <!--<reasonCode>
-                                <text value="Cholesterinsenker"/>
-                            </reasonCode>-->
+                    <text value="Cholesterinsenker"/>
+                </reasonCode>-->
                 <dosage>
                     <timing>
                         <repeat>

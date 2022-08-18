@@ -18,6 +18,9 @@ If you have questions or want more information about the Analyzer please contact
 * [Terminologies](terminology.html) - were defined to allow the representation as coded data.
 * [Artifacts](artifacts.html) - provides a list of the FHIR artifacts included in this implementation guide.
 
+#### Development
+[Here](development.html) are some remarks about the development of the analyzer documented.
+
 ####  Download
 You can download this implementation guide in [NPM format](https://confluence.hl7.org/display/FHIR/NPM+Package+Specification) from [here](package.tgz).
 

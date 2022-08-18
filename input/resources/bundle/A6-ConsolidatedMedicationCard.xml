@@ -483,8 +483,8 @@
                     <reference value="MedicationStatement/A6-MedStatImigran-Tbl"/>
                 </derivedFrom>
                 <!--<reasonCode>
-                                <text value="Migräne"/>
-                            </reasonCode>-->
+                    <text value="Migräne"/>
+                </reasonCode>-->
                 <dosage>
                     <timing>
                         <repeat>
@@ -611,8 +611,8 @@
                     <reference value="MedicationStatement/A6-MedStatImigran-Spray"/>
                 </derivedFrom>
                 <!--<reasonCode>
-                                <text value="Migräne"/>
-                            </reasonCode>-->
+                    <text value="Migräne"/>
+                </reasonCode>-->
                 <dosage>
                     <timing>
                         <repeat>
