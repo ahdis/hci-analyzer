@@ -98,6 +98,17 @@
         </resource>
     </entry>
     <entry>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/Spezialist"/>
+        <resource>
+            <PractitionerRole>
+                <id value="Spezialist"/>
+                <practitioner>
+                    <reference value="Practitioner/SpezialistMonney"/>
+                </practitioner>
+            </PractitionerRole>
+        </resource>
+    </entry>
+    <entry>
         <fullUrl value="http://test.fhir.ch/r4/Practitioner/SpezialistMonney"/>
         <resource>
             <Practitioner>
@@ -220,7 +231,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="Practitioner/SpezialistMonney"/>
+                    <reference value="PractitionerRole/Spezialist"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Bluthochdruck"/>
@@ -379,7 +390,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="Practitioner/SpezialistMonney"/>
+                    <reference value="PractitionerRole/Spezialist"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Bluthochdruck"/>
@@ -520,7 +531,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="Practitioner/SpezialistMonney"/>
+                    <reference value="PractitionerRole/Spezialist"/>
                 </informationSource>
                 <!-- History -->
                 <derivedFrom>

@@ -12,11 +12,12 @@ See also open issues on [GitHub](https://github.com/ahdis/hci-analyzer/issues).
 * Add slices for different entries in the Bundle to simplify the validation.
 * Add [ValueSet Document Type](ValueSet-document-type.html) incl. binding to [Extension Input Document Type](StructureDefinition-inputdocumenttype.html) to improve the validation.
 * Add ATC code (element category) to MedicationDispense and MedicationRequest (analog to MedicationStatement and MedicationStatement Header).
+* Integrate [development notes](development.html).
 
 #### Changed / Updated
 * The working hypothesis until v0.3.0 was that the Medication List document as a dynamically generated document will not appear as an input document for the analyzer. This hypothesis was disproved and the implementation guide adapted accordingly (graphics, use case, examples, profiles). 
 * Update of the output document of the analyzer; the consolidated Medication Card document is a Bundle that is no longer nested in the resource Parameters.
-* TBD: PractitionerRole instead of Practitioner for author of the medical decision.
+* Use of PractitionerRole instead of Practitioner to map the author of the medical decision, see also [here](development.html#authors).
 
 #### Fixed
 

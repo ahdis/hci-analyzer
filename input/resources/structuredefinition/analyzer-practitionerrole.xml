@@ -3,7 +3,7 @@
    <url value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitionerrole"/>
    <version value="0.1.0"/>
    <name value="AnalyzerPractitionerRole"/>
-   <title value="Analyzer PractitionerRoele"/>
+   <title value="Analyzer PractitionerRole"/>
    <status value="draft"/>
    <description value="Profile for the Analyzer PractitionerRole"/>
    <fhirVersion value="4.0.1"/>

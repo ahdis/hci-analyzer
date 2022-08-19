@@ -38,13 +38,13 @@
       </element>
       <element id="Observation.performer">
          <path value="Observation.performer"/>
-         <short value="The author (and its organization) of the medical decision"/>
+         <short value="The author of the medical decision"/>
          <min value="1"/>
          <max value="1"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitioner"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitionerrole"/>
+            <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>
          </type>
       </element>
    </differential>

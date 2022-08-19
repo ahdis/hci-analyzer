@@ -97,6 +97,17 @@
         </resource>
     </entry>
     <entry>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/Hausarzt"/>
+        <resource>
+            <PractitionerRole>
+                <id value="Hausarzt"/>
+                <practitioner>
+                    <reference value="Practitioner/HausarztDupont"/>
+                </practitioner>
+            </PractitionerRole>
+        </resource>
+    </entry>
+    <entry>
         <fullUrl value="http://test.fhir.ch/r4/Practitioner/HausarztDupont"/>
         <resource>
             <Practitioner>
@@ -219,7 +230,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="Practitioner/HausarztDupont"/>
+                    <reference value="PractitionerRole/Hausarzt"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Bluthochdruck"/>
@@ -353,7 +364,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="Practitioner/HausarztDupont"/>
+                    <reference value="PractitionerRole/Hausarzt"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Bluthochdruck"/>
@@ -470,7 +481,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="Practitioner/HausarztDupont"/>
+                    <reference value="PractitionerRole/Hausarzt"/>
                 </informationSource>
                 <!-- History -->
                 <derivedFrom>

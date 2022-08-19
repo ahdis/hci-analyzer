@@ -97,13 +97,12 @@
       </element>
       <element id="MedicationStatement.informationSource">
          <path value="MedicationStatement.informationSource"/>
-         <short value="The author (and its organization) of the medical decision"/>
+         <short value="The author of the medical decision"/>
          <min value="1"/>
          <type>
             <code value="Reference"/>
-            <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>
-            <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitioner"/>
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-practitionerrole"/>
+            <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>
          </type>
       </element>
       <element id="MedicationStatement.derivedFrom">

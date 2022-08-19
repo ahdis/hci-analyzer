@@ -100,6 +100,17 @@
         </resource>
     </entry>
     <entry>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/Spezialist1"/>
+        <resource>
+            <PractitionerRole>
+                <id value="Spezialist1"/>
+                <practitioner>
+                    <reference value="Practitioner/SpezialistMetzler"/>
+                </practitioner>
+            </PractitionerRole>
+        </resource>
+    </entry>
+    <entry>
         <fullUrl value="http://test.fhir.ch/r4/Practitioner/SpezialistMetzler"/>
         <resource>
             <Practitioner>
@@ -222,7 +233,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="Practitioner/SpezialistMetzler"/>
+                    <reference value="PractitionerRole/Spezialist1"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Migräne"/>
@@ -357,7 +368,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="Practitioner/SpezialistMetzler"/>
+                    <reference value="PractitionerRole/Spezialist1"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Migräne"/>
@@ -476,7 +487,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="Practitioner/SpezialistMetzler"/>
+                    <reference value="PractitionerRole/Spezialist1"/>
                 </informationSource>
                 <!-- History -->
                 <derivedFrom>
@@ -598,7 +609,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="Practitioner/SpezialistMetzler"/>
+                    <reference value="PractitionerRole/Spezialist1"/>
                 </informationSource>
                 <!-- History -->
                 <derivedFrom>

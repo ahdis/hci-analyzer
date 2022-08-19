@@ -96,6 +96,17 @@
         </resource>
     </entry>
     <entry>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/Hausarzt"/>
+        <resource>
+            <PractitionerRole>
+                <id value="Hausarzt"/>
+                <practitioner>
+                    <reference value="Practitioner/FamilienHausarzt"/>
+                </practitioner>
+            </PractitionerRole>
+        </resource>
+    </entry>
+    <entry>
         <fullUrl value="http://test.fhir.ch/r4/Practitioner/FamilienHausarzt"/>
         <resource>
             <Practitioner>
@@ -218,7 +229,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="Practitioner/FamilienHausarzt"/>
+                    <reference value="PractitionerRole/Hausarzt"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Bluthochdruck"/>
@@ -367,7 +378,7 @@
                 </subject>
                 <performer>
                     <actor>
-                        <reference value="Practitioner/FamilienHausarzt"/>
+                        <reference value="PractitionerRole/Hausarzt"/>
                     </actor>
                 </performer>
                 <quantity>
@@ -455,7 +466,7 @@
                 </subject>
                 <effectiveDateTime value="2012-02-04T14:00:00+01:00"/>
                 <performer>
-                    <reference value="Practitioner/FamilienHausarzt"/>
+                    <reference value="PractitionerRole/Hausarzt"/>
                 </performer>
                 <note>
                     <text value="Abgesetzt aufgrund UAW trockener Husten"/>
@@ -564,7 +575,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="Practitioner/FamilienHausarzt"/>
+                    <reference value="PractitionerRole/Hausarzt"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Bluthochdruck"/>
@@ -740,7 +751,7 @@
                 </subject>
                 <performer>
                     <actor>
-                        <reference value="Practitioner/FamilienHausarzt"/>
+                        <reference value="PractitionerRole/Hausarzt"/>
                     </actor>
                 </performer>
                 <quantity>
@@ -902,7 +913,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="Practitioner/FamilienHausarzt"/>
+                    <reference value="PractitionerRole/Hausarzt"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Bluthochdruck"/>
@@ -1012,7 +1023,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="Practitioner/FamilienHausarzt"/>
+                    <reference value="PractitionerRole/Hausarzt"/>
                 </informationSource>
                 <!-- History -->
                 <derivedFrom>
@@ -1207,7 +1218,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="Practitioner/FamilienHausarzt"/>
+                    <reference value="PractitionerRole/Hausarzt"/>
                 </informationSource>
                 <!-- History -->
                 <derivedFrom>
@@ -1391,7 +1402,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="Practitioner/FamilienHausarzt"/>
+                    <reference value="PractitionerRole/Hausarzt"/>
                 </informationSource>
                 <!-- History -->
                 <derivedFrom>
