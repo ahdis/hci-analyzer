@@ -23,7 +23,7 @@ Die in diesem Abschnitt abgebildeten Anwendungsfälle basieren auf dem Fallbeisp
 {% include img.html img="uc_2-1.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
 
 
-#### 2-2 Kommentar zur Medikation (Pharmaceutical Advice document)
+#### 2-2 Pharmazeutischer Ratschlag (Pharmaceutical Advice document)
 PADV = **CANCEL** (Abgesetzt aufgrund UAW trockener Husten)
 * [2-2 Input Analyzer](Parameters-2-2-Input-Analyzer.html)
    * Inputdokumente: [1-1 MTP](http://fhir.ch/ig/ch-emed/Bundle-1-1-MedicationTreatmentPlan.html), [1-2 DIS](http://fhir.ch/ig/ch-emed/Bundle-1-2-MedicationDispense.html), [2-1 LIST](https://fhir.ch/ig/ch-emed/Bundle-2-1-MedicationList.html), [2-2 PADV CANCEL](http://fhir.ch/ig/ch-emed/Bundle-2-2-PharmaceuticalAdvice.html)
