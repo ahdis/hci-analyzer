@@ -7,7 +7,7 @@
         <value value="urn:uuid:d5065b47-6ec1-4088-b650-83a7f745c6c0"/>
     </identifier>
     <type value="document"/>
-    <timestamp value="2022-06-12T12:00:00.000+00:00"/>
+    <timestamp value="2022-08-19T13:20:00+00:00"/>
     <entry>
         <fullUrl value="http://test.fhir.ch/r4/Composition/PMP1-Analyzer"/>
         <resource>
@@ -28,7 +28,7 @@
                 <subject>
                     <reference value="Patient/TrongSangNeffWingeier"/>
                 </subject>
-                <date value="2022-06-12T12:00:00.000+00:00"/>
+                <date value="2022-08-19T13:20:00+00:00"/>
                 <author>
                     <reference value="Device/Analyzer"/>
                 </author>
@@ -83,6 +83,39 @@
                 <gender value="male"/>
                 <birthDate value="1987-10-08"/>
             </Patient>
+        </resource>
+    </entry>
+
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/Hopital"/>
+        <resource>
+            <PractitionerRole>
+                <id value="Hopital"/>
+                <practitioner>
+                    <reference value="Practitioner/DocteurHopital"/>
+                </practitioner>
+            </PractitionerRole>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Practitioner/DocteurHopital"/>
+        <resource>
+            <Practitioner>
+                <id value="DocteurHopital"/>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601000234322"/>
+                </identifier>
+                <name>
+                    <family value="Hôpital"/>
+                    <given value="Docteur"/>
+                </name>
+                <address>
+                    <city value="Zürich"/>
+                    <postalCode value="8005"/>
+                    <country value="CH"/>
+                </address>
+            </Practitioner>
         </resource>
     </entry>
 
@@ -152,7 +185,7 @@
                 </contained>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:fb2f9fa1-544f-40b2-a4f6-a23641c08703"/>
+                    <value value="urn:uuid:eb5ebd69-4d14-47c2-a5d8-c9a37fd485ee"/>
                 </identifier>
                 <status value="completed"/>
                 <category>
@@ -168,6 +201,9 @@
                 <subject>
                     <reference value="Patient/TrongSangNeffWingeier"/>
                 </subject>
+                <informationSource>
+                    <reference value="PractitionerRole/Hopital"/>
+                </informationSource>
                 <!-- History -->
                 <derivedFrom>
                     <reference value="MedicationStatement/1-MedStat-MTP"/>
@@ -287,12 +323,12 @@
                         </valueCodeableConcept>
                     </extension>
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
-                        <valueDateTime value="2022-07-08T07:00:08+00:00"/>
+                        <valueDateTime value="2022-08-19T13:10:22+00:00"/>
                     </extension>
                 </extension>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:4340fa56-50ac-4e90-ae3b-dcd35803ec38"/>
+                    <value value="urn:uuid:1979830b-088d-4979-b73b-95c5d389dfef"/>
                 </identifier>
                 <status value="completed"/>
                 <category>
@@ -308,6 +344,9 @@
                 <subject>
                     <reference value="Patient/TrongSangNeffWingeier"/>
                 </subject>
+                <informationSource>
+                    <reference value="PractitionerRole/Hopital"/>
+                </informationSource>
                 <reasonCode>
                     <text value="allergie"/>
                 </reasonCode>
@@ -388,26 +427,25 @@
                         </valueCodeableConcept>
                     </extension>
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
-                        <valueDateTime value="2022-07-08T07:00:08+00:00"/>
+                        <valueDateTime value="2022-08-19T13:10:22+00:00"/>
                     </extension>
                 </extension>
                 <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
                     <extension url="id">
                         <valueIdentifier>
                             <system value="urn:ietf:rfc:3986"/>
-                            <value value="urn:uuid:4340fa56-50ac-4e90-ae3b-dcd35803ec38"/>
+                            <value value="urn:uuid:1979830b-088d-4979-b73b-95c5d389dfef"/>
                         </valueIdentifier>
                     </extension>
                     <extension url="externalDocumentId">
                         <valueIdentifier>
                             <system value="urn:ietf:rfc:3986"/>
-                            <value value="urn:uuid:33c72b02-0b5e-499f-853f-d6b8594610e4"/>
+                            <value value="urn:uuid:1979830b-088d-4979-b73b-95c5d389dfef"/>
                         </valueIdentifier>
                     </extension>
                 </extension>
                 <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-medicationstatement-changed">
                     <valueReference>
-                        <!--<reference value="urn:uuid:6d684f1a-885b-4fe7-be01-56e1f9c4c2cd"/>-->
                         <reference value="MedicationStatement/2-MedStat-changed"/>
                     </valueReference>
                 </extension>
@@ -426,6 +464,9 @@
                     <reference value="Patient/TrongSangNeffWingeier"/>
                 </subject>
                 <effectiveDateTime value="2019-02-28T11:00:00+01:00"/>
+                <performer>
+                    <reference value="PractitionerRole/Hopital"/>
+                </performer>
                 <note>
                     <text value="pas de réaction significative avec le traitement 1 x jour. -&gt; 2x/j."/>
                 </note>
@@ -511,7 +552,7 @@
                         </valueCodeableConcept>
                     </extension>
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
-                        <valueDateTime value="2022-07-08T07:00:08+00:00"/>
+                        <valueDateTime value="2022-08-19T13:10:22+00:00"/>
                     </extension>
                 </extension>
                 <identifier>
@@ -532,6 +573,9 @@
                 <subject>
                     <reference value="Patient/TrongSangNeffWingeier"/>
                 </subject>
+                <informationSource>
+                    <reference value="PractitionerRole/Hopital"/>
+                </informationSource>
                 <reasonCode>
                     <text value="allergie"/>
                 </reasonCode>

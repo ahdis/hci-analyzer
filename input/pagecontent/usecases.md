@@ -160,9 +160,6 @@ Die in diesem Abschnitt abgebildeten Anwendungsfälle basieren auf Elementen des
 
 
 #### CHANGE
-
-**Note**: [Open issue #3](https://github.com/ahdis/hci-analyzer/issues/3) -> Missing author of medical decision
-
 Cetirizine: 0-0-1-0 => 1-0-1-0
 * [PMP1 Input Analyzer](Parameters-PMP1-Input-Analyzer.html)
    * Inputdokument: Medication List document vom PMP
