@@ -26,3 +26,7 @@ In order to map the author of the medical decision, the following procedure is f
       -> Practitioner => generate a PractitionerRole resource with the element PractitionerRole.practitioner -> Practitioner; the Practitioner resource can then be taken from the input   
       -> Patient => the resource can be taken from the input   
 
+#### History Changes
+Codes to show the different type of changes in the medication history:
+* [CodeSystem](CodeSystem-history-changes.html) & [ValueSet](ValueSet-history-changes.html)
+* [ConceptMap](ConceptMap-ihe-padv-to-analyzer-history-changes.html) to show the mapping to the different types/codes of the PADV Observations (input document).

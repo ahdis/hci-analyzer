@@ -18,6 +18,7 @@ See also open issues on [GitHub](https://github.com/ahdis/hci-analyzer/issues).
 * The working hypothesis until v0.3.0 was that the Medication List document as a dynamically generated document will not appear as an input document for the analyzer. This hypothesis was disproved and the implementation guide adapted accordingly (graphics, use case, examples, profiles). 
 * Update of the output document of the analyzer; the consolidated Medication Card document is a Bundle that is no longer nested in the resource Parameters.
 * Use of PractitionerRole instead of Practitioner to map the author of the medical decision, see also [here](development.html#authors).
+* Adapt change typ (remove 'changeROA', add 'stop'), see [CodeSystem History Changes](CodeSystem-history-changes.html) and added [ConceptMap IHE PADV to Analyzer History Changes](ConceptMap-ihe-padv-to-analyzer-history-changes.html).
 
 #### Fixed
 

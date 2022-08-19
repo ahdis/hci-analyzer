@@ -38,8 +38,8 @@
       <display value="Änderung Galenik"/>
    </concept>
    <concept>
-      <code value="changeROA"/>
-      <display value="Änderung ROA"/>
+      <code value="stop"/>
+      <display value="Stopp"/>
    </concept>
    <concept>
       <code value="comment"/>

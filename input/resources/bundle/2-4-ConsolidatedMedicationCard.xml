@@ -996,7 +996,7 @@
                 <valueCodeableConcept>
                     <coding>
                         <system value="http://hcisolutions.ch/ig/analyzer/CodeSystem/history-changes"/>
-                        <code value="changeTherapy"/>
+                        <code value="stop"/>
                     </coding>
                 </valueCodeableConcept>
             </Observation>

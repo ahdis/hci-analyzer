@@ -370,7 +370,7 @@
       <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>
 
-    <resource>
+    <!--<resource>
       <reference>
         <reference value="Parameters/A6-Input-Analyzer"/>
       </reference>
@@ -385,7 +385,7 @@
       <name value="A6 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
       <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
-    </resource>
+    </resource>-->
 
     <resource>
       <reference>
@@ -607,6 +607,15 @@
       <exampleBoolean value="false"/>
     </resource>
 
+    <!-- ConceptMap -->
+    <resource>
+      <reference>
+        <reference value="ConceptMap/ihe-padv-to-analyzer-history-changes"/>
+      </reference>
+      <name value="IHE PADV to Analyzer History Changes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+
     <!-- Pages -->
     <page>
       <nameUrl value="toc.html"/>
@@ -667,9 +676,17 @@
       <code value="copyrightyear"/>
       <value value="2020+"/>
     </parameter>
-    <parameter>
+    <!--<parameter>
       <code value="no-narrative"/>
       <value value="*/*"/>
+    </parameter>-->
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="Parameters/*"/>
+    </parameter>
+    <parameter>
+      <code value="no-narrative"/>
+      <value value="Bundle/*"/>
     </parameter>
   </definition>
 </ImplementationGuide>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+    <id value="ihe-padv-to-analyzer-history-changes"/>
+    <url value="http://hcisolutions.ch/ig/analyzer/ConceptMap/ihe-padv-to-analyzer-history-changes" />
+    <version value="0.1.0"/>
+    <name value="IhePadvToAnalyzerHistoryChanges" />
+    <title value="IHE PADV to Analyzer History Changes"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <date value="2022-08-18"/>
+    <publisher value="HCI Solutions AG"/>
+    <description value="ConceptMap to show which Analyzer History Changes map to which IHE PADV codes"/>
+    <sourceUri value="http://fhir.ch/ig/ch-emed/ValueSet/ihe-pharmaceuticaladvicestatuslist"/>
+    <targetUri value="http://hcisolutions.ch/ig/analyzer/ValueSet/history-changes"/>
+    <group>
+        <source value="urn:oid:1.3.6.1.4.1.19376.1.9.2.1"/>
+        <target value="http://hcisolutions.ch/ig/analyzer/CodeSystem/history-changes"/>
+        <element>
+            <code value="OK"/>
+            <target>
+                <code value="sameMedication"/>
+                <display value="Gleiche Medikation"/>
+                <equivalence value="specializes"/>
+            </target>
+        </element>
+        <element>
+            <code value="CHANGE"/>
+            <target>
+                <code value="substitution"/>
+                <display value="Substitution"/>
+                <equivalence value="specializes"/>
+            </target>
+            <target>
+                <code value="changeDosage"/>
+                <display value="Änderung Dosierung"/>
+                <equivalence value="specializes"/>
+            </target>
+            <target>
+                <code value="changePractitioner"/>
+                <display value="Änderung Arzt"/>
+                <equivalence value="specializes"/>
+            </target>
+            <target>
+                <code value="changeTherapy"/>
+                <display value="Änderung Therapie"/>
+                <equivalence value="specializes"/>
+            </target>
+            <target>
+                <code value="changeGalenic"/>
+                <display value="Änderung Galenik"/>
+                <equivalence value="specializes"/>
+            </target>
+        </element>
+        <element>
+            <code value="CANCEL"/>
+            <target>
+                <code value="stop"/>
+                <display value="Stopp"/>
+                <equivalence value="specializes"/>
+            </target>
+        </element>
+        <element>
+            <code value="COMMENT"/>
+            <target>
+                <code value="comment"/>
+                <display value="Kommentar"/>
+                <equivalence value="specializes"/>
+            </target>
+        </element>
+    </group>
+</ConceptMap>
