@@ -1,7 +1,16 @@
 ### Output Document - Consolidated Medication Card document
 
 #### Header MedicationStatement
-* There must be at least one dosage element. If there is no dosage information, this element `"text" : "-"` is listed.
+##### Dosage
+* There must be at least **one dosage element** (non-structrued/structured-normal/structured-split).
+* The dosage element (1..*) is set according to this scheme:
+   1. The dosage element is taken from the **last CHANGE** (Observation.code = CHANGE, see also [ConceptMap](ConceptMap-ihe-padv-to-analyzer-history-changes.html))
+   2. If there is **no** CHANGE (see decision 1), the dosage element is taken from the **newest resource** (MedicationStatement/MedicationDispense/MedicationRequest)
+   3. If the last resource is an **Observation (PADV)**, then it depends on the Observation.code (see also [ConceptMap](ConceptMap-ihe-padv-to-analyzer-history-changes.html)):   
+      a. **OK**: decision 1/2   
+      b. **CHANGE**: decision 1   
+      c. **CANCEL**: dosage with this element `"text" : "-"` is listed   
+      d. **COMMENT**:  decision 1/2   
 
 #### Authors
 ##### Author of the document
