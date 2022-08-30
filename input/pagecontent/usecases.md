@@ -111,7 +111,7 @@ Abgesetztes Triatec und abgegebenes Beloc Zok werden für Testzwecke nicht aufge
 Die Art der Veränderung sind im [ValueSet History Changes](ValueSet-history-changes.html) definiert.
 
 #### A1 Substitution
-Apotheke Gare führt eine Substituion bei Zocor durch.
+Apotheke Gare führt eine Substitution bei Zocor durch.
 * [A1 Input Analyzer](Parameters-A1-Input-Analyzer.html)
    * Inputdokumente: Medication Card Zocor, Medication Card Simcora
 * [A1 Consolidated Medication Card document](Bundle-A1-ConsolidatedMedicationCard.html)
