@@ -70,6 +70,20 @@
       </type>
     </element>
 
+    <element id="Bundle.entry:PractitionerRole">
+      <path value="Bundle.entry"/>
+      <sliceName value="PractitionerRole"/>
+    </element>
+    <element id="Bundle.entry:PractitionerRole.resource">
+      <path value="Bundle.entry.resource"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Resource"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+      </type>
+    </element>
+
     <element id="Bundle.entry:Organization">
       <path value="Bundle.entry"/>
       <sliceName value="Organization"/>
