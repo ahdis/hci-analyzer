@@ -88,6 +88,23 @@
 
     <resource>
       <reference>
+        <reference value="Parameters/1-1-SectionAuthor-Input-Analyzer"/>
+      </reference>
+      <name value="1-1 Section Author Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/1-1-SectionAuthor-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="1-1 Section Author Output Analyzer"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
+    </resource>
+
+    <resource>
+      <reference>
         <reference value="Parameters/1-2-Input-Analyzer"/>
       </reference>
       <name value="1-2 Input Analyzer"/>
