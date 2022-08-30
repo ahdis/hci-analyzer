@@ -52,11 +52,23 @@
             </target>
         </element>
         <element>
+            <code value="REFUSE"/>
+            <target>
+                <equivalence value="unmatched"/>
+            </target>
+        </element>
+        <element>
             <code value="CANCEL"/>
             <target>
                 <code value="stop"/>
                 <display value="Stopp"/>
                 <equivalence value="specializes"/>
+            </target>
+        </element>
+        <element>
+            <code value="SUSPEND"/>
+            <target>
+                <equivalence value="unmatched"/>
             </target>
         </element>
         <element>
