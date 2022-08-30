@@ -44,11 +44,8 @@ The string value contains text that looks like embedded HTML tags. If this conte
 
 # Slicing information (about Extensions) from CH EMED/CH Core
 This element does not match any known slice defined in the profile http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-composition
-This element does not match any known slice defined in the profile http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-medicationstatement
-This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationtreatmentplan
-This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationprescription
-This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-composition-medicationcard
-This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medicationstatement-treatmentplan
+This element does not match any known slice defined in the profile http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-MedicationStatement
+
 # Pattern defined in CH EMED / CH Core
 The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 
