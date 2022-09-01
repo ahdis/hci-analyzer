@@ -4,13 +4,9 @@
 ##### Dosage
 * There must be **at least one dosage element** (non-structrued/structured-normal/structured-split).
 * The dosage element (1..*) is set according to this scheme:
-   1. The dosage element is taken from the **last CHANGE** (Observation.code = CHANGE, see also [ConceptMap](ConceptMap-ihe-padv-to-analyzer-history-changes.html))
-   2. If there is **no** CHANGE (see decision 1), the dosage element is taken from the **newest resource** (MedicationStatement/MedicationDispense/MedicationRequest)
-   3. If the last resource is an **Observation (PADV)**, then it depends on the Observation.code (see also [ConceptMap](ConceptMap-ihe-padv-to-analyzer-history-changes.html)):   
-      a. **OK**: decision 1/2   
-      b. **CHANGE**: decision 1   
-      c. **CANCEL**: dosage with this element `"text" : "-"` is listed   
-      d. **COMMENT**:  decision 1/2   
+   1.  If the last Observation (which isn’t necessarily the last resource) is a CHANGE (= Observation.code, see also [ConceptMap](ConceptMap-ihe-padv-to-analyzer-history-changes.html)), use the dosages contained in the resource, referenced by its `"url": "id"`-extension, if it contains a dosage.
+   2. If the last Observation (which isn’t necessarily the last resource) is a CANCEL, set a constant dosage with `"text" : "-"`.
+   3. Take the dosage from the newest (last) resource (MedicationStatement/MedicationDispense/MedicationRequest) having a dosage.
 
 #### Authors
 ##### Author of the document
