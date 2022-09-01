@@ -657,9 +657,6 @@
                             <reasonCode>
                                 <text value="-"/>
                             </reasonCode>
-                            <note>
-                                <text value="-"/>
-                            </note>
                             <dosageInstruction>
                                 <timing>
                                     <repeat>
@@ -1011,9 +1008,6 @@
                             <reasonCode>
                                 <text value="Bluthochdruck"/>
                             </reasonCode>
-                            <note>
-                                <text value="-"/>
-                            </note>
                             <dosage>
                                 <timing>
                                     <repeat>

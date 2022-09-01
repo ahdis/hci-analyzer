@@ -2924,9 +2924,6 @@
                             <reasonCode>
                                 <text value="-"/>
                             </reasonCode>
-                            <note>
-                                <text value="-"/>
-                            </note>
                             <dosageInstruction>
                                 <timing>
                                     <repeat>
