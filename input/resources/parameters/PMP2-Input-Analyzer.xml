@@ -257,13 +257,8 @@
                                 </extension>
                                 <text value="pour dormir"/>
                             </reasonCode>
-                            <note>
-                                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                                    <valueUrl value="#kklqe.refpdf"/>
-                                </extension>
-                                <text value="laisser fondre 1 comprimé sous la langue ½ heure avant le coucher &#xA;(si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin)"/>
-                            </note>
                             <dosage>
+                                <patientInstruction value="laisser fondre 1 comprimé sous la langue ½ heure avant le coucher &#xA;(si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin)"/>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
