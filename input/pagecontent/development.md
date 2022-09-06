@@ -47,3 +47,11 @@ In order to map the author of the medical decision, the following procedure is f
 Codes to show the different type of changes in the medication history:
 * [CodeSystem](CodeSystem-history-changes.html) & [ValueSet](ValueSet-history-changes.html)
 * [ConceptMap](ConceptMap-ihe-padv-to-analyzer-history-changes.html) to show the mapping to the different types/codes of the PADV Observations (input document).
+
+
+### FHIR Implementation Guide
+#### Naming
+The files (bundle & paramters) should all be named according to the same scheme, so that the analyzer tests can be performed in a standardized/automated way:
+* Input document: `Parameters-<test-case-name>-Input-Analyzer.json`
+* Output document:  `Bundle-<test-case-name>-ConsolidatedMedicationCard.json`    
+Where &lt;test-case-name&gt; corresponds to the name of the test case. The test case will only be executed if an input/output pair with the same &lt;test-case-name&gt; is found.
