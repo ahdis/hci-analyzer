@@ -935,6 +935,14 @@
                             <display value="Oral use"/>
                         </coding>
                     </route>
+                    <doseAndRate>
+                        <doseQuantity>
+                            <value value="1"/>
+                            <unit value="Tablet (unit of presentation)"/>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="732936001"/>
+                        </doseQuantity>
+                    </doseAndRate>
                 </dosage>
             </MedicationStatement>
         </resource>
@@ -1428,6 +1436,14 @@
                             <display value="Oral use"/>
                         </coding>
                     </route>
+                    <doseAndRate>
+                        <doseQuantity>
+                            <value value="1"/>
+                            <unit value="Tablet (unit of presentation)"/>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="732936001"/>
+                        </doseQuantity>
+                    </doseAndRate>
                 </dosage>
             </MedicationStatement>
         </resource>
