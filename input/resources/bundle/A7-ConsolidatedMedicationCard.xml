@@ -35,9 +35,6 @@
                 <title value="Medikationsplan"/>
                 <section>
                     <entry>
-                        <reference value="MedicationStatement/A7-MedStatBrufen-600-Analyzer"/>
-                    </entry>
-                    <entry>
                         <reference value="MedicationStatement/A7-MedStatBrufenRetard-800-Analyzer"/>
                     </entry>
                 </section>
@@ -400,128 +397,7 @@
         </resource>
     </entry>
 
-    <!-- Section entry 1: MedicationStatement -->
-    <entry>
-        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/A7-MedStatBrufen-600-Analyzer"/>
-        <resource>
-            <MedicationStatement>
-                <id value="A7-MedStatBrufen-600-Analyzer"/>
-                <contained>
-                    <Medication>
-                        <id value="cont1"/>
-                        <code>
-                            <coding>
-                                <system value="urn:oid:2.51.1.1"/>
-                                <code value="7680450311951"/>
-                                <display value="Brufen 600 mg Filmtabl"/>
-                            </coding>
-                            <text value="Brufen 600 mg Filmtabl"/>
-                        </code>
-                        <form>
-                            <coding>
-                                <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                                <code value="10221000"/>
-                                <display value="Film-coated tablet"/>
-                            </coding>
-                        </form>
-                        <amount>
-                            <numerator>
-                                <value value="20"/>
-                                <unit value="Piece"/>
-                                <system value="http://unitsofmeasure.org"/>
-                                <code value="{Piece}"/>
-                            </numerator>
-                            <denominator>
-                                <value value="1"/>
-                                <unit value="Package"/>
-                                <system value="http://unitsofmeasure.org"/>
-                                <code value="{Package}"/>
-                            </denominator>
-                        </amount>
-                        <ingredient>
-                            <itemCodeableConcept>
-                                <coding>
-                                    <system value="http://snomed.info/sct"/>
-                                    <code value="387207008"/>
-                                    <display value="Ibuprofen (substance)"/>
-                                </coding>
-                                <text value="Ibuprofen (substance)"/>
-                            </itemCodeableConcept>
-                            <strength>
-                                <numerator>
-                                    <value value="600"/>
-                                    <unit value="milligram"/>
-                                    <system value="http://unitsofmeasure.org"/>
-                                    <code value="mg"/>
-                                </numerator>
-                                <denominator>
-                                    <value value="1"/>
-                                    <unit value="Tablet (unit of presentation)"/>
-                                    <system value="http://snomed.info/sct"/>
-                                    <code value="732936001"/>
-                                </denominator>
-                            </strength>
-                        </ingredient>
-                    </Medication>
-                </contained>
-                <identifier>
-                    <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:60999d89-95fb-43b2-aa15-22e101a7ae40"/>
-                </identifier>
-                <status value="completed"/>
-                <category>
-                    <coding>
-                        <system value="http://www.whocc.no/atc"/>
-                        <code value="M"/>
-                        <display value="Muskel- und Skelettsystem"/>
-                    </coding>
-                </category>
-                <medicationReference>
-                    <reference value="#cont1"/>
-                </medicationReference>
-                <subject>
-                    <reference value="Patient/MonikaWegmueller"/>
-                </subject>
-                <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
-                </informationSource>
-                <!-- History -->
-                <derivedFrom>
-                    <reference value="MedicationStatement/A7-MedStatBrufen-600"/>
-                </derivedFrom>
-                <!--<reasonCode>
-                    <text value="Schmerzen"/>
-                </reasonCode>-->
-                <dosage>
-                    <timing>
-                        <repeat>
-                            <boundsPeriod>
-                                <start value="2020-02-01"/>
-                            </boundsPeriod>
-                            <when value="MORN"/>
-                        </repeat>
-                    </timing>
-                    <route>
-                        <coding>
-                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                            <code value="20053000"/>
-                            <display value="Oral use"/>
-                        </coding>
-                    </route>
-                    <doseAndRate>
-                        <doseQuantity>
-                            <value value="1"/>
-                            <unit value="Tablet (unit of presentation)" />
-                            <system value="http://snomed.info/sct"/>
-                            <code value="732936001"/>
-                        </doseQuantity>
-                    </doseAndRate>
-                </dosage>
-            </MedicationStatement>
-        </resource>
-    </entry>
-
-    <!-- Section entry 2: MedicationStatement -->
+    <!-- Section entry: MedicationStatement -->
     <entry>
         <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/A7-MedStatBrufenRetard-800-Analyzer"/>
         <resource>
