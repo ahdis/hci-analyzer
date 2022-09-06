@@ -147,9 +147,9 @@
                         <amount>
                             <numerator>
                                 <value value="30"/>
-                                <unit value="Piece"/>
-                                <system value="http://unitsofmeasure.org"/>
-                                <code value="{Piece}"/>
+                                <unit value="Tablet (unit of presentation)"/>
+                                <system value="http://snomed.info/sct"/>
+                                <code value="732936001"/>
                             </numerator>
                             <denominator>
                                 <value value="1"/>
@@ -242,6 +242,14 @@
                             <display value="Oral use"/>
                         </coding>
                     </route>
+                    <doseAndRate>
+                        <doseQuantity>
+                            <value value="1"/>
+                            <unit value="Tablet (unit of presentation)"/>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="732936001"/>
+                        </doseQuantity>
+                    </doseAndRate>
                 </dosage>
             </MedicationStatement>
         </resource>
@@ -274,9 +282,9 @@
                         <amount>
                             <numerator>
                                 <value value="30"/>
-                                <unit value="Piece"/>
-                                <system value="http://unitsofmeasure.org"/>
-                                <code value="{Piece}"/>
+                                <unit value="Tablet (unit of presentation)"/>
+                                <system value="http://snomed.info/sct"/>
+                                <code value="732936001"/>
                             </numerator>
                             <denominator>
                                 <value value="1"/>
@@ -391,10 +399,10 @@
                     </doseAndRate>
                 </dosageInstruction>
                 <dispenseRequest>
-                    <numberOfRepeatsAllowed value="2"/>
-                    <quantity>
-                        <value value="1"/>
-                    </quantity>
+                    <validityPeriod>
+                        <start value="2012-02-04"/>
+                        <end value="2012-05-03"/>
+                    </validityPeriod>
                 </dispenseRequest>
             </MedicationRequest>
         </resource>
@@ -427,9 +435,9 @@
                         <amount>
                             <numerator>
                                 <value value="30"/>
-                                <unit value="Piece"/>
-                                <system value="http://unitsofmeasure.org"/>
-                                <code value="{Piece}"/>
+                                <unit value="Tablet (unit of presentation)"/>
+                                <system value="http://snomed.info/sct"/>
+                                <code value="732936001"/>
                             </numerator>
                             <denominator>
                                 <value value="1"/>
