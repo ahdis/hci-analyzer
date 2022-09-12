@@ -69,7 +69,17 @@
                         </coding>
                     </type>
                     <system value="urn:oid:2.999.1"/>
-                    <value value="11111111"/>
+                    <value value="1234"/>
+                </identifier>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="MR"/>
+                        </coding>
+                    </type>
+                    <system value="urn:oid:2.999.1"/>
+                    <value value="5678"/>
                 </identifier>
                 <name>
                     <family value="Wegmüller"/>
