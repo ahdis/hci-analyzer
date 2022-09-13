@@ -30,6 +30,7 @@ In order to map the author of the medical decision, the following procedure is f
             * see [schematic illustration](PR-UCs-PMP1.jpg)
          * PMP2: see [schematic illustration](PR-UCs-PMP2.jpg)
          * PMP3: see [schematic illustration](PR-UCs-PMP3.jpg)     
+      * **Note**: If there is a changed MedicationStatement (PADV CHANGE) without informationSource, take the Observation.performer, from where the changed MedicationStatement is referenced (see PMP1 UC). 
 
    2. Composition.section.author   
       * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner) => both resources can be taken from the input
