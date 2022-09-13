@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="inputdocumentid"/>
+  <url value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentid"/>
+  <version value="0.1.0"/>
+  <name value="InputDocumentId"/>
+  <title value="Input Document Id"/>
+  <status value="draft"/>
+  <description value="Extension for representing the identifier (externalDocumentId) of the input document"/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Extension"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Extension for Input Document Id"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentid"/>
+    </element>
+    <element id="Extension.valueIdentifier">
+      <path value="Extension.valueIdentifier"/>
+      <short value="Identifier of the input document"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -34,6 +34,7 @@
       <path value="Extension"/>
       <short value="Extension for Information about Input Document"/>
     </element>
+
     <element id="Extension.extension:documentSource">
       <path value="Extension.extension"/>
       <sliceName value="documentSource"/>
@@ -45,6 +46,7 @@
         <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource"/>
       </type>
     </element>
+
     <element id="Extension.extension:documentType">
       <path value="Extension.extension"/>
       <sliceName value="documentType"/>
@@ -56,10 +58,11 @@
         <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype"/>
       </type>
     </element>
+
     <element id="Extension.extension:documentDate">
       <path value="Extension.extension"/>
       <sliceName value="documentDate"/>
-      <short value="Date of the input document"/>
+      <short value="Date of the input document (Bundle.timestamp)"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -67,6 +70,20 @@
         <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate"/>
       </type>
     </element>
+
+    <element id="Extension.extension:documentId">
+      <path value="Extension.extension"/>
+      <sliceName value="documentId"/>
+      <short value="Identifier of the input document (Bundle.identifier)"/>
+      <!--TBD: min = 1 -->
+      <!--<min value="1"/>-->
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentid"/>
+      </type>
+    </element>
+
     <element id="Extension.url">
       <path value="Extension.url"/>
       <type>
