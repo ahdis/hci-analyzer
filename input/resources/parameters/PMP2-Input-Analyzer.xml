@@ -165,7 +165,11 @@
                     <fullUrl value="urn:uuid:206e9378-b456-4a58-9e1e-b72dcff4aa89"/>
                     <resource>
                         <Organization>
-                            <name value="Hausarzt"/>
+                            <identifier>
+                                <system value="urn:oid:2.51.1.3"/>
+                                <value value="7601001407428"/>
+                            </identifier>
+                            <name value="Association CARA"/>
                         </Organization>
                     </resource>
                 </entry>
