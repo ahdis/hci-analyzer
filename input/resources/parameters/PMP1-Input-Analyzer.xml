@@ -240,6 +240,20 @@
                             <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
                                 <valueUrl value="#iquvk."/>
                             </extension>
+                            <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
+                                <extension url="id">
+                                    <valueIdentifier>
+                                        <system value="urn:ietf:rfc:3986"/>
+                                        <value value="urn:uuid:39092343-7e0c-4c6f-b706-2c8e4dac77a9"/>
+                                    </valueIdentifier>
+                                </extension>
+                                <extension url="externalDocumentId">
+                                    <valueIdentifier>
+                                        <system value="urn:ietf:rfc:3986"/>
+                                        <value value="urn:uuid:39092343-7e0c-4c6f-b706-2c8e4dac77a9"/>
+                                    </valueIdentifier>
+                                </extension>
+                            </extension>
                             <identifier>
                                 <system value="urn:ietf:rfc:3986"/>
                                 <value value="urn:uuid:1979830b-088d-4979-b73b-95c5d389dfef"/>
@@ -344,6 +358,20 @@
                                 <valueReference>
                                     <reference value="urn:uuid:ba3359b0-4c1c-40b8-86c9-39b328730163"/>
                                 </valueReference>
+                            </extension>
+                            <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-pharmaceuticaladvice">
+                                <extension url="id">
+                                    <valueIdentifier>
+                                        <system value="urn:ietf:rfc:3986"/>
+                                        <value value="urn:uuid:1339a426-b61e-4c99-acac-450724fcf6d9"/>
+                                    </valueIdentifier>
+                                </extension>
+                                <extension url="externalDocumentId">
+                                    <valueIdentifier>
+                                        <system value="urn:ietf:rfc:3986"/>
+                                        <value value="urn:uuid:bdf2e38c-29a4-46dc-aa75-70e07ccabb8b"/>
+                                    </valueIdentifier>
+                                </extension>
                             </extension>
                             <identifier>
                                 <system value="urn:ietf:rfc:3986"/>

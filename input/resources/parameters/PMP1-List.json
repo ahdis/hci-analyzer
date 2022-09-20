@@ -2,13 +2,13 @@
   "resourceType": "Bundle",
   "identifier": {
     "system": "urn:ietf:rfc:3986",
-    "value": "urn:uuid:aec803b7-c61a-4521-9254-ee808c75d3c6"
+    "value": "urn:uuid:b5107b1c-489a-4519-9969-b635166c28f1"
   },
   "type": "document",
-  "timestamp": "2022-08-19T13:10:22+00:00",
+  "timestamp": "2022-09-20T12:56:04+00:00",
   "entry": [
     {
-      "fullUrl": "urn:uuid:1367bc4c-3894-4536-9bcc-f869e2c77e07",
+      "fullUrl": "urn:uuid:0cb84fc5-05c2-4e12-8b79-bdbaf7cdee61",
       "resource": {
         "resourceType": "Composition",
         "language": "fr-CH",
@@ -16,13 +16,13 @@
           {
             "url": "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient",
             "valueReference": {
-              "reference": "urn:uuid:4052756e-0412-4176-85c7-91dd9bfb6ac7"
+              "reference": "urn:uuid:682c97be-0367-4c4f-bb4a-b5c05ead7f9d"
             }
           }
         ],
         "identifier": {
           "system": "urn:ietf:rfc:3986",
-          "value": "urn:uuid:aec803b7-c61a-4521-9254-ee808c75d3c6"
+          "value": "urn:uuid:b5107b1c-489a-4519-9969-b635166c28f1"
         },
         "status": "final",
         "type": {
@@ -40,18 +40,18 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:d7ae9998-05cc-4178-ac11-4d9b4d306693"
+          "reference": "urn:uuid:76dd22e7-bfd0-4240-93a4-61f5a202b0ba"
         },
-        "date": "2022-08-19T13:10:22+00:00",
+        "date": "2022-09-20T12:56:04+00:00",
         "author": [
           {
             "extension": [
               {
                 "url": "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time",
-                "valueDateTime": "2022-08-19T13:10:22+00:00"
+                "valueDateTime": "2022-09-20T12:56:04+00:00"
               }
             ],
-            "reference": "urn:uuid:7516fa3e-b2e2-4eb4-8365-d80ed22c2e33"
+            "reference": "urn:uuid:cf316572-89db-4e1f-b269-aae6b0d95908"
           }
         ],
         "title": "Liste de médication",
@@ -73,7 +73,7 @@
           ]
         },
         "custodian": {
-          "reference": "urn:uuid:064d380d-01ce-4102-8520-9ee46272053e"
+          "reference": "urn:uuid:c340c837-0fbb-49c2-998f-bdecfc4caf37"
         },
         "section": [
           {
@@ -89,14 +89,14 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span id=\"generator_comment\">Cette liste de médication a été générée automatiquement par le PMP le August 19, 2022 at 1:10:22 PM UTC. Les paramètres utilisés pour la génération du document sont : les éléments de type Medication Treatment Plan Item, Prescription Item, Dispense Item et PADV sont inclus ; tous les traitements sont considérés.</span><span id=\"iquvk.\">Texte narratif pour l'item 1979830b-088d-4979-b73b-95c5d389dfef</span><p id=\"iquvk.refpdf\">Cetirizine Mepha Lactab 10 mg, 0-0-1, durant 3 jours, raison: allergie</p><span id=\"camsc.\">Texte narratif pour l'item 1339a426-b61e-4c99-acac-450724fcf6d9</span><p id=\"camsc.refpdf\">pas de réaction significative avec le traitement 1 x jour. -&gt; 2x/j.</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span id=\"generator_comment\">Cette liste de médication a été générée automatiquement par le PMP le September 20, 2022 at 12:56:04 PM UTC. Les paramètres utilisés pour la génération du document sont : les éléments de type Medication Treatment Plan Item, Prescription Item, Dispense Item et PADV sont inclus ; tous les traitements sont considérés.</span><span id=\"mrfao.\">Texte narratif pour l'item 39092343-7e0c-4c6f-b706-2c8e4dac77a9</span><p id=\"mrfao.refpdf\">Cetirizine Mepha Lactab 10 mg, 0-0-1, durant 3 jours, raison: allergie</p><span id=\"sqodr.\">Texte narratif pour l'item 1339a426-b61e-4c99-acac-450724fcf6d9</span><p id=\"sqodr.refpdf\">pas de réaction significative avec le traitement 1 x jour. -&gt; 2x/j.</p></div>"
             },
             "entry": [
               {
-                "reference": "urn:uuid:d468c1e6-fb92-4732-85ae-20486c03efc6"
+                "reference": "urn:uuid:0a8d0c7f-b3c0-4864-8f4a-3d1e847e4f5b"
               },
               {
-                "reference": "urn:uuid:79198575-82c2-4d00-8a25-f275f145a21a"
+                "reference": "urn:uuid:66def1c8-bbcb-4f0b-8b10-94e6da826de2"
               }
             ]
           }
@@ -104,7 +104,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:d7ae9998-05cc-4178-ac11-4d9b4d306693",
+      "fullUrl": "urn:uuid:76dd22e7-bfd0-4240-93a4-61f5a202b0ba",
       "resource": {
         "resourceType": "Patient",
         "identifier": [
@@ -134,7 +134,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:7516fa3e-b2e2-4eb4-8365-d80ed22c2e33",
+      "fullUrl": "urn:uuid:cf316572-89db-4e1f-b269-aae6b0d95908",
       "resource": {
         "resourceType": "Device",
         "identifier": [
@@ -145,7 +145,7 @@
         ],
         "deviceName": [
           {
-            "name": "9d7a6b3",
+            "name": "6d6e100",
             "type": "manufacturer-name"
           }
         ],
@@ -153,7 +153,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:064d380d-01ce-4102-8520-9ee46272053e",
+      "fullUrl": "urn:uuid:c340c837-0fbb-49c2-998f-bdecfc4caf37",
       "resource": {
         "resourceType": "Organization",
         "identifier": [
@@ -166,7 +166,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:4052756e-0412-4176-85c7-91dd9bfb6ac7",
+      "fullUrl": "urn:uuid:682c97be-0367-4c4f-bb4a-b5c05ead7f9d",
       "resource": {
         "resourceType": "Organization",
         "identifier": [
@@ -179,7 +179,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:d468c1e6-fb92-4732-85ae-20486c03efc6",
+      "fullUrl": "urn:uuid:0a8d0c7f-b3c0-4864-8f4a-3d1e847e4f5b",
       "resource": {
         "resourceType": "MedicationStatement",
         "contained": [
@@ -252,13 +252,32 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-            "valueUrl": "#iquvk."
+            "valueUrl": "#mrfao."
+          },
+          {
+            "extension": [
+              {
+                "url": "id",
+                "valueIdentifier": {
+                  "system": "urn:ietf:rfc:3986",
+                  "value": "urn:uuid:39092343-7e0c-4c6f-b706-2c8e4dac77a9"
+                }
+              },
+              {
+                "url": "externalDocumentId",
+                "valueIdentifier": {
+                  "system": "urn:ietf:rfc:3986",
+                  "value": "urn:uuid:39092343-7e0c-4c6f-b706-2c8e4dac77a9"
+                }
+              }
+            ],
+            "url": "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan"
           }
         ],
         "identifier": [
           {
             "system": "urn:ietf:rfc:3986",
-            "value": "urn:uuid:1979830b-088d-4979-b73b-95c5d389dfef"
+            "value": "urn:uuid:39092343-7e0c-4c6f-b706-2c8e4dac77a9"
           }
         ],
         "status": "completed",
@@ -266,7 +285,7 @@
           "reference": "#med"
         },
         "subject": {
-          "reference": "urn:uuid:d7ae9998-05cc-4178-ac11-4d9b4d306693"
+          "reference": "urn:uuid:76dd22e7-bfd0-4240-93a4-61f5a202b0ba"
         },
         "informationSource": {
           "extension": [
@@ -275,14 +294,14 @@
               "valueDateTime": "2019-02-27T10:00:00+00:00"
             }
           ],
-          "reference": "urn:uuid:3656263a-8f15-4175-975a-13524d922ce4"
+          "reference": "urn:uuid:b32776b3-21dc-46e9-8627-a96655a90cae"
         },
         "reasonCode": [
           {
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                "valueUrl": "#iquvk."
+                "valueUrl": "#mrfao."
               }
             ],
             "text": "allergie"
@@ -325,16 +344,16 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:3656263a-8f15-4175-975a-13524d922ce4",
+      "fullUrl": "urn:uuid:b32776b3-21dc-46e9-8627-a96655a90cae",
       "resource": {
         "resourceType": "PractitionerRole",
         "practitioner": {
-          "reference": "urn:uuid:f2854370-f9b0-4893-87d2-09b6098ed641"
+          "reference": "urn:uuid:5e40b088-b9f1-4bcd-9675-a44c6cb5bb82"
         }
       }
     },
     {
-      "fullUrl": "urn:uuid:f2854370-f9b0-4893-87d2-09b6098ed641",
+      "fullUrl": "urn:uuid:5e40b088-b9f1-4bcd-9675-a44c6cb5bb82",
       "resource": {
         "resourceType": "Practitioner",
         "identifier": [
@@ -361,7 +380,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:79198575-82c2-4d00-8a25-f275f145a21a",
+      "fullUrl": "urn:uuid:66def1c8-bbcb-4f0b-8b10-94e6da826de2",
       "resource": {
         "resourceType": "Observation",
         "extension": [
@@ -371,14 +390,14 @@
                 "url": "id",
                 "valueIdentifier": {
                   "system": "urn:ietf:rfc:3986",
-                  "value": "urn:uuid:1979830b-088d-4979-b73b-95c5d389dfef"
+                  "value": "urn:uuid:39092343-7e0c-4c6f-b706-2c8e4dac77a9"
                 }
               },
               {
                 "url": "externalDocumentId",
                 "valueIdentifier": {
                   "system": "urn:ietf:rfc:3986",
-                  "value": "urn:uuid:1979830b-088d-4979-b73b-95c5d389dfef"
+                  "value": "urn:uuid:39092343-7e0c-4c6f-b706-2c8e4dac77a9"
                 }
               }
             ],
@@ -387,8 +406,27 @@
           {
             "url": "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-medicationstatement-changed",
             "valueReference": {
-              "reference": "urn:uuid:ba3359b0-4c1c-40b8-86c9-39b328730163"
+              "reference": "urn:uuid:fe68386b-6535-4213-9b1f-3821b7e71115"
             }
+          },
+          {
+            "extension": [
+              {
+                "url": "id",
+                "valueIdentifier": {
+                  "system": "urn:ietf:rfc:3986",
+                  "value": "urn:uuid:1339a426-b61e-4c99-acac-450724fcf6d9"
+                }
+              },
+              {
+                "url": "externalDocumentId",
+                "valueIdentifier": {
+                  "system": "urn:ietf:rfc:3986",
+                  "value": "urn:uuid:bdf2e38c-29a4-46dc-aa75-70e07ccabb8b"
+                }
+              }
+            ],
+            "url": "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-pharmaceuticaladvice"
           }
         ],
         "identifier": [
@@ -407,7 +445,7 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:d7ae9998-05cc-4178-ac11-4d9b4d306693"
+          "reference": "urn:uuid:76dd22e7-bfd0-4240-93a4-61f5a202b0ba"
         },
         "effectiveDateTime": "2019-02-28T11:00:00+01:00",
         "performer": [
@@ -418,7 +456,7 @@
                 "valueDateTime": "2019-02-28T10:00:00+00:00"
               }
             ],
-            "reference": "urn:uuid:c9e4081e-ae48-46e5-967b-968e7c877731"
+            "reference": "urn:uuid:a5bfdbda-43c6-4c2d-bd38-9288522e847a"
           }
         ],
         "note": [
@@ -426,7 +464,7 @@
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                "valueUrl": "#camsc."
+                "valueUrl": "#sqodr.refpdf"
               }
             ],
             "text": "pas de réaction significative avec le traitement 1 x jour. -> 2x/j."
@@ -435,16 +473,16 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:c9e4081e-ae48-46e5-967b-968e7c877731",
+      "fullUrl": "urn:uuid:a5bfdbda-43c6-4c2d-bd38-9288522e847a",
       "resource": {
         "resourceType": "PractitionerRole",
         "practitioner": {
-          "reference": "urn:uuid:29fdd6c8-bcfe-446f-be46-cf58f06cd1c6"
+          "reference": "urn:uuid:a89acdb3-a748-4fb2-b1af-d520459f37bd"
         }
       }
     },
     {
-      "fullUrl": "urn:uuid:29fdd6c8-bcfe-446f-be46-cf58f06cd1c6",
+      "fullUrl": "urn:uuid:a89acdb3-a748-4fb2-b1af-d520459f37bd",
       "resource": {
         "resourceType": "Practitioner",
         "identifier": [
@@ -471,8 +509,8 @@
       }
     },
     {
-      "id": "ba3359b0-4c1c-40b8-86c9-39b328730163",
-      "fullUrl": "urn:uuid:ba3359b0-4c1c-40b8-86c9-39b328730163",
+      "id": "fe68386b-6535-4213-9b1f-3821b7e71115",
+      "fullUrl": "urn:uuid:fe68386b-6535-4213-9b1f-3821b7e71115",
       "resource": {
         "resourceType": "MedicationStatement",
         "contained": [
@@ -545,7 +583,7 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-            "valueUrl": "#camsc."
+            "valueUrl": "#sqodr."
           }
         ],
         "identifier": [
@@ -559,14 +597,14 @@
           "reference": "#med"
         },
         "subject": {
-          "reference": "urn:uuid:d7ae9998-05cc-4178-ac11-4d9b4d306693"
+          "reference": "urn:uuid:76dd22e7-bfd0-4240-93a4-61f5a202b0ba"
         },
         "reasonCode": [
           {
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                "valueUrl": "#camsc."
+                "valueUrl": "#sqodr."
               }
             ],
             "text": "allergie"
