@@ -2,13 +2,13 @@
     "resourceType": "Bundle",
     "identifier": {
         "system": "urn:ietf:rfc:3986",
-        "value": "urn:uuid:917956eb-7ea7-4d81-925e-892cbb556d44"
+        "value": "urn:uuid:becf94a2-f957-466e-835a-8297551f910f"
     },
     "type": "document",
-    "timestamp": "2022-08-17T08:21:04+00:00",
+    "timestamp": "2022-09-20T13:19:54+00:00",
     "entry": [
         {
-            "fullUrl": "urn:uuid:b3fd4851-1367-4784-9424-95fd9f210123",
+            "fullUrl": "urn:uuid:9d3b6507-f2d5-4ce8-860c-958758bf2f4a",
             "resource": {
                 "resourceType": "Composition",
                 "language": "fr-CH",
@@ -16,13 +16,13 @@
                     {
                         "url": "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient",
                         "valueReference": {
-                            "reference": "urn:uuid:206e9378-b456-4a58-9e1e-b72dcff4aa89"
+                            "reference": "urn:uuid:3c11b8b9-8351-4243-815f-4c801f0a1b1f"
                         }
                     }
                 ],
                 "identifier": {
                     "system": "urn:ietf:rfc:3986",
-                    "value": "urn:uuid:917956eb-7ea7-4d81-925e-892cbb556d44"
+                    "value": "urn:uuid:becf94a2-f957-466e-835a-8297551f910f"
                 },
                 "status": "final",
                 "type": {
@@ -40,18 +40,18 @@
                     ]
                 },
                 "subject": {
-                    "reference": "urn:uuid:17633005-e2c5-4ce2-b23c-a6d9d4fe45b9"
+                    "reference": "urn:uuid:e7cdd896-3644-47dd-8001-fe6a2eb961e8"
                 },
-                "date": "2022-08-17T08:21:04+00:00",
+                "date": "2022-09-20T13:19:54+00:00",
                 "author": [
                     {
                         "extension": [
                             {
                                 "url": "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time",
-                                "valueDateTime": "2022-08-17T08:21:04+00:00"
+                                "valueDateTime": "2022-09-20T13:19:54+00:00"
                             }
                         ],
-                        "reference": "urn:uuid:97b2b649-749b-457a-94e2-6196d0992000"
+                        "reference": "urn:uuid:598adec2-3aec-4ba1-879c-392f97159235"
                     }
                 ],
                 "title": "Liste de médication",
@@ -73,7 +73,7 @@
                     ]
                 },
                 "custodian": {
-                    "reference": "urn:uuid:be34cfa3-4454-4163-b1ea-5d74819a29b4"
+                    "reference": "urn:uuid:cc249f0c-10f9-4e1b-bc16-83458a51cb7d"
                 },
                 "section": [
                     {
@@ -89,14 +89,14 @@
                         },
                         "text": {
                             "status": "generated",
-                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span id=\"generator_comment\">Cette liste de médication a été générée automatiquement par le PMP le August 17, 2022 at 8:21:04 AM UTC. Les paramètres utilisés pour la génération du document sont : les éléments de type Medication Treatment Plan Item, Prescription Item, Dispense Item et PADV sont inclus ; tous les traitements sont considérés.</span><span id=\"kklqe.\">Texte narratif pour l'item 8b1e35ec-0a5a-4d14-9913-45402e0ac8e4</span><p id=\"kklqe.refpdf\">Temesta Expidet cpr orodisp 1 mg, 0-0-0-1, durant 3 jours, raison: pour dormir</p><span id=\"myaey.\">Texte narratif pour l'item 70ef012c-4655-431c-a3bb-8d97edf8e130</span><p id=\"myaey.refpdf\">selon téléphone avec le médecin, arrêter le traitement car inefficace</p></div>"
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span id=\"generator_comment\">Cette liste de médication a été générée automatiquement par le PMP le September 20, 2022 at 1:19:54 PM UTC. Les paramètres utilisés pour la génération du document sont : les éléments de type Medication Treatment Plan Item, Prescription Item, Dispense Item et PADV sont inclus ; tous les traitements sont considérés.</span><span id=\"urccz.\">Texte narratif pour l'item 53eac822-12f7-4335-a8cb-da90538ca0f1</span><p id=\"urccz.refpdf\">Temesta Expidet cpr orodisp 1 mg, 0-0-0-1, durant 3 jours, raison: pour dormir</p><span id=\"wxrce.\">Texte narratif pour l'item 49f142cf-347b-499a-bbd0-540f16d559da</span><p id=\"wxrce.refpdf\">selon téléphone avec le médecin, arrêter le traitement car inefficace</p></div>"
                         },
                         "entry": [
                             {
-                                "reference": "urn:uuid:4698be13-bd2c-4e4a-96e2-feda8f78f6fa"
+                                "reference": "urn:uuid:a8c6fa00-9f6a-449e-9901-eea35fa6c4a1"
                             },
                             {
-                                "reference": "urn:uuid:3fef0764-e7e8-4c64-a08c-56c17b8b8513"
+                                "reference": "urn:uuid:6b1a23c9-7159-4814-97e1-7549e94519bc"
                             }
                         ]
                     }
@@ -104,7 +104,7 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:17633005-e2c5-4ce2-b23c-a6d9d4fe45b9",
+            "fullUrl": "urn:uuid:e7cdd896-3644-47dd-8001-fe6a2eb961e8",
             "resource": {
                 "resourceType": "Patient",
                 "identifier": [
@@ -134,7 +134,7 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:97b2b649-749b-457a-94e2-6196d0992000",
+            "fullUrl": "urn:uuid:598adec2-3aec-4ba1-879c-392f97159235",
             "resource": {
                 "resourceType": "Device",
                 "identifier": [
@@ -145,7 +145,7 @@
                 ],
                 "deviceName": [
                     {
-                        "name": "f7dafc8",
+                        "name": "6d6e100",
                         "type": "manufacturer-name"
                     }
                 ],
@@ -153,7 +153,7 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:be34cfa3-4454-4163-b1ea-5d74819a29b4",
+            "fullUrl": "urn:uuid:cc249f0c-10f9-4e1b-bc16-83458a51cb7d",
             "resource": {
                 "resourceType": "Organization",
                 "identifier": [
@@ -162,18 +162,24 @@
                         "value": "7601001407428"
                     }
                 ],
-                "name": "Hausarzt"
+                "name": "Association CARA"
             }
         },
         {
-            "fullUrl": "urn:uuid:206e9378-b456-4a58-9e1e-b72dcff4aa89",
+            "fullUrl": "urn:uuid:3c11b8b9-8351-4243-815f-4c801f0a1b1f",
             "resource": {
                 "resourceType": "Organization",
-                "name": "Hausarzt"
+                "identifier": [
+                    {
+                        "system": "urn:oid:2.51.1.3",
+                        "value": "7601001407428"
+                    }
+                ],
+                "name": "Association CARA"
             }
         },
         {
-            "fullUrl": "urn:uuid:4698be13-bd2c-4e4a-96e2-feda8f78f6fa",
+            "fullUrl": "urn:uuid:a8c6fa00-9f6a-449e-9901-eea35fa6c4a1",
             "resource": {
                 "resourceType": "MedicationStatement",
                 "contained": [
@@ -246,13 +252,32 @@
                 "extension": [
                     {
                         "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "#refpdf"
+                        "valueUrl": "#urccz."
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "id",
+                                "valueIdentifier": {
+                                    "system": "urn:ietf:rfc:3986",
+                                    "value": "urn:uuid:53eac822-12f7-4335-a8cb-da90538ca0f1"
+                                }
+                            },
+                            {
+                                "url": "externalDocumentId",
+                                "valueIdentifier": {
+                                    "system": "urn:ietf:rfc:3986",
+                                    "value": "urn:uuid:53eac822-12f7-4335-a8cb-da90538ca0f1"
+                                }
+                            }
+                        ],
+                        "url": "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan"
                     }
                 ],
                 "identifier": [
                     {
                         "system": "urn:ietf:rfc:3986",
-                        "value": "urn:uuid:8b1e35ec-0a5a-4d14-9913-45402e0ac8e4"
+                        "value": "urn:uuid:53eac822-12f7-4335-a8cb-da90538ca0f1"
                     }
                 ],
                 "status": "completed",
@@ -260,7 +285,7 @@
                     "reference": "#med"
                 },
                 "subject": {
-                    "reference": "urn:uuid:17633005-e2c5-4ce2-b23c-a6d9d4fe45b9"
+                    "reference": "urn:uuid:e7cdd896-3644-47dd-8001-fe6a2eb961e8"
                 },
                 "informationSource": {
                     "extension": [
@@ -269,32 +294,22 @@
                             "valueDateTime": "2019-02-12T10:00:00+00:00"
                         }
                     ],
-                    "reference": "urn:uuid:c1cedc5e-719c-44f6-9f3f-2b47cbef1420"
+                    "reference": "urn:uuid:5726f7b9-13d5-47b4-acbb-6c5ad2dfd797"
                 },
                 "reasonCode": [
                     {
                         "extension": [
                             {
                                 "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                                "valueUrl": "#kklqe.refpdf"
+                                "valueUrl": "#urccz."
                             }
                         ],
                         "text": "pour dormir"
                     }
                 ],
-                "note": [
-                    {
-                        "extension": [
-                            {
-                                "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                                "valueUrl": "#kklqe.refpdf"
-                            }
-                        ],
-                        "text": "laisser fondre 1 comprimé sous la langue ½ heure avant le coucher \n(si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin)"
-                    }
-                ],
                 "dosage": [
                     {
+                        "patientInstruction": "laisser fondre 1 comprimé sous la langue ½ heure avant le coucher \n(si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin)",
                         "timing": {
                             "repeat": {
                                 "boundsPeriod": {
@@ -330,16 +345,16 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:c1cedc5e-719c-44f6-9f3f-2b47cbef1420",
+            "fullUrl": "urn:uuid:5726f7b9-13d5-47b4-acbb-6c5ad2dfd797",
             "resource": {
                 "resourceType": "PractitionerRole",
                 "practitioner": {
-                    "reference": "urn:uuid:3d2a0fb8-786d-4c92-a82a-dff7bd038d7a"
+                    "reference": "urn:uuid:7a0b0410-4282-4654-be2d-1ce636465f03"
                 }
             }
         },
         {
-            "fullUrl": "urn:uuid:3d2a0fb8-786d-4c92-a82a-dff7bd038d7a",
+            "fullUrl": "urn:uuid:7a0b0410-4282-4654-be2d-1ce636465f03",
             "resource": {
                 "resourceType": "Practitioner",
                 "identifier": [
@@ -366,7 +381,7 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:3fef0764-e7e8-4c64-a08c-56c17b8b8513",
+            "fullUrl": "urn:uuid:6b1a23c9-7159-4814-97e1-7549e94519bc",
             "resource": {
                 "resourceType": "Observation",
                 "extension": [
@@ -376,24 +391,43 @@
                                 "url": "id",
                                 "valueIdentifier": {
                                     "system": "urn:ietf:rfc:3986",
-                                    "value": "urn:uuid:8b1e35ec-0a5a-4d14-9913-45402e0ac8e4"
+                                    "value": "urn:uuid:53eac822-12f7-4335-a8cb-da90538ca0f1"
                                 }
                             },
                             {
                                 "url": "externalDocumentId",
                                 "valueIdentifier": {
                                     "system": "urn:ietf:rfc:3986",
-                                    "value": "urn:uuid:8b1e35ec-0a5a-4d14-9913-45402e0ac8e4"
+                                    "value": "urn:uuid:53eac822-12f7-4335-a8cb-da90538ca0f1"
                                 }
                             }
                         ],
                         "url": "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan"
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "id",
+                                "valueIdentifier": {
+                                    "system": "urn:ietf:rfc:3986",
+                                    "value": "urn:uuid:49f142cf-347b-499a-bbd0-540f16d559da"
+                                }
+                            },
+                            {
+                                "url": "externalDocumentId",
+                                "valueIdentifier": {
+                                    "system": "urn:ietf:rfc:3986",
+                                    "value": "urn:uuid:49f142cf-347b-499a-bbd0-540f16d559da"
+                                }
+                            }
+                        ],
+                        "url": "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-pharmaceuticaladvice"
                     }
                 ],
                 "identifier": [
                     {
                         "system": "urn:ietf:rfc:3986",
-                        "value": "urn:uuid:70ef012c-4655-431c-a3bb-8d97edf8e130"
+                        "value": "urn:uuid:49f142cf-347b-499a-bbd0-540f16d559da"
                     }
                 ],
                 "status": "final",
@@ -406,7 +440,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "urn:uuid:17633005-e2c5-4ce2-b23c-a6d9d4fe45b9"
+                    "reference": "urn:uuid:e7cdd896-3644-47dd-8001-fe6a2eb961e8"
                 },
                 "effectiveDateTime": "2019-02-15T11:00:00+01:00",
                 "performer": [
@@ -417,7 +451,7 @@
                                 "valueDateTime": "2019-02-15T10:00:00+00:00"
                             }
                         ],
-                        "reference": "urn:uuid:9822ac56-7cc4-4540-aa0a-45f66756595e"
+                        "reference": "urn:uuid:7005d783-5e98-4c80-a361-59358843ec2f"
                     }
                 ],
                 "note": [
@@ -425,7 +459,7 @@
                         "extension": [
                             {
                                 "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                                "valueUrl": "#refpdf"
+                                "valueUrl": "#wxrce.refpdf"
                             }
                         ],
                         "text": "selon téléphone avec le médecin, arrêter le traitement car inefficace"
@@ -434,16 +468,16 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:9822ac56-7cc4-4540-aa0a-45f66756595e",
+            "fullUrl": "urn:uuid:7005d783-5e98-4c80-a361-59358843ec2f",
             "resource": {
                 "resourceType": "PractitionerRole",
                 "practitioner": {
-                    "reference": "urn:uuid:e1fc359f-0e8f-43f9-ae9d-2a26cadcd762"
+                    "reference": "urn:uuid:2988abfc-b2c1-4756-805f-4d41354e4e98"
                 }
             }
         },
         {
-            "fullUrl": "urn:uuid:e1fc359f-0e8f-43f9-ae9d-2a26cadcd762",
+            "fullUrl": "urn:uuid:2988abfc-b2c1-4756-805f-4d41354e4e98",
             "resource": {
                 "resourceType": "Practitioner",
                 "identifier": [

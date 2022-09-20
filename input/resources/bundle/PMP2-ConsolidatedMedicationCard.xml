@@ -335,10 +335,30 @@
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
                         <valueDateTime value="2022-08-17T08:21:04+00:00"/>
                     </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentid">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:53eac822-12f7-4335-a8cb-da90538ca0f1"/>
+                        </valueIdentifier>
+                    </extension>
+                </extension>
+                <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
+                    <extension url="id">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:53eac822-12f7-4335-a8cb-da90538ca0f1"/>
+                        </valueIdentifier>
+                    </extension>
+                    <extension url="externalDocumentId">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:53eac822-12f7-4335-a8cb-da90538ca0f1"/>
+                        </valueIdentifier>
+                    </extension>
                 </extension>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:8b1e35ec-0a5a-4d14-9913-45402e0ac8e4"/>
+                    <value value="urn:uuid:53eac822-12f7-4335-a8cb-da90538ca0f1"/>
                 </identifier>
                 <status value="completed"/>
                 <category>
@@ -440,24 +460,44 @@
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
                         <valueDateTime value="2022-08-17T08:21:04+00:00"/>
                     </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentid">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:49f142cf-347b-499a-bbd0-540f16d559da"/>
+                        </valueIdentifier>
+                    </extension>
                 </extension>
                 <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
                     <extension url="id">
                         <valueIdentifier>
                             <system value="urn:ietf:rfc:3986"/>
-                            <value value="urn:uuid:8b1e35ec-0a5a-4d14-9913-45402e0ac8e4"/>
+                            <value value="urn:uuid:53eac822-12f7-4335-a8cb-da90538ca0f1"/>
                         </valueIdentifier>
                     </extension>
                     <extension url="externalDocumentId">
                         <valueIdentifier>
                             <system value="urn:ietf:rfc:3986"/>
-                            <value value="urn:uuid:8b1e35ec-0a5a-4d14-9913-45402e0ac8e4"/>
+                            <value value="urn:uuid:53eac822-12f7-4335-a8cb-da90538ca0f1"/>
+                        </valueIdentifier>
+                    </extension>
+                </extension>
+                <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-pharmaceuticaladvice">
+                    <extension url="id">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:49f142cf-347b-499a-bbd0-540f16d559da"/>
+                        </valueIdentifier>
+                    </extension>
+                    <extension url="externalDocumentId">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:49f142cf-347b-499a-bbd0-540f16d559da"/>
                         </valueIdentifier>
                     </extension>
                 </extension>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:70ef012c-4655-431c-a3bb-8d97edf8e130"/>
+                    <value value="urn:uuid:49f142cf-347b-499a-bbd0-540f16d559da"/>
                 </identifier>
                 <status value="final"/>
                 <code>

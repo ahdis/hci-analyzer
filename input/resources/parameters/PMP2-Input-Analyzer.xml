@@ -87,13 +87,13 @@
                                 Cette liste de médication a été générée automatiquement par le PMP le August 17, 2022 at 8:21:04 AM UTC. Les paramètres utilisés pour la génération du document sont : les éléments de type Medication Treatment Plan Item, Prescription Item, Dispense Item et PADV sont inclus ; tous les traitements sont considérés.
                                         </span>
                                         <span id="kklqe.">
-                                Texte narratif pour l'item 8b1e35ec-0a5a-4d14-9913-45402e0ac8e4
+                                Texte narratif pour l'item 53eac822-12f7-4335-a8cb-da90538ca0f1
                                         </span>
                                         <p id="kklqe.refpdf">
                                 Temesta Expidet cpr orodisp 1 mg, 0-0-0-1, durant 3 jours, raison: pour dormir
                                         </p>
                                         <span id="myaey.">
-                                Texte narratif pour l'item 70ef012c-4655-431c-a3bb-8d97edf8e130
+                                Texte narratif pour l'item 49f142cf-347b-499a-bbd0-540f16d559da
                                         </span>
                                         <p id="myaey.refpdf">
                                 selon téléphone avec le médecin, arrêter le traitement car inefficace
@@ -157,7 +157,7 @@
                                 <system value="urn:oid:2.51.1.3"/>
                                 <value value="7601001407428"/>
                             </identifier>
-                            <name value="CARA"/>
+                            <name value="Association CARA"/>
                         </Organization>
                     </resource>
                 </entry>
@@ -234,9 +234,23 @@
                             <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
                                 <valueUrl value="#refpdf"/>
                             </extension>
+                            <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
+                                <extension url="id">
+                                    <valueIdentifier>
+                                        <system value="urn:ietf:rfc:3986"/>
+                                        <value value="urn:uuid:53eac822-12f7-4335-a8cb-da90538ca0f1"/>
+                                    </valueIdentifier>
+                                </extension>
+                                <extension url="externalDocumentId">
+                                    <valueIdentifier>
+                                        <system value="urn:ietf:rfc:3986"/>
+                                        <value value="urn:uuid:53eac822-12f7-4335-a8cb-da90538ca0f1"/>
+                                    </valueIdentifier>
+                                </extension>
+                            </extension>
                             <identifier>
                                 <system value="urn:ietf:rfc:3986"/>
-                                <value value="urn:uuid:8b1e35ec-0a5a-4d14-9913-45402e0ac8e4"/>
+                                <value value="urn:uuid:53eac822-12f7-4335-a8cb-da90538ca0f1"/>
                             </identifier>
                             <status value="completed"/>
                             <medicationReference>
@@ -325,19 +339,33 @@
                                 <extension url="id">
                                     <valueIdentifier>
                                         <system value="urn:ietf:rfc:3986"/>
-                                        <value value="urn:uuid:8b1e35ec-0a5a-4d14-9913-45402e0ac8e4"/>
+                                        <value value="urn:uuid:53eac822-12f7-4335-a8cb-da90538ca0f1"/>
                                     </valueIdentifier>
                                 </extension>
                                 <extension url="externalDocumentId">
                                     <valueIdentifier>
                                         <system value="urn:ietf:rfc:3986"/>
-                                        <value value="urn:uuid:8b1e35ec-0a5a-4d14-9913-45402e0ac8e4"/>
+                                        <value value="urn:uuid:53eac822-12f7-4335-a8cb-da90538ca0f1"/>
+                                    </valueIdentifier>
+                                </extension>
+                            </extension>
+                            <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-pharmaceuticaladvice">
+                                <extension url="id">
+                                    <valueIdentifier>
+                                        <system value="urn:ietf:rfc:3986"/>
+                                        <value value="urn:uuid:49f142cf-347b-499a-bbd0-540f16d559da"/>
+                                    </valueIdentifier>
+                                </extension>
+                                <extension url="externalDocumentId">
+                                    <valueIdentifier>
+                                        <system value="urn:ietf:rfc:3986"/>
+                                        <value value="urn:uuid:49f142cf-347b-499a-bbd0-540f16d559da"/>
                                     </valueIdentifier>
                                 </extension>
                             </extension>
                             <identifier>
                                 <system value="urn:ietf:rfc:3986"/>
-                                <value value="urn:uuid:70ef012c-4655-431c-a3bb-8d97edf8e130"/>
+                                <value value="urn:uuid:49f142cf-347b-499a-bbd0-540f16d559da"/>
                             </identifier>
                             <status value="final"/>
                             <code>
