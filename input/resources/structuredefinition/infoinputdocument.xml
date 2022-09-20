@@ -6,7 +6,7 @@
   <name value="InfoInputDocument"/>
   <title value="Info Input Document"/>
   <status value="draft"/>
-  <description value="Extension for representing the information of the input document (source, type, date)"/>
+  <description value="Extension for representing the information of the input document (source, type, date, id)"/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -75,8 +75,7 @@
       <path value="Extension.extension"/>
       <sliceName value="documentId"/>
       <short value="Identifier of the input document (Bundle.identifier)"/>
-      <!--TBD: min = 1 -->
-      <!--<min value="1"/>-->
+      <min value="1"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>

@@ -243,6 +243,12 @@
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
                         <valueDateTime value="2020-03-01T11:00:00+01:00"/>
                     </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentid">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:26d3dff7-ab05-4737-a49c-5eccd3359a4a"/>
+                        </valueIdentifier>
+                    </extension>
                 </extension>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
@@ -376,6 +382,12 @@
                     </extension>
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
                         <valueDateTime value="2020-03-10T11:00:00+01:00"/>
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentid">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:26d3dff7-ab05-4737-a49c-5eccd3359a4b"/>
+                        </valueIdentifier>
                     </extension>
                 </extension>
                 <identifier>

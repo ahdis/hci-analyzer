@@ -141,16 +141,16 @@ Dr. Monney verschreibt neu das Medikamente Exforge. Ausgangsmedikation war Renit
 * [A5 Consolidated Medication Card document](Bundle-A5-ConsolidatedMedicationCard.html)
 
 #### A6 Änderung ROA (Route of Administration)
-Arzt Dr. Dupont verschreibt zusätzlich ein Imigran Spray zu den bestehenden Imigran Tabletten.
-**Note**: Nicht umgesetzt in dieser Version des Analyzers.
+Arzt Dr. Dupont verschreibt zusätzlich ein Imigran Spray zu den bestehenden Imigran Tabletten.   
+**Note**: Änderung ROA nicht umgesetzt in dieser Version des Analyzers.
 * A6 Input Analyzer
    * Inputdokumente: Medication Card Imigran Tabletten, Medication Card Imigran Tabletten und Spray
 * A6 Consolidated Medication Card document
 
 #### A7 Änderung Galenik
-Arzt Dr. Dupont verordnet zusätzlich zu den Brufen Tabletten (600 mg) die Brufen retard Tabletten (800 mg).
+Arzt Dr. Dupont verordnet anstelle den Brufen Tabletten (600 mg) die Brufen retard Tabletten (800 mg).
 * [A7 Input Analyzer](Parameters-A7-Input-Analyzer.html)
-   * Inputdokumente: Medication Card Brufen (600 mg), Medication Card Brufen (600 mg) und Brufen retard (800 mg)
+   * Inputdokumente: Medication Card Brufen (600 mg), Medication Card Brufen retard (800 mg)
 * [A7 Consolidated Medication Card document](Bundle-A7-ConsolidatedMedicationCard.html)
 
 

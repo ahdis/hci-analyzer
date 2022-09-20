@@ -12,6 +12,7 @@ See also open issues on [GitHub](https://github.com/ahdis/hci-analyzer/issues).
 * Add slices for different entries in the Bundle to simplify the validation.
 * Add [ValueSet Document Type](ValueSet-document-type.html) incl. binding to [Extension Input Document Type](StructureDefinition-inputdocumenttype.html) to improve the validation.
 * Add ATC code (element category) to MedicationDispense and MedicationRequest (analog to MedicationStatement and MedicationStatement Header).
+* Include the new extension [Input Document Id](StructureDefinition-inputdocumentid.html) into the existing extension [Info Input Document](StructureDefinition-infoinputdocument.html) to represent the identifier (externalDocumentId) of the input document.
 * Integrate [development notes](development.html).
 
 #### Changed / Updated

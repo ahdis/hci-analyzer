@@ -200,6 +200,12 @@
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
                         <valueDateTime value="2012-02-04T14:00:00+01:00"/>
                     </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentid">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:84a4189e-c626-4646-8599-0a8b957109eb"/>
+                        </valueIdentifier>
+                    </extension>
                 </extension>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
