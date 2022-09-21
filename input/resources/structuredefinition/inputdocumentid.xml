@@ -6,7 +6,7 @@
   <name value="InputDocumentId"/>
   <title value="Input Document Id"/>
   <status value="draft"/>
-  <description value="Extension for representing the identifier (externalDocumentId) of the input document"/>
+  <description value="Extension for representing the identifier (externalDocumentId) of the input document (original document MTP/DIS/PRE/PADV/CARD, not LIST)"/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -35,7 +35,7 @@
     </element>
     <element id="Extension.valueIdentifier">
       <path value="Extension.valueIdentifier"/>
-      <short value="Identifier of the input document"/>
+      <short value="Identifier of the original document (not LIST)"/>
       <min value="1"/>
       <max value="1"/>
       <type>
