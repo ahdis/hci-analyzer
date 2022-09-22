@@ -1,3 +1,8 @@
+### Input Document
+
+#### Input Document Source
+See [here](#input-document-source-1).
+
 ### Output Document - Consolidated Medication Card document
 
 #### Header MedicationStatement
@@ -61,6 +66,10 @@ The extension [Info Input Document](StructureDefinition-infoinputdocument.html) 
 * [Input Document Type](StructureDefinition-inputdocumenttype.html)
 * [Input Document Date](StructureDefinition-inputdocumentdate.html)
 * [Input Document Id](StructureDefinition-inputdocumentid.html)
+
+##### Input Document Source
+* **Analyzer Input**: This information is set or overwritten in each input document (see [Analyzer IN Composition](StructureDefinition-analyzer-in-composition.html)).
+* **Analyzer Output**: This information (from the input) is set on each 'derivedFrom'-entry ([MedicationStatement](StructureDefinition-analyzer-medicationstatement.html), [MedicationRequest](StructureDefinition-analyzer-medicationrequest.html), [MedicationDispense](StructureDefinition-analyzer-medicationdispense.html), [Observation](StructureDefinition-analyzer-observationpadv.html)), but not on the [Header MedicationStatement](StructureDefinition-analyzer-medicationstatement-header.html).
 
 ##### Input Document Id
 This information is needed, for example, when a medication is 'imported' via a LIST (input document), on which a PADV is to be created later (needs the reference externalDocumentId).   
