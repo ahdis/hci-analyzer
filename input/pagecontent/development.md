@@ -87,7 +87,17 @@ The extension **Info Input Document** is set on each 'derivedFrom'-entry ([Medic
 * **Analyzer Output**: This information (from the input) is set on each 'derivedFrom'-entry, but not on the Header MedicationStatement.
 
 ##### Input Document Type
-This information is used to distinguish the document type. The type ([ValueSet Document Type](ValueSet-document-type.html)) is taken from the Input Document (`Composition.type`).   
+This information is used to distinguish the following document types: MTP, PRE, DIS, PADV, LIST, CARD.
+
+* MTP/PRE/DIS/PADV: These document types have a unique value that can be taken from the input document (`Composition.type`):
+  * MTP: LOINC 77603-9 Medication treatment plan.extended
+  * PRE: LOINC 57833-6 Prescription for medication
+  * DIS: LOINC 60593-1 Medication dispensed.extended
+  * PADV: LOINC 61356-2 Medication pharmaceutical advice.extended
+* LIST/CARD:These documents types have the same value and must therefore be differentiated via the title (`Composition.title`)
+   * LIST/CARD: LOINC 56445-0 Medication summary
+     * LIST: 'Medikationsliste' in german or 'Liste de médication' in french or 'Elenco delle terapie farmacologiche' in talian or Medication List' in english
+     * CARD: 'Medikationsplan' in german or 'Plan de médication' in french or 'Piano farmacologico' in talian or 'Medication Card' in english
 
 ##### Input Document Id
 This information is needed, for example, when a medication is 'imported' via a LIST (input document), on which a PADV is to be created later (needs the reference externalDocumentId).   
