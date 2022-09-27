@@ -6,6 +6,19 @@ See [here](#input-document-source-1).
 ### Output Document - Consolidated Medication Card document
 
 #### Header MedicationStatement
+
+##### Elements allowed
+In the [Header MedicationStatement](StructureDefinition-analyzer-medicationstatement-header.html), only the following elements are taken over or set:
+* contained
+* identifier (new)
+* status
+* category 
+* medicationReference
+* subject
+* informationSource
+* derivedFrom (set)
+* dosage (taken over, see below)
+
 ##### Dosage
 * There must be **at least one dosage element** (non-structrued/structured-normal/structured-split).
 * The dosage element (1..*) is set according to this scheme:
@@ -62,31 +75,39 @@ If there is the same patient with different identifiers in the [input documents]
 
 #### Info Input Document
 The extension [Info Input Document](StructureDefinition-infoinputdocument.html) represents the information of the input document (source, type, date, id). This complexe extension contains these 4 extensions:
-* [Input Document Source](StructureDefinition-inputdocumentsource.html)
-* [Input Document Type](StructureDefinition-inputdocumenttype.html)
-* [Input Document Date](StructureDefinition-inputdocumentdate.html)
-* [Input Document Id](StructureDefinition-inputdocumentid.html)
+* [Input Document Source](StructureDefinition-inputdocumentsource.html) (Input document)
+* [Input Document Type](StructureDefinition-inputdocumenttype.html) (Input document / Output document)
+* [Input Document Date](StructureDefinition-inputdocumentdate.html) (Input document / Output document)
+* [Input Document Id](StructureDefinition-inputdocumentid.html) (Input document / Output document)
+
+The extension **Info Input Document** is set on each 'derivedFrom'-entry ([MedicationStatement](StructureDefinition-analyzer-medicationstatement.html), [MedicationRequest](StructureDefinition-analyzer-medicationrequest.html), [MedicationDispense](StructureDefinition-analyzer-medicationdispense.html), [Observation](StructureDefinition-analyzer-observationpadv.html)), but not on the [Header MedicationStatement](StructureDefinition-analyzer-medicationstatement-header.html).
 
 ##### Input Document Source
 * **Analyzer Input**: This information is set or overwritten in each input document (see [Analyzer IN Composition](StructureDefinition-analyzer-in-composition.html)).
-* **Analyzer Output**: This information (from the input) is set on each 'derivedFrom'-entry ([MedicationStatement](StructureDefinition-analyzer-medicationstatement.html), [MedicationRequest](StructureDefinition-analyzer-medicationrequest.html), [MedicationDispense](StructureDefinition-analyzer-medicationdispense.html), [Observation](StructureDefinition-analyzer-observationpadv.html)), but not on the [Header MedicationStatement](StructureDefinition-analyzer-medicationstatement-header.html).
+* **Analyzer Output**: This information (from the input) is set on each 'derivedFrom'-entry, but not on the Header MedicationStatement.
+
+##### Input Document Type
+This information is used to distinguish the document type. The type ([ValueSet Document Type](ValueSet-document-type.html)) is taken from the Input Document (`Composition.type`).   
 
 ##### Input Document Id
 This information is needed, for example, when a medication is 'imported' via a LIST (input document), on which a PADV is to be created later (needs the reference externalDocumentId).   
 
 The identifier is taken from the input document as follows:
-* Input document = LIST/CARD
-   * MedicationDispense (only in LIST) => extension.url = **"externalDocumentId"** -> valueIdentifier
+* Input document = MTP/PRE/DIS/PADV/CARD => **Bundle.identifier** 
+* Input document = LIST
+   * MedicationDispense => extension.url = **"externalDocumentId"** -> valueIdentifier
       * If it exists from this extension: `http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan`
       * If not, from the first extension where "externalDocumentId" exists
-   * MedicationRequest (only in LIST) => extension.url = **"externalDocumentId"** -> valueIdentifier
+   * MedicationRequest => extension.url = **"externalDocumentId"** -> valueIdentifier
       * dito 
-   * Observation (only in LIST) => extension.url = **"externalDocumentId"** -> valueIdentifier
+   * Observation => extension.url = **"externalDocumentId"** -> valueIdentifier
       * dito
-   * MedicationStatement (LIST & CARD)
-      * If any extension with "externalDocumentId" exists (same selection order as above) => extension.url = **"externalDocumentId"** -> valueIdentifier
-      * If not => **Bundle.identifier**
-* Input document = MTP/PRE/DIS/PADV => **Bundle.identifier**
+   * MedicationStatement => extension.url = **"externalDocumentId"** -> valueIdentifier
+      * dito
+
+{% include img.html img="infoinputdocument-mtp.png" caption="Fig.: Schematic illustration of the Info Input Document (MTP), the logic also applies to PRE/DIS/PADV/CARD," width="80%" %}
+
+{% include img.html img="infoinputdocument-list.png" caption="Fig.: Schematic illustration of the Info Input Document (LIST)" width="80%" %}
 
 
 #### History Changes
