@@ -87,32 +87,77 @@ The extension **Info Input Document** is set on each 'derivedFrom'-entry ([Medic
 * **Analyzer Output**: This information (from the input) is set on each 'derivedFrom'-entry, but not on the Header MedicationStatement.
 
 ##### Input Document Type
-This information is used to distinguish the following document types: MTP, PRE, DIS, PADV, LIST, CARD.
-
+This information is used to distinguish the following document types:
 * MTP/PRE/DIS/PADV: These document types have a unique value that can be taken from the input document (`Composition.type`):
   * MTP: LOINC 77603-9 Medication treatment plan.extended
+    ```json
+   {
+      "url" : "http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype",
+      "valueCodeableConcept" : {
+         "coding" : [
+            {
+               "system" : "http://loinc.org",
+               "code" : "77603-9",
+               "display" : "Medication treatment plan.extended"
+            }
+         ]
+      }
+   }
+   ```
   * PRE: LOINC 57833-6 Prescription for medication
   * DIS: LOINC 60593-1 Medication dispensed.extended
   * PADV: LOINC 61356-2 Medication pharmaceutical advice.extended
-* LIST/CARD:These documents types have the same value and must therefore be differentiated via the title (`Composition.title`)
+* LIST/CARD: These documents types have the same value (`Composition.type`) and must therefore be differentiated via the title (`Composition.title`) (used afterwards to set the Input Document Id):
    * LIST/CARD: LOINC 56445-0 Medication summary
      * LIST: 'Medikationsliste' in german or 'Liste de médication' in french or 'Elenco delle terapie farmacologiche' in talian or Medication List' in english
+     ```json
+      {
+         "url" : "http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype",
+         "valueCodeableConcept" : {
+            "coding" : [
+               {
+                  "system" : "http://loinc.org",
+                  "code" : "56445-0",
+                  "display" : "Medication summary"
+               }
+            ],
+            "text" : "Medication List"
+         }
+      }
+      ```
      * CARD: 'Medikationsplan' in german or 'Plan de médication' in french or 'Piano farmacologico' in talian or 'Medication Card' in english
+      ```json
+      {
+         "url" : "http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype",
+         "valueCodeableConcept" : {
+            "coding" : [
+               {
+                  "system" : "http://loinc.org",
+                  "code" : "56445-0",
+                  "display" : "Medication summary"
+               }
+            ],
+            "text" : "Medication Card"
+         }
+      }
+      ```
+     * If none of these titles is specified, the additional information (.text) is omitted.
 
 ##### Input Document Id
 This information is needed, for example, when a medication is 'imported' via a LIST (input document), on which a PADV is to be created later (needs the reference externalDocumentId).   
 
 The identifier is taken from the input document as follows:
 * Input document = MTP/PRE/DIS/PADV/CARD => **Bundle.identifier** 
+   * If the additional information for CARD ("text" : "Medication Card") is missing, then follow the rules for LIST. It may happen that the externalDocumentId of another document (e.g. MTP) is used. This must be tolerated at the moment, as long as no other differentiation CARD/LIST is possible. The drug will be referenced correctly in any case, e.g. in a later PADV.
 * Input document = LIST
-   * MedicationDispense => extension.url = **"externalDocumentId"** -> valueIdentifier
+   * MedicationStatement => extension.url = **"externalDocumentId"** -> valueIdentifier
       * If it exists from this extension: `http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan`
       * If not, from the first extension where "externalDocumentId" exists
+   * MedicationDispense => extension.url = **"externalDocumentId"** -> valueIdentifier
+      * dito
    * MedicationRequest => extension.url = **"externalDocumentId"** -> valueIdentifier
       * dito 
    * Observation => extension.url = **"externalDocumentId"** -> valueIdentifier
-      * dito
-   * MedicationStatement => extension.url = **"externalDocumentId"** -> valueIdentifier
       * dito
 
 {% include img.html img="infoinputdocument-mtp.png" caption="Fig.: Schematic illustration of the Info Input Document (MTP), the logic also applies to PRE/DIS/PADV/CARD," width="80%" %}

@@ -206,6 +206,7 @@
                                 <code value="56445-0"/>
                                 <display value="Medication summary"/>
                             </coding>
+                            <text value="Medication Card"/>
                         </valueCodeableConcept>
                     </extension>
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
@@ -371,6 +372,7 @@
                                 <code value="56445-0"/>
                                 <display value="Medication summary"/>
                             </coding>
+                            <text value="Medication Card"/>
                         </valueCodeableConcept>
                     </extension>
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
