@@ -17,12 +17,20 @@
          <path value="MedicationStatement"/>
          <short value="Analyzer MedicationStatement Header"/>
       </element>
+
       <element id="MedicationStatement.contained">
          <path value="MedicationStatement.contained"/>
          <short value="Medication inline resource"/>
          <min value="1"/>
          <max value="1"/>
       </element>
+
+      <element id="MedicationStatement.extension">
+         <path value="MedicationStatement.extension"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+
       <element id="MedicationStatement.identifier">
          <path value="MedicationStatement.identifier"/>
          <min value="1"/>
@@ -38,6 +46,29 @@
          <short value="Identifier value as UUID"/>
          <min value="1"/>
       </element>
+
+      <element id="MedicationStatement.basedOn">
+         <path value="MedicationStatement.basedOn"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+
+      <element id="MedicationStatement.partOf">
+         <path value="MedicationStatement.partOf"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+
+      <element id="MedicationStatement.status">
+         <path value="MedicationStatement.status"/>
+      </element>
+
+      <element id="MedicationStatement.statusReason">
+         <path value="MedicationStatement.statusReason"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+
       <element id="MedicationStatement.category">
          <path value="MedicationStatement.category"/>
          <min value="1"/>
@@ -78,6 +109,7 @@
          <path value="MedicationStatement.category.text"/>
          <short value="Note that no ATC Code is applied"/>
       </element>
+
       <element id="MedicationStatement.medicationReference">
          <path value="MedicationStatement.medicationReference"/>
          <short value="Reference to the contained medication"/>
@@ -87,6 +119,7 @@
             <aggregation value="contained"/>
          </type>
       </element>
+
       <element id="MedicationStatement.subject">
          <path value="MedicationStatement.subject"/>
          <short value="Patient"/>
@@ -95,6 +128,25 @@
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>
          </type>
       </element>
+
+      <element id="MedicationStatement.context">
+         <path value="MedicationStatement.context"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+
+      <element id="MedicationStatement.effective[x]">
+         <path value="MedicationStatement.effective[x]"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+
+      <element id="MedicationStatement.dateAsserted">
+         <path value="MedicationStatement.dateAsserted"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+
       <element id="MedicationStatement.informationSource">
          <path value="MedicationStatement.informationSource"/>
          <short value="The author of the medical decision"/>
@@ -105,6 +157,7 @@
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>
          </type>
       </element>
+
       <element id="MedicationStatement.derivedFrom">
          <path value="MedicationStatement.derivedFrom"/>
          <short value="History of changes"/>
@@ -118,6 +171,25 @@
          </type>
          <min value="1"/>
       </element>
+
+      <element id="MedicationStatement.reasonCode">
+         <path value="MedicationStatement.reasonCode"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+
+      <element id="MedicationStatement.reasonReference">
+         <path value="MedicationStatement.reasonReference"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+
+      <element id="MedicationStatement.note">
+         <path value="MedicationStatement.note"/>
+         <min value="0"/>
+         <max value="0"/>
+      </element>
+
       <element id="MedicationStatement.dosage">
          <path value="MedicationStatement.dosage"/>
          <min value="1"/>
