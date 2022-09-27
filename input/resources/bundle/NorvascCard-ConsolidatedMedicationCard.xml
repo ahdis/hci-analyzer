@@ -503,7 +503,7 @@
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentid">
                         <valueIdentifier>
                             <system value="urn:ietf:rfc:3986"/>
-                            <value value="urn:uuid:c9721461-00a6-4488-b080-da6b65d59511"/>
+                            <value value="urn:uuid:6b6ed376-a7da-44cb-92d1-e75ce1ae73b0"/>
                         </valueIdentifier>
                     </extension>
                 </extension>
@@ -523,7 +523,7 @@
                 </extension>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:c9721461-00a6-4488-b080-da6b65d59511"/>
+                    <value value="urn:uuid:534996fe-5e45-40ed-9388-06fa268e13d8"/>
                 </identifier>
                 <status value="completed"/>
                 <category>
@@ -641,7 +641,7 @@
                 </contained>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:534996fe-5e45-40ed-9388-06fa268e13d8"/>
+                    <value value="urn:uuid:9100975d-fd9d-4063-81ce-de69d16d3aa9"/>
                 </identifier>
                 <status value="completed"/>
                 <category>
