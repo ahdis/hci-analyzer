@@ -148,7 +148,7 @@ This information is needed, for example, when a medication is 'imported' via a L
 
 The identifier is taken from the input document as follows:
 * Input document = MTP/PRE/DIS/PADV/CARD => **Bundle.identifier** 
-   * If the additional information for CARD ("text" : "Medication Card") is missing, then follow the rules for LIST. It may happen that the externalDocumentId of another document (e.g. MTP) is used. This must be tolerated at the moment, as long as no other differentiation CARD/LIST is possible. The drug will be referenced correctly in any case, e.g. in a later PADV.
+   * If the additional information for CARD ("text" : "Medication Card") is missing, then follow the rules for LIST. It may happen that the externalDocumentId of another document (e.g. MTP) is used. This must be tolerated at the moment, as long as no other differentiation CARD/LIST is possible (<https://github.com/hl7ch/ch-emed/issues/140>). The drug will be referenced correctly in any case, e.g. in a later PADV.
 * Input document = LIST
    * MedicationStatement => extension.url = **"externalDocumentId"** -> valueIdentifier
       * If it exists from this extension: `http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan`
