@@ -5,6 +5,7 @@
    <name value="DocumentType"/>
    <title value="Document Type"/>
    <status value="active"/>
+   <experimental value="false"/>
    <publisher value="HCI Solutions AG"/>
    <description value="ValueSet with codes for the different type of documents (Input Documents according to CH EMED)"/>
    <compose>

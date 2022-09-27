@@ -5,6 +5,7 @@
    <name value="HistoryChanges"/>
    <title value="History Changes"/>
    <status value="active"/>
+   <experimental value="false"/>
    <publisher value="HCI Solutions AG"/>
    <description value="ValueSet with codes for the different type of changes in the medication history, defined in the CodeSystem of the same name"/>
    <compose>

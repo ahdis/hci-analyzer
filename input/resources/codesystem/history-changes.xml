@@ -9,6 +9,7 @@
    <name value="HistoryChanges"/>
    <title value="History Changes"/>
    <status value="active"/>
+   <experimental value="false"/>
    <publisher value="HCI Solutions AG"/>
    <description value="CodeSystem with codes for the different type of changes in the medication history"/>
    <caseSensitive value="true"/>
