@@ -109,7 +109,7 @@ This information is used to distinguish the following document types:
   * PADV: LOINC 61356-2 Medication pharmaceutical advice.extended
 * LIST/CARD: These documents types have the same value (`Composition.type`) and must therefore be differentiated via the title (`Composition.title`) (used afterwards to set the Input Document Id):
    * LIST/CARD: LOINC 56445-0 Medication summary
-     * LIST: 'Medikationsliste' in german or 'Liste de médication' in french or 'Elenco delle terapie farmacologiche' in talian or Medication List' in english
+     * LIST: 'Medikationsliste' in german or 'Liste de médication' in french or 'Elenco delle terapie farmacologiche' in italian or Medication List' in english
      ```json
       {
          "url" : "http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype",
@@ -148,7 +148,7 @@ This information is needed, for example, when a medication is 'imported' via a L
 
 The identifier is taken from the input document as follows:
 * Input document = MTP/PRE/DIS/PADV/CARD => **Bundle.identifier** 
-   * If the additional information for CARD ("text" : "Medication Card") is missing, then follow the rules for LIST. It may happen that the externalDocumentId of another document (e.g. MTP) is used. This must be tolerated at the moment, as long as no other differentiation CARD/LIST is possible (<https://github.com/hl7ch/ch-emed/issues/140>). The drug will be referenced correctly in any case, e.g. in a later PADV.
+   * If the additional information for CARD `"text" : "Medication Card"` (`http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype`) is missing, then follow the rules for LIST. It may happen that the externalDocumentId of another document (e.g. MTP) is used. This must be tolerated at the moment, as long as no other differentiation CARD/LIST is possible (<https://github.com/hl7ch/ch-emed/issues/140>). The drug will be referenced correctly in any case, e.g. in a later PADV.
 * Input document = LIST
    * MedicationStatement => extension.url = **"externalDocumentId"** -> valueIdentifier
       * If it exists from this extension: `http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan`
@@ -160,7 +160,7 @@ The identifier is taken from the input document as follows:
    * Observation => extension.url = **"externalDocumentId"** -> valueIdentifier
       * dito
 
-{% include img.html img="infoinputdocument-mtp.png" caption="Fig.: Schematic illustration of the Info Input Document (MTP), the logic also applies to PRE/DIS/PADV/CARD," width="80%" %}
+{% include img.html img="infoinputdocument-mtp.png" caption="Fig.: Schematic illustration of the Info Input Document (MTP), the logic also applies to PRE/DIS/PADV/CARD" width="80%" %}
 
 {% include img.html img="infoinputdocument-list.png" caption="Fig.: Schematic illustration of the Info Input Document (LIST)" width="80%" %}
 
