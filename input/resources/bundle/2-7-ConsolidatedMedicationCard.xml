@@ -39,11 +39,11 @@
                         <!-- gestopptes Medi -->
                     </entry>
                     <entry>
-                        <reference value="MedicationStatement/2-7-MedStatBeloczok-Analyzer"/>
+                        <reference value="MedicationStatement/2-7-1-MedStatBeloczok-Analyzer"/>
                         <!-- abgegebenes Medi -->
                     </entry>
                     <entry>
-                        <reference value="MedicationStatement/2-7-MedStatNorvasc-Analyzer"/>
+                        <reference value="MedicationStatement/2-7-2-MedStatNorvasc-Analyzer"/>
                         <!-- verschriebenes Medi -->
                     </entry>
                 </section>
@@ -1145,10 +1145,10 @@
 
     <!-- Section entry 2: Reference from MedicationStatement.derivedFrom (History) -->
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/2-7-MedStatBeloczokFromCard-Analyzer"/>
+        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/2-7-1-MedStatBeloczokFromCard-Analyzer"/>
         <resource>
             <MedicationStatement>
-                <id value="2-7-MedStatBeloczokFromCard-Analyzer"/>
+                <id value="2-7-1-MedStatBeloczokFromCard-Analyzer"/>
                 <contained>
                     <Medication>
                         <id value="med"/>
@@ -1327,10 +1327,10 @@
 
     <!-- Section entry 3: Reference from MedicationStatement.derivedFrom (History) -->
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/2-7-MedStatNorvascFromCard-Analyzer"/>
+        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/2-7-2-MedStatNorvascFromCard-Analyzer"/>
         <resource>
             <MedicationStatement>
-                <id value="2-7-MedStatNorvascFromCard-Analyzer"/>
+                <id value="2-7-2-MedStatNorvascFromCard-Analyzer"/>
                 <contained>
                     <Medication>
                         <id value="med"/>
@@ -1678,10 +1678,10 @@
 
     <!-- Section entry 2: MedicationStatement -->
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/2-7-MedStatBeloczok-Analyzer"/>
+        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/2-7-1-MedStatBeloczok-Analyzer"/>
         <resource>
             <MedicationStatement>
-                <id value="2-7-MedStatBeloczok-Analyzer"/>
+                <id value="2-7-1-MedStatBeloczok-Analyzer"/>
                 <contained>
                     <Medication>
                         <id value="med"/>
@@ -1775,11 +1775,11 @@
                     <!-- 2-4 Abgabe (Beloc Zok) -->
                 </derivedFrom>
                 <derivedFrom>
-                    <reference value="Observation/2-7-Beloczok-History"/>
+                    <reference value="Observation/2-7-1-Beloczok-History"/>
                     <!-- 2-7 Erstellung Medication Card -->
                 </derivedFrom>
                 <derivedFrom>
-                    <reference value="MedicationStatement/2-7-MedStatBeloczokFromCard-Analyzer"/>
+                    <reference value="MedicationStatement/2-7-1-MedStatBeloczokFromCard-Analyzer"/>
                     <!-- 2-7 Erstellung Medication Card -->
                 </derivedFrom>
                 <!--<reasonCode>
@@ -1870,10 +1870,10 @@
 
     <!-- Section entry 2: Reference from MedicationStatement.derivedFrom (History) -->
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Observation/2-7-Beloczok-History"/>
+        <fullUrl value="http://test.fhir.ch/r4/Observation/2-7-1-Beloczok-History"/>
         <resource>
             <Observation>
-                <id value="2-7-Beloczok-History"/>
+                <id value="2-7-1-Beloczok-History"/>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:b4d149ef-92aa-4fe1-bbfc-5d60ca2319a3"/>
@@ -1897,10 +1897,10 @@
 
     <!-- Section entry 3: MedicationStatement -->
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/2-7-MedStatNorvasc-Analyzer"/>
+        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/2-7-2-MedStatNorvasc-Analyzer"/>
         <resource>
             <MedicationStatement>
-                <id value="2-7-MedStatNorvasc-Analyzer"/>
+                <id value="2-7-2-MedStatNorvasc-Analyzer"/>
                 <contained>
                     <Medication>
                         <id value="med"/>
@@ -1994,11 +1994,11 @@
                     <!-- 2-6 Rezept (Norvasc) -->
                 </derivedFrom>
                 <derivedFrom>
-                    <reference value="Observation/2-7-Norvasc-History"/>
+                    <reference value="Observation/2-7-2-Norvasc-History"/>
                     <!-- 2-7 Erstellung Medication Card -->
                 </derivedFrom>
                 <derivedFrom>
-                    <reference value="MedicationStatement/2-7-MedStatNorvascFromCard-Analyzer"/>
+                    <reference value="MedicationStatement/2-7-2-MedStatNorvascFromCard-Analyzer"/>
                     <!-- 2-7 Erstellung Medication Card -->
                 </derivedFrom>
                 <!--<reasonCode>
@@ -2063,10 +2063,10 @@
 
     <!-- Section entry 3: Reference from MedicationStatement.derivedFrom (History) -->
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Observation/2-7-Norvasc-History"/>
+        <fullUrl value="http://test.fhir.ch/r4/Observation/2-7-2-Norvasc-History"/>
         <resource>
             <Observation>
-                <id value="2-7-Norvasc-History"/>
+                <id value="2-7-2-Norvasc-History"/>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:094129e6-4c25-48bf-a6f5-acc4b7c36132"/>
