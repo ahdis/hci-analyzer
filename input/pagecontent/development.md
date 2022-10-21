@@ -183,7 +183,7 @@ The identifier is taken from the input document as follows:
    * MedicationDispense => extension.url = **"externalDocumentId"** (valueIdentifier) from this extension: `http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-dispense`
    * MedicationRequest => extension.url = **"externalDocumentId"** (valueIdentifier) from this extension: `http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-prescription`
    * Observation => extension.url = **"externalDocumentId"** (valueIdentifier) from this extension: `http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-pharmaceuticaladvice`
-   * <span style="color:red">Note: The presence of this information in the Medication List document is a requirement for the device that generates this document. If the information about the original document (externalDocumentId) is not included in the list, it will be lost.</span>
+   * <span style="color:red">Note: The presence of this information in the Medication List document is a requirement for the device that generates this document. If the information about the original document (externalDocumentId) is not included in the list, it will be lost. If a Medication Card document is used to initialize the device that generates the Medication List document, then the device must return this information afterwards, there is no reference back to the Medication Card document (Medication Card document is a snapshot and cannot be referenced according to the IHE Pharmacy Framework).</span>
 
 {% include img.html img="infoinputdocument-mtp.png" caption="Fig.: Schematic illustration of the Info Input Document (MTP), the logic also applies to PRE/DIS/PADV/CARD" width="80%" %}
 
