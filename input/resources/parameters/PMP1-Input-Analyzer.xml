@@ -244,13 +244,13 @@
                                 <extension url="id">
                                     <valueIdentifier>
                                         <system value="urn:ietf:rfc:3986"/>
-                                        <value value="urn:uuid:39092343-7e0c-4c6f-b706-2c8e4dac77a9"/>
+                                        <value value="urn:uuid:1979830b-088d-4979-b73b-95c5d389dfef"/>
                                     </valueIdentifier>
                                 </extension>
                                 <extension url="externalDocumentId">
                                     <valueIdentifier>
                                         <system value="urn:ietf:rfc:3986"/>
-                                        <value value="urn:uuid:39092343-7e0c-4c6f-b706-2c8e4dac77a9"/>
+                                        <value value="urn:uuid:de88cf01-927a-46d1-9227-ba68146a8ceb"/>
                                     </valueIdentifier>
                                 </extension>
                             </extension>
@@ -350,7 +350,7 @@
                                 <extension url="externalDocumentId">
                                     <valueIdentifier>
                                         <system value="urn:ietf:rfc:3986"/>
-                                        <value value="urn:uuid:1979830b-088d-4979-b73b-95c5d389dfef"/>
+                                        <value value="urn:uuid:de88cf01-927a-46d1-9227-ba68146a8ceb"/>
                                     </valueIdentifier>
                                 </extension>
                             </extension>
@@ -369,7 +369,7 @@
                                 <extension url="externalDocumentId">
                                     <valueIdentifier>
                                         <system value="urn:ietf:rfc:3986"/>
-                                        <value value="urn:uuid:bdf2e38c-29a4-46dc-aa75-70e07ccabb8b"/>
+                                        <value value="urn:uuid:cdd13555-2382-4dc7-b7c6-03fe3d5be1c8"/>
                                     </valueIdentifier>
                                 </extension>
                             </extension>

@@ -179,15 +179,11 @@ The identifier is taken from the input document as follows:
 * Input document = MTP/PRE/DIS/PADV/CARD => **Bundle.identifier** 
    * If the additional information for CARD `"text" : "Medication Card"` (`http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype`) is missing, then follow the rules for LIST. It may happen that the externalDocumentId of another document (e.g. MTP) is used. This must be tolerated at the moment, as long as no other differentiation CARD/LIST is possible (<https://github.com/hl7ch/ch-emed/issues/140>). The drug will be referenced correctly in any case, e.g. in a later PADV.
 * Input document = LIST
-   * MedicationStatement => extension.url = **"externalDocumentId"** -> valueIdentifier
-      * If it exists from this extension: `http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan`
-      * If not, from the first extension where "externalDocumentId" exists
-   * MedicationDispense => extension.url = **"externalDocumentId"** -> valueIdentifier
-      * dito
-   * MedicationRequest => extension.url = **"externalDocumentId"** -> valueIdentifier
-      * dito 
-   * Observation => extension.url = **"externalDocumentId"** -> valueIdentifier
-      * dito
+   * MedicationStatement => extension.url = **"externalDocumentId"** (valueIdentifier) from this extension: `http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan`
+   * MedicationDispense => extension.url = **"externalDocumentId"** (valueIdentifier) from this extension: `http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-dispense`
+   * MedicationRequest => extension.url = **"externalDocumentId"** (valueIdentifier) from this extension: `http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-prescription`
+   * Observation => extension.url = **"externalDocumentId"** (valueIdentifier) from this extension: `http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-pharmaceuticaladvice`
+   * <span style="color:red">Note: The presence of this information in the Medication List document is a requirement for the device that generates this document. If the information about the original document (externalDocumentId) is not included in the list, it will be lost.</span>
 
 {% include img.html img="infoinputdocument-mtp.png" caption="Fig.: Schematic illustration of the Info Input Document (MTP), the logic also applies to PRE/DIS/PADV/CARD" width="80%" %}
 
