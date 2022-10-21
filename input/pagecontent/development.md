@@ -1,7 +1,7 @@
 ### Input Document
 
 #### Input Document Source
-See [here](#input-document-source-1).
+See section [here](#input-document-source-1).
 
 ### Output Document - Consolidated Medication Card document
 
@@ -83,7 +83,7 @@ The extension [Info Input Document](StructureDefinition-infoinputdocument.html) 
 The extension **Info Input Document** is set on each 'derivedFrom'-entry ([MedicationStatement](StructureDefinition-analyzer-medicationstatement.html), [MedicationRequest](StructureDefinition-analyzer-medicationrequest.html), [MedicationDispense](StructureDefinition-analyzer-medicationdispense.html), [Observation](StructureDefinition-analyzer-observationpadv.html)), but not on the [Header MedicationStatement](StructureDefinition-analyzer-medicationstatement-header.html).
 
 ##### Input Document Source
-* **Analyzer Input**: This information is set or overwritten in each input document (see [Analyzer IN Composition](StructureDefinition-analyzer-in-composition.html)).
+* **Analyzer Input**: This information is set or overwritten by the backend in each input document (see [Analyzer IN Composition](StructureDefinition-analyzer-in-composition.html)). (Note: This requirement must be considered if it is a different backend.)
 * **Analyzer Output**: This information (from the input) is set on each 'derivedFrom'-entry, but not on the Header MedicationStatement.
 
 ##### Input Document Type
