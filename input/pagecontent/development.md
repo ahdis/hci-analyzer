@@ -1,3 +1,23 @@
+- [Input Document](#input-document)
+  - [Input Document Source](#input-document-source)
+- [Output Document - Consolidated Medication Card document](#output-document---consolidated-medication-card-document)
+  - [Header MedicationStatement](#header-medicationstatement)
+    - [Elements allowed](#elements-allowed)
+    - [Dosage](#dosage)
+  - [Id & Identifier](#id--identifier)
+  - [Authors](#authors)
+    - [Author of the document](#author-of-the-document)
+    - [Author of the medical decision](#author-of-the-medical-decision)
+  - [Patient](#patient)
+    - [Identifier](#identifier)
+  - [Info Input Document](#info-input-document)
+    - [Input Document Source](#input-document-source-1)
+    - [Input Document Type](#input-document-type)
+    - [Input Document Id](#input-document-id)
+  - [History Changes](#history-changes)
+- [FHIR Implementation Guide](#fhir-implementation-guide)
+  - [Naming](#naming)
+
 ### Input Document
 
 #### Input Document Source
@@ -25,6 +45,15 @@ In the [Header MedicationStatement](StructureDefinition-analyzer-medicationstate
    1.  If the last Observation (which isn’t necessarily the last resource) is a CHANGE (= Observation.code, see also [ConceptMap](ConceptMap-ihe-padv-to-analyzer-history-changes.html)), use the dosages contained in the resource, referenced by its `"url": "id"`-extension, if it contains a dosage.
    2. If the last Observation (which isn’t necessarily the last resource) is a CANCEL, set a constant dosage with `"text" : "-"`.
    3. Take the dosage from the newest (last) resource (MedicationStatement/MedicationDispense/MedicationRequest) having a dosage.
+
+
+#### Id & Identifier
+
+{:class="table table-bordered"}
+| Reource | Id | Identifier |
+| --- | --- | --- |
+| **MedicationStatement Header** | new | new (`urn:uuid:<id>`) |
+| **Original entries (derivedFrom)**<br>(MedicationStatement/MedicationRequest/MedicationDispense/Observation) | new | remains unchanged |
 
 #### Authors
 ##### Author of the document
