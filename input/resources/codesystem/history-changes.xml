@@ -14,34 +14,49 @@
    <description value="CodeSystem with codes for the different type of changes in the medication history"/>
    <caseSensitive value="true"/>
    <content value="complete"/>
+
    <concept>
       <code value="sameMedication"/>
       <display value="Gleiche Medikation"/>
    </concept>
+
    <concept>
       <code value="substitution"/>
-      <display value="Substitution"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Substitution"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Substitution"/>
+      </designation>
    </concept>
+
    <concept>
       <code value="changeDosage"/>
       <display value="Änderung Dosierung"/>
    </concept>
+
    <concept>
       <code value="changePractitioner"/>
       <display value="Änderung Arzt"/>
    </concept>
+
    <concept>
       <code value="changeTherapy"/>
       <display value="Änderung Therapie"/>
    </concept>
+
    <concept>
       <code value="changeGalenic"/>
       <display value="Änderung Galenik"/>
    </concept>
+
    <concept>
       <code value="stop"/>
       <display value="Stopp"/>
    </concept>
+   
    <concept>
       <code value="comment"/>
       <display value="Kommentar"/>
