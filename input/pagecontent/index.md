@@ -26,3 +26,20 @@ You can download this implementation guide in [NPM format](https://confluence.hl
 
 #### Change Log
 [Significant changes](changelog.html) to this specification since its initial version.
+
+
+### IP Statements
+
+{% include ip-statements.xhtml %}
+
+### Cross Version Analysis
+
+{% include cross-version-analysis.xhtml %}
+
+### Dependency Table
+
+{% include dependency-table.xhtml %}
+
+### Globals Table
+
+{% include globals-table.xhtml %}
