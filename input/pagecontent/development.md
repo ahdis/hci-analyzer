@@ -71,7 +71,7 @@ In the [Header MedicationStatement](StructureDefinition-analyzer-medicationstate
 
 In order to map the author of the medical decision, the following procedure is followed to get the information from the input document(s) - take the information from where you first get it from:
    1. MedicationStatement.informationSource / MedicationDispense.performer.actor / MedicationRequest.performer / Observation.performer   
-      * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner | PractitionerRole.organization -> Organization) => all resources can be taken from the input   
+      * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input   
          * [PMP1 IN](Parameters-PMP1-Input-Analyzer.json.html): urn:uuid:3656263a-8f15-4175-975a-13524d922ce4 (PractitionerRole) -> urn:uuid:f2854370-f9b0-4893-87d2-09b6098ed641 (Practitioner) =>    
            [PMP1 OUT](Bundle-PMP1-ConsolidatedMedicationCard.json.html): PractitionerRole/Hopital -> Practitioner/DocteurHopital
             * see [schematic illustration](PR-UCs-PMP1.jpg)
@@ -80,18 +80,17 @@ In order to map the author of the medical decision, the following procedure is f
       * **Note**: If there is a changed MedicationStatement (PADV CHANGE) without informationSource, take the Observation.performer, from where the changed MedicationStatement is referenced (see PMP1 UC). 
 
    2. Composition.section.author   
-      * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner | PractitionerRole.organization -> Organization) => all resources can be taken from the input
-         * [1-1 SectionAuthor IN](Parameters-1-1-SectionAuthor-Input-Analyzer.json.html): AuthorSectionPractitionerRole -> AuthorSection | AuthorSectionOrganization =>   
-           [1-1 SectionAuthor OUT](Bundle-1-1-SectionAuthor-ConsolidatedMedicationCard.json.html): AuthorSectionPractitionerRole -> AuthorSection | AuthorSectionOrganization         
+      * -> PractitionerRole (Pracstatus value="comptitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input
+         * [1-1 SectionAuthor IN](Parameters-1-1-SectionAuthor-Input-Analyzer.json.html): AuthorSectionPractitionerRole -> AuthorSection &#0124; AuthorSectionOrganization =>   
+           [1-1 SectionAuthor OUT](Bundle-1-1-SectionAuthor-ConsolidatedMedicationCard.json.html): AuthorSectionPractitionerRole -> AuthorSection &#0124; AuthorSectionOrganization         
 
    3. Composition.author   
-      * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner | PractitionerRole.organization -> Organization) => all resources can be taken from the input    
-         * [1-1 IN](Parameters-1-1-Input-Analyzer.json.html): FamilienHausarztAtHausarzt -> FamilienHausarzt | Hausarzt =>   
-           [1-1 OUT](Bundle-1-1-ConsolidatedMedicationCard.json.html): FamilienHausarztAtHausarzt -> FamilienHausarzt | Hausarzt   
+      * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input    
+         * [1-1 IN](Parameters-1-1-Input-Analyzer.json.html): FamilienHausarztAtHausarzt -> FamilienHausarzt &#0124; Hausarzt =>   
+           [1-1 OUT](Bundle-1-1-ConsolidatedMedicationCard.json.html): FamilienHausarztAtHausarzt -> FamilienHausarzt &#0124; Hausarzt   
       * -> Patient => the resource can be taken from the input   
-         * [1-1 PatAuthor IN](Parameters-1-1-PatAuthor-Input-Analyzer.json.html): Patient/AuthorMonikaWegmueller =>   
-           [1-1 PatAuthor OUT](Bundle-1-1-PatAuthor-ConsolidatedMedicationCard.json.html): Patient/AuthorMonikaWegmueller  
-            * see [schematic illustration](PR-UCs-1-1-PATAuthor.jpg) 
+         * [1-1 PatAuthor IN](Parameters-1-1-PatAuthor-Input-Analyzer.json.html): AuthorMonikaWegmueller =>   
+           [1-1 PatAuthor OUT](Bundle-1-1-PatAuthor-ConsolidatedMedicationCard.json.html): AuthorMonikaWegmueller  
 
 #### Patient
 ##### Identifier
