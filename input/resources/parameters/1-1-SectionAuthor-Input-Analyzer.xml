@@ -50,13 +50,7 @@
                             </subject>
                             <date value="2011-11-29T11:00:00+01:00"/>
                             <author>
-                                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
-                                    <valueDateTime value="2020-03-04T10:05:00+01:00"/>
-                                </extension>
-                                <reference value="Practitioner/AuthorDocument"/>
-                            </author>
-                            <author>
-                                <reference value="Organization/AuthorDocumentOrganization"/>
+                                <reference value="PractitionerRole/AuthorDocumentPractitionerRole"/>
                             </author>
                             <title value="Therapieentscheid Medikation"/>
                             <confidentiality value="N">
@@ -165,6 +159,20 @@
                 </entry>
 
                 <entry>
+                    <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/AuthorDocumentPractitionerRole"/>
+                    <resource>
+                        <PractitionerRole>
+                            <id value="AuthorDocumentPractitionerRole"/>
+                            <practitioner>
+                                <reference value="Practitioner/AuthorDocument"/>
+                            </practitioner>
+                            <organization>
+                                <reference value="Organization/AuthorDocumentOrganization"/>
+                            </organization>
+                        </PractitionerRole>
+                    </resource>
+                </entry>
+                <entry>
                     <fullUrl value="http://test.fhir.ch/r4/Practitioner/AuthorDocument"/>
                     <resource>
                         <Practitioner>
@@ -177,12 +185,6 @@
                                 <family value="Author"/>
                                 <given value="Document"/>
                             </name>
-                            <address>
-                                <line value="Dokumentenweg 11"/>
-                                <city value="Zürich"/>
-                                <postalCode value="8000"/>
-                                <country value="CH"/>
-                            </address>
                         </Practitioner>
                     </resource>
                 </entry>
@@ -196,6 +198,12 @@
                                 <value value="7601000987655"/>
                             </identifier>
                             <name value="AuthorDocumentOrganization"/>
+                            <address>
+                                <line value="Dokumentenweg 11"/>
+                                <city value="Zürich"/>
+                                <postalCode value="8000"/>
+                                <country value="CH"/>
+                            </address>
                         </Organization>
                     </resource>
                 </entry>
@@ -227,12 +235,6 @@
                                 <family value="Author"/>
                                 <given value="Section"/>
                             </name>
-                            <address>
-                                <line value="Sektionsweg 13"/>
-                                <city value="Zürich"/>
-                                <postalCode value="8000"/>
-                                <country value="CH"/>
-                            </address>
                         </Practitioner>
                     </resource>
                 </entry>
@@ -246,6 +248,12 @@
                                 <value value="7601000975317"/>
                             </identifier>
                             <name value="AuthorSectionOrganization"/>
+                            <address>
+                                <line value="Sektionsweg 13"/>
+                                <city value="Zürich"/>
+                                <postalCode value="8000"/>
+                                <country value="CH"/>
+                            </address>
                         </Organization>
                     </resource>
                 </entry>
@@ -354,7 +362,7 @@
                                 <system value="urn:ietf:rfc:3986"/>
                                 <value value="urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"/>
                             </identifier>
-                            <status value="completed"/>
+                            <status value="active"/>
                             <medicationReference>
                                 <reference value="#med"/>
                             </medicationReference>

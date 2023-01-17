@@ -94,6 +94,9 @@
                 <practitioner>
                     <reference value="Practitioner/AuthorSection"/>
                 </practitioner>
+                <organization>
+                    <reference value="Organization/AuthorSectionOrganization"/>
+                </organization>
             </PractitionerRole>
         </resource>
     </entry>
@@ -110,13 +113,26 @@
                     <family value="Author"/>
                     <given value="Section"/>
                 </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Organization/AuthorSectionOrganization"/>
+        <resource>
+            <Organization>
+                <id value="AuthorSectionOrganization"/>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601000975317"/>
+                </identifier>
+                <name value="AuthorSectionOrganization"/>
                 <address>
                     <line value="Sektionsweg 13"/>
                     <city value="Zürich"/>
                     <postalCode value="8000"/>
                     <country value="CH"/>
                 </address>
-            </Practitioner>
+            </Organization>
         </resource>
     </entry>
 
@@ -211,7 +227,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -328,7 +344,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>

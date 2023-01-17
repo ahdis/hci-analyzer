@@ -4,7 +4,7 @@
   - [Header MedicationStatement](#header-medicationstatement)
     - [Elements allowed](#elements-allowed)
     - [Dosage](#dosage)
-  - [Id & Identifier](#id--identifier)
+  - [Id \& Identifier](#id--identifier)
   - [Authors](#authors)
     - [Author of the document](#author-of-the-document)
     - [Author of the medical decision](#author-of-the-medical-decision)
@@ -71,7 +71,7 @@ In the [Header MedicationStatement](StructureDefinition-analyzer-medicationstate
 
 In order to map the author of the medical decision, the following procedure is followed to get the information from the input document(s) - take the information from where you first get it from:
    1. MedicationStatement.informationSource / MedicationDispense.performer.actor / MedicationRequest.performer / Observation.performer   
-      * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner) => both resources can be taken from the input   
+      * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner | PractitionerRole.organization -> Organization) => all resources can be taken from the input   
          * [PMP1 IN](Parameters-PMP1-Input-Analyzer.json.html): urn:uuid:3656263a-8f15-4175-975a-13524d922ce4 (PractitionerRole) -> urn:uuid:f2854370-f9b0-4893-87d2-09b6098ed641 (Practitioner) =>    
            [PMP1 OUT](Bundle-PMP1-ConsolidatedMedicationCard.json.html): PractitionerRole/Hopital -> Practitioner/DocteurHopital
             * see [schematic illustration](PR-UCs-PMP1.jpg)
@@ -80,9 +80,9 @@ In order to map the author of the medical decision, the following procedure is f
       * **Note**: If there is a changed MedicationStatement (PADV CHANGE) without informationSource, take the Observation.performer, from where the changed MedicationStatement is referenced (see PMP1 UC). 
 
    2. Composition.section.author   
-      * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner) => both resources can be taken from the input
-         * [1-1 SectionAuthor IN](Parameters-1-1-SectionAuthor-Input-Analyzer.json.html): PractitionerRole/AuthorSectionPractitionerRole -> Practitioner/AuthorSection   
-           [1-1 SectionAuthor OUT](Bundle-1-1-SectionAuthor-ConsolidatedMedicationCard.json.html): PractitionerRole/AuthorSectionPractitionerRole -> Practitioner/AuthorSection        
+      * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner | PractitionerRole.organization -> Organization) => all resources can be taken from the input
+         * [1-1 SectionAuthor IN](Parameters-1-1-SectionAuthor-Input-Analyzer.json.html): AuthorSectionPractitionerRole -> AuthorSection | AuthorSectionOrganization   
+           [1-1 SectionAuthor OUT](Bundle-1-1-SectionAuthor-ConsolidatedMedicationCard.json.html): AuthorSectionPractitionerRole -> AuthorSection | AuthorSectionOrganization        
             * see [schematic illustration](PR-UCs-1-1-SectionAuthor.jpg)   
 
    3. Composition.author   
