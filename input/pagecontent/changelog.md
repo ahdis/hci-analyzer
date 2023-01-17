@@ -1,7 +1,19 @@
 
 All significant changes to this FHIR implementation guide will be documented on this page.
 
-### v0.4.0 (from July 2022)
+### v0.5.0 (from Jan 2023)
+
+#### Open Issues
+* [#3](https://github.com/ahdis/hci-analyzer/issues/3): Missing author of medical decision
+
+See also open issues on [GitHub](https://github.com/ahdis/hci-analyzer/issues).
+
+#### Changed / Updated
+* Changes due to the new [CH EMED v3.0.0](https://fhir.ch/ig/ch-emed/3.0.0/index.html) specification
+
+
+
+### v0.4.0 (from July 2022 until Dec 2022)
 
 #### Open Issues
 * [#3](https://github.com/ahdis/hci-analyzer/issues/3): Missing author of medical decision
@@ -20,9 +32,6 @@ See also open issues on [GitHub](https://github.com/ahdis/hci-analyzer/issues).
 * Update of the output document of the analyzer; the consolidated Medication Card document is a Bundle that is no longer nested in the resource Parameters.
 * Use of PractitionerRole instead of Practitioner to map the author of the medical decision, see also [here](development.html#authors).
 * Adapt change typ (remove 'changeROA', add 'stop'), see [CodeSystem History Changes](CodeSystem-history-changes.html) and added [ConceptMap IHE PADV to Analyzer History Changes](ConceptMap-ihe-padv-to-analyzer-history-changes.html).
-
-#### Fixed
-
 
 
 
