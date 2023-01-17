@@ -1,8 +1,5 @@
 == Suppressed Messages ==
 
-# Error caused by this issue: https://github.com/hl7ch/ch-core/issues/150
-The modifier extension http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time is not allowed to be used at this point (allowed = e:Composition.extension, e:Composition.author, e:Composition.section.author, e:MedicationStatement.informationSource, e:MedicationStatement.extension; this element is [[Parameters.parameter.resource.entry.resource.ofType(Observation).performer, Bundle.entry.resource.performer, BackboneElement.resource.performer, Observation.performer, Reference])
-
 # IG publisher issue with jurisdiction code (CH -> CHE)
 Error parsing response message: This does not appear to be a FHIR resource (wrong namespace '') (@ /)
 
@@ -36,7 +33,6 @@ The display "Medication dispensed.extended" is not a valid display for the code 
 The display "Medication pharmaceutical advice.extended" is not a valid display for the code {http://loinc.org}61356-2 - should be one of ['Medication pharmaceutical advice.extended Document', 'Medication pharm advice.extended Doc', '', '临床文档型' (zh-CN), '临床文档' (zh-CN), '文档' (zh-CN), '文书' (zh-CN), '医疗文书' (zh-CN), '临床医疗文书 医疗服务对象' (zh-CN), '客户' (zh-CN), '病人' (zh-CN), '病患' (zh-CN), '病号' (zh-CN), '超系统 - 病人 发现是一个原子型临床观察指标，并不是作为印象的概括陈述。体格检查、病史、系统检查及其他此类观察指标的属性均为发现。它们的标尺对于编码型发现可能是名义型，而对于叙述型文本之中所报告的发现，则可能是叙述型。' (zh-CN), '发现物' (zh-CN), '所见' (zh-CN), '结果' (zh-CN), '结论 处理用药' (zh-CN), '处理用药物' (zh-CN), '处理药物' (zh-CN), '治疗用药' (zh-CN), '治疗用药物' (zh-CN), '用药' (zh-CN), '药物处理' (zh-CN), '药物治疗' (zh-CN), '治疗药物 文档.其他' (zh-CN), '杂项类文档' (zh-CN), '其他文档 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 杂项' (zh-CN), '杂项类' (zh-CN), '杂项试验 药物药剂学忠告.扩充' (zh-CN), '药物药剂学意见.扩充' (zh-CN), '处理用药药剂学建议.扩充' (zh-CN), '处理用药物药剂学建议.扩充' (zh-CN), '处理药物药剂学建议.扩充' (zh-CN), '治疗用药药剂学建议.扩充' (zh-CN), '治疗用药物药剂学建议.扩充' (zh-CN), '用药药剂学建议.扩充' (zh-CN), '药物处理药剂学建议.扩充' (zh-CN), '药物治疗药剂学建议.扩充' (zh-CN), '治疗药物药剂学建议.扩充' (zh-CN), '治疗药物药剂学建议.扩充（扩展）信息' (zh-CN), 'Documentazione miscellanea Miscellanea Osservazione paziente Punto nel tempo (episodio)' (it-IT), 'Документ Точка во времени' (ru-RU), 'Момент' (ru-RU), 'geneesmiddelen' (nl-NL), 'Pharmazeutische Empfehlung (Korrekturmeldung)' (de-AT)] (from http://tx.fhir.org/r4)
 The display "Antiinfektiva zur systemischen Anwendung" is not a valid display for the code {http://www.whocc.no/atc}J - should be one of ['ANTIINFECTIVES FOR SYSTEMIC USE'] (from http://tx.fhir.org/r4) for 'http://www.whocc.no/atc#J'
 The display "Alimentäres System und Stoffwechsel" is not a valid display for the code {http://www.whocc.no/atc}A - should be one of ['ALIMENTARY TRACT AND METABOLISM'] (from http://tx.fhir.org/r4) for 'http://www.whocc.no/atc#A'
-The display "Respirationstrakt" is not a valid display for the code {http://www.whocc.no/atc}R - should be one of ['RESPIRATORY SYSTEM'] (from http://tx.fhir.org/r4) for 'http://www.whocc.no/atc#R'
 
 
 # The examples are included in the Bundle instances
@@ -46,8 +42,7 @@ The Implementation Guide contains no explicitly linked examples for this profile
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 
 # Slicing information (about Extensions) from CH EMED/CH Core
-This element does not match any known slice defined in the profile http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-composition
-This element does not match any known slice defined in the profile http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-MedicationStatement
+This element does not match any known slice defined in the profile http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-composition|0.5.0
 
 # Pattern defined in CH EMED / CH Core
 The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
