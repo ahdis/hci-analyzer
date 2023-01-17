@@ -81,18 +81,13 @@ In order to map the author of the medical decision, the following procedure is f
 
    2. Composition.section.author   
       * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner | PractitionerRole.organization -> Organization) => all resources can be taken from the input
-         * [1-1 SectionAuthor IN](Parameters-1-1-SectionAuthor-Input-Analyzer.json.html): AuthorSectionPractitionerRole -> AuthorSection | AuthorSectionOrganization   
-           [1-1 SectionAuthor OUT](Bundle-1-1-SectionAuthor-ConsolidatedMedicationCard.json.html): AuthorSectionPractitionerRole -> AuthorSection | AuthorSectionOrganization        
-            * see [schematic illustration](PR-UCs-1-1-SectionAuthor.jpg)   
+         * [1-1 SectionAuthor IN](Parameters-1-1-SectionAuthor-Input-Analyzer.json.html): AuthorSectionPractitionerRole -> AuthorSection | AuthorSectionOrganization =>   
+           [1-1 SectionAuthor OUT](Bundle-1-1-SectionAuthor-ConsolidatedMedicationCard.json.html): AuthorSectionPractitionerRole -> AuthorSection | AuthorSectionOrganization         
 
    3. Composition.author   
-      * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner) => both resources can be taken from the input    
-         * [1-1- PRAuthor IN](Parameters-1-1-PRAuthor-Input-Analyzer.json.html): PractitionerRole/Familienpraxis -> Practitioner/FamilienHausarzt =>   
-           [1-1- PRAuthor OUT](Bundle-1-1-PRAuthor-ConsolidatedMedicationCard.json.html): PractitionerRole/Familienpraxis -> Practitioner/FamilienHausarzt 
-            * see [schematic illustration](PR-UCs-1-1-PRAuthor.jpg)
-      * -> Practitioner => generate a PractitionerRole resource with the element PractitionerRole.practitioner -> Practitioner; the Practitioner resource can then be taken from the input   
-         * [1-1 IN](Parameters-1-1-Input-Analyzer.json.html): Practitioner/FamilienHausarzt =>   
-           [1-1 OUT](Bundle-1-1-ConsolidatedMedicationCard.json.html): PractitionerRole/Hausarzt -> Practitioner/FamilienHausarzt   
+      * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner | PractitionerRole.organization -> Organization) => all resources can be taken from the input    
+         * [1-1 IN](Parameters-1-1-Input-Analyzer.json.html): FamilienHausarztAtHausarzt -> FamilienHausarzt | Hausarzt =>   
+           [1-1 OUT](Bundle-1-1-ConsolidatedMedicationCard.json.html): FamilienHausarztAtHausarzt -> FamilienHausarzt | Hausarzt   
       * -> Patient => the resource can be taken from the input   
          * [1-1 PatAuthor IN](Parameters-1-1-PatAuthor-Input-Analyzer.json.html): Patient/AuthorMonikaWegmueller =>   
            [1-1 PatAuthor OUT](Bundle-1-1-PatAuthor-ConsolidatedMedicationCard.json.html): Patient/AuthorMonikaWegmueller  
