@@ -50,13 +50,7 @@
                             </subject>
                             <date value="2011-11-29T11:00:00+01:00"/>
                             <author>
-                                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
-                                    <valueDateTime value="2011-11-29T11:00:00+01:00"/>
-                                </extension>
-                                <reference value="Practitioner/FamilienHausarzt"/>
-                            </author>
-                            <author>
-                                <reference value="Organization/Hausarzt"/>
+                                <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                             </author>
                             <title value="Therapieentscheid Medikation"/>
                             <confidentiality value="N">
@@ -92,7 +86,6 @@
                                                     <th>Wirkstoffname</th>
                                                     <th>Galenische Form</th>
                                                     <th>Dosis pro Einheit</th>
-                                                    <th>Dosierung</th>
                                                     <th>Dos.Morgen</th>
                                                     <th>Dos.Mittag</th>
                                                     <th>Dos.Abend</th>
@@ -109,7 +102,6 @@
                                                     <td id="mtp.1.ingredient">Ramipril</td>
                                                     <td id="mtp.1.packageform">Tbl</td>
                                                     <td id="mtp.1.dosequantity">2.5 mg</td>
-                                                    <td id="mtp.1.dosageintakemode">Morgens 1/2 Tablette nehmen</td>
                                                     <td id="mtp.1.dosagemorning">0.5</td>
                                                     <td id="mtp.1.dosagelunch">0</td>
                                                     <td id="mtp.1.dosageevening">0</td>
@@ -161,6 +153,20 @@
                     </resource>
                 </entry>
                 <entry>
+                    <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/FamilienHausarztAtHausarzt"/>
+                    <resource>
+                        <PractitionerRole>
+                            <id value="FamilienHausarztAtHausarzt"/>
+                            <practitioner>
+                                <reference value="Practitioner/FamilienHausarzt"/>
+                            </practitioner>
+                            <organization>
+                                <reference value="Organization/Hausarzt"/>
+                            </organization>
+                        </PractitionerRole>
+                    </resource>
+                </entry>
+                <entry>
                     <fullUrl value="http://test.fhir.ch/r4/Practitioner/FamilienHausarzt"/>
                     <resource>
                         <Practitioner>
@@ -173,12 +179,6 @@
                                 <family value="Hausarzt"/>
                                 <given value="Familien"/>
                             </name>
-                            <address>
-                                <line value="Krankenstrasse 2"/>
-                                <city value="Zürich"/>
-                                <postalCode value="8005"/>
-                                <country value="CH"/>
-                            </address>
                         </Practitioner>
                     </resource>
                 </entry>
@@ -305,7 +305,7 @@
                                 <system value="urn:ietf:rfc:3986"/>
                                 <value value="urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"/>
                             </identifier>
-                            <status value="completed"/>
+                            <status value="active"/>
                             <medicationReference>
                                 <reference value="#med"/>
                             </medicationReference>
@@ -319,6 +319,7 @@
                                 <text value="Bluthochdruck"/>
                             </reasonCode>
                             <dosage>
+                                <patientInstruction value="-"/>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -396,13 +397,7 @@
                             </subject>
                             <date value="2011-11-29T11:01:00+01:00"/>
                             <author>
-                                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
-                                    <valueDateTime value="2011-11-29T11:00:00+01:00"/>
-                                </extension>
-                                <reference value="Practitioner/FamilienHausarzt"/>
-                            </author>
-                            <author>
-                                <reference value="Organization/Hausarzt"/>
+                                <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                             </author>
                             <title value="Abgabe"/>
                             <confidentiality value="N">
@@ -440,7 +435,6 @@
                                                     <th>Dosis pro Einheit</th>
                                                     <th>Anzahl Packungen</th>
                                                     <th>Packungsgrösse</th>
-                                                    <th>Dosierung</th>
                                                     <th>Dos.Morgen</th>
                                                     <th>Dos.Mittag</th>
                                                     <th>Dos.Abend</th>
@@ -460,7 +454,6 @@
                                                     <td id="dis.1.packageform">Tbl</td>
                                                     <td id="dis.1.nopackages">1</td>
                                                     <td id="dis.1.packagesize">20</td>
-                                                    <td id="dis.1.dosageintakemode">Morgens 1/2 Tablette nehmen</td>
                                                     <td id="dis.1.dosagemorning">0.5</td>
                                                     <td id="dis.1.dosagelunch">0</td>
                                                     <td id="dis.1.dosageevening">0</td>
@@ -514,6 +507,20 @@
                     </resource>
                 </entry>
                 <entry>
+                    <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/FamilienHausarztAtHausarzt"/>
+                    <resource>
+                        <PractitionerRole>
+                            <id value="FamilienHausarztAtHausarzt"/>
+                            <practitioner>
+                                <reference value="Practitioner/FamilienHausarzt"/>
+                            </practitioner>
+                            <organization>
+                                <reference value="Organization/Hausarzt"/>
+                            </organization>
+                        </PractitionerRole>
+                    </resource>
+                </entry>
+                <entry>
                     <fullUrl value="http://test.fhir.ch/r4/Practitioner/FamilienHausarzt"/>
                     <resource>
                         <Practitioner>
@@ -526,12 +533,6 @@
                                 <family value="Hausarzt"/>
                                 <given value="Familien"/>
                             </name>
-                            <address>
-                                <line value="Krankenstrasse 2"/>
-                                <city value="Zürich"/>
-                                <postalCode value="8005"/>
-                                <country value="CH"/>
-                            </address>
                         </Practitioner>
                     </resource>
                 </entry>
@@ -683,6 +684,7 @@
                                 <value value="1"/>
                             </quantity>
                             <dosageInstruction>
+                                <patientInstruction value="-"/>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -759,13 +761,8 @@
                             </subject>
                             <date value="2012-02-04T13:55:00+01:00"/>
                             <author>
-                                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
-                                    <valueDateTime value="2012-02-04T13:55:00+01:00"/>
-                                </extension>
-                                <reference value="urn:uuid:9689296c-7861-44d4-8824-714f2917c8c9"/>
-                            </author>
-                            <author>
-                                <reference value="urn:uuid:76c1ea57-0834-4f52-b87b-8b534e9918f2"/>
+                                <reference value="urn:uuid:f8ce3333-a68f-4901-bf42-1c4ad17820d2"/>
+                                <type value="Device"/>
                             </author>
                             <title value="Medikationsliste"/>
                             <confidentiality value="N">
@@ -783,12 +780,6 @@
                                 <reference value="urn:uuid:c7ab130a-7962-47f8-bd62-4f40e0099f4d"/>
                             </custodian>
                             <section>
-                                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid">
-                                    <valueIdentifier>
-                                        <system value="urn:ietf:rfc:3986"/>
-                                        <value value="urn:uuid:f5ee14ee-52dc-48b0-8d96-e2713c99e607"/>
-                                    </valueIdentifier>
-                                </extension>
                                 <title value="Medikamentenliste"/>
                                 <code>
                                     <coding>
@@ -883,12 +874,25 @@
                                 </text>
                                 <entry>
                                     <reference value="urn:uuid:733f5a67-5347-43bb-a3e1-068b10a0d808"/>
+                                    <type value="MedicationStatement"/>
                                 </entry>
                                 <entry>
                                     <reference value="urn:uuid:97ebd6b4-f0d9-4ee6-a81b-0853c259d5b6"/>
+                                    <type value="MedicationDispense"/>
                                 </entry>
                             </section>
                         </Composition>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="urn:uuid:f8ce3333-a68f-4901-bf42-1c4ad17820d2"/>
+                    <resource>
+                        <Device>
+                            <deviceName>
+                                <name value="Device name"/>
+                                <type value="manufacturer-name"/>
+                            </deviceName>
+                        </Device>
                     </resource>
                 </entry>
                 <entry>
@@ -921,6 +925,19 @@
                     </resource>
                 </entry>
                 <entry>
+                    <fullUrl value="urn:uuid:dd92f6bf-4ac1-48fe-8ee0-d2c384485246"/>
+                    <resource>
+                        <PractitionerRole>
+                            <practitioner>
+                                <reference value="urn:uuid:9689296c-7861-44d4-8824-714f2917c8c9"/>
+                            </practitioner>
+                            <organization>
+                                <reference value="urn:uuid:76c1ea57-0834-4f52-b87b-8b534e9918f2"/>
+                            </organization>
+                        </PractitionerRole>
+                    </resource>
+                </entry>
+                <entry>
                     <fullUrl value="urn:uuid:9689296c-7861-44d4-8824-714f2917c8c9"/>
                     <resource>
                         <Practitioner>
@@ -932,12 +949,6 @@
                                 <family value="Hausarzt"/>
                                 <given value="Familien"/>
                             </name>
-                            <address>
-                                <line value="Krankenstrasse 2"/>
-                                <city value="Zürich"/>
-                                <postalCode value="8005"/>
-                                <country value="CH"/>
-                            </address>
                         </Practitioner>
                     </resource>
                 </entry>
@@ -1071,13 +1082,17 @@
                                 <system value="urn:ietf:rfc:3986"/>
                                 <value value="urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"/>
                             </identifier>
-                            <status value="completed"/>
+                            <status value="active"/>
                             <medicationReference>
                                 <reference value="#med"/>
                             </medicationReference>
                             <subject>
                                 <reference value="urn:uuid:1848022e-bf1c-4421-bb4c-b803522c3411"/>
                             </subject>
+                            <informationSource>
+                                <reference value="urn:uuid:dd92f6bf-4ac1-48fe-8ee0-d2c384485246"/>
+                                <type value="PractitionerRole"/>
+                            </informationSource>
                             <reasonCode>
                                 <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
                                     <valueUrl value="#mtp.1.reason"/>
@@ -1085,6 +1100,7 @@
                                 <text value="Bluthochdruck"/>
                             </reasonCode>
                             <dosage>
+                                <patientInstruction value="-"/>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -1216,10 +1232,17 @@
                             <subject>
                                 <reference value="urn:uuid:1848022e-bf1c-4421-bb4c-b803522c3411"/>
                             </subject>
+                            <performer>
+                                <actor>
+                                    <reference value="urn:uuid:dd92f6bf-4ac1-48fe-8ee0-d2c384485246"/>
+                                    <type value="PractitionerRole"/>
+                                </actor>
+                            </performer>
                             <quantity>
                                 <value value="1"/>
                             </quantity>
                             <dosageInstruction>
+                                <patientInstruction value="-"/>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
