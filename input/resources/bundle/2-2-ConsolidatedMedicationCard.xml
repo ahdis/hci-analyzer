@@ -87,13 +87,16 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/Hausarzt"/>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/FamilienHausarztAtHausarzt"/>
         <resource>
             <PractitionerRole>
-                <id value="Hausarzt"/>
+                <id value="FamilienHausarztAtHausarzt"/>
                 <practitioner>
                     <reference value="Practitioner/FamilienHausarzt"/>
                 </practitioner>
+                <organization>
+                    <reference value="Organization/Hausarzt"/>
+                </organization>
             </PractitionerRole>
         </resource>
     </entry>
@@ -110,13 +113,26 @@
                     <family value="Hausarzt"/>
                     <given value="Familien"/>
                 </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Organization/Hausarzt"/>
+        <resource>
+            <Organization>
+                <id value="Hausarzt"/>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601000234438"/>
+                </identifier>
+                <name value="Hausarzt"/>
                 <address>
                     <line value="Krankenstrasse 2"/>
                     <city value="Zürich"/>
                     <postalCode value="8005"/>
                     <country value="CH"/>
                 </address>
-            </Practitioner>
+            </Organization>
         </resource>
     </entry>
 
@@ -211,7 +227,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -226,12 +242,13 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Bluthochdruck"/>
                 </reasonCode>
                 <dosage>
+                    <patientInstruction value="-"/>
                     <timing>
                         <repeat>
                             <boundsPeriod>
@@ -381,7 +398,7 @@
                 </subject>
                 <performer>
                     <actor>
-                        <reference value="PractitionerRole/Hausarzt"/>
+                        <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                     </actor>
                 </performer>
                 <quantity>
@@ -475,7 +492,7 @@
                 </subject>
                 <effectiveDateTime value="2012-02-04T14:00:00+01:00"/>
                 <performer>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                 </performer>
                 <note>
                     <text value="Abgesetzt aufgrund UAW trockener Husten"/>
@@ -552,7 +569,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:cf011bde-7a9d-484a-90c7-057a052d4cd2"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -567,7 +584,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                 </informationSource>
                 <!-- History -->
                 <derivedFrom>
@@ -590,37 +607,9 @@
                     <reference value="Observation/2-2-PharmAdvTriatec-Analyzer"/>
                     <!-- 1-2 Kommentar: Medikament absetzen (Triatec) -->
                 </derivedFrom>
-                <!--<reasonCode>
-                    <text value="Bluthochdruck"/>
-                </reasonCode>-->
                 <dosage>
                     <text value="-"/>
                 </dosage>
-                <!--<dosage>
-                    <timing>
-                        <repeat>
-                            <boundsPeriod>
-                                <start value="2011-11-29"/>
-                            </boundsPeriod>
-                            <when value="MORN"/>
-                        </repeat>
-                    </timing>
-                    <route>
-                        <coding>
-                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                            <code value="20053000"/>
-                            <display value="Oral use"/>
-                        </coding>
-                    </route>
-                    <doseAndRate>
-                        <doseQuantity>
-                            <value value="0.5"/>
-                            <unit value="Tablet (unit of presentation)" />
-                            <system value="http://snomed.info/sct"/>
-                            <code value="732936001"/>
-                        </doseQuantity>
-                    </doseAndRate>
-                </dosage>-->
             </MedicationStatement>
         </resource>
     </entry>
