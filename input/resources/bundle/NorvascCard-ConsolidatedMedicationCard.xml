@@ -87,13 +87,16 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/Hausarzt"/>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/FamilienHausarztAtHausarzt"/>
         <resource>
             <PractitionerRole>
-                <id value="Hausarzt"/>
+                <id value="FamilienHausarztAtHausarzt"/>
                 <practitioner>
                     <reference value="Practitioner/FamilienHausarzt"/>
                 </practitioner>
+                <organization>
+                    <reference value="Organization/Hausarzt"/>
+                </organization>
             </PractitionerRole>
         </resource>
     </entry>
@@ -110,13 +113,26 @@
                     <family value="Hausarzt"/>
                     <given value="Familien"/>
                 </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Organization/Hausarzt"/>
+        <resource>
+            <Organization>
+                <id value="Hausarzt"/>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601000234438"/>
+                </identifier>
+                <name value="Hausarzt"/>
                 <address>
                     <line value="Krankenstrasse 2"/>
                     <city value="Zürich"/>
                     <postalCode value="8005"/>
                     <country value="CH"/>
                 </address>
-            </Practitioner>
+            </Organization>
         </resource>
     </entry>
 
@@ -211,7 +227,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -226,12 +242,13 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Bluthochdruck"/>
                 </reasonCode>
                 <dosage>
+                    <patientInstruction value="-"/>
                     <timing>
                         <repeat>
                             <boundsPeriod>
@@ -366,7 +383,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:d41d72ba-2100-11e6-b67b-9e71128cae77"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <intent value="order"/>
                 <category>
                     <coding>
@@ -382,9 +399,10 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <performer>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                 </performer>
                 <dosageInstruction>
+                    <patientInstruction value="-"/>
                     <timing>
                         <repeat>
                             <boundsPeriod>
@@ -526,7 +544,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:534996fe-5e45-40ed-9388-06fa268e13d8"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -541,12 +559,13 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Bluthochdruck"/>
                 </reasonCode>
                 <dosage>
+                    <patientInstruction value="-"/>
                     <timing>
                         <repeat>
                             <boundsPeriod>
@@ -644,7 +663,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:9100975d-fd9d-4063-81ce-de69d16d3aa9"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -659,7 +678,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                 </informationSource>
                 <!-- History -->
                 <derivedFrom>
@@ -682,10 +701,8 @@
                     <reference value="MedicationStatement/2-7-MedStatNorvascFromCard-Analyzer"/>
                     <!-- 2-7 Erstellung Medication Card -->
                 </derivedFrom>
-                <!--<reasonCode>
-                    <text value="Bluthochdruck"/>
-                </reasonCode>-->
                 <dosage>
+                    <patientInstruction value="-"/>
                     <timing>
                         <repeat>
                             <boundsPeriod>
