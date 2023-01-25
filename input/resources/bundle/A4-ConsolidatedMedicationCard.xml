@@ -97,21 +97,24 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/Hausarzt"/>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/DupontAtHausarzt"/>
         <resource>
             <PractitionerRole>
-                <id value="Hausarzt"/>
+                <id value="DupontAtHausarzt"/>
                 <practitioner>
-                    <reference value="Practitioner/HausarztDupont"/>
+                    <reference value="Practitioner/Dupont"/>
                 </practitioner>
+                <organization>
+                    <reference value="Organization/Hausarzt"/>
+                </organization>
             </PractitionerRole>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Practitioner/HausarztDupont"/>
+        <fullUrl value="http://test.fhir.ch/r4/Practitioner/Dupont"/>
         <resource>
             <Practitioner>
-                <id value="HausarztDupont"/>
+                <id value="Dupont"/>
                 <identifier>
                     <system value="urn:oid:2.51.1.3"/>
                     <value value="7601023234613"/>
@@ -120,31 +123,47 @@
                     <family value="Dupont"/>
                     <given value="Hausarzt"/>
                 </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Organization/Hausarzt"/>
+        <resource>
+            <Organization>
+                <id value="Hausarzt"/>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601023234613"/>
+                </identifier>
+                <name value="Hausarzt"/>
                 <address>
                     <line value="Dupontstrasse"/>
                     <city value="Bern"/>
                     <postalCode value="3000"/>
                     <country value="CH"/>
                 </address>
-            </Practitioner>
+            </Organization>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/Spezialist"/>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/MonneyAtSpezialist"/>
         <resource>
             <PractitionerRole>
-                <id value="Spezialist"/>
+                <id value="MonneyAtSpezialist"/>
                 <practitioner>
-                    <reference value="Practitioner/SpezialistMonney"/>
+                    <reference value="Practitioner/Monney"/>
                 </practitioner>
+                <organization>
+                    <reference value="Organization/Spezialist"/>
+                </organization>
             </PractitionerRole>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Practitioner/SpezialistMonney"/>
+        <fullUrl value="http://test.fhir.ch/r4/Practitioner/Monney"/>
         <resource>
             <Practitioner>
-                <id value="SpezialistMonney"/>
+                <id value="Monney"/>
                 <identifier>
                     <system value="urn:oid:2.51.1.3"/>
                     <value value="7601000239891"/>
@@ -153,13 +172,26 @@
                     <family value="Monney"/>
                     <given value="Spezialist"/>
                 </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Organization/Spezialist"/>
+        <resource>
+            <Organization>
+                <id value="Spezialist"/>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601000239891"/>
+                </identifier>
+                <name value="Spezialist"/>
                 <address>
                     <line value="Monneystrasse"/>
                     <city value="Bern"/>
                     <postalCode value="3000"/>
                     <country value="CH"/>
                 </address>
-            </Practitioner>
+            </Organization>
         </resource>
     </entry>
 
@@ -255,7 +287,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:8467d8ef-0c21-4d1b-abc9-8721b4095ab8"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -270,7 +302,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/DupontAtHausarzt"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Bluthochdruck"/>
@@ -396,7 +428,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:30723235-64b9-4727-8040-2525aa67dadb"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -411,7 +443,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Spezialist"/>
+                    <reference value="PractitionerRole/MonneyAtSpezialist"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Bluthochdruck"/>
@@ -513,7 +545,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:07688814-21a1-4a47-b9fd-32178066ce26"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -528,7 +560,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Spezialist"/>
+                    <reference value="PractitionerRole/MonneyAtSpezialist"/>
                 </informationSource>
                 <!-- History -->
                 <derivedFrom>
@@ -543,9 +575,6 @@
                 <derivedFrom>
                     <reference value="MedicationStatement/A4-MedStatReniten-Monney"/>
                 </derivedFrom>
-                <!--<reasonCode>
-                    <text value="Bluthochdruck"/>
-                </reasonCode>-->
                 <dosage>
                     <timing>
                         <repeat>

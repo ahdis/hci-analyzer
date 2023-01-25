@@ -4,21 +4,21 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### v0.5.0 (from Jan 2023)
 
 #### Open Issues
-* [#3](https://github.com/ahdis/hci-analyzer/issues/3): Missing author of medical decision
+* 
 
 See also open issues on [GitHub](https://github.com/ahdis/hci-analyzer/issues).
 
 #### Changed / Updated
 * Changes due to the new [CH EMED v3.0.0](https://fhir.ch/ig/ch-emed/3.0.0/index.html) specification
+   * Input Documents:
+      * Updated the CH EMED example documents
+   * Output Documents: 
+      * ALL: Composition.author: Changed from seperate elements 'Practitioner' and 'Organization' to 'PractitionerRole' with the respective references from there (added slice for Organization to Bundle profiles)
+      * ALL: New structure of dosage element(s)
 
 
 
 ### v0.4.0 (from July 2022 until Dec 2022)
-
-#### Open Issues
-* [#3](https://github.com/ahdis/hci-analyzer/issues/3): Missing author of medical decision
-
-See also open issues on [GitHub](https://github.com/ahdis/hci-analyzer/issues).
 
 #### Added
 * Add slices for different entries in the Bundle to simplify the validation.

@@ -5,7 +5,9 @@ To do's for a manually adapted Input Document
 - Put each Bundle in a Parameter (Parameters.parameter.name ="ch-emed-doc")
 - Add Composition.extension:inputdocumentsource
 
-
+CH EMED:
+- Remove .text elements
+- Add Composition.extension:inputdocumentsource (http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource)
 
 
 To do's for a manually adapted consolidated Medciation Card document (from Input Document)

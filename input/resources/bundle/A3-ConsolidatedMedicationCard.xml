@@ -97,21 +97,24 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/Hausarzt"/>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/DupontAtHausarzt"/>
         <resource>
             <PractitionerRole>
-                <id value="Hausarzt"/>
+                <id value="DupontAtHausarzt"/>
                 <practitioner>
-                    <reference value="Practitioner/HausarztDupont"/>
+                    <reference value="Practitioner/Dupont"/>
                 </practitioner>
+                <organization>
+                    <reference value="Organization/Hausarzt"/>
+                </organization>
             </PractitionerRole>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Practitioner/HausarztDupont"/>
+        <fullUrl value="http://test.fhir.ch/r4/Practitioner/Dupont"/>
         <resource>
             <Practitioner>
-                <id value="HausarztDupont"/>
+                <id value="Dupont"/>
                 <identifier>
                     <system value="urn:oid:2.51.1.3"/>
                     <value value="7601023234613"/>
@@ -120,13 +123,26 @@
                     <family value="Dupont"/>
                     <given value="Hausarzt"/>
                 </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Organization/Hausarzt"/>
+        <resource>
+            <Organization>
+                <id value="Hausarzt"/>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601023234613"/>
+                </identifier>
+                <name value="Hausarzt"/>
                 <address>
                     <line value="Dupontstrasse"/>
                     <city value="Bern"/>
                     <postalCode value="3000"/>
                     <country value="CH"/>
                 </address>
-            </Practitioner>
+            </Organization>
         </resource>
     </entry>
 
@@ -222,7 +238,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:64bff866-0059-4b56-ab89-d0a3e46fddda"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -237,7 +253,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/DupontAtHausarzt"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Bluthochdruck"/>
@@ -363,7 +379,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:8bec35c0-7da4-4b28-aa8c-f657cf0c95b3"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -378,7 +394,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/DupontAtHausarzt"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Bluthochdruck"/>
@@ -480,7 +496,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:79ff247f-7e14-4581-90b2-2fa157320bd2"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -495,7 +511,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/DupontAtHausarzt"/>
                 </informationSource>
                 <!-- History -->
                 <derivedFrom>
@@ -507,9 +523,6 @@
                 <derivedFrom>
                     <reference value="MedicationStatement/A3-MedStatReniten-2x"/>
                 </derivedFrom>
-                <!--<reasonCode>
-                    <text value="Bluthochdruck"/>
-                </reasonCode>-->
                 <dosage>
                     <timing>
                         <repeat>

@@ -97,21 +97,24 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/Hausarzt"/>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/DupontAtHausarzt"/>
         <resource>
             <PractitionerRole>
-                <id value="Hausarzt"/>
+                <id value="DupontAtHausarzt"/>
                 <practitioner>
-                    <reference value="Practitioner/HausarztDupont"/>
+                    <reference value="Practitioner/Dupont"/>
                 </practitioner>
+                <organization>
+                    <reference value="Organization/Hausarzt"/>
+                </organization>
             </PractitionerRole>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Practitioner/HausarztDupont"/>
+        <fullUrl value="http://test.fhir.ch/r4/Practitioner/Dupont"/>
         <resource>
             <Practitioner>
-                <id value="HausarztDupont"/>
+                <id value="Dupont"/>
                 <identifier>
                     <system value="urn:oid:2.51.1.3"/>
                     <value value="7601023234613"/>
@@ -120,23 +123,39 @@
                     <family value="Dupont"/>
                     <given value="Hausarzt"/>
                 </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Organization/Hausarzt"/>
+        <resource>
+            <Organization>
+                <id value="Hausarzt"/>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601023234613"/>
+                </identifier>
+                <name value="Hausarzt"/>
                 <address>
                     <line value="Dupontstrasse"/>
                     <city value="Bern"/>
                     <postalCode value="3000"/>
                     <country value="CH"/>
                 </address>
-            </Practitioner>
+            </Organization>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/Apotheke"/>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/ApothekerAtApothekeGare"/>
         <resource>
             <PractitionerRole>
-                <id value="Apotheke"/>
+                <id value="ApothekerAtApothekeGare"/>
                 <practitioner>
                     <reference value="Practitioner/Apotheker"/>
                 </practitioner>
+                <organization>
+                    <reference value="Organization/ApothekeGare"/>
+                </organization>
             </PractitionerRole>
         </resource>
     </entry>
@@ -153,13 +172,26 @@
                     <family value="Apotheker"/>
                     <given value="Andreas"/>
                 </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Organization/ApothekeGare"/>
+        <resource>
+            <Organization>
+                <id value="ApothekeGare"/>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601000876546"/>
+                </identifier>
+                <name value="Apotheke Gare"/>
                 <address>
                     <line value="Apothekerstrasse"/>
                     <city value="Bern"/>
                     <postalCode value="3000"/>
                     <country value="CH"/>
                 </address>
-            </Practitioner>
+            </Organization>
         </resource>
     </entry>
 
@@ -255,7 +287,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:6b7e044c-6d68-47f9-879e-0221338b45ba"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -270,7 +302,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/DupontAtHausarzt"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Cholesterinsenker"/>
@@ -396,7 +428,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:a9d448f4-ed8d-45ae-81d9-41f2e82be808"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -411,7 +443,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Apotheke"/>
+                    <reference value="PractitionerRole/ApothekerAtApothekeGare"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Cholesterinsenker"/>
@@ -513,7 +545,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:f0301281-41f9-49d5-95ec-ea3ebecc6156"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -528,7 +560,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Apotheke"/>
+                    <reference value="PractitionerRole/ApothekerAtApothekeGare"/>
                 </informationSource>
                 <!-- History -->
                 <derivedFrom>
@@ -543,9 +575,6 @@
                 <derivedFrom>
                     <reference value="MedicationStatement/A1-MedStatSimcora"/>
                 </derivedFrom>
-                <!--<reasonCode>
-                    <text value="Cholesterinsenker"/>
-                </reasonCode>-->
                 <dosage>
                     <timing>
                         <repeat>

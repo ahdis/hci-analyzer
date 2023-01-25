@@ -107,21 +107,24 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/Hausarzt"/>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/DupontAtHausarzt"/>
         <resource>
             <PractitionerRole>
-                <id value="Hausarzt"/>
+                <id value="DupontAtHausarzt"/>
                 <practitioner>
-                    <reference value="Practitioner/HausarztDupont"/>
+                    <reference value="Practitioner/Dupont"/>
                 </practitioner>
+                <organization>
+                    <reference value="Organization/Hausarzt"/>
+                </organization>
             </PractitionerRole>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Practitioner/HausarztDupont"/>
+        <fullUrl value="http://test.fhir.ch/r4/Practitioner/Dupont"/>
         <resource>
             <Practitioner>
-                <id value="HausarztDupont"/>
+                <id value="Dupont"/>
                 <identifier>
                     <system value="urn:oid:2.51.1.3"/>
                     <value value="7601023234613"/>
@@ -130,13 +133,26 @@
                     <family value="Dupont"/>
                     <given value="Hausarzt"/>
                 </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Organization/Hausarzt"/>
+        <resource>
+            <Organization>
+                <id value="Hausarzt"/>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601023234613"/>
+                </identifier>
+                <name value="Hausarzt"/>
                 <address>
                     <line value="Dupontstrasse"/>
                     <city value="Bern"/>
                     <postalCode value="3000"/>
                     <country value="CH"/>
                 </address>
-            </Practitioner>
+            </Organization>
         </resource>
     </entry>
 
@@ -232,7 +248,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:d0506dca-64e6-464a-862a-15cdb40b2796"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -247,7 +263,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/DupontAtHausarzt"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Schmerzen"/>
@@ -372,7 +388,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:d4745784-4409-48d1-a332-92077c804ac3"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -387,7 +403,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/DupontAtHausarzt"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Schmerzen"/>
@@ -489,7 +505,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:de1a022c-171c-4bdb-b51a-aaa4f0cd850c"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -504,7 +520,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/DupontAtHausarzt"/>
                 </informationSource>
                 <!-- History -->
                 <derivedFrom>
@@ -516,9 +532,6 @@
                 <derivedFrom>
                     <reference value="MedicationStatement/A7-MedStatBrufenRetard-800"/>
                 </derivedFrom>
-                <!--<reasonCode>
-                    <text value="Schmerzen"/>
-                </reasonCode>-->
                 <dosage>
                     <timing>
                         <repeat>

@@ -45,7 +45,7 @@
                             </subject>
                             <date value="2020-03-01T11:00:00+01:00"/>
                             <author>
-                                <reference value="Practitioner/HausarztDupont"/>
+                                <reference value="PractitionerRole/DupontAtHausarzt"/>
                             </author>
                             <title value="Medikationsplan"/>
                             <confidentiality value="N">
@@ -60,7 +60,7 @@
                                 </extension>
                             </confidentiality>
                             <custodian>
-                                <reference value="Organization/Custodian"/>
+                                <reference value="Organization/Hausarzt"/>
                             </custodian>
                             <section>
                                 <title value="Medikamentenliste"/>
@@ -139,10 +139,24 @@
                     </resource>
                 </entry>
                 <entry>
-                    <fullUrl value="http://test.fhir.ch/r4/Practitioner/HausarztDupont"/>
+                    <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/DupontAtHausarzt"/>
+                    <resource>
+                        <PractitionerRole>
+                            <id value="DupontAtHausarzt"/>
+                            <practitioner>
+                                <reference value="Practitioner/Dupont"/>
+                            </practitioner>
+                            <organization>
+                                <reference value="Organization/Hausarzt"/>
+                            </organization>
+                        </PractitionerRole>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="http://test.fhir.ch/r4/Practitioner/Dupont"/>
                     <resource>
                         <Practitioner>
-                            <id value="HausarztDupont"/>
+                            <id value="Dupont"/>
                             <identifier>
                                 <system value="urn:oid:2.51.1.3"/>
                                 <value value="7601023234613"/>
@@ -151,25 +165,25 @@
                                 <family value="Dupont"/>
                                 <given value="Hausarzt"/>
                             </name>
+                        </Practitioner>
+                    </resource>
+                </entry>
+                <entry>
+                    <fullUrl value="http://test.fhir.ch/r4/Organization/Hausarzt"/>
+                    <resource>
+                        <Organization>
+                            <id value="Hausarzt"/>
+                            <identifier>
+                                <system value="urn:oid:2.51.1.3"/>
+                                <value value="7601023234613"/>
+                            </identifier>
+                            <name value="Hausarzt"/>
                             <address>
                                 <line value="Dupontstrasse"/>
                                 <city value="Bern"/>
                                 <postalCode value="3000"/>
                                 <country value="CH"/>
                             </address>
-                        </Practitioner>
-                    </resource>
-                </entry>
-                <entry>
-                    <fullUrl value="http://test.fhir.ch/r4/Organization/Custodian"/>
-                    <resource>
-                        <Organization>
-                            <id value="Custodian"/>
-                            <identifier>
-                                <system value="urn:oid:2.51.1.3"/>
-                                <value value="7601023234613"/>
-                            </identifier>
-                            <name value="Hausarzt"/>
                         </Organization>
                     </resource>
                 </entry>
@@ -258,7 +272,7 @@
                                 <system value="urn:ietf:rfc:3986"/>
                                 <value value="urn:uuid:6b7e044c-6d68-47f9-879e-0221338b45ba"/>
                             </identifier>
-                            <status value="completed"/>
+                            <status value="active"/>
                             <category>
                                 <coding>
                                     <system value="http://www.whocc.no/atc"/>
@@ -359,7 +373,7 @@
                             </subject>
                             <date value="2020-03-01T16:00:00+01:00"/>
                             <author>
-                                <reference value="Practitioner/Apotheker"/>
+                                <reference value="PractitionerRole/ApothekerAtApothekeGare"/>
                             </author>
                             <title value="Medikationsplan"/>
                             <confidentiality value="N">
@@ -453,6 +467,20 @@
                     </resource>
                 </entry>
                 <entry>
+                    <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/ApothekerAtApothekeGare"/>
+                    <resource>
+                        <PractitionerRole>
+                            <id value="ApothekerAtApothekeGare"/>
+                            <practitioner>
+                                <reference value="Practitioner/Apotheker"/>
+                            </practitioner>
+                            <organization>
+                                <reference value="Organization/ApothekeGare"/>
+                            </organization>
+                        </PractitionerRole>
+                    </resource>
+                </entry>
+                <entry>
                     <fullUrl value="http://test.fhir.ch/r4/Practitioner/Apotheker"/>
                     <resource>
                         <Practitioner>
@@ -465,12 +493,6 @@
                                 <family value="Apotheker"/>
                                 <given value="Andreas"/>
                             </name>
-                            <address>
-                                <line value="Apothekerstrasse"/>
-                                <city value="Bern"/>
-                                <postalCode value="3000"/>
-                                <country value="CH"/>
-                            </address>
                         </Practitioner>
                     </resource>
                 </entry>
@@ -484,6 +506,12 @@
                                 <value value="7601000876546"/>
                             </identifier>
                             <name value="Apotheke Gare"/>
+                            <address>
+                                <line value="Apothekerstrasse"/>
+                                <city value="Bern"/>
+                                <postalCode value="3000"/>
+                                <country value="CH"/>
+                            </address>
                         </Organization>
                     </resource>
                 </entry>
@@ -572,7 +600,7 @@
                                 <system value="urn:ietf:rfc:3986"/>
                                 <value value="urn:uuid:a9d448f4-ed8d-45ae-81d9-41f2e82be808"/>
                             </identifier>
-                            <status value="completed"/>
+                            <status value="active"/>
                             <category>
                                 <coding>
                                     <system value="http://www.whocc.no/atc"/>
