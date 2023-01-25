@@ -96,13 +96,16 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/Hausarzt"/>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/FamilienHausarztAtHausarzt"/>
         <resource>
             <PractitionerRole>
-                <id value="Hausarzt"/>
+                <id value="FamilienHausarztAtHausarzt"/>
                 <practitioner>
                     <reference value="Practitioner/FamilienHausarzt"/>
                 </practitioner>
+                <organization>
+                    <reference value="Organization/Hausarzt"/>
+                </organization>
             </PractitionerRole>
         </resource>
     </entry>
@@ -119,13 +122,26 @@
                     <family value="Hausarzt"/>
                     <given value="Familien"/>
                 </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Organization/Hausarzt"/>
+        <resource>
+            <Organization>
+                <id value="Hausarzt"/>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601000234438"/>
+                </identifier>
+                <name value="Hausarzt"/>
                 <address>
                     <line value="Krankenstrasse 2"/>
                     <city value="Zürich"/>
                     <postalCode value="8005"/>
                     <country value="CH"/>
                 </address>
-            </Practitioner>
+            </Organization>
         </resource>
     </entry>
 
@@ -220,7 +236,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:c9f758a1-296c-4710-84d4-e181db8c7478"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -235,12 +251,13 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Bluthochdruck"/>
                 </reasonCode>
                 <dosage>
+                    <patientInstruction value="-"/>
                     <timing>
                         <repeat>
                             <boundsPeriod>
@@ -390,13 +407,14 @@
                 </subject>
                 <performer>
                     <actor>
-                        <reference value="PractitionerRole/Hausarzt"/>
+                        <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                     </actor>
                 </performer>
                 <quantity>
                     <value value="1"/>
                 </quantity>
                 <dosageInstruction>
+                    <patientInstruction value="-"/>
                     <timing>
                         <repeat>
                             <boundsPeriod>
@@ -484,7 +502,7 @@
                 </subject>
                 <effectiveDateTime value="2012-02-04T14:00:00+01:00"/>
                 <performer>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                 </performer>
                 <note>
                     <text value="Abgesetzt aufgrund UAW trockener Husten"/>
@@ -584,7 +602,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:17931678-20b4-11e6-b67b-9e71128cca77"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -599,13 +617,14 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Bluthochdruck"/>
                 </reasonCode>
                 <dosage>
                     <sequence value="1"/>
+                    <patientInstruction value="-"/>
                     <timing>
                         <repeat>
                             <boundsPeriod>
@@ -634,19 +653,9 @@
                     <sequence value="2"/>
                     <timing>
                         <repeat>
-                            <boundsPeriod>
-                                <start value="2012-02-04"/>
-                            </boundsPeriod>
                             <when value="EVE"/>
                         </repeat>
                     </timing>
-                    <route>
-                        <coding>
-                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                            <code value="20053000"/>
-                            <display value="Oral use"/>
-                        </coding>
-                    </route>
                     <doseAndRate>
                         <doseQuantity>
                             <value value="0.5"/>
@@ -781,7 +790,7 @@
                 </subject>
                 <performer>
                     <actor>
-                        <reference value="PractitionerRole/Hausarzt"/>
+                        <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                     </actor>
                 </performer>
                 <quantity>
@@ -789,6 +798,7 @@
                 </quantity>
                 <dosageInstruction>
                     <sequence value="1"/>
+                    <patientInstruction value="-"/>
                     <timing>
                         <repeat>
                             <boundsPeriod>
@@ -817,19 +827,9 @@
                     <sequence value="2"/>
                     <timing>
                         <repeat>
-                            <boundsPeriod>
-                                <start value="2012-02-04"/>
-                            </boundsPeriod>
                             <when value="EVE"/>
                         </repeat>
                     </timing>
-                    <route>
-                        <coding>
-                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                            <code value="20053000"/>
-                            <display value="Oral use"/>
-                        </coding>
-                    </route>
                     <doseAndRate>
                         <doseQuantity>
                             <value value="0.5"/>
@@ -934,7 +934,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:5712fffe-20c6-11e6-b67b-9e71128cae77"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -949,12 +949,13 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                 </informationSource>
                 <reasonCode>
                     <text value="Bluthochdruck"/>
                 </reasonCode>
                 <dosage>
+                    <patientInstruction value="-"/>
                     <timing>
                         <repeat>
                             <boundsPeriod>
@@ -1089,7 +1090,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:d41d72ba-2100-11e6-b67b-9e71128cae77"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <intent value="order"/>
                 <category>
                     <coding>
@@ -1105,9 +1106,10 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <performer>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                 </performer>
                 <dosageInstruction>
+                    <patientInstruction value="-"/>
                     <timing>
                         <repeat>
                             <boundsPeriod>
@@ -1211,7 +1213,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:2476c8c6-7227-48ba-af3c-f8aad3d8c192"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -1226,7 +1228,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                 </informationSource>
                 <!-- History -->
                 <derivedFrom>
@@ -1249,37 +1251,9 @@
                     <reference value="Observation/2-2-PharmAdvTriatec-Analyzer"/>
                     <!-- 1-2 Kommentar: Medikament absetzen (Triatec) -->
                 </derivedFrom>
-                <!--<reasonCode>
-                    <text value="Bluthochdruck"/>
-                </reasonCode>-->
                 <dosage>
                     <text value="-"/>
                 </dosage>
-                <!--<dosage>
-                    <timing>
-                        <repeat>
-                            <boundsPeriod>
-                                <start value="2011-11-29"/>
-                            </boundsPeriod>
-                            <when value="MORN"/>
-                        </repeat>
-                    </timing>
-                    <route>
-                        <coding>
-                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                            <code value="20053000"/>
-                            <display value="Oral use"/>
-                        </coding>
-                    </route>
-                    <doseAndRate>
-                        <doseQuantity>
-                            <value value="0.5"/>
-                            <unit value="Tablet (unit of presentation)" />
-                            <system value="http://snomed.info/sct"/>
-                            <code value="732936001"/>
-                        </doseQuantity>
-                    </doseAndRate>
-                </dosage>-->
             </MedicationStatement>
         </resource>
     </entry>
@@ -1406,7 +1380,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:f17e5848-4101-49a4-b33b-3a1cee07ebf3"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -1421,7 +1395,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                 </informationSource>
                 <!-- History -->
                 <derivedFrom>
@@ -1436,11 +1410,9 @@
                     <reference value="MedicationDispense/2-4-MedDispBeloczok-Analyzer"/>
                     <!-- 2-4 Abgabe (Beloc Zok) -->
                 </derivedFrom>
-                <!--<reasonCode>
-                                <text value="Bluthochdruck"/>
-                            </reasonCode>-->
                 <dosage>
                     <sequence value="1"/>
+                    <patientInstruction value="-"/>
                     <timing>
                         <repeat>
                             <boundsPeriod>
@@ -1469,19 +1441,9 @@
                     <sequence value="2"/>
                     <timing>
                         <repeat>
-                            <boundsPeriod>
-                                <start value="2012-02-04"/>
-                            </boundsPeriod>
                             <when value="EVE"/>
                         </repeat>
                     </timing>
-                    <route>
-                        <coding>
-                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                            <code value="20053000"/>
-                            <display value="Oral use"/>
-                        </coding>
-                    </route>
                     <doseAndRate>
                         <doseQuantity>
                             <value value="0.5"/>
@@ -1590,7 +1552,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:58deda81-8750-4215-bfa0-d0766656d0ae"/>
                 </identifier>
-                <status value="completed"/>
+                <status value="active"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -1605,7 +1567,7 @@
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/Hausarzt"/>
+                    <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
                 </informationSource>
                 <!-- History -->
                 <derivedFrom>
@@ -1620,10 +1582,8 @@
                     <reference value="MedicationRequest/2-6-MedReqNorvasc-Analyzer"/>
                     <!-- 2-6 Rezept (Norvasc) -->
                 </derivedFrom>
-                <!--<reasonCode>
-                    <text value="Bluthochdruck"/>
-                </reasonCode>-->
                 <dosage>
+                    <patientInstruction value="-"/>
                     <timing>
                         <repeat>
                             <boundsPeriod>
