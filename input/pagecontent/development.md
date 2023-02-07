@@ -40,7 +40,7 @@ In the [Header MedicationStatement](StructureDefinition-analyzer-medicationstate
 * dosage (taken over, see below)
 
 ##### Dosage
-* There must be **at least one dosage element** (non-structrued/structured-normal/structured-split).
+* There must be **at least one dosage element**.
 * The dosage element (1..*) is set according to this scheme:
    1.  If the last Observation (which isn’t necessarily the last resource) is a CHANGE (= Observation.code, see also [ConceptMap](ConceptMap-ihe-padv-to-analyzer-history-changes.html)), use the dosages contained in the resource, referenced by its `"url": "id"`-extension, if it contains a dosage.
    2. If the last Observation (which isn’t necessarily the last resource) is a CANCEL, set a constant dosage with `"text" : "-"`.
