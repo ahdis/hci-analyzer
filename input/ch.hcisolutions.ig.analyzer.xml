@@ -30,7 +30,7 @@
     <uri value="http://chmed.emediplan.ch/fhir/ImplementationGuide/ch.chmed.emediplan"/>
     <packageId value="ch.chmed.emediplan"/>
     <version value="current"/>
-    <!-- TBD: update to released version -->
+    <!-- TODO: update to released version -->
   </dependsOn>
   <definition>
 

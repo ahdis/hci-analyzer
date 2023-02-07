@@ -733,7 +733,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:d1bc571c-b8d0-47fc-8ccf-8fb251661bd8"/>
                 </identifier>
-                <status value="active"/>
+                <status value="unknown"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -900,7 +900,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:661362d5-a209-4050-8e9a-98e9ac17e8cb"/>
                 </identifier>
-                <status value="active"/>
+                <status value="unknown"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>

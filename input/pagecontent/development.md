@@ -5,6 +5,7 @@
     - [Elements allowed](#elements-allowed)
     - [Dosage](#dosage)
   - [Id \& Identifier](#id--identifier)
+  - [Status](#status)
   - [Authors](#authors)
     - [Author of the document](#author-of-the-document)
     - [Author of the medical decision](#author-of-the-medical-decision)
@@ -54,6 +55,16 @@ In the [Header MedicationStatement](StructureDefinition-analyzer-medicationstate
 | --- | --- | --- |
 | **MedicationStatement Header** | new | new (`urn:uuid:<id>`) |
 | **Original entries (derivedFrom)**<br>(MedicationStatement/MedicationRequest/MedicationDispense/Observation) | new | remains unchanged |
+
+
+#### Status
+
+{:class="table table-bordered"}
+| Reource | Status | 
+| --- | --- | --- |
+| **MedicationStatement Header** | new (`unknown`) |
+| **Original entries (derivedFrom)**<br>(MedicationStatement/MedicationRequest/MedicationDispense/Observation) | remains unchanged |
+
 
 #### Authors
 ##### Author of the document

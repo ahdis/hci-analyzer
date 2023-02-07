@@ -1213,7 +1213,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:2476c8c6-7227-48ba-af3c-f8aad3d8c192"/>
                 </identifier>
-                <status value="active"/>
+                <status value="unknown"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -1380,7 +1380,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:f17e5848-4101-49a4-b33b-3a1cee07ebf3"/>
                 </identifier>
-                <status value="active"/>
+                <status value="unknown"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
@@ -1552,7 +1552,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:58deda81-8750-4215-bfa0-d0766656d0ae"/>
                 </identifier>
-                <status value="active"/>
+                <status value="unknown"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>

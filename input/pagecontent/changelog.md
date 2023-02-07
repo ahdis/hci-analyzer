@@ -15,6 +15,7 @@ See also open issues on [GitHub](https://github.com/ahdis/hci-analyzer/issues).
    * Output Documents: 
       * ALL: Composition.author: Changed from seperate elements 'Practitioner' and 'Organization' to 'PractitionerRole' with the respective references from there (added slice for Organization to Bundle profiles)
       * ALL: New structure of dosage element(s)
+      * ALL: Change status of Header MedicationStatement to `unknown` (incl. profile)
 
 
 

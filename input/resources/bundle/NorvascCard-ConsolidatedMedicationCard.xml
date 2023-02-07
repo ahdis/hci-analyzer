@@ -663,7 +663,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:9100975d-fd9d-4063-81ce-de69d16d3aa9"/>
                 </identifier>
-                <status value="active"/>
+                <status value="unknown"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>

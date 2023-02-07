@@ -61,6 +61,7 @@
 
       <element id="MedicationStatement.status">
          <path value="MedicationStatement.status"/>
+         <fixedCode value="unknown"/>
       </element>
 
       <element id="MedicationStatement.statusReason">

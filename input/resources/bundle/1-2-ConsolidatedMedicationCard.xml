@@ -502,7 +502,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:80682dd8-b022-4400-a769-d773bc5f4a73"/>
                 </identifier>
-                <status value="active"/>
+                <status value="unknown"/>
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
