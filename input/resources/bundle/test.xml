@@ -1,8 +1,8 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="test"/>
     <meta>
-        <!--<profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationtreatmentplan"/>-->
-        <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationlist"/>
+        <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationtreatmentplan"/>
+        <!--<profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationlist"/>-->
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
