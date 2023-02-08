@@ -106,7 +106,7 @@ In order to map the author of the medical decision, the following procedure is f
 
 #### Patient
 ##### Identifier
-If there is the same patient with different identifiers in the [input documents](Parameters-A7-Input-Analyzer.json.html), then all identifiers will be listed with the patient in the [output document](Bundle-A7-ConsolidatedMedicationCard.json.html).
+If there is the same patient with different identifiers (e.g. '1234' and '5678') in the [input documents](Parameters-A7-Input-Analyzer.json.html), then all identifiers will be listed with the patient in the [output document](Bundle-A7-ConsolidatedMedicationCard.json.html).
 
 #### Info Input Document
 The extension [Info Input Document](StructureDefinition-infoinputdocument.html) represents the information of the input document (source, type, date, id). This complexe extension contains these 4 extensions:
