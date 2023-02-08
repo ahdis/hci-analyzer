@@ -33,6 +33,15 @@
     <!-- TODO: update to released version -->
   </dependsOn>
   <definition>
+    <!-- test file for better validation-->
+    <resource>
+      <reference>
+        <reference value="Bundle/test"/>
+      </reference>
+      <name value="Test"/>
+      <description value="Test"/>
+      <exampleBoolean value="false"/>
+    </resource>
 
     <!-- IN/OUT Examples Parameters -->
     <resource>
