@@ -358,7 +358,7 @@
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
                         <valueDateTime value="2022-08-17T11:50:10+00:00"/>
                     </extension>
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentid">
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid">
                         <valueIdentifier>
                             <system value="urn:ietf:rfc:3986"/>
                             <value value="urn:uuid:00c70ec7-9525-4e31-b2ad-c9b4db0f922f"/>
@@ -482,7 +482,7 @@
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
                         <valueDateTime value="2022-08-17T11:50:10+00:00"/>
                     </extension>
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentid">
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid">
                         <valueIdentifier>
                             <system value="urn:ietf:rfc:3986"/>
                             <value value="urn:uuid:e2d4c1a8-2fc0-4636-95a6-c06d19c505cb"/>

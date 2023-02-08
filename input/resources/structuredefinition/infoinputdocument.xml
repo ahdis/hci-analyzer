@@ -74,12 +74,12 @@
     <element id="Extension.extension:documentId">
       <path value="Extension.extension"/>
       <sliceName value="documentId"/>
-      <short value="Identifier of the input document (Bundle.identifier)"/>
+      <short value="Identifier of the parent document (Bundle.identifier)"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="Extension"/>
-        <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentid"/>
+        <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid"/>
       </type>
     </element>
 

@@ -216,7 +216,7 @@
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
                         <valueDateTime value="2012-02-04T14:00:00+01:00"/>
                     </extension>
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentid">
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid">
                         <valueIdentifier>
                             <system value="urn:ietf:rfc:3986"/>
                             <value value="urn:uuid:17931678-20b4-11e6-b67b-9e71128cca77"/>
@@ -374,7 +374,7 @@
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
                         <valueDateTime value="2012-02-04T14:00:00+01:00"/>
                     </extension>
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentid">
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid">
                         <valueIdentifier>
                             <system value="urn:ietf:rfc:3986"/>
                             <value value="urn:uuid:d8143fea-4778-11e6-beb8-9e71128cae77"/>

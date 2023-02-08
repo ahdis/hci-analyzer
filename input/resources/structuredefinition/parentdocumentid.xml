@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="inputdocumentid"/>
-  <url value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentid"/>
+  <id value="parentdocumentid"/>
+  <url value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid"/>
   <version value="0.1.0"/>
-  <name value="InputDocumentId"/>
-  <title value="Input Document Id"/>
+  <name value="ParentDocumentId"/>
+  <title value="Parent Document Id"/>
   <status value="draft"/>
-  <description value="Extension for representing the identifier (externalDocumentId) of the input document (original document MTP/DIS/PRE/PADV/CARD, not LIST)"/>
+  <description value="Extension for representing the identifier (externalDocumentId) of the parent document (original document MTP/DIS/PRE/PADV/CARD, not LIST)"/>
   <fhirVersion value="4.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
@@ -20,7 +20,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension"/>
-      <short value="Extension for Input Document Id"/>
+      <short value="Extension for Parent Document Id"/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>
@@ -31,11 +31,11 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentid"/>
+      <fixedUri value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid"/>
     </element>
     <element id="Extension.valueIdentifier">
       <path value="Extension.valueIdentifier"/>
-      <short value="Identifier of the original document (not LIST)"/>
+      <short value="Identifier of the parent document (not LIST)"/>
       <min value="1"/>
       <max value="1"/>
       <type>

@@ -14,7 +14,7 @@
   - [Info Input Document](#info-input-document)
     - [Input Document Source](#input-document-source-1)
     - [Input Document Type](#input-document-type)
-    - [Input Document Id](#input-document-id)
+    - [Parent Document Id](#parent-document-id)
   - [History Changes](#history-changes)
 - [FHIR Implementation Guide](#fhir-implementation-guide)
   - [Naming](#naming)
@@ -113,7 +113,7 @@ The extension [Info Input Document](StructureDefinition-infoinputdocument.html) 
 * [Input Document Source](StructureDefinition-inputdocumentsource.html) (Input document)
 * [Input Document Type](StructureDefinition-inputdocumenttype.html) (Input document / Output document)
 * [Input Document Date](StructureDefinition-inputdocumentdate.html) (Input document / Output document)
-* [Input Document Id](StructureDefinition-inputdocumentid.html) (Input document / Output document)
+* [Parent Document Id](StructureDefinition-parentdocumentid.html) (Input document / Output document)
 
 The extension **Info Input Document** is set on each 'derivedFrom'-entry ([MedicationStatement](StructureDefinition-analyzer-medicationstatement.html), [MedicationRequest](StructureDefinition-analyzer-medicationrequest.html), [MedicationDispense](StructureDefinition-analyzer-medicationdispense.html), [Observation](StructureDefinition-analyzer-observationpadv.html)), but not on the [Header MedicationStatement](StructureDefinition-analyzer-medicationstatement-header.html).
 
@@ -142,7 +142,7 @@ This information is used to distinguish the following document types:
   * PRE: LOINC 57833-6
   * DIS: LOINC 60593-1
   * PADV: LOINC 61356-2
-* LIST/CARD: These documents types have the same code (`Composition.type`) and must therefore be differentiated via the title (`Composition.title`) (used afterwards to set the Input Document Id):
+* LIST/CARD: These documents types have the same code (`Composition.type`) and must therefore be differentiated via the title (`Composition.title`) (used afterwards to set the Parent Document Id):
    * LIST/CARD: LOINC 56445-0
      * LIST: 'Medikationsliste' in german or 'Liste de médication' in french or 'Elenco delle terapie farmacologiche' in italian or Medication List' in english
      ```json
@@ -178,7 +178,7 @@ This information is used to distinguish the following document types:
       ```
      * If none of these titles is specified, the additional information (.text) is omitted.
 
-##### Input Document Id
+##### Parent Document Id
 This information is needed, for example, when a medication is 'imported' via a LIST (input document), on which a PADV is to be created later (needs the reference externalDocumentId).   
 
 The identifier is taken from the input document as follows:

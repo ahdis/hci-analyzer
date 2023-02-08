@@ -618,7 +618,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/inputdocumentid"/>
+        <reference value="StructureDefinition/parentdocumentid"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
