@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 1. add parameters as container -->
 <Parameters xmlns="http://hl7.org/fhir">
     <!-- The parameter resource actually has no ID. Here the ID is used to show the resource in the IG. -->
     <id value="PMP1-Input-Analyzer"/>
@@ -7,33 +6,31 @@
         <name value="ch-emed-doc"/>
         <resource>
             <Bundle xmlns="http://hl7.org/fhir">
-                <!-- 3. add profile for validation (check gln urn:oid:2.51.1.3) -->
-                <!--<meta>
+                <meta>
                     <profile value="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationlist"/>
-                </meta>-->
+                </meta>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:aec803b7-c61a-4521-9254-ee808c75d3c6"/>
+                    <value value="urn:uuid:0f50b6a1-2b3b-4725-a675-e296ce9cfae4"/>
                 </identifier>
                 <type value="document"/>
-                <timestamp value="2022-08-19T13:10:22+00:00"/>
+                <timestamp value="2023-02-08T07:47:27.391+00:00"/>
                 <entry>
-                    <fullUrl value="urn:uuid:1367bc4c-3894-4536-9bcc-f869e2c77e07"/>
+                    <fullUrl value="urn:uuid:14b29d89-c32e-497a-a734-00e51d9ec961"/>
                     <resource>
                         <Composition>
                             <language value="fr-CH"/>
-                            <!-- 2. add source -->
                             <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
                                 <valueString value="PMP"/>
                             </extension>
                             <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
                                 <valueReference>
-                                    <reference value="urn:uuid:4052756e-0412-4176-85c7-91dd9bfb6ac7"/>
+                                    <reference value="urn:uuid:6248d701-25e4-4990-b812-fc7a71d1519b"/>
                                 </valueReference>
                             </extension>
                             <identifier>
                                 <system value="urn:ietf:rfc:3986"/>
-                                <value value="urn:uuid:aec803b7-c61a-4521-9254-ee808c75d3c6"/>
+                                <value value="urn:uuid:0f50b6a1-2b3b-4725-a675-e296ce9cfae4"/>
                             </identifier>
                             <status value="final"/>
                             <type>
@@ -49,14 +46,11 @@
                                 </coding>
                             </type>
                             <subject>
-                                <reference value="urn:uuid:d7ae9998-05cc-4178-ac11-4d9b4d306693"/>
+                                <reference value="urn:uuid:6248d701-25e4-4990-b812-fc7a71d1519b"/>
                             </subject>
-                            <date value="2022-08-19T13:10:22+00:00"/>
+                            <date value="2023-02-08T07:47:27+00:00"/>
                             <author>
-                                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
-                                    <valueDateTime value="2022-08-19T13:10:22+00:00"/>
-                                </extension>
-                                <reference value="urn:uuid:7516fa3e-b2e2-4eb4-8365-d80ed22c2e33"/>
+                                <reference value="urn:uuid:db8ed070-52d1-4fb7-94c0-dc36faa3dd64"/>
                             </author>
                             <title value="Liste de médication"/>
                             <confidentiality value="N">
@@ -71,52 +65,39 @@
                                 </extension>
                             </confidentiality>
                             <custodian>
-                                <reference value="urn:uuid:064d380d-01ce-4102-8520-9ee46272053e"/>
+                                <reference value="urn:uuid:4f708766-baf5-4b71-a2ea-fb6be6fca1d3"/>
                             </custodian>
                             <section>
-                                <title value="Liste de médicaments"/>
+                                <title value="Medication List"/>
                                 <code>
                                     <coding>
                                         <system value="http://loinc.org"/>
                                         <code value="10160-0"/>
-                                        <display value="History of Medication use Narrative"/>
+                                        <display value="History of medication use"/>
                                     </coding>
                                 </code>
                                 <text>
                                     <status value="generated"/>
                                     <div xmlns="http://www.w3.org/1999/xhtml">
-                                        <span id="generator_comment">
-                                Cette liste de médication a été générée automatiquement par le PMP le August 19, 2022 at 1:10:22 PM UTC. Les paramètres utilisés pour la génération du document sont : les éléments de type Medication Treatment Plan Item, Prescription Item, Dispense Item et PADV sont inclus ; tous les traitements sont considérés.
-                                        </span>
-                                        <span id="iquvk.">
-                                Texte narratif pour l'item 1979830b-088d-4979-b73b-95c5d389dfef
-                                        </span>
-                                        <p id="iquvk.refpdf">
-                                Cetirizine Mepha Lactab 10 mg, 0-0-1, durant 3 jours, raison: allergie
-                                        </p>
-                                        <span id="camsc.">
-                                Texte narratif pour l'item 1339a426-b61e-4c99-acac-450724fcf6d9
-                                        </span>
-                                        <p id="camsc.refpdf">
-                                pas de réaction significative avec le traitement 1 x jour. -&gt; 2x/j.
-                                        </p>
+                                        Cette liste de médication a été générée automatiquement par le service eMedication CARA le 8 février 2023 à 07:47:27 UTC. Les paramètres utilisés pour la génération du document sont : les éléments de type Medication Treatment Plan Item, Prescription Item, Dispense Item et PADV sont inclus ; tous les traitements sont considérés.
                                     </div>
                                 </text>
                                 <entry>
-                                    <reference value="urn:uuid:d468c1e6-fb92-4732-85ae-20486c03efc6"/>
+                                    <reference value="urn:uuid:dcf005f1-7647-4296-9849-84c1182b7bd1"/>
                                 </entry>
                                 <entry>
-                                    <reference value="urn:uuid:79198575-82c2-4d00-8a25-f275f145a21a"/>
+                                    <reference value="urn:uuid:1339a426-b61e-4c99-acac-450724fcf6d9"/>
                                 </entry>
                             </section>
                         </Composition>
                     </resource>
                 </entry>
                 <entry>
-                    <fullUrl value="urn:uuid:d7ae9998-05cc-4178-ac11-4d9b4d306693"/>
+                    <fullUrl value="urn:uuid:6248d701-25e4-4990-b812-fc7a71d1519b"/>
                     <resource>
                         <Patient>
                             <identifier>
+                                <use value="official"/>
                                 <type>
                                     <coding>
                                         <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
@@ -126,6 +107,51 @@
                                 <system value="urn:oid:2.16.756.5.30.1.191.1.0.2.1"/>
                                 <value value="e7963774-9098-445f-9cab-5d52234b52c3"/>
                             </identifier>
+                            <identifier>
+                                <use value="secondary"/>
+                                <type>
+                                    <coding>
+                                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                                        <code value="MR"/>
+                                    </coding>
+                                </type>
+                                <system value="urn:oid:2.16.756.5.30.1.191.1.0.12.3.101"/>
+                                <value value="e04f4689-6402-4b1c-a62e-33cb4d4f32e7"/>
+                            </identifier>
+                            <identifier>
+                                <use value="secondary"/>
+                                <type>
+                                    <coding>
+                                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                                        <code value="MR"/>
+                                    </coding>
+                                </type>
+                                <system value="urn:oid:2.16.756.5.30.1.128.4.1.4.2.3.2.1.1.1"/>
+                                <value value="99146299"/>
+                            </identifier>
+                            <identifier>
+                                <use value="secondary"/>
+                                <type>
+                                    <coding>
+                                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                                        <code value="MR"/>
+                                    </coding>
+                                </type>
+                                <system value="urn:oid:2.16.756.5.30.1.196.3.2.1"/>
+                                <value value="MAGMED011"/>
+                            </identifier>
+                            <identifier>
+                                <use value="secondary"/>
+                                <type>
+                                    <coding>
+                                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                                        <code value="MR"/>
+                                    </coding>
+                                </type>
+                                <system value="urn:oid:2.16.756.5.30.1.196.3.2.1"/>
+                                <value value="MAGMED001"/>
+                            </identifier>
+                            <active value="true"/>
                             <name>
                                 <family value="NEFF-WINGEIER"/>
                                 <given value="Trong Sang"/>
@@ -136,23 +162,31 @@
                     </resource>
                 </entry>
                 <entry>
-                    <fullUrl value="urn:uuid:7516fa3e-b2e2-4eb4-8365-d80ed22c2e33"/>
+                    <fullUrl value="urn:uuid:db8ed070-52d1-4fb7-94c0-dc36faa3dd64"/>
                     <resource>
                         <Device>
-                            <identifier>
-                                <system value="urn:oid:2.51.1.3"/>
-                                <value value="7601001407428"/>
-                            </identifier>
                             <deviceName>
-                                <name value="9d7a6b3"/>
-                                <type value="manufacturer-name"/>
+                                <name value="PMP CARA v0.1"/>
+                                <type value="model-name"/>
                             </deviceName>
-                            <modelNumber value="PMP CARA v0.1"/>
+                            <type>
+                                <coding>
+                                    <system value="http://snomed.info/sct"/>
+                                    <code value="701612004"/>
+                                    <display value="Pharmaceutical information system application software (physical object)"/>
+                                </coding>
+                            </type>
+                            <version>
+                                <value value="b75f0bc"/>
+                            </version>
+                            <owner>
+                                <reference value="urn:uuid:4f708766-baf5-4b71-a2ea-fb6be6fca1d3"/>
+                            </owner>
                         </Device>
                     </resource>
                 </entry>
                 <entry>
-                    <fullUrl value="urn:uuid:064d380d-01ce-4102-8520-9ee46272053e"/>
+                    <fullUrl value="urn:uuid:4f708766-baf5-4b71-a2ea-fb6be6fca1d3"/>
                     <resource>
                         <Organization>
                             <identifier>
@@ -164,24 +198,426 @@
                     </resource>
                 </entry>
                 <entry>
-                    <fullUrl value="urn:uuid:4052756e-0412-4176-85c7-91dd9bfb6ac7"/>
-                    <resource>
-                        <Organization>
-                            <identifier>
-                                <system value="urn:oid:2.51.1.3"/>
-                                <value value="7601001407428"/>
-                            </identifier>
-                            <name value="Association CARA"/>
-                        </Organization>
-                    </resource>
-                </entry>
-                <entry>
-                    <fullUrl value="urn:uuid:d468c1e6-fb92-4732-85ae-20486c03efc6"/>
+                    <fullUrl value="urn:uuid:dcf005f1-7647-4296-9849-84c1182b7bd1"/>
                     <resource>
                         <MedicationStatement>
+                            <text>
+                                <status value="generated"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>
+                                        <b>
+                                            Generated Narrative: MedicationStatement
+                                        </b>
+                                        <a name="3-1-MedStatCetirizine"/>
+                                    </p>
+                                    <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                                        <p style="margin-bottom: 0px">
+                                            Resource MedicationStatement "3-1-MedStatCetirizine"
+                                        </p>
+                                        <p style="margin-bottom: 0px">
+                                            Profile:
+                                            <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-medicationstatement.html">
+                                                CH EMED MedicationStatement
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <p>
+                                        <b>
+                                            identifier
+                                        </b>
+                                        : id: urn:uuid:dcf005f1-7647-4296-9849-84c1182b7bd1
+                                    </p>
+                                    <p>
+                                        <b>
+                                            status
+                                        </b>
+                                        : completed
+                                    </p>
+                                    <p>
+                                        <b>
+                                            medication
+                                        </b>
+                                        :
+                                        <a name="MedCetirizine"/>
+                                    </p>
+                                    <blockquote>
+                                        <p/>
+                                        <p>
+                                            <a name="MedCetirizine"/>
+                                        </p>
+                                        <p>
+                                            <b>
+                                                code
+                                            </b>
+                                            : CETIRIZIN Mepha Lactab 10 mg blister 10 pce
+                                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">
+                                                (unknown#7680651190041)
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <b>
+                                                form
+                                            </b>
+                                            : Film-coated tablet
+                                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">
+                                                (
+                                                <a href="https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-edqm-standardterms.html">
+                                                    EDQM - Standard Terms
+                                                </a>
+                                                #10221000)
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <b>
+                                                amount
+                                            </b>
+                                            : 10 Piece(s)
+                                            <span style="background: LightGoldenRodYellow">
+                                                (Details: UCUM code {Piece} = '{Piece}')
+                                            </span>
+                                            /1 Package
+                                            <span style="background: LightGoldenRodYellow">
+                                                (Details: UCUM code {Package} = '{Package}')
+                                            </span>
+                                        </p>
+                                        <h3>
+                                            Ingredients
+                                        </h3>
+                                        <table class="grid">
+                                            <tr>
+                                                <td>
+                                                    -
+                                                </td>
+                                                <td>
+                                                    <b>
+                                                        Item[x]
+                                                    </b>
+                                                </td>
+                                                <td>
+                                                    <b>
+                                                        Strength
+                                                    </b>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    *
+                                                </td>
+                                                <td>
+                                                    Cetirizine
+                                                    <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">
+                                                        (
+                                                        <a href="https://browser.ihtsdotools.org/">
+                                                            SNOMED CT
+                                                        </a>
+                                                        #372523007 "Cetirizine (substance)")
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    10 milligram
+                                                    <span style="background: LightGoldenRodYellow">
+                                                        (Details: UCUM code mg = 'mg')
+                                                    </span>
+                                                    /1 Tablet (unit of presentation)
+                                                    <span style="background: LightGoldenRodYellow">
+                                                        (Details: SNOMED CT code 732936001 = 'Tablet (unit of presentation)')
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </blockquote>
+                                    <p>
+                                        <b>
+                                            subject
+                                        </b>
+                                        :
+                                        <a href="#Patient_MadameDupont">
+                                            See above (Patient/MadameDupont)
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            reasonCode
+                                        </b>
+                                        : allergie
+                                        <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">
+                                            ()
+                                        </span>
+                                    </p>
+                                    <blockquote>
+                                        <p>
+                                            <b>
+                                                dosage
+                                            </b>
+                                        </p>
+                                        <p>
+                                            <b>
+                                                timing
+                                            </b>
+                                            : Starting 2019-02-27, , ?ngen-6?, Until 2019-03-01
+                                        </p>
+                                        <p>
+                                            <b>
+                                                route
+                                            </b>
+                                            : Oral use
+                                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">
+                                                (
+                                                <a href="https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-edqm-standardterms.html">
+                                                    EDQM - Standard Terms
+                                                </a>
+                                                #20053000)
+                                            </span>
+                                        </p>
+                                    </blockquote>
+                                    <hr/>
+                                    <blockquote>
+                                        <p>
+                                            <b>
+                                                Generated Narrative: Medication #MedCetirizine
+                                            </b>
+                                            <a name="MedCetirizine"/>
+                                        </p>
+                                        <p>
+                                            <b>
+                                                code
+                                            </b>
+                                            : CETIRIZIN Mepha Lactab 10 mg blister 10 pce
+                                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">
+                                                (unknown#7680651190041)
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <b>
+                                                form
+                                            </b>
+                                            : Film-coated tablet
+                                            <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">
+                                                (
+                                                <a href="https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-edqm-standardterms.html">
+                                                    EDQM - Standard Terms
+                                                </a>
+                                                #10221000)
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <b>
+                                                amount
+                                            </b>
+                                            : 10 Piece(s)
+                                            <span style="background: LightGoldenRodYellow">
+                                                (Details: UCUM code {Piece} = '{Piece}')
+                                            </span>
+                                            /1 Package
+                                            <span style="background: LightGoldenRodYellow">
+                                                (Details: UCUM code {Package} = '{Package}')
+                                            </span>
+                                        </p>
+                                        <h3>
+                                            Ingredients
+                                        </h3>
+                                        <table class="grid">
+                                            <tr>
+                                                <td>
+                                                    -
+                                                </td>
+                                                <td>
+                                                    <b>
+                                                        Item[x]
+                                                    </b>
+                                                </td>
+                                                <td>
+                                                    <b>
+                                                        Strength
+                                                    </b>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    *
+                                                </td>
+                                                <td>
+                                                    Cetirizine
+                                                    <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">
+                                                        (
+                                                        <a href="https://browser.ihtsdotools.org/">
+                                                            SNOMED CT
+                                                        </a>
+                                                        #372523007 "Cetirizine (substance)")
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    10 milligram
+                                                    <span style="background: LightGoldenRodYellow">
+                                                        (Details: UCUM code mg = 'mg')
+                                                    </span>
+                                                    /1 Tablet (unit of presentation)
+                                                    <span style="background: LightGoldenRodYellow">
+                                                        (Details: SNOMED CT code 732936001 = 'Tablet (unit of presentation)')
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </blockquote>
+                                </div>
+                            </text>
+                            <contained>
+                                <PractitionerRole>
+                                    <id value="practitioner-role-2"/>
+                                    <text>
+                                        <status value="generated"/>
+                                        <div xmlns="http://www.w3.org/1999/xhtml">
+                                            <p>
+                                                <b>
+                                                    Generated Narrative: PractitionerRole
+                                                </b>
+                                                <a name="DoctorHospital"/>
+                                            </p>
+                                            <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                                                <p style="margin-bottom: 0px">
+                                                    Resource PractitionerRole "DoctorHospital"
+                                                </p>
+                                                <p style="margin-bottom: 0px">
+                                                    Profile:
+                                                    <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html">
+                                                        CH EMED PractitionerRole
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <p>
+                                                <b>
+                                                    practitioner
+                                                </b>
+                                                :
+                                                <a href="#Practitioner_Hopital">
+                                                    See above (Practitioner/Hopital)
+                                                </a>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    organization
+                                                </b>
+                                                :
+                                                <a href="#Organization_Hospital">
+                                                    See above (Organization/Hospital)
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </text>
+                                    <practitioner>
+                                        <reference value="#practitioner-2"/>
+                                    </practitioner>
+                                    <organization>
+                                        <reference value="#organization-2"/>
+                                    </organization>
+                                </PractitionerRole>
+                            </contained>
+                            <contained>
+                                <Practitioner>
+                                    <id value="practitioner-2"/>
+                                    <text>
+                                        <status value="generated"/>
+                                        <div xmlns="http://www.w3.org/1999/xhtml">
+                                            <p>
+                                                <b>
+                                                    Generated Narrative: Practitioner
+                                                </b>
+                                                <a name="Hopital"/>
+                                            </p>
+                                            <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                                                <p style="margin-bottom: 0px">
+                                                    Resource Practitioner "Hopital"
+                                                </p>
+                                                <p style="margin-bottom: 0px">
+                                                    Profile:
+                                                    <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html">
+                                                        CH EMED Practitioner
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <p>
+                                                <b>
+                                                    identifier
+                                                </b>
+                                                : id: 7601000234322
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    name
+                                                </b>
+                                                : Docteur Hôpital
+                                            </p>
+                                        </div>
+                                    </text>
+                                    <identifier>
+                                        <system value="urn:oid:2.51.1.3"/>
+                                        <value value="7601000234322"/>
+                                    </identifier>
+                                    <name>
+                                        <family value="Hôpital"/>
+                                        <given value="Docteur"/>
+                                    </name>
+                                </Practitioner>
+                            </contained>
+                            <contained>
+                                <Organization>
+                                    <id value="organization-2"/>
+                                    <text>
+                                        <status value="generated"/>
+                                        <div xmlns="http://www.w3.org/1999/xhtml">
+                                            <p>
+                                                <b>
+                                                    Generated Narrative: Organization
+                                                </b>
+                                                <a name="Hospital"/>
+                                            </p>
+                                            <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                                                <p style="margin-bottom: 0px">
+                                                    Resource Organization "Hospital"
+                                                </p>
+                                                <p style="margin-bottom: 0px">
+                                                    Profile:
+                                                    <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html">
+                                                        CH EMED Organization
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <p>
+                                                <b>
+                                                    identifier
+                                                </b>
+                                                : id: 7601000234322
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    name
+                                                </b>
+                                                : Hôpital
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    address
+                                                </b>
+                                                : Spitalgasse 4 Zürich 8005 CH
+                                            </p>
+                                        </div>
+                                    </text>
+                                    <identifier>
+                                        <system value="urn:oid:2.51.1.3"/>
+                                        <value value="7601000234322"/>
+                                    </identifier>
+                                    <name value="Hôpital"/>
+                                    <address>
+                                        <line value="Spitalgasse 4"/>
+                                        <city value="Zürich"/>
+                                        <postalCode value="8005"/>
+                                        <country value="CH"/>
+                                    </address>
+                                </Organization>
+                            </contained>
                             <contained>
                                 <Medication>
-                                    <id value="med"/>
+                                    <id value="medication-1"/>
                                     <code>
                                         <coding>
                                             <system value="urn:oid:2.51.1.1"/>
@@ -200,7 +636,7 @@
                                     <amount>
                                         <numerator>
                                             <value value="10"/>
-                                            <unit value="Piece"/>
+                                            <unit value="Piece(s)"/>
                                             <system value="http://unitsofmeasure.org"/>
                                             <code value="{Piece}"/>
                                         </numerator>
@@ -237,47 +673,183 @@
                                     </ingredient>
                                 </Medication>
                             </contained>
-                            <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                                <valueUrl value="#iquvk."/>
-                            </extension>
-                            <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
-                                <extension url="id">
-                                    <valueIdentifier>
-                                        <system value="urn:ietf:rfc:3986"/>
-                                        <value value="urn:uuid:1979830b-088d-4979-b73b-95c5d389dfef"/>
-                                    </valueIdentifier>
-                                </extension>
-                                <extension url="externalDocumentId">
-                                    <valueIdentifier>
-                                        <system value="urn:ietf:rfc:3986"/>
-                                        <value value="urn:uuid:de88cf01-927a-46d1-9227-ba68146a8ceb"/>
-                                    </valueIdentifier>
-                                </extension>
+                            <contained>
+                                <PractitionerRole>
+                                    <id value="practitioner-role-1"/>
+                                    <text>
+                                        <status value="generated"/>
+                                        <div xmlns="http://www.w3.org/1999/xhtml">
+                                            <p>
+                                                <b>
+                                                    Generated Narrative: PractitionerRole
+                                                </b>
+                                                <a name="DoctorHospital"/>
+                                            </p>
+                                            <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                                                <p style="margin-bottom: 0px">
+                                                    Resource PractitionerRole "DoctorHospital"
+                                                </p>
+                                                <p style="margin-bottom: 0px">
+                                                    Profile:
+                                                    <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html">
+                                                        CH EMED PractitionerRole
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <p>
+                                                <b>
+                                                    practitioner
+                                                </b>
+                                                :
+                                                <a href="#Practitioner_Hopital">
+                                                    See above (Practitioner/Hopital)
+                                                </a>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    organization
+                                                </b>
+                                                :
+                                                <a href="#Organization_Hospital">
+                                                    See above (Organization/Hospital)
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </text>
+                                    <practitioner>
+                                        <reference value="#practitioner-1"/>
+                                    </practitioner>
+                                    <organization>
+                                        <reference value="#organization-1"/>
+                                    </organization>
+                                </PractitionerRole>
+                            </contained>
+                            <contained>
+                                <Practitioner>
+                                    <id value="practitioner-1"/>
+                                    <text>
+                                        <status value="generated"/>
+                                        <div xmlns="http://www.w3.org/1999/xhtml">
+                                            <p>
+                                                <b>
+                                                    Generated Narrative: Practitioner
+                                                </b>
+                                                <a name="Hopital"/>
+                                            </p>
+                                            <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                                                <p style="margin-bottom: 0px">
+                                                    Resource Practitioner "Hopital"
+                                                </p>
+                                                <p style="margin-bottom: 0px">
+                                                    Profile:
+                                                    <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html">
+                                                        CH EMED Practitioner
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <p>
+                                                <b>
+                                                    identifier
+                                                </b>
+                                                : id: 7601000234322
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    name
+                                                </b>
+                                                : Docteur Hôpital
+                                            </p>
+                                        </div>
+                                    </text>
+                                    <identifier>
+                                        <system value="urn:oid:2.51.1.3"/>
+                                        <value value="7601000234322"/>
+                                    </identifier>
+                                    <name>
+                                        <family value="Hôpital"/>
+                                        <given value="Docteur"/>
+                                    </name>
+                                </Practitioner>
+                            </contained>
+                            <contained>
+                                <Organization>
+                                    <id value="organization-1"/>
+                                    <text>
+                                        <status value="generated"/>
+                                        <div xmlns="http://www.w3.org/1999/xhtml">
+                                            <p>
+                                                <b>
+                                                    Generated Narrative: Organization
+                                                </b>
+                                                <a name="Hospital"/>
+                                            </p>
+                                            <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                                                <p style="margin-bottom: 0px">
+                                                    Resource Organization "Hospital"
+                                                </p>
+                                                <p style="margin-bottom: 0px">
+                                                    Profile:
+                                                    <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html">
+                                                        CH EMED Organization
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <p>
+                                                <b>
+                                                    identifier
+                                                </b>
+                                                : id: 7601000234322
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    name
+                                                </b>
+                                                : Hôpital
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    address
+                                                </b>
+                                                : Spitalgasse 4 Zürich 8005 CH
+                                            </p>
+                                        </div>
+                                    </text>
+                                    <identifier>
+                                        <system value="urn:oid:2.51.1.3"/>
+                                        <value value="7601000234322"/>
+                                    </identifier>
+                                    <name value="Hôpital"/>
+                                    <address>
+                                        <line value="Spitalgasse 4"/>
+                                        <city value="Zürich"/>
+                                        <postalCode value="8005"/>
+                                        <country value="CH"/>
+                                    </address>
+                                </Organization>
+                            </contained>
+                            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author">
+                                <valueReference>
+                                    <reference value="#practitioner-role-2"/>
+                                </valueReference>
                             </extension>
                             <identifier>
                                 <system value="urn:ietf:rfc:3986"/>
-                                <value value="urn:uuid:1979830b-088d-4979-b73b-95c5d389dfef"/>
+                                <value value="urn:uuid:dcf005f1-7647-4296-9849-84c1182b7bd1"/>
                             </identifier>
                             <status value="completed"/>
                             <medicationReference>
-                                <reference value="#med"/>
+                                <reference value="#medication-1"/>
                             </medicationReference>
                             <subject>
-                                <reference value="urn:uuid:d7ae9998-05cc-4178-ac11-4d9b4d306693"/>
+                                <reference value="urn:uuid:6248d701-25e4-4990-b812-fc7a71d1519b"/>
                             </subject>
                             <informationSource>
-                                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
-                                    <valueDateTime value="2019-02-27T10:00:00+00:00"/>
-                                </extension>
-                                <reference value="urn:uuid:3656263a-8f15-4175-975a-13524d922ce4"/>
+                                <reference value="#practitioner-role-1"/>
                             </informationSource>
                             <reasonCode>
-                                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                                    <valueUrl value="#iquvk."/>
-                                </extension>
                                 <text value="allergie"/>
                             </reasonCode>
-                            <dosage>
+                            <dosage id="#dosage-1">
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
@@ -307,71 +879,417 @@
                     </resource>
                 </entry>
                 <entry>
-                    <fullUrl value="urn:uuid:3656263a-8f15-4175-975a-13524d922ce4"/>
-                    <resource>
-                        <PractitionerRole>
-                            <practitioner>
-                                <reference value="urn:uuid:f2854370-f9b0-4893-87d2-09b6098ed641"/>
-                            </practitioner>
-                        </PractitionerRole>
-                    </resource>
-                </entry>
-                <entry>
-                    <fullUrl value="urn:uuid:f2854370-f9b0-4893-87d2-09b6098ed641"/>
-                    <resource>
-                        <Practitioner>
-                            <identifier>
-                                <system value="urn:oid:2.51.1.3"/>
-                                <value value="7601000234322"/>
-                            </identifier>
-                            <name>
-                                <family value="Hôpital"/>
-                                <given value="Docteur"/>
-                            </name>
-                            <address>
-                                <city value="Zürich"/>
-                                <postalCode value="8005"/>
-                                <country value="CH"/>
-                            </address>
-                        </Practitioner>
-                    </resource>
-                </entry>
-                <entry>
-                    <fullUrl value="urn:uuid:79198575-82c2-4d00-8a25-f275f145a21a"/>
+                    <fullUrl value="urn:uuid:1339a426-b61e-4c99-acac-450724fcf6d9"/>
                     <resource>
                         <Observation>
-                            <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
-                                <extension url="id">
-                                    <valueIdentifier>
-                                        <system value="urn:ietf:rfc:3986"/>
-                                        <value value="urn:uuid:1979830b-088d-4979-b73b-95c5d389dfef"/>
-                                    </valueIdentifier>
-                                </extension>
-                                <extension url="externalDocumentId">
-                                    <valueIdentifier>
-                                        <system value="urn:ietf:rfc:3986"/>
-                                        <value value="urn:uuid:de88cf01-927a-46d1-9227-ba68146a8ceb"/>
-                                    </valueIdentifier>
-                                </extension>
-                            </extension>
-                            <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-medicationstatement-changed">
+                            <text>
+                                <status value="extensions"/>
+                                <div xmlns="http://www.w3.org/1999/xhtml">
+                                    <p>
+                                        <b>
+                                            Generated Narrative: Observation
+                                        </b>
+                                        <a name="3-2-ObsCetirizine"/>
+                                    </p>
+                                    <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                                        <p style="margin-bottom: 0px">
+                                            Resource Observation "3-2-ObsCetirizine"
+                                        </p>
+                                        <p style="margin-bottom: 0px">
+                                            Profile:
+                                            <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-observation.html">
+                                                CH EMED Observation (PADV)
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <blockquote>
+                                        <p>
+                                            <b>
+                                                CH EMED Extension Treatment Plan
+                                            </b>
+                                        </p>
+                                        <p>
+                                            <b>
+                                                value
+                                            </b>
+                                            : id: urn:uuid:dcf005f1-7647-4296-9849-84c1182b7bd1
+                                        </p>
+                                        <p>
+                                            <b>
+                                                value
+                                            </b>
+                                            : id: urn:uuid:dcf005f1-7647-4296-9849-84c1182b7bd1
+                                        </p>
+                                    </blockquote>
+                                    <p>
+                                        <b>
+                                            CH EMED Extension MedicationStatement Changed
+                                        </b>
+                                        :
+                                        <a href="#MedicationStatement_3-2-MedStatCetirizine">
+                                            See above (MedicationStatement/3-2-MedStatCetirizine)
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            identifier
+                                        </b>
+                                        : id: urn:uuid:1339a426-b61e-4c99-acac-450724fcf6d9
+                                    </p>
+                                    <p>
+                                        <b>
+                                            status
+                                        </b>
+                                        : final
+                                    </p>
+                                    <p>
+                                        <b>
+                                            code
+                                        </b>
+                                        : CHANGE
+                                        <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">
+                                            (
+                                            <a href="https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-ihe-pharmaceuticaladvicestatuslist.html">
+                                                IHE Pharmaceutical Advice Status List
+                                            </a>
+                                            #CHANGE)
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            subject
+                                        </b>
+                                        :
+                                        <a href="#Patient_MadameDupont">
+                                            See above (Patient/MadameDupont)
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <b>
+                                            effective
+                                        </b>
+                                        : 2019-02-28 11:00:00+0100
+                                    </p>
+                                    <p>
+                                        <b>
+                                            note
+                                        </b>
+                                        : pas de réaction significative avec le traitement 1 x jour. -&gt; 2x/j.
+                                    </p>
+                                </div>
+                            </text>
+                            <contained>
+                                <PractitionerRole>
+                                    <id value="practitioner-role-4"/>
+                                    <text>
+                                        <status value="generated"/>
+                                        <div xmlns="http://www.w3.org/1999/xhtml">
+                                            <p>
+                                                <b>
+                                                    Generated Narrative: PractitionerRole
+                                                </b>
+                                                <a name="DoctorHospital"/>
+                                            </p>
+                                            <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                                                <p style="margin-bottom: 0px">
+                                                    Resource PractitionerRole "DoctorHospital"
+                                                </p>
+                                                <p style="margin-bottom: 0px">
+                                                    Profile:
+                                                    <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html">
+                                                        CH EMED PractitionerRole
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <p>
+                                                <b>
+                                                    practitioner
+                                                </b>
+                                                :
+                                                <a href="#Practitioner_Hopital">
+                                                    See above (Practitioner/Hopital)
+                                                </a>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    organization
+                                                </b>
+                                                :
+                                                <a href="#Organization_Hospital">
+                                                    See above (Organization/Hospital)
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </text>
+                                    <practitioner>
+                                        <reference value="#practitioner-4"/>
+                                    </practitioner>
+                                    <organization>
+                                        <reference value="#organization-4"/>
+                                    </organization>
+                                </PractitionerRole>
+                            </contained>
+                            <contained>
+                                <Practitioner>
+                                    <id value="practitioner-4"/>
+                                    <text>
+                                        <status value="generated"/>
+                                        <div xmlns="http://www.w3.org/1999/xhtml">
+                                            <p>
+                                                <b>
+                                                    Generated Narrative: Practitioner
+                                                </b>
+                                                <a name="Hopital"/>
+                                            </p>
+                                            <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                                                <p style="margin-bottom: 0px">
+                                                    Resource Practitioner "Hopital"
+                                                </p>
+                                                <p style="margin-bottom: 0px">
+                                                    Profile:
+                                                    <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html">
+                                                        CH EMED Practitioner
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <p>
+                                                <b>
+                                                    identifier
+                                                </b>
+                                                : id: 7601000234322
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    name
+                                                </b>
+                                                : Docteur Hôpital
+                                            </p>
+                                        </div>
+                                    </text>
+                                    <identifier>
+                                        <system value="urn:oid:2.51.1.3"/>
+                                        <value value="7601000234322"/>
+                                    </identifier>
+                                    <name>
+                                        <family value="Hôpital"/>
+                                        <given value="Docteur"/>
+                                    </name>
+                                </Practitioner>
+                            </contained>
+                            <contained>
+                                <Organization>
+                                    <id value="organization-4"/>
+                                    <text>
+                                        <status value="generated"/>
+                                        <div xmlns="http://www.w3.org/1999/xhtml">
+                                            <p>
+                                                <b>
+                                                    Generated Narrative: Organization
+                                                </b>
+                                                <a name="Hospital"/>
+                                            </p>
+                                            <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                                                <p style="margin-bottom: 0px">
+                                                    Resource Organization "Hospital"
+                                                </p>
+                                                <p style="margin-bottom: 0px">
+                                                    Profile:
+                                                    <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html">
+                                                        CH EMED Organization
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <p>
+                                                <b>
+                                                    identifier
+                                                </b>
+                                                : id: 7601000234322
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    name
+                                                </b>
+                                                : Hôpital
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    address
+                                                </b>
+                                                : Spitalgasse 4 Zürich 8005 CH
+                                            </p>
+                                        </div>
+                                    </text>
+                                    <identifier>
+                                        <system value="urn:oid:2.51.1.3"/>
+                                        <value value="7601000234322"/>
+                                    </identifier>
+                                    <name value="Hôpital"/>
+                                    <address>
+                                        <line value="Spitalgasse 4"/>
+                                        <city value="Zürich"/>
+                                        <postalCode value="8005"/>
+                                        <country value="CH"/>
+                                    </address>
+                                </Organization>
+                            </contained>
+                            <contained>
+                                <PractitionerRole>
+                                    <id value="practitioner-role-3"/>
+                                    <text>
+                                        <status value="generated"/>
+                                        <div xmlns="http://www.w3.org/1999/xhtml">
+                                            <p>
+                                                <b>
+                                                    Generated Narrative: PractitionerRole
+                                                </b>
+                                                <a name="DoctorHospital"/>
+                                            </p>
+                                            <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                                                <p style="margin-bottom: 0px">
+                                                    Resource PractitionerRole "DoctorHospital"
+                                                </p>
+                                                <p style="margin-bottom: 0px">
+                                                    Profile:
+                                                    <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html">
+                                                        CH EMED PractitionerRole
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <p>
+                                                <b>
+                                                    practitioner
+                                                </b>
+                                                :
+                                                <a href="#Practitioner_Hopital">
+                                                    See above (Practitioner/Hopital)
+                                                </a>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    organization
+                                                </b>
+                                                :
+                                                <a href="#Organization_Hospital">
+                                                    See above (Organization/Hospital)
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </text>
+                                    <practitioner>
+                                        <reference value="#practitioner-3"/>
+                                    </practitioner>
+                                    <organization>
+                                        <reference value="#organization-3"/>
+                                    </organization>
+                                </PractitionerRole>
+                            </contained>
+                            <contained>
+                                <Practitioner>
+                                    <id value="practitioner-3"/>
+                                    <text>
+                                        <status value="generated"/>
+                                        <div xmlns="http://www.w3.org/1999/xhtml">
+                                            <p>
+                                                <b>
+                                                    Generated Narrative: Practitioner
+                                                </b>
+                                                <a name="Hopital"/>
+                                            </p>
+                                            <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                                                <p style="margin-bottom: 0px">
+                                                    Resource Practitioner "Hopital"
+                                                </p>
+                                                <p style="margin-bottom: 0px">
+                                                    Profile:
+                                                    <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html">
+                                                        CH EMED Practitioner
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <p>
+                                                <b>
+                                                    identifier
+                                                </b>
+                                                : id: 7601000234322
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    name
+                                                </b>
+                                                : Docteur Hôpital
+                                            </p>
+                                        </div>
+                                    </text>
+                                    <identifier>
+                                        <system value="urn:oid:2.51.1.3"/>
+                                        <value value="7601000234322"/>
+                                    </identifier>
+                                    <name>
+                                        <family value="Hôpital"/>
+                                        <given value="Docteur"/>
+                                    </name>
+                                </Practitioner>
+                            </contained>
+                            <contained>
+                                <Organization>
+                                    <id value="organization-3"/>
+                                    <text>
+                                        <status value="generated"/>
+                                        <div xmlns="http://www.w3.org/1999/xhtml">
+                                            <p>
+                                                <b>
+                                                    Generated Narrative: Organization
+                                                </b>
+                                                <a name="Hospital"/>
+                                            </p>
+                                            <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
+                                                <p style="margin-bottom: 0px">
+                                                    Resource Organization "Hospital"
+                                                </p>
+                                                <p style="margin-bottom: 0px">
+                                                    Profile:
+                                                    <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html">
+                                                        CH EMED Organization
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            <p>
+                                                <b>
+                                                    identifier
+                                                </b>
+                                                : id: 7601000234322
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    name
+                                                </b>
+                                                : Hôpital
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    address
+                                                </b>
+                                                : Spitalgasse 4 Zürich 8005 CH
+                                            </p>
+                                        </div>
+                                    </text>
+                                    <identifier>
+                                        <system value="urn:oid:2.51.1.3"/>
+                                        <value value="7601000234322"/>
+                                    </identifier>
+                                    <name value="Hôpital"/>
+                                    <address>
+                                        <line value="Spitalgasse 4"/>
+                                        <city value="Zürich"/>
+                                        <postalCode value="8005"/>
+                                        <country value="CH"/>
+                                    </address>
+                                </Organization>
+                            </contained>
+                            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author">
                                 <valueReference>
-                                    <reference value="urn:uuid:ba3359b0-4c1c-40b8-86c9-39b328730163"/>
+                                    <reference value="#practitioner-role-4"/>
                                 </valueReference>
-                            </extension>
-                            <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-pharmaceuticaladvice">
-                                <extension url="id">
-                                    <valueIdentifier>
-                                        <system value="urn:ietf:rfc:3986"/>
-                                        <value value="urn:uuid:1339a426-b61e-4c99-acac-450724fcf6d9"/>
-                                    </valueIdentifier>
-                                </extension>
-                                <extension url="externalDocumentId">
-                                    <valueIdentifier>
-                                        <system value="urn:ietf:rfc:3986"/>
-                                        <value value="urn:uuid:cdd13555-2382-4dc7-b7c6-03fe3d5be1c8"/>
-                                    </valueIdentifier>
-                                </extension>
                             </extension>
                             <identifier>
                                 <system value="urn:ietf:rfc:3986"/>
@@ -385,164 +1303,16 @@
                                 </coding>
                             </code>
                             <subject>
-                                <reference value="urn:uuid:d7ae9998-05cc-4178-ac11-4d9b4d306693"/>
+                                <reference value="urn:uuid:6248d701-25e4-4990-b812-fc7a71d1519b"/>
                             </subject>
                             <effectiveDateTime value="2019-02-28T11:00:00+01:00"/>
                             <performer>
-                                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
-                                    <valueDateTime value="2019-02-28T10:00:00+00:00"/>
-                                </extension>
-                                <reference value="urn:uuid:c9e4081e-ae48-46e5-967b-968e7c877731"/>
+                                <reference value="#practitioner-role-3"/>
                             </performer>
                             <note>
-                                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                                    <valueUrl value="#camsc."/>
-                                </extension>
                                 <text value="pas de réaction significative avec le traitement 1 x jour. -&gt; 2x/j."/>
                             </note>
                         </Observation>
-                    </resource>
-                </entry>
-                <entry>
-                    <fullUrl value="urn:uuid:c9e4081e-ae48-46e5-967b-968e7c877731"/>
-                    <resource>
-                        <PractitionerRole>
-                            <practitioner>
-                                <reference value="urn:uuid:29fdd6c8-bcfe-446f-be46-cf58f06cd1c6"/>
-                            </practitioner>
-                        </PractitionerRole>
-                    </resource>
-                </entry>
-                <entry>
-                    <fullUrl value="urn:uuid:29fdd6c8-bcfe-446f-be46-cf58f06cd1c6"/>
-                    <resource>
-                        <Practitioner>
-                            <identifier>
-                                <system value="urn:oid:2.51.1.3"/>
-                                <value value="7601000234322"/>
-                            </identifier>
-                            <name>
-                                <family value="Hôpital"/>
-                                <given value="Docteur"/>
-                            </name>
-                            <address>
-                                <city value="Zürich"/>
-                                <postalCode value="8005"/>
-                                <country value="CH"/>
-                            </address>
-                        </Practitioner>
-                    </resource>
-                </entry>
-                <entry id="ba3359b0-4c1c-40b8-86c9-39b328730163">
-                    <fullUrl value="urn:uuid:ba3359b0-4c1c-40b8-86c9-39b328730163"/>
-                    <resource>
-                        <MedicationStatement>
-                            <contained>
-                                <Medication>
-                                    <id value="med"/>
-                                    <code>
-                                        <coding>
-                                            <system value="urn:oid:2.51.1.1"/>
-                                            <code value="7680651190041"/>
-                                            <display value="CETIRIZIN Mepha Lactab 10 mg blister 10 pce"/>
-                                        </coding>
-                                        <text value="CETIRIZIN Mepha Lactab 10 mg blister 10 pce"/>
-                                    </code>
-                                    <form>
-                                        <coding>
-                                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                                            <code value="10221000"/>
-                                            <display value="Film-coated tablet"/>
-                                        </coding>
-                                    </form>
-                                    <amount>
-                                        <numerator>
-                                            <value value="10"/>
-                                            <unit value="Piece"/>
-                                            <system value="http://unitsofmeasure.org"/>
-                                            <code value="{Piece}"/>
-                                        </numerator>
-                                        <denominator>
-                                            <value value="1"/>
-                                            <unit value="Package"/>
-                                            <system value="http://unitsofmeasure.org"/>
-                                            <code value="{Package}"/>
-                                        </denominator>
-                                    </amount>
-                                    <ingredient>
-                                        <itemCodeableConcept>
-                                            <coding>
-                                                <system value="http://snomed.info/sct"/>
-                                                <code value="372523007"/>
-                                                <display value="Cetirizine (substance)"/>
-                                            </coding>
-                                            <text value="Cetirizine"/>
-                                        </itemCodeableConcept>
-                                        <strength>
-                                            <numerator>
-                                                <value value="10"/>
-                                                <unit value="milligram"/>
-                                                <system value="http://unitsofmeasure.org"/>
-                                                <code value="mg"/>
-                                            </numerator>
-                                            <denominator>
-                                                <value value="1"/>
-                                                <unit value="Tablet (unit of presentation)"/>
-                                                <system value="http://snomed.info/sct"/>
-                                                <code value="732936001"/>
-                                            </denominator>
-                                        </strength>
-                                    </ingredient>
-                                </Medication>
-                            </contained>
-                            <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                                <valueUrl value="#camsc."/>
-                            </extension>
-                            <identifier>
-                                <system value="urn:ietf:rfc:3986"/>
-                                <value value="urn:uuid:0b015b1d-2e25-441a-bb4c-95c39e1de4ad"/>
-                            </identifier>
-                            <status value="completed"/>
-                            <medicationReference>
-                                <reference value="#med"/>
-                            </medicationReference>
-                            <subject>
-                                <reference value="urn:uuid:d7ae9998-05cc-4178-ac11-4d9b4d306693"/>
-                            </subject>
-                            <reasonCode>
-                                <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-                                    <valueUrl value="#camsc."/>
-                                </extension>
-                                <text value="allergie"/>
-                            </reasonCode>
-                            <dosage>
-                                <timing>
-                                    <repeat>
-                                        <boundsPeriod>
-                                            <start value="2019-02-27"/>
-                                            <end value="2019-03-01"/>
-                                        </boundsPeriod>
-                                        <when value="MORN"/>
-                                        <when value="EVE"/>
-                                    </repeat>
-                                </timing>
-                                <route>
-                                    <coding>
-                                        <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                                        <code value="20053000"/>
-                                        <display value="Oral use"/>
-                                    </coding>
-                                </route>
-                                <doseAndRate>
-                                    <doseQuantity>
-                                        <value value="1"/>
-                                        <unit value="Tablet (unit of presentation)"/>
-                                        <system value="http://snomed.info/sct"/>
-                                        <code value="732936001"/>
-                                    </doseQuantity>
-                                </doseAndRate>
-                            </dosage>
-                        </MedicationStatement>
                     </resource>
                 </entry>
             </Bundle>
