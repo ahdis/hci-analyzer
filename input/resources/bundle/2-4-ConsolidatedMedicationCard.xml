@@ -213,7 +213,7 @@
                             <coding>
                                 <system value="http://loinc.org"/>
                                 <code value="77603-9"/>
-                                <display value="Medication treatment plan.extended"/>
+                                <display value="Medication treatment plan.extended Document"/>
                             </coding>
                         </valueCodeableConcept>
                     </extension>
@@ -354,7 +354,7 @@
                             <coding>
                                 <system value="http://loinc.org"/>
                                 <code value="60593-1"/>
-                                <display value="Medication dispensed.extended"/>
+                                <display value="Medication dispensed.extended Document"/>
                             </coding>
                         </valueCodeableConcept>
                     </extension>
@@ -453,7 +453,7 @@
                             <coding>
                                 <system value="http://loinc.org"/>
                                 <code value="61356-2"/>
-                                <display value="Medication pharmaceutical advice.extended"/>
+                                <display value="Medication pharmaceutical advice.extended Document"/>
                             </coding>
                         </valueCodeableConcept>
                     </extension>
@@ -579,7 +579,7 @@
                             <coding>
                                 <system value="http://loinc.org"/>
                                 <code value="77603-9"/>
-                                <display value="Medication treatment plan.extended"/>
+                                <display value="Medication treatment plan.extended Document"/>
                             </coding>
                         </valueCodeableConcept>
                     </extension>
@@ -737,7 +737,7 @@
                             <coding>
                                 <system value="http://loinc.org"/>
                                 <code value="60593-1"/>
-                                <display value="Medication dispensed.extended"/>
+                                <display value="Medication dispensed.extended Document"/>
                             </coding>
                         </valueCodeableConcept>
                     </extension>

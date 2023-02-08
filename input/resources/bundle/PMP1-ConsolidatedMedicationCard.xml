@@ -318,7 +318,7 @@
                             <coding>
                                 <system value="http://loinc.org"/>
                                 <code value="56445-0"/>
-                                <display value="Medication summary"/>
+                                <display value="Medication summary Document"/>
                             </coding>
                             <text value="Medication List"/>
                         </valueCodeableConcept>
@@ -443,7 +443,7 @@
                             <coding>
                                 <system value="http://loinc.org"/>
                                 <code value="56445-0"/>
-                                <display value="Medication summary"/>
+                                <display value="Medication summary Document"/>
                             </coding>
                             <text value="Medication List"/>
                         </valueCodeableConcept>
@@ -589,7 +589,7 @@
                             <coding>
                                 <system value="http://loinc.org"/>
                                 <code value="56445-0"/>
-                                <display value="Medication summary"/>
+                                <display value="Medication summary Document"/>
                             </coding>
                             <text value="Medication List"/>
                         </valueCodeableConcept>

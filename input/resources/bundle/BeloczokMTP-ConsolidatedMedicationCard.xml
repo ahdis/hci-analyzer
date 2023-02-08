@@ -210,7 +210,7 @@
                             <coding>
                                 <system value="http://loinc.org"/>
                                 <code value="77603-9"/>
-                                <display value="Medication treatment plan.extended"/>
+                                <display value="Medication treatment plan.extended Document"/>
                             </coding>
                         </valueCodeableConcept>
                     </extension>

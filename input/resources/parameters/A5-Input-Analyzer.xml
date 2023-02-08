@@ -54,7 +54,7 @@
                                         <coding>
                                             <system value="http://snomed.info/sct"/>
                                             <code value="17621005"/>
-                                            <display value="Normally accessible"/>
+                                            <display value="Normal (qualifier value)"/>
                                         </coding>
                                     </valueCodeableConcept>
                                 </extension>
@@ -68,7 +68,7 @@
                                     <coding>
                                         <system value="http://loinc.org"/>
                                         <code value="10160-0"/>
-                                        <display value="History of medication use"/>
+                                        <display value="History of Medication use Narrative"/>
                                     </coding>
                                 </code>
                                 <entry>
@@ -82,7 +82,7 @@
                                     <coding>
                                         <system value="http://loinc.org"/>
                                         <code value="55108-5"/>
-                                        <display value="Clinical presentation"/>
+                                        <display value="Clinical presentation Document"/>
                                     </coding>
                                 </code>
                                 <text>
@@ -383,7 +383,7 @@
                                         <coding>
                                             <system value="http://snomed.info/sct"/>
                                             <code value="17621005"/>
-                                            <display value="Normally accessible"/>
+                                            <display value="Normal (qualifier value)"/>
                                         </coding>
                                     </valueCodeableConcept>
                                 </extension>
@@ -397,7 +397,7 @@
                                     <coding>
                                         <system value="http://loinc.org"/>
                                         <code value="10160-0"/>
-                                        <display value="History of medication use"/>
+                                        <display value="History of Medication use Narrative"/>
                                     </coding>
                                 </code>
                                 <entry>
@@ -410,7 +410,7 @@
                                     <coding>
                                         <system value="http://loinc.org"/>
                                         <code value="55108-5"/>
-                                        <display value="Clinical presentation"/>
+                                        <display value="Clinical presentation Document"/>
                                     </coding>
                                 </code>
                                 <text>

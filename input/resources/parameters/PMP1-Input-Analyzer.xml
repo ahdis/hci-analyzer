@@ -40,7 +40,7 @@
                                 <coding>
                                     <system value="http://loinc.org"/>
                                     <code value="56445-0"/>
-                                    <display value="Medication summary"/>
+                                    <display value="Medication summary Document"/>
                                 </coding>
                                 <coding>
                                     <system value="http://snomed.info/sct"/>
@@ -79,7 +79,7 @@
                                     <coding>
                                         <system value="http://loinc.org"/>
                                         <code value="10160-0"/>
-                                        <display value="History of medication use"/>
+                                        <display value="History of Medication use Narrative"/>
                                     </coding>
                                 </code>
                                 <text>

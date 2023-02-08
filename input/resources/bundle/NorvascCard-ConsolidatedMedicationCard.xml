@@ -209,7 +209,7 @@
                             <coding>
                                 <system value="http://loinc.org"/>
                                 <code value="77603-9"/>
-                                <display value="Medication treatment plan.extended"/>
+                                <display value="Medication treatment plan.extended Document"/>
                             </coding>
                         </valueCodeableConcept>
                     </extension>
@@ -511,7 +511,7 @@
                             <coding>
                                 <system value="http://loinc.org"/>
                                 <code value="56445-0"/>
-                                <display value="Medication summary"/>
+                                <display value="Medication summary Document"/>
                             </coding>
                             <text value="Medication Card"/>
                         </valueCodeableConcept>

@@ -30,7 +30,7 @@
                             {
                                 "system": "http://loinc.org",
                                 "code": "56445-0",
-                                "display": "Medication summary"
+                                "display": "Medication summary Document"
                             },
                             {
                                 "system": "http://snomed.info/sct",
@@ -83,7 +83,7 @@
                                     {
                                         "system": "http://loinc.org",
                                         "code": "10160-0",
-                                        "display": "History of medication use"
+                                        "display": "History of Medication use Narrative"
                                     }
                                 ]
                             },
