@@ -53,7 +53,7 @@
     </element>
     <element id="Extension.valueCodeableConcept.text">
       <path value="Extension.valueCodeableConcept.text"/>
-      <short value="If coding is '56445-0 Medication summary' then: 'Medication Card' or 'Medication List'"/>
+      <short value="If coding is 'LOINC 56445-0' then: 'Medication Card' or 'Medication List'"/>
     </element>
   </differential>
 </StructureDefinition>

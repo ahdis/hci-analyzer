@@ -14,27 +14,22 @@
          <!-- MTP -->
          <concept>
             <code value="77603-9"/>
-            <display value="Medication treatment plan.extended"/>
          </concept>
          <!-- PRE -->
          <concept>
             <code value="57833-6"/>
-            <display value="Prescription for medication"/>
          </concept>
          <!-- DIS -->
          <concept>
             <code value="60593-1"/>
-            <display value="Medication dispensed.extended"/>
          </concept>
          <!-- PADV -->
          <concept>
             <code value="61356-2"/>
-            <display value="Medication pharmaceutical advice.extended"/>
          </concept>
          <!-- CARD/LIST -->
          <concept>
             <code value="56445-0"/>
-            <display value="Medication summary"/>
          </concept>
       </include>
    </compose>
