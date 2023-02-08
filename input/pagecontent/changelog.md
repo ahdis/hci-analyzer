@@ -9,14 +9,17 @@ All significant changes to this FHIR implementation guide will be documented on 
 See also open issues on [GitHub](https://github.com/ahdis/hci-analyzer/issues).
 
 #### Changed / Updated
-* Changes due to the new [CH EMED v3.0.0](https://fhir.ch/ig/ch-emed/3.0.0/index.html) specification
+* Changes due to the new [CH EMED v3.0.0](https://fhir.ch/ig/ch-emed/3.0.0/index.html) and [current (CI build)](https://build.fhir.org/ig/hl7ch/ch-emed/index.html) specification
    * Input Documents:
       * Updated the CH EMED example documents
    * Output Documents: 
-      * ALL: Composition.author: Changed from seperate elements 'Practitioner' and 'Organization' to 'PractitionerRole' with the respective references from there (added slice for Organization to Bundle profiles)
-      * ALL: New structure of dosage element(s)
-      * ALL: Change status of Header MedicationStatement to `unknown` (incl. profile)
-      * ALL: Adapt the display values
+      * Composition.author: Changed from seperate elements 'Practitioner' and 'Organization' to 'PractitionerRole' with the respective references from there (added slice for Organization to Bundle profiles)
+      * New structure of dosage element(s)
+      * Change status of Header MedicationStatement to `unknown` (incl. profile)
+      * Adapt the display values
+      * Author of the medical decision (MedicationRequest) (see [development notes](development.html#author-of-the-medical-decision))
+         * Map to MedicationRequest.requester (instead of MedicationRequest.performer) in the output document
+         * Take it from MedicationRequest.requester (instead of MedicationRequest.performer) from the input document
 * Rename 'Extension Input Document Type': http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid
 
 

@@ -77,8 +77,8 @@
             <targetProfile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-patient"/>
          </type>
       </element>
-      <element id="MedicationRequest.performer">
-         <path value="MedicationRequest.performer"/>
+      <element id="MedicationRequest.requester">
+         <path value="MedicationRequest.requester"/>
          <short value="The author of the medical decision"/>
          <min value="1"/>
          <type>

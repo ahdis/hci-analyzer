@@ -398,9 +398,9 @@
                 <subject>
                     <reference value="Patient/MonikaWegmueller"/>
                 </subject>
-                <performer>
+                <requester>
                     <reference value="PractitionerRole/FamilienHausarztAtHausarzt"/>
-                </performer>
+                </requester>
                 <dosageInstruction>
                     <patientInstruction value="-"/>
                     <timing>

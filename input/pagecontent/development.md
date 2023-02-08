@@ -78,11 +78,11 @@ In the [Header MedicationStatement](StructureDefinition-analyzer-medicationstate
    * Header MedicationStatement.informationSource ([profile](StructureDefinition-analyzer-medicationstatement-header.html))
    * MedicationStatement.informationSource ([profile](StructureDefinition-analyzer-medicationstatement.html))
    * MedicationDispense.performer.actor ([profile](StructureDefinition-analyzer-medicationdispense.html))
-   * MedicationRequest.performer ([profile](StructureDefinition-analyzer-medicationrequest.html))
+   * MedicationRequest.requester ([profile](StructureDefinition-analyzer-medicationrequest.html))
    * Observation.performer ([profile](StructureDefinition-analyzer-observationpadv.html))
 
 In order to map the author of the medical decision, the following procedure is followed to get the information from the input document(s) - take the information from where you first get it from:
-   1. MedicationStatement.informationSource / MedicationDispense.performer.actor / MedicationRequest.performer / Observation.performer   
+   1. MedicationStatement.informationSource / MedicationDispense.performer.actor / MedicationRequest.requester / Observation.performer   
       * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input   
          * [PMP1 IN](Parameters-PMP1-Input-Analyzer.json.html): urn:uuid:3656263a-8f15-4175-975a-13524d922ce4 (PractitionerRole) -> urn:uuid:f2854370-f9b0-4893-87d2-09b6098ed641 (Practitioner) =>    
            [PMP1 OUT](Bundle-PMP1-ConsolidatedMedicationCard.json.html): PractitionerRole/Hopital -> Practitioner/DocteurHopital
@@ -92,7 +92,7 @@ In order to map the author of the medical decision, the following procedure is f
       * **Note**: If there is a changed MedicationStatement (PADV CHANGE) without informationSource, take the Observation.performer, from where the changed MedicationStatement is referenced (see PMP1 UC). 
 
    2. Composition.section.author   
-      * -> PractitionerRole (Pracstatus value="comptitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input
+      * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input
          * [1-1 SectionAuthor IN](Parameters-1-1-SectionAuthor-Input-Analyzer.json.html): AuthorSectionPractitionerRole -> AuthorSection &#0124; AuthorSectionOrganization =>   
            [1-1 SectionAuthor OUT](Bundle-1-1-SectionAuthor-ConsolidatedMedicationCard.json.html): AuthorSectionPractitionerRole -> AuthorSection &#0124; AuthorSectionOrganization         
 
