@@ -64,6 +64,7 @@ In the [Header MedicationStatement](StructureDefinition-analyzer-medicationstate
 | --- | --- | --- |
 | **MedicationStatement Header** | new (`unknown`) |
 | **Original entries (derivedFrom)**<br>(MedicationStatement/MedicationRequest/MedicationDispense/Observation) | remains unchanged |
+| **Observation History** | set (`final`) |
 
 
 #### Authors
@@ -122,8 +123,8 @@ The extension **Info Input Document** is set on each 'derivedFrom'-entry ([Medic
 
 ##### Input Document Type
 This information is used to distinguish the following document types:
-* MTP/PRE/DIS/PADV: These document types have a unique value that can be taken from the input document (`Composition.type`):
-  * MTP: LOINC 77603-9 Medication treatment plan.extended
+* MTP/PRE/DIS/PADV: These document types have a unique codes (display values can vary!) that can be taken from the input document (`Composition.type`):
+  * MTP: LOINC 77603-9
     ```json
    {
       "url" : "http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype",
@@ -132,17 +133,17 @@ This information is used to distinguish the following document types:
             {
                "system" : "http://loinc.org",
                "code" : "77603-9",
-               "display" : "Medication treatment plan.extended"
+               "display" : "Medication treatment plan.extended Document"
             }
          ]
       }
    }
    ```
-  * PRE: LOINC 57833-6 Prescription for medication
-  * DIS: LOINC 60593-1 Medication dispensed.extended
-  * PADV: LOINC 61356-2 Medication pharmaceutical advice.extended
-* LIST/CARD: These documents types have the same value (`Composition.type`) and must therefore be differentiated via the title (`Composition.title`) (used afterwards to set the Input Document Id):
-   * LIST/CARD: LOINC 56445-0 Medication summary
+  * PRE: LOINC 57833-6
+  * DIS: LOINC 60593-1
+  * PADV: LOINC 61356-2
+* LIST/CARD: These documents types have the same code (`Composition.type`) and must therefore be differentiated via the title (`Composition.title`) (used afterwards to set the Input Document Id):
+   * LIST/CARD: LOINC 56445-0
      * LIST: 'Medikationsliste' in german or 'Liste de médication' in french or 'Elenco delle terapie farmacologiche' in italian or Medication List' in english
      ```json
       {
@@ -152,7 +153,7 @@ This information is used to distinguish the following document types:
                {
                   "system" : "http://loinc.org",
                   "code" : "56445-0",
-                  "display" : "Medication summary"
+                  "display" : "Medication summary Document"
                }
             ],
             "text" : "Medication List"
@@ -168,7 +169,7 @@ This information is used to distinguish the following document types:
                {
                   "system" : "http://loinc.org",
                   "code" : "56445-0",
-                  "display" : "Medication summary"
+                  "display" : "Medication summary Document"
                }
             ],
             "text" : "Medication Card"
