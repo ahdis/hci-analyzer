@@ -31,6 +31,10 @@
          <path value="Observation.identifier.value"/>
          <short value="Identifier value as UUID"/>
          <min value="1"/>
+      </element>      
+      <element id="Observation.status">
+         <path value="Observation.status"/>
+         <fixedCode value="final"/>
       </element>
       <element id="Observation.code">
          <path value="Observation.code"/>
