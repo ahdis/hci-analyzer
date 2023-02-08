@@ -1,14 +1,19 @@
 {
   "resourceType": "Bundle",
+  "meta": {
+    "profile": [
+      "http://example.com/StructureDefinition/pmlDoc"
+    ]
+  },
   "identifier": {
     "system": "urn:ietf:rfc:3986",
-    "value": "urn:uuid:b5107b1c-489a-4519-9969-b635166c28f1"
+    "value": "urn:uuid:0f50b6a1-2b3b-4725-a675-e296ce9cfae4"
   },
   "type": "document",
-  "timestamp": "2022-09-20T12:56:04+00:00",
+  "timestamp": "2023-02-08T07:47:27.391+00:00",
   "entry": [
     {
-      "fullUrl": "urn:uuid:0cb84fc5-05c2-4e12-8b79-bdbaf7cdee61",
+      "fullUrl": "urn:uuid:14b29d89-c32e-497a-a734-00e51d9ec961",
       "resource": {
         "resourceType": "Composition",
         "language": "fr-CH",
@@ -16,22 +21,17 @@
           {
             "url": "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient",
             "valueReference": {
-              "reference": "urn:uuid:682c97be-0367-4c4f-bb4a-b5c05ead7f9d"
+              "reference": "urn:uuid:6248d701-25e4-4990-b812-fc7a71d1519b"
             }
           }
         ],
         "identifier": {
           "system": "urn:ietf:rfc:3986",
-          "value": "urn:uuid:b5107b1c-489a-4519-9969-b635166c28f1"
+          "value": "urn:uuid:0f50b6a1-2b3b-4725-a675-e296ce9cfae4"
         },
         "status": "final",
         "type": {
           "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "56445-0",
-              "display": "Medication summary Document"
-            },
             {
               "system": "http://snomed.info/sct",
               "code": "721912009",
@@ -40,18 +40,12 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:76dd22e7-bfd0-4240-93a4-61f5a202b0ba"
+          "reference": "urn:uuid:6248d701-25e4-4990-b812-fc7a71d1519b"
         },
-        "date": "2022-09-20T12:56:04+00:00",
+        "date": "2023-02-08T07:47:27+00:00",
         "author": [
           {
-            "extension": [
-              {
-                "url": "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time",
-                "valueDateTime": "2022-09-20T12:56:04+00:00"
-              }
-            ],
-            "reference": "urn:uuid:cf316572-89db-4e1f-b269-aae6b0d95908"
+            "reference": "urn:uuid:db8ed070-52d1-4fb7-94c0-dc36faa3dd64"
           }
         ],
         "title": "Liste de médication",
@@ -73,30 +67,30 @@
           ]
         },
         "custodian": {
-          "reference": "urn:uuid:c340c837-0fbb-49c2-998f-bdecfc4caf37"
+          "reference": "urn:uuid:4f708766-baf5-4b71-a2ea-fb6be6fca1d3"
         },
         "section": [
           {
-            "title": "Liste de médicaments",
+            "title": "Medication List",
             "code": {
               "coding": [
                 {
                   "system": "http://loinc.org",
                   "code": "10160-0",
-                  "display": "History of Medication use Narrative"
+                  "display": "History of medication use"
                 }
               ]
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><span id=\"generator_comment\">Cette liste de médication a été générée automatiquement par le PMP le September 20, 2022 at 12:56:04 PM UTC. Les paramètres utilisés pour la génération du document sont : les éléments de type Medication Treatment Plan Item, Prescription Item, Dispense Item et PADV sont inclus ; tous les traitements sont considérés.</span><span id=\"mrfao.\">Texte narratif pour l'item 39092343-7e0c-4c6f-b706-2c8e4dac77a9</span><p id=\"mrfao.refpdf\">Cetirizine Mepha Lactab 10 mg, 0-0-1, durant 3 jours, raison: allergie</p><span id=\"sqodr.\">Texte narratif pour l'item 1339a426-b61e-4c99-acac-450724fcf6d9</span><p id=\"sqodr.refpdf\">pas de réaction significative avec le traitement 1 x jour. -&gt; 2x/j.</p></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cette liste de médication a été générée automatiquement par le service eMedication CARA le 8 février 2023 à 07:47:27 UTC. Les paramètres utilisés pour la génération du document sont : les éléments de type Medication Treatment Plan Item, Prescription Item, Dispense Item et PADV sont inclus ; tous les traitements sont considérés.</div>"
             },
             "entry": [
               {
-                "reference": "urn:uuid:0a8d0c7f-b3c0-4864-8f4a-3d1e847e4f5b"
+                "reference": "urn:uuid:dcf005f1-7647-4296-9849-84c1182b7bd1"
               },
               {
-                "reference": "urn:uuid:66def1c8-bbcb-4f0b-8b10-94e6da826de2"
+                "reference": "urn:uuid:1339a426-b61e-4c99-acac-450724fcf6d9"
               }
             ]
           }
@@ -104,11 +98,17 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:76dd22e7-bfd0-4240-93a4-61f5a202b0ba",
+      "fullUrl": "urn:uuid:6248d701-25e4-4990-b812-fc7a71d1519b",
       "resource": {
         "resourceType": "Patient",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Patient"
+          ]
+        },
         "identifier": [
           {
+            "use": "official",
             "type": {
               "coding": [
                 {
@@ -119,8 +119,61 @@
             },
             "system": "urn:oid:2.16.756.5.30.1.191.1.0.2.1",
             "value": "e7963774-9098-445f-9cab-5d52234b52c3"
+          },
+          {
+            "use": "secondary",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MR"
+                }
+              ]
+            },
+            "system": "urn:oid:2.16.756.5.30.1.191.1.0.12.3.101",
+            "value": "e04f4689-6402-4b1c-a62e-33cb4d4f32e7"
+          },
+          {
+            "use": "secondary",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MR"
+                }
+              ]
+            },
+            "system": "urn:oid:2.16.756.5.30.1.128.4.1.4.2.3.2.1.1.1",
+            "value": "99146299"
+          },
+          {
+            "use": "secondary",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MR"
+                }
+              ]
+            },
+            "system": "urn:oid:2.16.756.5.30.1.196.3.2.1",
+            "value": "MAGMED011"
+          },
+          {
+            "use": "secondary",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "MR"
+                }
+              ]
+            },
+            "system": "urn:oid:2.16.756.5.30.1.196.3.2.1",
+            "value": "MAGMED001"
           }
         ],
+        "active": true,
         "name": [
           {
             "family": "NEFF-WINGEIER",
@@ -134,28 +187,43 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:cf316572-89db-4e1f-b269-aae6b0d95908",
+      "fullUrl": "urn:uuid:db8ed070-52d1-4fb7-94c0-dc36faa3dd64",
       "resource": {
         "resourceType": "Device",
-        "identifier": [
-          {
-            "system": "urn:oid:2.51.1.3",
-            "value": "7601001407428"
-          }
-        ],
         "deviceName": [
           {
-            "name": "6d6e100",
-            "type": "manufacturer-name"
+            "name": "PMP CARA v0.1",
+            "type": "model-name"
           }
         ],
-        "modelNumber": "PMP CARA v0.1"
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "701612004",
+              "display": "Pharmaceutical information system application software (physical object)"
+            }
+          ]
+        },
+        "version": [
+          {
+            "value": "b75f0bc"
+          }
+        ],
+        "owner": {
+          "reference": "urn:uuid:4f708766-baf5-4b71-a2ea-fb6be6fca1d3"
+        }
       }
     },
     {
-      "fullUrl": "urn:uuid:c340c837-0fbb-49c2-998f-bdecfc4caf37",
+      "fullUrl": "urn:uuid:4f708766-baf5-4b71-a2ea-fb6be6fca1d3",
       "resource": {
         "resourceType": "Organization",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Organization"
+          ]
+        },
         "identifier": [
           {
             "system": "urn:oid:2.51.1.3",
@@ -166,26 +234,107 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:682c97be-0367-4c4f-bb4a-b5c05ead7f9d",
-      "resource": {
-        "resourceType": "Organization",
-        "identifier": [
-          {
-            "system": "urn:oid:2.51.1.3",
-            "value": "7601001407428"
-          }
-        ],
-        "name": "Association CARA"
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:0a8d0c7f-b3c0-4864-8f4a-3d1e847e4f5b",
+      "fullUrl": "urn:uuid:dcf005f1-7647-4296-9849-84c1182b7bd1",
       "resource": {
         "resourceType": "MedicationStatement",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/MedicationStatement"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"3-1-MedStatCetirizine\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;3-1-MedStatCetirizine&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-medicationstatement.html\">CH EMED MedicationStatement</a></p></div><p><b>identifier</b>: id: urn:uuid:dcf005f1-7647-4296-9849-84c1182b7bd1</p><p><b>status</b>: completed</p><p><b>medication</b>: <a name=\"MedCetirizine\"> </a></p><blockquote><p/><p><a name=\"MedCetirizine\"> </a></p><p><b>code</b>: CETIRIZIN Mepha Lactab 10 mg blister 10 pce <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#7680651190041)</span></p><p><b>form</b>: Film-coated tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-edqm-standardterms.html\">EDQM - Standard Terms</a>#10221000)</span></p><p><b>amount</b>: 10 Piece(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {Piece} = '{Piece}')</span>/1 Package<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {Package} = '{Package}')</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>Cetirizine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#372523007 &quot;Cetirizine (substance)&quot;)</span></td><td>10 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet (unit of presentation)<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT code 732936001 = 'Tablet (unit of presentation)')</span></td></tr></table></blockquote><p><b>subject</b>: <a href=\"#Patient_MadameDupont\">See above (Patient/MadameDupont)</a></p><p><b>reasonCode</b>: allergie <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><blockquote><p><b>dosage</b></p><p><b>timing</b>: Starting 2019-02-27, , ?ngen-6?, Until 2019-03-01</p><p><b>route</b>: Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-edqm-standardterms.html\">EDQM - Standard Terms</a>#20053000)</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Medication #MedCetirizine</b><a name=\"MedCetirizine\"> </a></p><p><b>code</b>: CETIRIZIN Mepha Lactab 10 mg blister 10 pce <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#7680651190041)</span></p><p><b>form</b>: Film-coated tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-edqm-standardterms.html\">EDQM - Standard Terms</a>#10221000)</span></p><p><b>amount</b>: 10 Piece(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {Piece} = '{Piece}')</span>/1 Package<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {Package} = '{Package}')</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>Cetirizine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#372523007 &quot;Cetirizine (substance)&quot;)</span></td><td>10 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet (unit of presentation)<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT code 732936001 = 'Tablet (unit of presentation)')</span></td></tr></table></blockquote></div>"
+        },
         "contained": [
           {
+            "resourceType": "PractitionerRole",
+            "id": "practitioner-role-2",
+            "meta": {
+              "profile": [
+                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole",
+                "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"DoctorHospital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;DoctorHospital&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html\">CH EMED PractitionerRole</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_Hopital\">See above (Practitioner/Hopital)</a></p><p><b>organization</b>: <a href=\"#Organization_Hospital\">See above (Organization/Hospital)</a></p></div>"
+            },
+            "practitioner": {
+              "reference": "#practitioner-2"
+            },
+            "organization": {
+              "reference": "#organization-2"
+            }
+          },
+          {
+            "resourceType": "Practitioner",
+            "id": "practitioner-2",
+            "meta": {
+              "profile": [
+                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner",
+                "http://hl7.org/fhir/StructureDefinition/Practitioner"
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"Hopital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;Hopital&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html\">CH EMED Practitioner</a></p></div><p><b>identifier</b>: id: 7601000234322</p><p><b>name</b>: Docteur Hôpital </p></div>"
+            },
+            "identifier": [
+              {
+                "system": "urn:oid:2.51.1.3",
+                "value": "7601000234322"
+              }
+            ],
+            "name": [
+              {
+                "family": "Hôpital",
+                "given": [
+                  "Docteur"
+                ]
+              }
+            ]
+          },
+          {
+            "resourceType": "Organization",
+            "id": "organization-2",
+            "meta": {
+              "profile": [
+                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-organization",
+                "http://hl7.org/fhir/StructureDefinition/Organization"
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"Hospital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;Hospital&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html\">CH EMED Organization</a></p></div><p><b>identifier</b>: id: 7601000234322</p><p><b>name</b>: Hôpital</p><p><b>address</b>: Spitalgasse 4 Zürich 8005 CH </p></div>"
+            },
+            "identifier": [
+              {
+                "system": "urn:oid:2.51.1.3",
+                "value": "7601000234322"
+              }
+            ],
+            "name": "Hôpital",
+            "address": [
+              {
+                "line": [
+                  "Spitalgasse 4"
+                ],
+                "city": "Zürich",
+                "postalCode": "8005",
+                "country": "CH"
+              }
+            ]
+          },
+          {
             "resourceType": "Medication",
-            "id": "med",
+            "id": "medication-1",
+            "meta": {
+              "profile": [
+                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication",
+                "http://hl7.org/fhir/StructureDefinition/Medication"
+              ]
+            },
             "code": {
               "coding": [
                 {
@@ -208,7 +357,7 @@
             "amount": {
               "numerator": {
                 "value": 10,
-                "unit": "Piece",
+                "unit": "Piece(s)",
                 "system": "http://unitsofmeasure.org",
                 "code": "{Piece}"
               },
@@ -247,68 +396,119 @@
                 }
               }
             ]
+          },
+          {
+            "resourceType": "PractitionerRole",
+            "id": "practitioner-role-1",
+            "meta": {
+              "profile": [
+                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole",
+                "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"DoctorHospital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;DoctorHospital&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html\">CH EMED PractitionerRole</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_Hopital\">See above (Practitioner/Hopital)</a></p><p><b>organization</b>: <a href=\"#Organization_Hospital\">See above (Organization/Hospital)</a></p></div>"
+            },
+            "practitioner": {
+              "reference": "#practitioner-1"
+            },
+            "organization": {
+              "reference": "#organization-1"
+            }
+          },
+          {
+            "resourceType": "Practitioner",
+            "id": "practitioner-1",
+            "meta": {
+              "profile": [
+                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner",
+                "http://hl7.org/fhir/StructureDefinition/Practitioner"
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"Hopital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;Hopital&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html\">CH EMED Practitioner</a></p></div><p><b>identifier</b>: id: 7601000234322</p><p><b>name</b>: Docteur Hôpital </p></div>"
+            },
+            "identifier": [
+              {
+                "system": "urn:oid:2.51.1.3",
+                "value": "7601000234322"
+              }
+            ],
+            "name": [
+              {
+                "family": "Hôpital",
+                "given": [
+                  "Docteur"
+                ]
+              }
+            ]
+          },
+          {
+            "resourceType": "Organization",
+            "id": "organization-1",
+            "meta": {
+              "profile": [
+                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-organization",
+                "http://hl7.org/fhir/StructureDefinition/Organization"
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"Hospital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;Hospital&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html\">CH EMED Organization</a></p></div><p><b>identifier</b>: id: 7601000234322</p><p><b>name</b>: Hôpital</p><p><b>address</b>: Spitalgasse 4 Zürich 8005 CH </p></div>"
+            },
+            "identifier": [
+              {
+                "system": "urn:oid:2.51.1.3",
+                "value": "7601000234322"
+              }
+            ],
+            "name": "Hôpital",
+            "address": [
+              {
+                "line": [
+                  "Spitalgasse 4"
+                ],
+                "city": "Zürich",
+                "postalCode": "8005",
+                "country": "CH"
+              }
+            ]
           }
         ],
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-            "valueUrl": "#mrfao."
-          },
-          {
-            "extension": [
-              {
-                "url": "id",
-                "valueIdentifier": {
-                  "system": "urn:ietf:rfc:3986",
-                  "value": "urn:uuid:39092343-7e0c-4c6f-b706-2c8e4dac77a9"
-                }
-              },
-              {
-                "url": "externalDocumentId",
-                "valueIdentifier": {
-                  "system": "urn:ietf:rfc:3986",
-                  "value": "urn:uuid:39092343-7e0c-4c6f-b706-2c8e4dac77a9"
-                }
-              }
-            ],
-            "url": "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan"
+            "url": "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author",
+            "valueReference": {
+              "reference": "#practitioner-role-2"
+            }
           }
         ],
         "identifier": [
           {
             "system": "urn:ietf:rfc:3986",
-            "value": "urn:uuid:39092343-7e0c-4c6f-b706-2c8e4dac77a9"
+            "value": "urn:uuid:dcf005f1-7647-4296-9849-84c1182b7bd1"
           }
         ],
         "status": "completed",
         "medicationReference": {
-          "reference": "#med"
+          "reference": "#medication-1"
         },
         "subject": {
-          "reference": "urn:uuid:76dd22e7-bfd0-4240-93a4-61f5a202b0ba"
+          "reference": "urn:uuid:6248d701-25e4-4990-b812-fc7a71d1519b"
         },
         "informationSource": {
-          "extension": [
-            {
-              "url": "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time",
-              "valueDateTime": "2019-02-27T10:00:00+00:00"
-            }
-          ],
-          "reference": "urn:uuid:b32776b3-21dc-46e9-8627-a96655a90cae"
+          "reference": "#practitioner-role-1"
         },
         "reasonCode": [
           {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                "valueUrl": "#mrfao."
-              }
-            ],
             "text": "allergie"
           }
         ],
         "dosage": [
           {
+            "id": "#dosage-1",
             "timing": {
               "repeat": {
                 "boundsPeriod": {
@@ -344,89 +544,184 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:b32776b3-21dc-46e9-8627-a96655a90cae",
-      "resource": {
-        "resourceType": "PractitionerRole",
-        "practitioner": {
-          "reference": "urn:uuid:5e40b088-b9f1-4bcd-9675-a44c6cb5bb82"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:5e40b088-b9f1-4bcd-9675-a44c6cb5bb82",
-      "resource": {
-        "resourceType": "Practitioner",
-        "identifier": [
-          {
-            "system": "urn:oid:2.51.1.3",
-            "value": "7601000234322"
-          }
-        ],
-        "name": [
-          {
-            "family": "Hôpital",
-            "given": [
-              "Docteur"
-            ]
-          }
-        ],
-        "address": [
-          {
-            "city": "Zürich",
-            "postalCode": "8005",
-            "country": "CH"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:66def1c8-bbcb-4f0b-8b10-94e6da826de2",
+      "fullUrl": "urn:uuid:1339a426-b61e-4c99-acac-450724fcf6d9",
       "resource": {
         "resourceType": "Observation",
-        "extension": [
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Observation"
+          ]
+        },
+        "text": {
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"3-2-ObsCetirizine\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;3-2-ObsCetirizine&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-observation.html\">CH EMED Observation (PADV)</a></p></div><blockquote><p><b>CH EMED Extension Treatment Plan</b></p><p><b>value</b>: id: urn:uuid:dcf005f1-7647-4296-9849-84c1182b7bd1</p><p><b>value</b>: id: urn:uuid:dcf005f1-7647-4296-9849-84c1182b7bd1</p></blockquote><p><b>CH EMED Extension MedicationStatement Changed</b>: <a href=\"#MedicationStatement_3-2-MedStatCetirizine\">See above (MedicationStatement/3-2-MedStatCetirizine)</a></p><p><b>identifier</b>: id: urn:uuid:1339a426-b61e-4c99-acac-450724fcf6d9</p><p><b>status</b>: final</p><p><b>code</b>: CHANGE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-ihe-pharmaceuticaladvicestatuslist.html\">IHE Pharmaceutical Advice Status List</a>#CHANGE)</span></p><p><b>subject</b>: <a href=\"#Patient_MadameDupont\">See above (Patient/MadameDupont)</a></p><p><b>effective</b>: 2019-02-28 11:00:00+0100</p><p><b>note</b>: pas de réaction significative avec le traitement 1 x jour. -&gt; 2x/j.</p></div>"
+        },
+        "contained": [
           {
-            "extension": [
-              {
-                "url": "id",
-                "valueIdentifier": {
-                  "system": "urn:ietf:rfc:3986",
-                  "value": "urn:uuid:39092343-7e0c-4c6f-b706-2c8e4dac77a9"
-                }
-              },
-              {
-                "url": "externalDocumentId",
-                "valueIdentifier": {
-                  "system": "urn:ietf:rfc:3986",
-                  "value": "urn:uuid:39092343-7e0c-4c6f-b706-2c8e4dac77a9"
-                }
-              }
-            ],
-            "url": "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan"
-          },
-          {
-            "url": "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-medicationstatement-changed",
-            "valueReference": {
-              "reference": "urn:uuid:fe68386b-6535-4213-9b1f-3821b7e71115"
+            "resourceType": "PractitionerRole",
+            "id": "practitioner-role-4",
+            "meta": {
+              "profile": [
+                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole",
+                "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"DoctorHospital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;DoctorHospital&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html\">CH EMED PractitionerRole</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_Hopital\">See above (Practitioner/Hopital)</a></p><p><b>organization</b>: <a href=\"#Organization_Hospital\">See above (Organization/Hospital)</a></p></div>"
+            },
+            "practitioner": {
+              "reference": "#practitioner-4"
+            },
+            "organization": {
+              "reference": "#organization-4"
             }
           },
           {
-            "extension": [
+            "resourceType": "Practitioner",
+            "id": "practitioner-4",
+            "meta": {
+              "profile": [
+                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner",
+                "http://hl7.org/fhir/StructureDefinition/Practitioner"
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"Hopital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;Hopital&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html\">CH EMED Practitioner</a></p></div><p><b>identifier</b>: id: 7601000234322</p><p><b>name</b>: Docteur Hôpital </p></div>"
+            },
+            "identifier": [
               {
-                "url": "id",
-                "valueIdentifier": {
-                  "system": "urn:ietf:rfc:3986",
-                  "value": "urn:uuid:1339a426-b61e-4c99-acac-450724fcf6d9"
-                }
-              },
-              {
-                "url": "externalDocumentId",
-                "valueIdentifier": {
-                  "system": "urn:ietf:rfc:3986",
-                  "value": "urn:uuid:bdf2e38c-29a4-46dc-aa75-70e07ccabb8b"
-                }
+                "system": "urn:oid:2.51.1.3",
+                "value": "7601000234322"
               }
             ],
-            "url": "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-pharmaceuticaladvice"
+            "name": [
+              {
+                "family": "Hôpital",
+                "given": [
+                  "Docteur"
+                ]
+              }
+            ]
+          },
+          {
+            "resourceType": "Organization",
+            "id": "organization-4",
+            "meta": {
+              "profile": [
+                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-organization",
+                "http://hl7.org/fhir/StructureDefinition/Organization"
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"Hospital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;Hospital&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html\">CH EMED Organization</a></p></div><p><b>identifier</b>: id: 7601000234322</p><p><b>name</b>: Hôpital</p><p><b>address</b>: Spitalgasse 4 Zürich 8005 CH </p></div>"
+            },
+            "identifier": [
+              {
+                "system": "urn:oid:2.51.1.3",
+                "value": "7601000234322"
+              }
+            ],
+            "name": "Hôpital",
+            "address": [
+              {
+                "line": [
+                  "Spitalgasse 4"
+                ],
+                "city": "Zürich",
+                "postalCode": "8005",
+                "country": "CH"
+              }
+            ]
+          },
+          {
+            "resourceType": "PractitionerRole",
+            "id": "practitioner-role-3",
+            "meta": {
+              "profile": [
+                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole",
+                "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"DoctorHospital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;DoctorHospital&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html\">CH EMED PractitionerRole</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_Hopital\">See above (Practitioner/Hopital)</a></p><p><b>organization</b>: <a href=\"#Organization_Hospital\">See above (Organization/Hospital)</a></p></div>"
+            },
+            "practitioner": {
+              "reference": "#practitioner-3"
+            },
+            "organization": {
+              "reference": "#organization-3"
+            }
+          },
+          {
+            "resourceType": "Practitioner",
+            "id": "practitioner-3",
+            "meta": {
+              "profile": [
+                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner",
+                "http://hl7.org/fhir/StructureDefinition/Practitioner"
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"Hopital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;Hopital&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html\">CH EMED Practitioner</a></p></div><p><b>identifier</b>: id: 7601000234322</p><p><b>name</b>: Docteur Hôpital </p></div>"
+            },
+            "identifier": [
+              {
+                "system": "urn:oid:2.51.1.3",
+                "value": "7601000234322"
+              }
+            ],
+            "name": [
+              {
+                "family": "Hôpital",
+                "given": [
+                  "Docteur"
+                ]
+              }
+            ]
+          },
+          {
+            "resourceType": "Organization",
+            "id": "organization-3",
+            "meta": {
+              "profile": [
+                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-organization",
+                "http://hl7.org/fhir/StructureDefinition/Organization"
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"Hospital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;Hospital&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html\">CH EMED Organization</a></p></div><p><b>identifier</b>: id: 7601000234322</p><p><b>name</b>: Hôpital</p><p><b>address</b>: Spitalgasse 4 Zürich 8005 CH </p></div>"
+            },
+            "identifier": [
+              {
+                "system": "urn:oid:2.51.1.3",
+                "value": "7601000234322"
+              }
+            ],
+            "name": "Hôpital",
+            "address": [
+              {
+                "line": [
+                  "Spitalgasse 4"
+                ],
+                "city": "Zürich",
+                "postalCode": "8005",
+                "country": "CH"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author",
+            "valueReference": {
+              "reference": "#practitioner-role-4"
+            }
           }
         ],
         "identifier": [
@@ -445,204 +740,17 @@
           ]
         },
         "subject": {
-          "reference": "urn:uuid:76dd22e7-bfd0-4240-93a4-61f5a202b0ba"
+          "reference": "urn:uuid:6248d701-25e4-4990-b812-fc7a71d1519b"
         },
         "effectiveDateTime": "2019-02-28T11:00:00+01:00",
         "performer": [
           {
-            "extension": [
-              {
-                "url": "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time",
-                "valueDateTime": "2019-02-28T10:00:00+00:00"
-              }
-            ],
-            "reference": "urn:uuid:a5bfdbda-43c6-4c2d-bd38-9288522e847a"
+            "reference": "#practitioner-role-3"
           }
         ],
         "note": [
           {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                "valueUrl": "#sqodr.refpdf"
-              }
-            ],
             "text": "pas de réaction significative avec le traitement 1 x jour. -> 2x/j."
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:a5bfdbda-43c6-4c2d-bd38-9288522e847a",
-      "resource": {
-        "resourceType": "PractitionerRole",
-        "practitioner": {
-          "reference": "urn:uuid:a89acdb3-a748-4fb2-b1af-d520459f37bd"
-        }
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:a89acdb3-a748-4fb2-b1af-d520459f37bd",
-      "resource": {
-        "resourceType": "Practitioner",
-        "identifier": [
-          {
-            "system": "urn:oid:2.51.1.3",
-            "value": "7601000234322"
-          }
-        ],
-        "name": [
-          {
-            "family": "Hôpital",
-            "given": [
-              "Docteur"
-            ]
-          }
-        ],
-        "address": [
-          {
-            "city": "Zürich",
-            "postalCode": "8005",
-            "country": "CH"
-          }
-        ]
-      }
-    },
-    {
-      "id": "fe68386b-6535-4213-9b1f-3821b7e71115",
-      "fullUrl": "urn:uuid:fe68386b-6535-4213-9b1f-3821b7e71115",
-      "resource": {
-        "resourceType": "MedicationStatement",
-        "contained": [
-          {
-            "resourceType": "Medication",
-            "id": "med",
-            "code": {
-              "coding": [
-                {
-                  "system": "urn:oid:2.51.1.1",
-                  "code": "7680651190041",
-                  "display": "CETIRIZIN Mepha Lactab 10 mg blister 10 pce"
-                }
-              ],
-              "text": "CETIRIZIN Mepha Lactab 10 mg blister 10 pce"
-            },
-            "form": {
-              "coding": [
-                {
-                  "system": "urn:oid:0.4.0.127.0.16.1.1.2.1",
-                  "code": "10221000",
-                  "display": "Film-coated tablet"
-                }
-              ]
-            },
-            "amount": {
-              "numerator": {
-                "value": 10,
-                "unit": "Piece",
-                "system": "http://unitsofmeasure.org",
-                "code": "{Piece}"
-              },
-              "denominator": {
-                "value": 1,
-                "unit": "Package",
-                "system": "http://unitsofmeasure.org",
-                "code": "{Package}"
-              }
-            },
-            "ingredient": [
-              {
-                "itemCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://snomed.info/sct",
-                      "code": "372523007",
-                      "display": "Cetirizine (substance)"
-                    }
-                  ],
-                  "text": "Cetirizine"
-                },
-                "strength": {
-                  "numerator": {
-                    "value": 10,
-                    "unit": "milligram",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "mg"
-                  },
-                  "denominator": {
-                    "value": 1,
-                    "unit": "Tablet (unit of presentation)",
-                    "system": "http://snomed.info/sct",
-                    "code": "732936001"
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-            "valueUrl": "#sqodr."
-          }
-        ],
-        "identifier": [
-          {
-            "system": "urn:ietf:rfc:3986",
-            "value": "urn:uuid:0b015b1d-2e25-441a-bb4c-95c39e1de4ad"
-          }
-        ],
-        "status": "completed",
-        "medicationReference": {
-          "reference": "#med"
-        },
-        "subject": {
-          "reference": "urn:uuid:76dd22e7-bfd0-4240-93a4-61f5a202b0ba"
-        },
-        "reasonCode": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                "valueUrl": "#sqodr."
-              }
-            ],
-            "text": "allergie"
-          }
-        ],
-        "dosage": [
-          {
-            "timing": {
-              "repeat": {
-                "boundsPeriod": {
-                  "start": "2019-02-27",
-                  "end": "2019-03-01"
-                },
-                "when": [
-                  "MORN",
-                  "EVE"
-                ]
-              }
-            },
-            "route": {
-              "coding": [
-                {
-                  "system": "urn:oid:0.4.0.127.0.16.1.1.2.1",
-                  "code": "20053000",
-                  "display": "Oral use"
-                }
-              ]
-            },
-            "doseAndRate": [
-              {
-                "doseQuantity": {
-                  "value": 1,
-                  "unit": "Tablet (unit of presentation)",
-                  "system": "http://snomed.info/sct",
-                  "code": "732936001"
-                }
-              }
-            ]
           }
         ]
       }
