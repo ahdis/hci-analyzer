@@ -18,14 +18,14 @@
          <short value="Analyzer Observation (PADV)"/>
       </element>
       <element id="Observation.extension:infoInputDocument">
-         <path value="Observation.extension" />
-         <sliceName value="infoInputDocument" />
+         <path value="Observation.extension"/>
+         <sliceName value="infoInputDocument"/>
          <short value="Information about the input document"/>
          <min value="1"/>
          <max value="1"/>
          <type>
-            <code value="Extension" />
-            <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument" />
+            <code value="Extension"/>
+            <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument"/>
          </type>
       </element>
       <element id="Observation.subject">

@@ -129,12 +129,12 @@
                             <communication>
                                 <language>
                                     <coding>
-                                        <system value="urn:ietf:bcp:47" />
-                                        <code value="de-CH" />
-                                        <display value="German (Region=Switzerland)" />
+                                        <system value="urn:ietf:bcp:47"/>
+                                        <code value="de-CH"/>
+                                        <display value="German (Region=Switzerland)"/>
                                     </coding>
                                 </language>
-                                <preferred value="true" />
+                                <preferred value="true"/>
                             </communication>
                         </Patient>
                     </resource>
@@ -309,7 +309,7 @@
                                 <doseAndRate>
                                     <doseQuantity>
                                         <value value="1"/>
-                                        <unit value="Tablet (unit of presentation)" />
+                                        <unit value="Tablet (unit of presentation)"/>
                                         <system value="http://snomed.info/sct"/>
                                         <code value="732936001"/>
                                     </doseQuantity>
@@ -457,12 +457,12 @@
                             <communication>
                                 <language>
                                     <coding>
-                                        <system value="urn:ietf:bcp:47" />
-                                        <code value="de-CH" />
-                                        <display value="German (Region=Switzerland)" />
+                                        <system value="urn:ietf:bcp:47"/>
+                                        <code value="de-CH"/>
+                                        <display value="German (Region=Switzerland)"/>
                                     </coding>
                                 </language>
-                                <preferred value="true" />
+                                <preferred value="true"/>
                             </communication>
                         </Patient>
                     </resource>
@@ -661,7 +661,7 @@
                                 <doseAndRate>
                                     <doseQuantity>
                                         <value value="1"/>
-                                        <unit value="Tablet (unit of presentation)" />
+                                        <unit value="Tablet (unit of presentation)"/>
                                         <system value="http://snomed.info/sct"/>
                                         <code value="732936001"/>
                                     </doseQuantity>

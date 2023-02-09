@@ -22,12 +22,12 @@
       <min value="1"/>
     </element>
     <element id="Parameters.parameter.name">
-      <path value="Parameters.parameter.name" />
-      <fixedString value="ch-emed-doc" />
+      <path value="Parameters.parameter.name"/>
+      <fixedString value="ch-emed-doc"/>
     </element>
     <element id="Parameters.parameter.resource">
-      <path value="Parameters.parameter.resource" />
-      <min value="1" />
+      <path value="Parameters.parameter.resource"/>
+      <min value="1"/>
       <type>
         <code value="Resource"/>
         <profile value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-bundle"/>

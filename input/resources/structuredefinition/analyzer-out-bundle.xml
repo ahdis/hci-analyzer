@@ -24,7 +24,7 @@
     </element>
     <element id="Bundle.identifier.system">
       <path value="Bundle.identifier.system"/>
-      <fixedUri value="urn:ietf:rfc:3986" />
+      <fixedUri value="urn:ietf:rfc:3986"/>
       <min value="1"/>
     </element>
     <element id="Bundle.identifier.value">
@@ -36,7 +36,7 @@
       <fixedCode value="document"/>
     </element>
     <element id="Bundle.timestamp">
-      <path value="Bundle.timestamp" />
+      <path value="Bundle.timestamp"/>
       <short value="The document's creation date and time"/>
       <min value="1"/>
     </element>

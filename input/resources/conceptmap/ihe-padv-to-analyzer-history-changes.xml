@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ConceptMap xmlns="http://hl7.org/fhir">
     <id value="ihe-padv-to-analyzer-history-changes"/>
-    <url value="http://hcisolutions.ch/ig/analyzer/ConceptMap/ihe-padv-to-analyzer-history-changes" />
+    <url value="http://hcisolutions.ch/ig/analyzer/ConceptMap/ihe-padv-to-analyzer-history-changes"/>
     <version value="0.1.0"/>
-    <name value="IhePadvToAnalyzerHistoryChanges" />
+    <name value="IhePadvToAnalyzerHistoryChanges"/>
     <title value="IHE PADV to Analyzer History Changes"/>
     <status value="draft"/>
     <experimental value="false"/>

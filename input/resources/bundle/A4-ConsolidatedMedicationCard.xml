@@ -22,7 +22,6 @@
                     <coding>
                         <system value="http://snomed.info/sct"/>
                         <code value="721912009"/>
-                        <display value="Medication summary document (record artifact)"/>
                     </coding>
                 </type>
                 <subject>
@@ -51,7 +50,7 @@
                     <type value="user-friendly-name"/>
                 </deviceName>
                 <version>
-                    <value value="1.0.0.0"/>
+                    <value value="0.0.0.1"/>
                 </version>
             </Device>
         </resource>
@@ -86,12 +85,12 @@
                 <communication>
                     <language>
                         <coding>
-                            <system value="urn:ietf:bcp:47" />
-                            <code value="de-CH" />
-                            <display value="German (Region=Switzerland)" />
+                            <system value="urn:ietf:bcp:47"/>
+                            <code value="de-CH"/>
+                            <display value="German (Region=Switzerland)"/>
                         </coding>
                     </language>
-                    <preferred value="true" />
+                    <preferred value="true"/>
                 </communication>
             </Patient>
         </resource>
@@ -268,7 +267,6 @@
                             <coding>
                                 <system value="http://loinc.org"/>
                                 <code value="56445-0"/>
-                                <display value="Medication summary Document"/>
                             </coding>
                             <text value="Medication Card"/>
                         </valueCodeableConcept>
@@ -326,7 +324,7 @@
                     <doseAndRate>
                         <doseQuantity>
                             <value value="1"/>
-                            <unit value="Tablet (unit of presentation)" />
+                            <unit value="Tablet (unit of presentation)"/>
                             <system value="http://snomed.info/sct"/>
                             <code value="732936001"/>
                         </doseQuantity>
@@ -409,7 +407,6 @@
                             <coding>
                                 <system value="http://loinc.org"/>
                                 <code value="56445-0"/>
-                                <display value="Medication summary Document"/>
                             </coding>
                             <text value="Medication Card"/>
                         </valueCodeableConcept>
@@ -467,7 +464,7 @@
                     <doseAndRate>
                         <doseQuantity>
                             <value value="1"/>
-                            <unit value="Tablet (unit of presentation)" />
+                            <unit value="Tablet (unit of presentation)"/>
                             <system value="http://snomed.info/sct"/>
                             <code value="732936001"/>
                         </doseQuantity>
@@ -594,7 +591,7 @@
                     <doseAndRate>
                         <doseQuantity>
                             <value value="1"/>
-                            <unit value="Tablet (unit of presentation)" />
+                            <unit value="Tablet (unit of presentation)"/>
                             <system value="http://snomed.info/sct"/>
                             <code value="732936001"/>
                         </doseQuantity>

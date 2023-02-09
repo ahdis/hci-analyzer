@@ -18,8 +18,8 @@
          <short value="Analyzer Patient"/>
       </element>
       <element id="Patient.identifier:LocalPid">
-         <path value="Patient.identifier" />
-         <sliceName value="LocalPid" />
+         <path value="Patient.identifier"/>
+         <sliceName value="LocalPid"/>
          <min value="1"/>
       </element>
       <element id="Patient.name">
