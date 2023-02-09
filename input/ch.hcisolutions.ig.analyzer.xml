@@ -718,7 +718,7 @@
       <value value="CI Build"/>
     </parameter>
     <parameter>
-      <code value="path-pages" />
+      <code value="path-pages"/>
       <value value="input/pages"/>
     </parameter>
     <parameter>
