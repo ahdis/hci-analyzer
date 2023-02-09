@@ -61,6 +61,6 @@ See also open issues on [GitHub](https://github.com/ahdis/hci-analyzer/issues).
 
 
 ### v0.1.0 (2020)
-* Initial version of this implementation guide on which the 'Documedis Medical Data Analyzer CE (v1.0.0.0)' as a certified medical device is based.   
+* Initial version of this implementation guide on which the 'Documedis Medical Data Analyzer CE' as a certified medical device is based.   
 * Based on CH EMED (v0.1.0) and CHMED (v1.0.0).
 * This version was not published. The status at that time corresponds to this CHMED [commit](https://github.com/ahdis/chmed/tree/371f5c04ecca44f0860047ebbc1a25ca60987ae4) from May 2020.
