@@ -1,575 +1,564 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="A3-ConsolidatedMedicationCard"/>
+    <id value="A3-ConsolidatedMedicationCard" />
     <identifier>
-        <system value="urn:ietf:rfc:3986"/>
-        <value value="urn:uuid:26d3dff7-ab05-4737-a49c-5eccd33511a3"/>
+        <system value="urn:ietf:rfc:3986" />
+        <value value="urn:uuid:5261a3f8-00ae-4767-a30d-9ea01ea7e7e5" />
     </identifier>
-    <type value="document"/>
-    <timestamp value="2020-03-10T18:00:00+01:00"/>
+    <type value="document" />
+    <timestamp value="2023-02-14T08:02:07.6787298+00:00" />
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Composition/A3-Analyzer"/>
+        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/Composition/5261a3f8-00ae-4767-a30d-9ea01ea7e7e5" />
         <resource>
             <Composition>
-                <id value="A3-Analyzer"/>
+                <id value="5261a3f8-00ae-4767-a30d-9ea01ea7e7e5" />
                 <identifier>
-                    <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:26d3dff7-ab05-4737-a49c-5eccd33511a3"/>
+                    <system value="urn:ietf:rfc:3986" />
+                    <value value="urn:uuid:5261a3f8-00ae-4767-a30d-9ea01ea7e7e5" />
                 </identifier>
-                <status value="final"/>
+                <status value="final" />
                 <type>
                     <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="721912009"/>
+                        <system value="http://snomed.info/sct" />
+                        <code value="721912009" />
                     </coding>
                 </type>
                 <subject>
-                    <reference value="Patient/MonikaWegmueller"/>
+                    <reference value="Patient/9a89b7d5-3c9b-40a8-9e07-4dca83ccafc5" />
                 </subject>
-                <date value="2020-03-10T18:00:00+01:00"/>
+                <date value="2023-02-14T08:02:07.678+00:00" />
                 <author>
-                    <reference value="Device/Analyzer"/>
+                    <reference value="Device/Analyzer" />
                 </author>
-                <title value="Medikationsplan"/>
+                <title value="Medikationsplan" />
                 <section>
                     <entry>
-                        <reference value="MedicationStatement/A3-MedStatReniten-Analyzer"/>
+                        <reference value="MedicationStatement/3766dc6d-4101-4042-ae55-28ccca93569e" />
                     </entry>
                 </section>
             </Composition>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Device/Analyzer"/>
+        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/Device/Analyzer" />
         <resource>
             <Device>
-                <id value="Analyzer"/>
+                <id value="Analyzer" />
                 <deviceName>
-                    <name value="Documedis Medical Data Analyzer CE"/>
-                    <type value="user-friendly-name"/>
+                    <name value="Documedis Medical Data Analyzer CE" />
+                    <type value="user-friendly-name" />
                 </deviceName>
                 <version>
-                    <value value="0.0.0.1"/>
+                    <value value="0.0.0.1" />
                 </version>
             </Device>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Patient/MonikaWegmueller"/>
+        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/Patient/9a89b7d5-3c9b-40a8-9e07-4dca83ccafc5" />
         <resource>
             <Patient>
-                <id value="MonikaWegmueller"/>
+                <id value="9a89b7d5-3c9b-40a8-9e07-4dca83ccafc5" />
                 <identifier>
                     <type>
                         <coding>
-                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                            <code value="MR"/>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                            <code value="MR" />
                         </coding>
                     </type>
-                    <system value="urn:oid:2.999.1"/>
-                    <value value="11111111"/>
+                    <system value="urn:oid:2.999.1" />
+                    <value value="11111111" />
                 </identifier>
                 <name>
-                    <family value="Wegmüller"/>
-                    <given value="Monika"/>
+                    <family value="Wegmüller" />
+                    <given value="Monika" />
                 </name>
-                <gender value="female"/>
-                <birthDate value="1943-05-15"/>
+                <gender value="female" />
+                <birthDate value="1943-05-15" />
                 <address>
-                    <line value="Wiesenstr. 12"/>
-                    <city value="Zürich"/>
-                    <postalCode value="8003"/>
-                    <country value="CH"/>
+                    <line value="Wiesenstr. 12" />
+                    <city value="Zürich" />
+                    <postalCode value="8003" />
+                    <country value="CH" />
                 </address>
                 <communication>
                     <language>
                         <coding>
-                            <system value="urn:ietf:bcp:47"/>
-                            <code value="de-CH"/>
-                            <display value="German (Region=Switzerland)"/>
+                            <system value="urn:ietf:bcp:47" />
+                            <code value="de-CH" />
+                            <display value="German (Region=Switzerland)" />
                         </coding>
                     </language>
-                    <preferred value="true"/>
+                    <preferred value="true" />
                 </communication>
             </Patient>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/DupontAtHausarzt"/>
+        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/PractitionerRole/fcc788d6-89e6-435b-9c95-598f20d09442" />
         <resource>
             <PractitionerRole>
-                <id value="DupontAtHausarzt"/>
+                <id value="fcc788d6-89e6-435b-9c95-598f20d09442" />
                 <practitioner>
-                    <reference value="Practitioner/Dupont"/>
+                    <reference value="Practitioner/13995206-45da-443a-b8ae-fbd0825c54de" />
                 </practitioner>
                 <organization>
-                    <reference value="Organization/Hausarzt"/>
+                    <reference value="Organization/585c1145-99fc-45b8-b446-f79aa8a51814" />
                 </organization>
             </PractitionerRole>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Practitioner/Dupont"/>
+        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/Practitioner/13995206-45da-443a-b8ae-fbd0825c54de" />
         <resource>
             <Practitioner>
-                <id value="Dupont"/>
+                <id value="13995206-45da-443a-b8ae-fbd0825c54de" />
                 <identifier>
-                    <system value="urn:oid:2.51.1.3"/>
-                    <value value="7601023234613"/>
+                    <system value="urn:oid:2.51.1.3" />
+                    <value value="7601023234613" />
                 </identifier>
                 <name>
-                    <family value="Dupont"/>
-                    <given value="Hausarzt"/>
+                    <family value="Dupont" />
+                    <given value="Hausarzt" />
                 </name>
             </Practitioner>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Organization/Hausarzt"/>
+        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/Organization/585c1145-99fc-45b8-b446-f79aa8a51814" />
         <resource>
             <Organization>
-                <id value="Hausarzt"/>
+                <id value="585c1145-99fc-45b8-b446-f79aa8a51814" />
                 <identifier>
-                    <system value="urn:oid:2.51.1.3"/>
-                    <value value="7601023234613"/>
+                    <system value="urn:oid:2.51.1.3" />
+                    <value value="7601023234613" />
                 </identifier>
-                <name value="Hausarzt"/>
+                <name value="Hausarzt" />
                 <address>
-                    <line value="Dupontstrasse"/>
-                    <city value="Bern"/>
-                    <postalCode value="3000"/>
-                    <country value="CH"/>
+                    <line value="Dupontstrasse" />
+                    <city value="Bern" />
+                    <postalCode value="3000" />
+                    <country value="CH" />
                 </address>
             </Organization>
         </resource>
     </entry>
-
-    <!-- Reference from MedicationStatement.derivedFrom (History) -->
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/A3-MedStatReniten-1x"/>
-        <resource>
-            <MedicationStatement xmlns="http://hl7.org/fhir">
-                <id value="A3-MedStatReniten-1x"/>
-                <contained>
-                    <Medication xmlns="http://hl7.org/fhir">
-                        <id value="cont1"/>
-                        <code>
-                            <coding>
-                                <system value="urn:oid:2.51.1.1"/>
-                                <code value="7680460380299"/>
-                                <display value="RENITEN Tabl 20 mg"/>
-                            </coding>
-                            <text value="RENITEN Tabl 20 mg"/>
-                        </code>
-                        <form>
-                            <coding>
-                                <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                                <code value="10219000"/>
-                                <display value="Tablet"/>
-                            </coding>
-                        </form>
-                        <amount>
-                            <numerator>
-                                <value value="98"/>
-                                <unit value="Piece"/>
-                                <system value="http://unitsofmeasure.org"/>
-                                <code value="{Piece}"/>
-                            </numerator>
-                            <denominator>
-                                <value value="1"/>
-                                <unit value="Package"/>
-                                <system value="http://unitsofmeasure.org"/>
-                                <code value="{Package}"/>
-                            </denominator>
-                        </amount>
-                        <ingredient>
-                            <itemCodeableConcept>
-                                <coding>
-                                    <system value="http://snomed.info/sct"/>
-                                    <code value="387165009"/>
-                                    <display value="Enalapril maleate (substance)"/>
-                                </coding>
-                                <text value="Enalapril maleate (substance)"/>
-                            </itemCodeableConcept>
-                            <strength>
-                                <numerator>
-                                    <value value="20"/>
-                                    <unit value="milligram"/>
-                                    <system value="http://unitsofmeasure.org"/>
-                                    <code value="mg"/>
-                                </numerator>
-                                <denominator>
-                                    <value value="1"/>
-                                    <unit value="Tablet (unit of presentation)"/>
-                                    <system value="http://snomed.info/sct"/>
-                                    <code value="732936001"/>
-                                </denominator>
-                            </strength>
-                        </ingredient>
-                    </Medication>
-                </contained>
-                <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument">
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
-                        <valueString value="Cara"/>
-                    </extension>
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype">
-                        <valueCodeableConcept>
-                            <coding>
-                                <system value="http://loinc.org"/>
-                                <code value="56445-0"/>
-                            </coding>
-                            <text value="Medication Card"/>
-                        </valueCodeableConcept>
-                    </extension>
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
-                        <valueDateTime value="2020-03-10T10:00:00+01:00"/>
-                    </extension>
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid">
-                        <valueIdentifier>
-                            <system value="urn:ietf:rfc:3986"/>
-                            <value value="urn:uuid:26d3dff7-ab05-4737-a49c-5eccd3359a3a"/>
-                        </valueIdentifier>
-                    </extension>
-                </extension>
-                <identifier>
-                    <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:64bff866-0059-4b56-ab89-d0a3e46fddda"/>
-                </identifier>
-                <status value="active"/>
-                <category>
-                    <coding>
-                        <system value="http://www.whocc.no/atc"/>
-                        <code value="C"/>
-                        <display value="Kardiovaskuläres System"/>
-                    </coding>
-                </category>
-                <medicationReference>
-                    <reference value="#cont1"/>
-                </medicationReference>
-                <subject>
-                    <reference value="Patient/MonikaWegmueller"/>
-                </subject>
-                <informationSource>
-                    <reference value="PractitionerRole/DupontAtHausarzt"/>
-                </informationSource>
-                <reasonCode>
-                    <text value="Bluthochdruck"/>
-                </reasonCode>
-                <dosage>
-                    <timing>
-                        <repeat>
-                            <boundsPeriod>
-                                <start value="2020-03-10"/>
-                            </boundsPeriod>
-                            <when value="MORN"/>
-                        </repeat>
-                    </timing>
-                    <route>
-                        <coding>
-                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                            <code value="20053000"/>
-                            <display value="Oral use"/>
-                        </coding>
-                    </route>
-                    <doseAndRate>
-                        <doseQuantity>
-                            <value value="1"/>
-                            <unit value="Tablet (unit of presentation)"/>
-                            <system value="http://snomed.info/sct"/>
-                            <code value="732936001"/>
-                        </doseQuantity>
-                    </doseAndRate>
-                </dosage>
-            </MedicationStatement>
-        </resource>
-    </entry>
-
-    <!-- Reference from MedicationStatement.derivedFrom (History) -->
-    <entry>
-        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/A3-MedStatReniten-2x"/>
-        <resource>
-            <MedicationStatement xmlns="http://hl7.org/fhir">
-                <id value="A3-MedStatReniten-2x"/>
-                <contained>
-                    <Medication xmlns="http://hl7.org/fhir">
-                        <id value="cont1"/>
-                        <code>
-                            <coding>
-                                <system value="urn:oid:2.51.1.1"/>
-                                <code value="7680460380299"/>
-                                <display value="RENITEN Tabl 20 mg"/>
-                            </coding>
-                            <text value="RENITEN Tabl 20 mg"/>
-                        </code>
-                        <form>
-                            <coding>
-                                <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                                <code value="10219000"/>
-                                <display value="Tablet"/>
-                            </coding>
-                        </form>
-                        <amount>
-                            <numerator>
-                                <value value="98"/>
-                                <unit value="Piece"/>
-                                <system value="http://unitsofmeasure.org"/>
-                                <code value="{Piece}"/>
-                            </numerator>
-                            <denominator>
-                                <value value="1"/>
-                                <unit value="Package"/>
-                                <system value="http://unitsofmeasure.org"/>
-                                <code value="{Package}"/>
-                            </denominator>
-                        </amount>
-                        <ingredient>
-                            <itemCodeableConcept>
-                                <coding>
-                                    <system value="http://snomed.info/sct"/>
-                                    <code value="387165009"/>
-                                    <display value="Enalapril maleate (substance)"/>
-                                </coding>
-                                <text value="Enalapril maleate (substance)"/>
-                            </itemCodeableConcept>
-                            <strength>
-                                <numerator>
-                                    <value value="20"/>
-                                    <unit value="milligram"/>
-                                    <system value="http://unitsofmeasure.org"/>
-                                    <code value="mg"/>
-                                </numerator>
-                                <denominator>
-                                    <value value="1"/>
-                                    <unit value="Tablet (unit of presentation)"/>
-                                    <system value="http://snomed.info/sct"/>
-                                    <code value="732936001"/>
-                                </denominator>
-                            </strength>
-                        </ingredient>
-                    </Medication>
-                </contained>
-                <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument">
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
-                        <valueString value="Cara"/>
-                    </extension>
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype">
-                        <valueCodeableConcept>
-                            <coding>
-                                <system value="http://loinc.org"/>
-                                <code value="56445-0"/>
-                            </coding>
-                            <text value="Medication Card"/>
-                        </valueCodeableConcept>
-                    </extension>
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
-                        <valueDateTime value="2020-03-10T17:00:00+01:00"/>
-                    </extension>
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid">
-                        <valueIdentifier>
-                            <system value="urn:ietf:rfc:3986"/>
-                            <value value="urn:uuid:26d3dff7-ab05-4737-a49c-5eccd3359a3b"/>
-                        </valueIdentifier>
-                    </extension>
-                </extension>
-                <identifier>
-                    <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:8bec35c0-7da4-4b28-aa8c-f657cf0c95b3"/>
-                </identifier>
-                <status value="active"/>
-                <category>
-                    <coding>
-                        <system value="http://www.whocc.no/atc"/>
-                        <code value="C"/>
-                        <display value="Kardiovaskuläres System"/>
-                    </coding>
-                </category>
-                <medicationReference>
-                    <reference value="#cont1"/>
-                </medicationReference>
-                <subject>
-                    <reference value="Patient/MonikaWegmueller"/>
-                </subject>
-                <informationSource>
-                    <reference value="PractitionerRole/DupontAtHausarzt"/>
-                </informationSource>
-                <reasonCode>
-                    <text value="Bluthochdruck"/>
-                </reasonCode>
-                <dosage>
-                    <timing>
-                        <repeat>
-                            <boundsPeriod>
-                                <start value="2020-03-10"/>
-                            </boundsPeriod>
-                            <when value="MORN"/>
-                        </repeat>
-                    </timing>
-                    <route>
-                        <coding>
-                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                            <code value="20053000"/>
-                            <display value="Oral use"/>
-                        </coding>
-                    </route>
-                    <doseAndRate>
-                        <doseQuantity>
-                            <value value="2"/>
-                            <unit value="Tablet (unit of presentation)"/>
-                            <system value="http://snomed.info/sct"/>
-                            <code value="732936001"/>
-                        </doseQuantity>
-                    </doseAndRate>
-                </dosage>
-            </MedicationStatement>
-        </resource>
-    </entry>
-
-    <!-- Section entry: MedicationStatement -->
-    <entry>
-        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/A3-MedStatReniten-Analyzer"/>
+        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/MedicationStatement/ab7baf6e-6403-4c0b-ba06-cf301201891f" />
         <resource>
             <MedicationStatement>
-                <id value="A3-MedStatReniten-Analyzer"/>
+                <id value="ab7baf6e-6403-4c0b-ba06-cf301201891f" />
                 <contained>
                     <Medication>
-                        <id value="cont1"/>
+                        <id value="cont1" />
                         <code>
                             <coding>
-                                <system value="urn:oid:2.51.1.1"/>
-                                <code value="7680460380299"/>
-                                <display value="RENITEN Tabl 20 mg"/>
+                                <system value="urn:oid:2.51.1.1" />
+                                <code value="7680460380299" />
+                                <display value="Reniten Tabl 20 mg 98 Stk" />
                             </coding>
-                            <text value="RENITEN Tabl 20 mg"/>
+                            <text value="RENITEN Tabl 20 mg" />
                         </code>
                         <form>
                             <coding>
-                                <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                                <code value="10219000"/>
-                                <display value="Tablet"/>
+                                <system value="urn:oid:0.4.0.127.0.16.1.1.2.1" />
+                                <code value="10219000" />
+                                <display value="Tablet" />
                             </coding>
                         </form>
                         <amount>
                             <numerator>
-                                <value value="98"/>
-                                <unit value="Piece"/>
-                                <system value="http://unitsofmeasure.org"/>
-                                <code value="{Piece}"/>
+                                <value value="98" />
+                                <unit value="Piece" />
+                                <system value="http://unitsofmeasure.org" />
+                                <code value="{Piece}" />
                             </numerator>
                             <denominator>
-                                <value value="1"/>
-                                <unit value="Package"/>
-                                <system value="http://unitsofmeasure.org"/>
-                                <code value="{Package}"/>
+                                <value value="1" />
+                                <unit value="Package" />
+                                <system value="http://unitsofmeasure.org" />
+                                <code value="{Package}" />
                             </denominator>
                         </amount>
                         <ingredient>
                             <itemCodeableConcept>
                                 <coding>
-                                    <system value="http://snomed.info/sct"/>
-                                    <code value="387165009"/>
-                                    <display value="Enalapril maleate (substance)"/>
+                                    <system value="http://snomed.info/sct" />
+                                    <code value="387165009" />
+                                    <display value="Enalapril maleate (substance)" />
                                 </coding>
-                                <text value="Enalapril maleate (substance)"/>
+                                <text value="Enalapril maleate (substance)" />
                             </itemCodeableConcept>
                             <strength>
                                 <numerator>
-                                    <value value="20"/>
-                                    <unit value="milligram"/>
-                                    <system value="http://unitsofmeasure.org"/>
-                                    <code value="mg"/>
+                                    <value value="20" />
+                                    <unit value="milligram" />
+                                    <system value="http://unitsofmeasure.org" />
+                                    <code value="mg" />
                                 </numerator>
                                 <denominator>
-                                    <value value="1"/>
-                                    <unit value="Tablet (unit of presentation)"/>
-                                    <system value="http://snomed.info/sct"/>
-                                    <code value="732936001"/>
+                                    <value value="1" />
+                                    <unit value="Tablet (unit of presentation)" />
+                                    <system value="http://snomed.info/sct" />
+                                    <code value="732936001" />
                                 </denominator>
                             </strength>
                         </ingredient>
                     </Medication>
                 </contained>
+                <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument">
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
+                        <valueString value="Cara" />
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="http://loinc.org" />
+                                <code value="56445-0" />
+                            </coding>
+                            <text value="Medication Card" />
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
+                        <valueDateTime value="2020-03-10T10:00:00+01:00" />
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986" />
+                            <value value="urn:uuid:26d3dff7-ab05-4737-a49c-5eccd3359a3a" />
+                        </valueIdentifier>
+                    </extension>
+                </extension>
                 <identifier>
-                    <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:79ff247f-7e14-4581-90b2-2fa157320bd2"/>
+                    <system value="urn:ietf:rfc:3986" />
+                    <value value="urn:uuid:64bff866-0059-4b56-ab89-d0a3e46fddda" />
                 </identifier>
-                <status value="unknown"/>
+                <status value="active" />
                 <category>
                     <coding>
-                        <system value="http://www.whocc.no/atc"/>
-                        <code value="C"/>
-                        <display value="Kardiovaskuläres System"/>
+                        <system value="http://www.whocc.no/atc" />
+                        <code value="C" />
+                        <display value="Kardiovaskuläres System" />
                     </coding>
                 </category>
                 <medicationReference>
-                    <reference value="#cont1"/>
+                    <reference value="#cont1" />
                 </medicationReference>
                 <subject>
-                    <reference value="Patient/MonikaWegmueller"/>
+                    <reference value="Patient/9a89b7d5-3c9b-40a8-9e07-4dca83ccafc5" />
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/DupontAtHausarzt"/>
+                    <reference value="PractitionerRole/fcc788d6-89e6-435b-9c95-598f20d09442" />
                 </informationSource>
-                <!-- History -->
-                <derivedFrom>
-                    <reference value="MedicationStatement/A3-MedStatReniten-1x"/>
-                </derivedFrom>
-                <derivedFrom>
-                    <reference value="Observation/A3-History-ChangeDosage"/>
-                </derivedFrom>
-                <derivedFrom>
-                    <reference value="MedicationStatement/A3-MedStatReniten-2x"/>
-                </derivedFrom>
+                <reasonCode>
+                    <text value="Bluthochdruck" />
+                </reasonCode>
                 <dosage>
                     <timing>
                         <repeat>
                             <boundsPeriod>
-                                <start value="2020-03-10"/>
+                                <start value="2020-03-10" />
                             </boundsPeriod>
-                            <when value="MORN"/>
+                            <when value="MORN" />
                         </repeat>
                     </timing>
                     <route>
                         <coding>
-                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                            <code value="20053000"/>
-                            <display value="Oral use"/>
+                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1" />
+                            <code value="20053000" />
+                            <display value="Oral use" />
                         </coding>
                     </route>
                     <doseAndRate>
                         <doseQuantity>
-                            <value value="2"/>
-                            <unit value="Tablet (unit of presentation)"/>
-                            <system value="http://snomed.info/sct"/>
-                            <code value="732936001"/>
+                            <value value="1" />
+                            <unit value="Tablet (unit of presentation)" />
+                            <system value="http://snomed.info/sct" />
+                            <code value="732936001" />
                         </doseQuantity>
                     </doseAndRate>
                 </dosage>
             </MedicationStatement>
         </resource>
     </entry>
-
-    <!-- Reference from MedicationStatement.derivedFrom (History) -->
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Observation/A3-History-ChangeDosage"/>
+        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/MedicationStatement/5c57f1a5-dc92-4450-9b01-5115385d4d6a" />
+        <resource>
+            <MedicationStatement>
+                <id value="5c57f1a5-dc92-4450-9b01-5115385d4d6a" />
+                <contained>
+                    <Medication>
+                        <id value="cont1" />
+                        <code>
+                            <coding>
+                                <system value="urn:oid:2.51.1.1" />
+                                <code value="7680460380299" />
+                                <display value="Reniten Tabl 20 mg 98 Stk" />
+                            </coding>
+                            <text value="RENITEN Tabl 20 mg" />
+                        </code>
+                        <form>
+                            <coding>
+                                <system value="urn:oid:0.4.0.127.0.16.1.1.2.1" />
+                                <code value="10219000" />
+                                <display value="Tablet" />
+                            </coding>
+                        </form>
+                        <amount>
+                            <numerator>
+                                <value value="98" />
+                                <unit value="Piece" />
+                                <system value="http://unitsofmeasure.org" />
+                                <code value="{Piece}" />
+                            </numerator>
+                            <denominator>
+                                <value value="1" />
+                                <unit value="Package" />
+                                <system value="http://unitsofmeasure.org" />
+                                <code value="{Package}" />
+                            </denominator>
+                        </amount>
+                        <ingredient>
+                            <itemCodeableConcept>
+                                <coding>
+                                    <system value="http://snomed.info/sct" />
+                                    <code value="387165009" />
+                                    <display value="Enalapril maleate (substance)" />
+                                </coding>
+                                <text value="Enalapril maleate (substance)" />
+                            </itemCodeableConcept>
+                            <strength>
+                                <numerator>
+                                    <value value="20" />
+                                    <unit value="milligram" />
+                                    <system value="http://unitsofmeasure.org" />
+                                    <code value="mg" />
+                                </numerator>
+                                <denominator>
+                                    <value value="1" />
+                                    <unit value="Tablet (unit of presentation)" />
+                                    <system value="http://snomed.info/sct" />
+                                    <code value="732936001" />
+                                </denominator>
+                            </strength>
+                        </ingredient>
+                    </Medication>
+                </contained>
+                <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument">
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
+                        <valueString value="Cara" />
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="http://loinc.org" />
+                                <code value="56445-0" />
+                            </coding>
+                            <text value="Medication Card" />
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
+                        <valueDateTime value="2020-03-10T17:00:00+01:00" />
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986" />
+                            <value value="urn:uuid:26d3dff7-ab05-4737-a49c-5eccd3359a3b" />
+                        </valueIdentifier>
+                    </extension>
+                </extension>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986" />
+                    <value value="urn:uuid:8bec35c0-7da4-4b28-aa8c-f657cf0c95b3" />
+                </identifier>
+                <status value="active" />
+                <category>
+                    <coding>
+                        <system value="http://www.whocc.no/atc" />
+                        <code value="C" />
+                        <display value="Kardiovaskuläres System" />
+                    </coding>
+                </category>
+                <medicationReference>
+                    <reference value="#cont1" />
+                </medicationReference>
+                <subject>
+                    <reference value="Patient/9a89b7d5-3c9b-40a8-9e07-4dca83ccafc5" />
+                </subject>
+                <informationSource>
+                    <reference value="PractitionerRole/fcc788d6-89e6-435b-9c95-598f20d09442" />
+                </informationSource>
+                <reasonCode>
+                    <text value="Bluthochdruck" />
+                </reasonCode>
+                <dosage>
+                    <timing>
+                        <repeat>
+                            <boundsPeriod>
+                                <start value="2020-03-10" />
+                            </boundsPeriod>
+                            <when value="MORN" />
+                        </repeat>
+                    </timing>
+                    <route>
+                        <coding>
+                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1" />
+                            <code value="20053000" />
+                            <display value="Oral use" />
+                        </coding>
+                    </route>
+                    <doseAndRate>
+                        <doseQuantity>
+                            <value value="2" />
+                            <unit value="Tablet (unit of presentation)" />
+                            <system value="http://snomed.info/sct" />
+                            <code value="732936001" />
+                        </doseQuantity>
+                    </doseAndRate>
+                </dosage>
+            </MedicationStatement>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/MedicationStatement/3766dc6d-4101-4042-ae55-28ccca93569e" />
+        <resource>
+            <MedicationStatement>
+                <id value="3766dc6d-4101-4042-ae55-28ccca93569e" />
+                <contained>
+                    <Medication>
+                        <id value="cont1" />
+                        <code>
+                            <coding>
+                                <system value="urn:oid:2.51.1.1" />
+                                <code value="7680460380299" />
+                                <display value="Reniten Tabl 20 mg 98 Stk" />
+                            </coding>
+                            <text value="RENITEN Tabl 20 mg" />
+                        </code>
+                        <form>
+                            <coding>
+                                <system value="urn:oid:0.4.0.127.0.16.1.1.2.1" />
+                                <code value="10219000" />
+                                <display value="Tablet" />
+                            </coding>
+                        </form>
+                        <amount>
+                            <numerator>
+                                <value value="98" />
+                                <unit value="Piece" />
+                                <system value="http://unitsofmeasure.org" />
+                                <code value="{Piece}" />
+                            </numerator>
+                            <denominator>
+                                <value value="1" />
+                                <unit value="Package" />
+                                <system value="http://unitsofmeasure.org" />
+                                <code value="{Package}" />
+                            </denominator>
+                        </amount>
+                        <ingredient>
+                            <itemCodeableConcept>
+                                <coding>
+                                    <system value="http://snomed.info/sct" />
+                                    <code value="387165009" />
+                                    <display value="Enalapril maleate (substance)" />
+                                </coding>
+                                <text value="Enalapril maleate (substance)" />
+                            </itemCodeableConcept>
+                            <strength>
+                                <numerator>
+                                    <value value="20" />
+                                    <unit value="milligram" />
+                                    <system value="http://unitsofmeasure.org" />
+                                    <code value="mg" />
+                                </numerator>
+                                <denominator>
+                                    <value value="1" />
+                                    <unit value="Tablet (unit of presentation)" />
+                                    <system value="http://snomed.info/sct" />
+                                    <code value="732936001" />
+                                </denominator>
+                            </strength>
+                        </ingredient>
+                    </Medication>
+                </contained>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986" />
+                    <value value="urn:uuid:3766dc6d-4101-4042-ae55-28ccca93569e" />
+                </identifier>
+                <status value="unknown" />
+                <category>
+                    <coding>
+                        <system value="http://www.whocc.no/atc" />
+                        <code value="C" />
+                        <display value="Kardiovaskuläres System" />
+                    </coding>
+                </category>
+                <medicationReference>
+                    <reference value="#cont1" />
+                </medicationReference>
+                <subject>
+                    <reference value="Patient/9a89b7d5-3c9b-40a8-9e07-4dca83ccafc5" />
+                </subject>
+                <informationSource>
+                    <reference value="PractitionerRole/fcc788d6-89e6-435b-9c95-598f20d09442" />
+                </informationSource>
+                <derivedFrom>
+                    <reference value="MedicationStatement/ab7baf6e-6403-4c0b-ba06-cf301201891f" />
+                </derivedFrom>
+                <derivedFrom>
+                    <reference value="Observation/1621f60b-ee77-43f9-bdf6-5cd179666200" />
+                </derivedFrom>
+                <derivedFrom>
+                    <reference value="MedicationStatement/5c57f1a5-dc92-4450-9b01-5115385d4d6a" />
+                </derivedFrom>
+                <dosage>
+                    <timing>
+                        <repeat>
+                            <boundsPeriod>
+                                <start value="2020-03-10" />
+                            </boundsPeriod>
+                            <when value="MORN" />
+                        </repeat>
+                    </timing>
+                    <route>
+                        <coding>
+                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1" />
+                            <code value="20053000" />
+                            <display value="Oral use" />
+                        </coding>
+                    </route>
+                    <doseAndRate>
+                        <doseQuantity>
+                            <value value="2" />
+                            <unit value="Tablet (unit of presentation)" />
+                            <system value="http://snomed.info/sct" />
+                            <code value="732936001" />
+                        </doseQuantity>
+                    </doseAndRate>
+                </dosage>
+            </MedicationStatement>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/Observation/1621f60b-ee77-43f9-bdf6-5cd179666200" />
         <resource>
             <Observation>
-                <id value="A3-History-ChangeDosage"/>
+                <id value="1621f60b-ee77-43f9-bdf6-5cd179666200" />
                 <identifier>
-                    <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:671a0728-b160-454e-9cdd-4e2a88b3d106"/>
+                    <system value="urn:ietf:rfc:3986" />
+                    <value value="urn:uuid:1621f60b-ee77-43f9-bdf6-5cd179666200" />
                 </identifier>
-                <status value="final"/>
+                <status value="final" />
                 <code>
                     <coding>
-                        <system value="urn:oid:1.3.6.1.4.1.19376.1.9.2.1"/>
-                        <code value="CHANGE"/>
+                        <system value="urn:oid:1.3.6.1.4.1.19376.1.9.2.1" />
+                        <code value="CHANGE" />
                     </coding>
                 </code>
                 <valueCodeableConcept>
                     <coding>
-                        <system value="http://hcisolutions.ch/ig/analyzer/CodeSystem/history-changes"/>
-                        <code value="changeDosage"/>
+                        <system value="http://hcisolutions.ch/ig/analyzer/CodeSystem/history-changes" />
+                        <code value="changeDosage" />
                     </coding>
                 </valueCodeableConcept>
             </Observation>
