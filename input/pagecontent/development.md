@@ -83,13 +83,14 @@ In the [Header MedicationStatement](StructureDefinition-analyzer-medicationstate
 
 In order to map the author of the medical decision, the following procedure is followed to get the information from the input document(s) - take the information from where you first get it from:
    1. MedicationStatement.informationSource / MedicationDispense.performer.actor / MedicationRequest.requester / Observation.performer   
-      * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input   
+      * MedicationStatement.informationSource -> PractitionerRole (PractitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input   
          * [PMP1 IN](Parameters-PMP1-Input-Analyzer.json.html): urn:uuid:3656263a-8f15-4175-975a-13524d922ce4 (PractitionerRole) -> urn:uuid:f2854370-f9b0-4893-87d2-09b6098ed641 (Practitioner) =>    
            [PMP1 OUT](Bundle-PMP1-ConsolidatedMedicationCard.json.html): PractitionerRole/Hopital -> Practitioner/DocteurHopital
             * see [schematic illustration](PR-UCs-PMP1.jpg)
          * PMP2: see [schematic illustration](PR-UCs-PMP2.jpg)
          * PMP3: see [schematic illustration](PR-UCs-PMP3.jpg)     
-      * **Note**: If there is a changed MedicationStatement (PADV CHANGE) without informationSource, take the Observation.performer, from where the changed MedicationStatement is referenced (see PMP1 UC). 
+         * **Note**: If there is a changed MedicationStatement (PADV CHANGE) without informationSource, take the Observation.performer, from where the changed MedicationStatement is referenced (see PMP1 UC). 
+      * TODO (https://github.com/ahdis/hci-analyzer/issues/7): MedicationRequest.requester -> PractitionerRole (PractitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input
 
    2. Composition.section.author   
       * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input
@@ -200,6 +201,20 @@ The identifier is taken from the input document as follows:
 Codes to show the different type of changes in the medication history:
 * [CodeSystem](CodeSystem-history-changes.html) & [ValueSet](ValueSet-history-changes.html)
 * [ConceptMap](ConceptMap-ihe-padv-to-analyzer-history-changes.html) to show the mapping to the different types/codes of the PADV Observations (input document).
+
+Rules when which type is set:
+
+{:class="table table-bordered"}
+Type of Change | is same substance | is same genericGroupCode12 | is same dosage | is same practitioner | is comment | is same galenicForm | is same ATC2 | is same ATC3 | is original generic | is stop medication |
+-- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | 
+**sameMedication**     | TRUE | TRUE | TRUE | - | - | - | - | - | TRUE | - |  
+**substitution**       | - | - | - | - | - | - | - | - | TRUE | - | 
+**changeDosage**       | TRUE | TRUE | TRUE | - | - | - | - | - | - | - | 
+**changePractitioner** | TRUE | TRUE | TRUE | FALSE | - | - | - | - | - | - | 
+**changeTherapy**      | - | - | - | - | - | - | TRUE | FALSE | - | - |  
+**changeGalenic**      | TRUE | - | - | - | - | FALSE | - | - | - | - | 
+**stop**               | - | - | - | - | - | - | - | - | - | TRUE | 
+**comment**            | - | - | - | - | TRUE | - | - | - | - | FALSE | 
 
 
 ### FHIR Implementation Guide

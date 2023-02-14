@@ -15,35 +15,125 @@
    <caseSensitive value="true"/>
    <content value="complete"/>
    <concept>
-      <code value="sameMedication"/>
-      <display value="Gleiche Medikation"/>
+      <code value="sameMedication"/>      
+      <designation>
+         <language value="de-CH"/>
+         <value value="Gleiche Medikation"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Même traitement"/>
+      </designation>
    </concept>
    <concept>
       <code value="substitution"/>
-      <display value="Substitution"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Substitution"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Substitution"/>
+      </designation>
    </concept>
    <concept>
       <code value="changeDosage"/>
-      <display value="Änderung Dosierung"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Veränderte Dosierung"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Posologie modifiée"/>
+      </designation>
    </concept>
    <concept>
       <code value="changePractitioner"/>
-      <display value="Änderung Arzt"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Arztwechsel"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Changement médecin"/>
+      </designation>
    </concept>
    <concept>
       <code value="changeTherapy"/>
-      <display value="Änderung Therapie"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Alternative Therapie"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Alternative thérapeutique"/>
+      </designation>
    </concept>
    <concept>
       <code value="changeGalenic"/>
-      <display value="Änderung Galenik"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Galenische Form"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Forme galénique"/>
+      </designation>
    </concept>
    <concept>
       <code value="stop"/>
-      <display value="Stopp"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Stopp"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Arrêt"/>
+      </designation>
    </concept>
    <concept>
       <code value="comment"/>
-      <display value="Kommentar"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Kommentar"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Commentaire"/>
+      </designation>
    </concept>
+   <!-- not implemented yet -->
+   <!--<concept>
+      <code value="refuse"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Abgelehnt"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Refusé"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="suspend"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Ausgesetzt"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Suspendu"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="okAfterSuspend"/>
+      <designation>
+         <language value="de-CH"/>
+         <value value="Wieder aufgenommen"/>
+      </designation>
+      <designation>
+         <language value="fr-CH"/>
+         <value value="Repris"/>
+      </designation>
+   </concept>-->
 </CodeSystem>

@@ -19,7 +19,6 @@
             <code value="OK"/>
             <target>
                 <code value="sameMedication"/>
-                <display value="Gleiche Medikation"/>
                 <equivalence value="specializes"/>
             </target>
         </element>
@@ -27,27 +26,22 @@
             <code value="CHANGE"/>
             <target>
                 <code value="substitution"/>
-                <display value="Substitution"/>
                 <equivalence value="specializes"/>
             </target>
             <target>
                 <code value="changeDosage"/>
-                <display value="Änderung Dosierung"/>
                 <equivalence value="specializes"/>
             </target>
             <target>
                 <code value="changePractitioner"/>
-                <display value="Änderung Arzt"/>
                 <equivalence value="specializes"/>
             </target>
             <target>
                 <code value="changeTherapy"/>
-                <display value="Änderung Therapie"/>
                 <equivalence value="specializes"/>
             </target>
             <target>
                 <code value="changeGalenic"/>
-                <display value="Änderung Galenik"/>
                 <equivalence value="specializes"/>
             </target>
         </element>
@@ -61,7 +55,6 @@
             <code value="CANCEL"/>
             <target>
                 <code value="stop"/>
-                <display value="Stopp"/>
                 <equivalence value="specializes"/>
             </target>
         </element>
@@ -75,7 +68,6 @@
             <code value="COMMENT"/>
             <target>
                 <code value="comment"/>
-                <display value="Kommentar"/>
                 <equivalence value="specializes"/>
             </target>
         </element>
