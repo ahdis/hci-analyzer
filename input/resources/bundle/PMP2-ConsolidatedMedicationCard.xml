@@ -6,7 +6,7 @@
         <value value="urn:uuid:fc354a5b-eabd-4275-9ea7-e248375baefd"/>
     </identifier>
     <type value="document"/>
-    <timestamp value="2023-02-08T10:48:19.299+00:00"/>
+    <timestamp value="2023-02-16T10:48:19.299+00:00"/>
     <entry>
         <fullUrl value="http://test.fhir.ch/r4/Composition/PMP2-Analyzer"/>
         <resource>
@@ -24,16 +24,16 @@
                     </coding>
                 </type>
                 <subject>
-                    <reference value="Patient/MAGMED011"/>
+                    <reference value="Patient/MAGMED005"/>
                 </subject>
-                <date value="2023-02-08T10:48:19.299+00:00"/>
+                <date value="2023-02-16T10:48:19.299+00:00"/>
                 <author>
                     <reference value="Device/Analyzer"/>
                 </author>
                 <title value="Medikationsplan"/>
                 <section>
                     <entry>
-                        <reference value="MedicationStatement/PMP2-MedStat-Analyzer"/>
+                        <reference value="MedicationStatement/PMP2-HeaderMedStat-Analyzer"/>
                     </entry>
                 </section>
             </Composition>
@@ -55,12 +55,13 @@
             </Device>
         </resource>
     </entry>
+
     <!-- Patient -->
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Patient/MAGMED011"/>
+        <fullUrl value="http://test.fhir.ch/r4/Patient/MAGMED005"/>
         <resource>
             <Patient>
-                <id value="MAGMED011"/>
+                <id value="MAGMED005"/>
                 <identifier>
                     <use value="official"/>
                     <type>
@@ -70,7 +71,7 @@
                         </coding>
                     </type>
                     <system value="urn:oid:2.16.756.5.30.1.191.1.0.2.1"/>
-                    <value value="e7963774-9098-445f-9cab-5d52234b52c3"/>
+                    <value value="7a4ec59f-a024-4cfb-bc04-3339c53cb9ac"/>
                 </identifier>
                 <identifier>
                     <use value="secondary"/>
@@ -80,8 +81,63 @@
                             <code value="MR"/>
                         </coding>
                     </type>
-                    <system value="urn:oid:2.16.756.5.30.1.191.1.0.12.3.101"/>
-                    <value value="e04f4689-6402-4b1c-a62e-33cb4d4f32e7"/>
+                    <system value="urn:oid:2.16.756.5.30.1.191.4.1.10.1.3"/>
+                    <value value="L53672539"/>
+                </identifier>
+                <identifier>
+                    <use value="secondary"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="MR"/>
+                        </coding>
+                    </type>
+                    <system value="urn:oid:2.16.756.5.30.1.196.3.2.1"/>
+                    <value value="MAGMED005"/>
+                </identifier>
+                <identifier>
+                    <use value="secondary"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="MR"/>
+                        </coding>
+                    </type>
+                    <system value="urn:oid:2.16.756.5.30.1.196.2.2.1"/>
+                    <value value="3486389"/>
+                </identifier>
+                <identifier>
+                    <use value="secondary"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="MR"/>
+                        </coding>
+                    </type>
+                    <system value="urn:oid:2.16.756.5.30.1.196.3.2.1"/>
+                    <value value="3503409"/>
+                </identifier>
+                <identifier>
+                    <use value="secondary"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="MR"/>
+                        </coding>
+                    </type>
+                    <system value="urn:oid:2.16.756.5.30.1.196.2.2.1"/>
+                    <value value="3505915"/>
+                </identifier>
+                <identifier>
+                    <use value="secondary"/>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="MR"/>
+                        </coding>
+                    </type>
+                    <system value="urn:oid:2.999.756.42.2"/>
+                    <value value="12345678"/>
                 </identifier>
                 <identifier>
                     <use value="secondary"/>
@@ -92,7 +148,7 @@
                         </coding>
                     </type>
                     <system value="urn:oid:2.16.756.5.30.1.128.4.1.4.2.3.2.1.1.1"/>
-                    <value value="99146299"/>
+                    <value value="99146298"/>
                 </identifier>
                 <identifier>
                     <use value="secondary"/>
@@ -103,7 +159,7 @@
                         </coding>
                     </type>
                     <system value="urn:oid:2.16.756.5.30.1.196.3.2.1"/>
-                    <value value="MAGMED011"/>
+                    <value value="3475203"/>
                 </identifier>
                 <identifier>
                     <use value="secondary"/>
@@ -113,420 +169,73 @@
                             <code value="MR"/>
                         </coding>
                     </type>
-                    <system value="urn:oid:2.16.756.5.30.1.196.3.2.1"/>
-                    <value value="MAGMED001"/>
+                    <system value="urn:oid:2.16.756.5.30.1.191.1.0.12.3.101"/>
+                    <value value="02fc1dd1-fc13-4ca0-874c-b8372b7e6cfc"/>
                 </identifier>
                 <active value="true"/>
                 <name>
-                    <family value="NEFF-WINGEIER"/>
-                    <given value="Trong Sang"/>
+                    <family value="Behluli-Qazimi"/>
+                    <given value="Leandra Corina"/>
                 </name>
-                <gender value="male"/>
-                <birthDate value="1987-10-08"/>
+                <gender value="female"/>
+                <birthDate value="2002-12-21"/>
             </Patient>
         </resource>
     </entry>
 
-    <!-- Original: Composition.author -->
+    <!-- PractitionerRole 1/2 (MedStat) -->
     <entry>
-        <fullUrl value="urn:uuid:792b1dbb-5c63-445f-97c2-9dfa96454086"/>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/practitioner-role-2"/>
         <resource>
-            <Device>
-                <deviceName>
-                    <name value="PMP CARA v0.1"/>
-                    <type value="model-name"/>
-                </deviceName>
-                <type>
-                    <coding>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="701612004"/>
-                        <display value="Pharmaceutical information system application software (physical object)"/>
-                    </coding>
-                </type>
-                <version>
-                    <value value="b75f0bc"/>
-                </version>
-                <owner>
-                    <reference value="urn:uuid:8ec48385-9f07-4cb7-87a9-e03acdfc0f93"/>
-                </owner>
-            </Device>
+            <PractitionerRole>
+                <id value="practitioner-role-2"/>
+                <practitioner>
+                    <reference value="Practitioner/practitioner-2"/>
+                </practitioner>
+                <organization>
+                    <reference value="Organization/organization-2"/>
+                </organization>
+            </PractitionerRole>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:8ec48385-9f07-4cb7-87a9-e03acdfc0f93"/>
+        <fullUrl value="http://test.fhir.ch/r4/Practitioner/practitioner-2"/>
         <resource>
-            <Organization>
+            <Practitioner>
+                <id value="practitioner-2"/>
                 <identifier>
                     <system value="urn:oid:2.51.1.3"/>
-                    <value value="7601001407428"/>
+                    <value value="7601000201041"/>
                 </identifier>
-                <name value="Association CARA"/>
+                <name>
+                    <family value="Rochat"/>
+                    <given value="Dr"/>
+                    <prefix value="Dr. med."/>
+                </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Organization/organization-2"/>
+        <resource>
+            <Organization>
+                <id value="organization-2"/>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601000201041"/>
+                </identifier>
+                <name value="Médecin de famille"/>
+                <address>
+                    <line value="Krankenstrasse 2"/>
+                    <city value="Zürich"/>
+                    <postalCode value="8005"/>
+                    <country value="CH"/>
+                </address>
             </Organization>
         </resource>
     </entry>
 
-    <!-- Original: MedicationStatement from MTP (Step 1) -->
-    <entry>
-        <fullUrl value="urn:uuid:cc9a1427-bd85-4b7f-ad7d-361d31b2607d"/>
-        <resource>
-            <MedicationStatement>
-                <contained>
-                    <PractitionerRole>
-                        <id value="practitioner-role-2"/>
-                        <practitioner>
-                            <reference value="#practitioner-2"/>
-                        </practitioner>
-                        <organization>
-                            <reference value="#organization-2"/>
-                        </organization>
-                    </PractitionerRole>
-                </contained>
-                <contained>
-                    <Practitioner>
-                        <id value="practitioner-2"/>
-                        <identifier>
-                            <system value="urn:oid:2.51.1.3"/>
-                            <value value="7601000201041"/>
-                        </identifier>
-                        <name>
-                            <family value="Rochat"/>
-                            <given value="Dr"/>
-                            <prefix value="Dr. med."/>
-                        </name>
-                    </Practitioner>
-                </contained>
-                <contained>
-                    <Organization>
-                        <id value="organization-2"/>
-                        <identifier>
-                            <system value="urn:oid:2.51.1.3"/>
-                            <value value="7601000201041"/>
-                        </identifier>
-                        <name value="Médecin de famille"/>
-                        <address>
-                            <line value="Krankenstrasse 2"/>
-                            <city value="Zürich"/>
-                            <postalCode value="8005"/>
-                            <country value="CH"/>
-                        </address>
-                    </Organization>
-                </contained>
-                <contained>
-                    <Medication>
-                        <id value="medication-1"/>
-                        <code>
-                            <coding>
-                                <system value="urn:oid:2.51.1.1"/>
-                                <code value="7680471020733"/>
-                                <display value="TEMESTA Expidet cpr orodisp 1 mg blister 20 pce"/>
-                            </coding>
-                            <text value="TEMESTA Expidet cpr orodisp 1 mg blister 20 pce"/>
-                        </code>
-                        <form>
-                            <coding>
-                                <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                                <code value="10221000"/>
-                                <display value="Film-coated tablet"/>
-                            </coding>
-                        </form>
-                        <amount>
-                            <numerator>
-                                <value value="20"/>
-                                <unit value="Piece(s)"/>
-                                <system value="http://unitsofmeasure.org"/>
-                                <code value="{Piece}"/>
-                            </numerator>
-                            <denominator>
-                                <value value="1"/>
-                                <unit value="Package"/>
-                                <system value="http://unitsofmeasure.org"/>
-                                <code value="{Package}"/>
-                            </denominator>
-                        </amount>
-                        <ingredient>
-                            <itemCodeableConcept>
-                                <coding>
-                                    <system value="http://snomed.info/sct"/>
-                                    <code value="387106007"/>
-                                    <display value="Lorazepam (substance)"/>
-                                </coding>
-                                <text value="Lorazépam"/>
-                            </itemCodeableConcept>
-                            <strength>
-                                <numerator>
-                                    <value value="1"/>
-                                    <unit value="milligram"/>
-                                    <system value="http://unitsofmeasure.org"/>
-                                    <code value="mg"/>
-                                </numerator>
-                                <denominator>
-                                    <value value="1"/>
-                                    <unit value="Tablet (unit of presentation)"/>
-                                    <system value="http://snomed.info/sct"/>
-                                    <code value="732936001"/>
-                                </denominator>
-                            </strength>
-                        </ingredient>
-                    </Medication>
-                </contained>
-                <contained>
-                    <PractitionerRole>
-                        <id value="practitioner-role-1"/>
-                        <practitioner>
-                            <reference value="#practitioner-1"/>
-                        </practitioner>
-                        <organization>
-                            <reference value="#organization-1"/>
-                        </organization>
-                    </PractitionerRole>
-                </contained>
-                <contained>
-                    <Practitioner>
-                        <id value="practitioner-1"/>
-                        <identifier>
-                            <system value="urn:oid:2.51.1.3"/>
-                            <value value="7601000201041"/>
-                        </identifier>
-                        <name>
-                            <family value="Rochat"/>
-                            <given value="Dr"/>
-                            <prefix value="Dr. med."/>
-                        </name>
-                    </Practitioner>
-                </contained>
-                <contained>
-                    <Organization>
-                        <id value="organization-1"/>
-                        <identifier>
-                            <system value="urn:oid:2.51.1.3"/>
-                            <value value="7601000201041"/>
-                        </identifier>
-                        <name value="Médecin de famille"/>
-                        <address>
-                            <line value="Krankenstrasse 2"/>
-                            <city value="Zürich"/>
-                            <postalCode value="8005"/>
-                            <country value="CH"/>
-                        </address>
-                    </Organization>
-                </contained>
-                <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument">
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
-                        <valueString value="PMP"/>
-                    </extension>
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype">
-                        <valueCodeableConcept>
-                            <coding>
-                                <system value="http://loinc.org"/>
-                                <code value="56445-0"/>
-                            </coding>
-                            <text value="Medication List"/>
-                        </valueCodeableConcept>
-                    </extension>
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
-                        <valueDateTime value="2023-02-08T09:11:19.299+00:00"/>
-                    </extension>
-                    <!--TODO-->
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid">
-                        <valueIdentifier>
-                            <system value="urn:ietf:rfc:3986"/>
-                            <value value="urn:uuid:935a9fcc-44f5-4533-8365-bb506e7611f5"/>
-                        </valueIdentifier>
-                    </extension>
-                </extension>
-                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author">
-                    <valueReference>
-                        <reference value="#practitioner-role-2"/>
-                    </valueReference>
-                </extension>
-                <identifier>
-                    <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:cc9a1427-bd85-4b7f-ad7d-361d31b2607d"/>
-                </identifier>
-                <status value="completed"/>
-                <medicationReference>
-                    <reference value="#medication-1"/>
-                </medicationReference>
-                <subject>
-                    <reference value="Patient/MAGMED011"/>
-                </subject>
-                <informationSource>
-                    <reference value="#practitioner-role-1"/>
-                </informationSource>
-                <reasonCode>
-                    <text value="pour dormir"/>
-                </reasonCode>
-                <dosage id="#dosage-1">
-                    <patientInstruction value="laisser fondre 1 comprimé sous la langue ½ heure avant le coucher &#xA;(si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin)"/>
-                    <timing>
-                        <repeat>
-                            <boundsPeriod>
-                                <start value="2019-02-12"/>
-                                <end value="2019-02-15"/>
-                            </boundsPeriod>
-                            <when value="NIGHT"/>
-                        </repeat>
-                    </timing>
-                    <route>
-                        <coding>
-                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
-                            <code value="20053000"/>
-                            <display value="Oral use"/>
-                        </coding>
-                    </route>
-                    <doseAndRate>
-                        <doseQuantity>
-                            <value value="1"/>
-                            <unit value="Tablet (unit of presentation)"/>
-                            <system value="http://snomed.info/sct"/>
-                            <code value="732936001"/>
-                        </doseQuantity>
-                    </doseAndRate>
-                </dosage>
-            </MedicationStatement>
-        </resource>
-    </entry>
-
-    <!-- Original: Observation (CANCEL) from PADV (Step 2) -->
-    <entry>
-        <fullUrl value="urn:uuid:bb5450e6-4968-4bbe-bc31-da48c4896653"/>
-        <resource>
-            <Observation>
-                <contained>
-                    <PractitionerRole>
-                        <id value="practitioner-role-4"/>
-                        <practitioner>
-                            <reference value="#practitioner-4"/>
-                        </practitioner>
-                        <organization>
-                            <reference value="#organization-4"/>
-                        </organization>
-                    </PractitionerRole>
-                </contained>
-                <contained>
-                    <Practitioner>
-                        <id value="practitioner-4"/>
-                        <identifier>
-                            <system value="urn:oid:2.51.1.3"/>
-                            <value value="7601000876546"/>
-                        </identifier>
-                        <name>
-                            <family value="Pharm"/>
-                            <given value="Pharmacien"/>
-                        </name>
-                    </Practitioner>
-                </contained>
-                <contained>
-                    <Organization>
-                        <id value="organization-4"/>
-                        <identifier>
-                            <system value="urn:oid:2.51.1.3"/>
-                            <value value="7601000876546"/>
-                        </identifier>
-                        <name value="Pharmacie"/>
-                        <address>
-                            <line value="Apothekerstrasse 22"/>
-                            <city value="Zürich"/>
-                            <postalCode value="8005"/>
-                            <country value="CH"/>
-                        </address>
-                    </Organization>
-                </contained>
-                <contained>
-                    <PractitionerRole>
-                        <id value="practitioner-role-3"/>
-                        <practitioner>
-                            <reference value="#practitioner-3"/>
-                        </practitioner>
-                        <organization>
-                            <reference value="#organization-3"/>
-                        </organization>
-                    </PractitionerRole>
-                </contained>
-                <contained>
-                    <Practitioner>
-                        <id value="practitioner-3"/>
-                        <identifier>
-                            <system value="urn:oid:2.51.1.3"/>
-                            <value value="7601000876546"/>
-                        </identifier>
-                        <name>
-                            <family value="Pharm"/>
-                            <given value="Pharmacien"/>
-                        </name>
-                    </Practitioner>
-                </contained>
-                <contained>
-                    <Organization>
-                        <id value="organization-3"/>
-                        <identifier>
-                            <system value="urn:oid:2.51.1.3"/>
-                            <value value="7601000876546"/>
-                        </identifier>
-                        <name value="Pharmacie"/>
-                        <address>
-                            <line value="Apothekerstrasse 22"/>
-                            <city value="Zürich"/>
-                            <postalCode value="8005"/>
-                            <country value="CH"/>
-                        </address>
-                    </Organization>
-                </contained>
-                <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument">
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
-                        <valueString value="PMP"/>
-                    </extension>
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype">
-                        <valueCodeableConcept>
-                            <coding>
-                                <system value="http://loinc.org"/>
-                                <code value="56445-0"/>
-                            </coding>
-                            <text value="Medication List"/>
-                        </valueCodeableConcept>
-                    </extension>
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
-                        <valueDateTime value="2023-02-08T09:11:19.299+00:00"/>
-                    </extension>
-                    <!--TODO-->
-                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid">
-                        <valueIdentifier>
-                            <system value="urn:ietf:rfc:3986"/>
-                            <value value="urn:uuid:935a9fcc-44f5-4533-8365-bb506e7611f5"/>
-                        </valueIdentifier>
-                    </extension>
-                </extension>
-                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author">
-                    <valueReference>
-                        <reference value="#practitioner-role-4"/>
-                    </valueReference>
-                </extension>
-                <identifier>
-                    <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:bb5450e6-4968-4bbe-bc31-da48c4896653"/>
-                </identifier>
-                <status value="final"/>
-                <code>
-                    <coding>
-                        <system value="urn:oid:1.3.6.1.4.1.19376.1.9.2.1"/>
-                        <code value="CANCEL"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/MAGMED011"/>
-                </subject>
-                <effectiveDateTime value="2019-02-15T11:00:00+01:00"/>
-                <performer>
-                    <reference value="#practitioner-role-3"/>
-                </performer>
-                <note>
-                    <text value="selon téléphone avec le médecin, arrêter le traitement car inefficace"/>
-                </note>
-            </Observation>
-        </resource>
-    </entry>
-
-    <!-- Header MedicationStatement -->
+    <!-- MedicationStatement -->
     <entry>
         <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/PMP2-MedStat-Analyzer"/>
         <resource>
@@ -590,65 +299,68 @@
                         </ingredient>
                     </Medication>
                 </contained>
-                <contained>
-                    <PractitionerRole>
-                        <id value="practitioner-role-1"/>
-                        <practitioner>
-                            <reference value="#practitioner-1"/>
-                        </practitioner>
-                        <organization>
-                            <reference value="#organization-1"/>
-                        </organization>
-                    </PractitionerRole>
-                </contained>
-                <contained>
-                    <Practitioner>
-                        <id value="practitioner-1"/>
-                        <identifier>
-                            <system value="urn:oid:2.51.1.3"/>
-                            <value value="7601000201041"/>
-                        </identifier>
-                        <name>
-                            <family value="Rochat"/>
-                            <given value="Dr"/>
-                            <prefix value="Dr. med."/>
-                        </name>
-                    </Practitioner>
-                </contained>
-                <contained>
-                    <Organization>
-                        <id value="organization-1"/>
-                        <identifier>
-                            <system value="urn:oid:2.51.1.3"/>
-                            <value value="7601000201041"/>
-                        </identifier>
-                        <name value="Médecin de famille"/>
-                        <address>
-                            <line value="Krankenstrasse 2"/>
-                            <city value="Zürich"/>
-                            <postalCode value="8005"/>
-                            <country value="CH"/>
-                        </address>
-                    </Organization>
-                </contained>
+                <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument">
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
+                        <valueString value="PMP" />
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="http://loinc.org"/>
+                                <code value="56445-0"/>
+                            </coding>
+                            <text value="Medication List"/>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
+                        <valueDateTime value="2023-02-16T09:12:55.482+01:00" />
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986" />
+                            <value value="urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153" />
+                        </valueIdentifier>
+                    </extension>
+                </extension>
+                <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
+                    <extension url="id">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"/>
+                        </valueIdentifier>
+                    </extension>
+                    <extension url="externalDocumentId">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"/>
+                        </valueIdentifier>
+                    </extension>
+                </extension>
                 <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author">
                     <valueReference>
-                        <reference value="#practitioner-role-2"/>
+                        <reference value="PractitionerRole/practitioner-role-2"/>
                     </valueReference>
                 </extension>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:cc9a1427-bd85-4b7f-ad7d-361d31b2607d"/>
+                    <value value="urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"/>
                 </identifier>
                 <status value="completed"/>
+                <category>
+                    <coding>
+                        <system value="http://www.whocc.no/atc" />
+                        <code value="N" />
+                        <display value="Nervensystem" />
+                    </coding>
+                </category>
                 <medicationReference>
                     <reference value="#medication-1"/>
                 </medicationReference>
                 <subject>
-                    <reference value="Patient/MAGMED011"/>
+                    <reference value="Patient/MAGMED005"/>
                 </subject>
                 <informationSource>
-                    <reference value="#practitioner-role-1"/>
+                    <reference value="PractitionerRole/practitioner-role-2"/>
                 </informationSource>
                 <reasonCode>
                     <text value="pour dormir"/>
@@ -684,4 +396,268 @@
         </resource>
     </entry>
 
+    <!-- PractitionerRole 3/4 (Obs) -->
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/practitioner-role-4"/>
+        <resource>
+            <PractitionerRole>
+                <id value="practitioner-role-4"/>
+                <practitioner>
+                    <reference value="Practitioner/practitioner-4"/>
+                </practitioner>
+                <organization>
+                    <reference value="Organization/organization-4"/>
+                </organization>
+            </PractitionerRole>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Practitioner/practitioner-4"/>
+        <resource>
+            <Practitioner>
+                <id value="practitioner-4"/>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601000876546"/>
+                </identifier>
+                <name>
+                    <family value="Pharm"/>
+                    <given value="Pharmacien"/>
+                </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Organization/organization-4"/>
+        <resource>
+            <Organization>
+                <id value="organization-4"/>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601000876546"/>
+                </identifier>
+                <name value="Pharmacie"/>
+                <address>
+                    <line value="Apothekerstrasse 22"/>
+                    <city value="Zürich"/>
+                    <postalCode value="8005"/>
+                    <country value="CH"/>
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+
+    <!-- Observation -->
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Observation/PMP2-Obs-Analyzer"/>
+        <resource>
+            <Observation>
+                <id value="PMP2-Obs-Analyzer"/>
+                <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument">
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
+                        <valueString value="PMP" />
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="http://loinc.org"/>
+                                <code value="56445-0"/>
+                            </coding>
+                            <text value="Medication List"/>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
+                        <valueDateTime value="2023-02-16T09:12:55.482+01:00" />
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986" />
+                            <value value="urn:uuid:63e4ae3d-3a79-476b-bb03-aa23a5e3e7bf" />
+                        </valueIdentifier>
+                    </extension>
+                </extension>
+                <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-pharmaceuticaladvice">
+                    <extension url="id">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:63e4ae3d-3a79-476b-bb03-aa23a5e3e7bf"/>
+                        </valueIdentifier>
+                    </extension>
+                    <extension url="externalDocumentId">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:63e4ae3d-3a79-476b-bb03-aa23a5e3e7bf"/>
+                        </valueIdentifier>
+                    </extension>
+                </extension>
+                <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
+                    <extension url="id">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"/>
+                        </valueIdentifier>
+                    </extension>
+                    <extension url="externalDocumentId">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"/>
+                        </valueIdentifier>
+                    </extension>
+                </extension>
+                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author">
+                    <valueReference>
+                        <reference value="PractitionerRole/practitioner-role-4"/>
+                    </valueReference>
+                </extension>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:1f88431a-80e5-46b3-a928-40bc5a63b08e"/>
+                </identifier>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="urn:oid:1.3.6.1.4.1.19376.1.9.2.1"/>
+                        <code value="CANCEL"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/MAGMED005"/>
+                </subject>
+                <effectiveDateTime value="2019-02-15T11:00:00+01:00"/>
+                <performer>
+                    <reference value="PractitionerRole/practitioner-role-4"/>
+                </performer>
+                <note>
+                    <text value="selon téléphone avec le médecin, arrêter le traitement car inefficace"/>
+                </note>
+            </Observation>
+        </resource>
+    </entry>
+
+    <!-- Header MedicationStatement -->
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/MedicationStatement/PMP2-HeaderMedStat-Analyzer"/>
+        <resource>
+            <MedicationStatement>
+                <id value="PMP2-HeaderMedStat-Analyzer"/>
+                <contained>
+                    <Medication>
+                        <id value="medication-1"/>
+                        <code>
+                            <coding>
+                                <system value="urn:oid:2.51.1.1"/>
+                                <code value="7680471020733"/>
+                                <display value="TEMESTA Expidet cpr orodisp 1 mg blister 20 pce"/>
+                            </coding>
+                            <text value="TEMESTA Expidet cpr orodisp 1 mg blister 20 pce"/>
+                        </code>
+                        <form>
+                            <coding>
+                                <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                                <code value="10221000"/>
+                                <display value="Film-coated tablet"/>
+                            </coding>
+                        </form>
+                        <amount>
+                            <numerator>
+                                <value value="20"/>
+                                <unit value="Piece(s)"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="{Piece}"/>
+                            </numerator>
+                            <denominator>
+                                <value value="1"/>
+                                <unit value="Package"/>
+                                <system value="http://unitsofmeasure.org"/>
+                                <code value="{Package}"/>
+                            </denominator>
+                        </amount>
+                        <ingredient>
+                            <itemCodeableConcept>
+                                <coding>
+                                    <system value="http://snomed.info/sct"/>
+                                    <code value="387106007"/>
+                                    <display value="Lorazepam (substance)"/>
+                                </coding>
+                                <text value="Lorazépam"/>
+                            </itemCodeableConcept>
+                            <strength>
+                                <numerator>
+                                    <value value="1"/>
+                                    <unit value="milligram"/>
+                                    <system value="http://unitsofmeasure.org"/>
+                                    <code value="mg"/>
+                                </numerator>
+                                <denominator>
+                                    <value value="1"/>
+                                    <unit value="Tablet (unit of presentation)"/>
+                                    <system value="http://snomed.info/sct"/>
+                                    <code value="732936001"/>
+                                </denominator>
+                            </strength>
+                        </ingredient>
+                    </Medication>
+                </contained>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:0670ff7b-b4c3-42b8-a528-1ac6cb39b563"/>
+                </identifier>
+                <status value="unknown"/>
+                <category>
+                    <coding>
+                        <system value="http://www.whocc.no/atc" />
+                        <code value="N" />
+                        <display value="Nervensystem" />
+                    </coding>
+                </category>
+                <medicationReference>
+                    <reference value="#medication-1"/>
+                </medicationReference>
+                <subject>
+                    <reference value="Patient/MAGMED005"/>
+                </subject>
+                <informationSource>
+                    <reference value="PractitionerRole/practitioner-role-4"/>
+                </informationSource>
+                <derivedFrom>
+                    <reference value="MedicationStatement/PMP2-MedStat-Analyzer" />
+                </derivedFrom>
+                <derivedFrom>
+                    <reference value="Observation/PMP2-Obs-History" />
+                </derivedFrom>
+                <derivedFrom>
+                    <reference value="Observation/PMP2-Obs-Analyzer" />
+                </derivedFrom>
+                <dosage>
+                    <text value="-"/>
+                </dosage>
+            </MedicationStatement>
+        </resource>
+    </entry>
+
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Observation/PMP2-Obs-History"/>
+        <resource>
+            <Observation>
+                <id value="PMP2-Obs-History"/>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uuid:8df31538-0515-4493-a744-deb2dc25bad7"/>
+                </identifier>
+                <status value="final"/>
+                <code>
+                    <coding>
+                        <system value="urn:oid:1.3.6.1.4.1.19376.1.9.2.1"/>
+                        <code value="CANCEL"/>
+                    </coding>
+                </code>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://hcisolutions.ch/ig/analyzer/CodeSystem/history-changes"/>
+                        <code value="stop"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
 </Bundle>

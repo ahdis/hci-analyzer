@@ -11,12 +11,12 @@
                 </meta>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
-                    <value value="urn:uuid:935a9fcc-44f5-4533-8365-bb506e7611f5"/>
+                    <value value="urn:uuid:9e156934-032c-47fb-bdcc-9abd0d56af72"/>
                 </identifier>
                 <type value="document"/>
-                <timestamp value="2023-02-08T09:11:19.299+00:00"/>
+                <timestamp value="2023-02-16T09:12:55.482+01:00"/>
                 <entry>
-                    <fullUrl value="urn:uuid:16c8ec15-cb79-4b96-a9a2-9f301939a4b8"/>
+                    <fullUrl value="urn:uuid:8e151915-1d76-452b-95ad-4c4c54784465"/>
                     <resource>
                         <Composition>
                             <language value="fr-CH"/>
@@ -25,32 +25,32 @@
                             </extension>
                             <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
                                 <valueReference>
-                                    <reference value="urn:uuid:15d4b324-a8ea-445b-a07a-8613eff5bdd5"/>
+                                    <reference value="urn:uuid:8b91e3cf-85ab-468d-bd4a-2dbe742b7555"/>
                                 </valueReference>
                             </extension>
                             <identifier>
                                 <system value="urn:ietf:rfc:3986"/>
-                                <value value="urn:uuid:935a9fcc-44f5-4533-8365-bb506e7611f5"/>
+                                <value value="urn:uuid:9e156934-032c-47fb-bdcc-9abd0d56af72"/>
                             </identifier>
                             <status value="final"/>
                             <type>
-                                <coding>
-                                    <system value="http://loinc.org"/>
-                                    <code value="56445-0"/>
-                                    <display value="Medication summary Document"/>
-                                </coding>
                                 <coding>
                                     <system value="http://snomed.info/sct"/>
                                     <code value="721912009"/>
                                     <display value="Medication summary document (record artifact)"/>
                                 </coding>
+                                <coding>
+                                    <system value="http://loinc.org"/>
+                                    <code value="56445-0"/>
+                                    <display value="Medication summary Document"/>
+                                </coding>
                             </type>
                             <subject>
-                                <reference value="urn:uuid:15d4b324-a8ea-445b-a07a-8613eff5bdd5"/>
+                                <reference value="urn:uuid:8b91e3cf-85ab-468d-bd4a-2dbe742b7555"/>
                             </subject>
-                            <date value="2023-02-08T09:11:19+00:00"/>
+                            <date value="2023-02-16T09:12:55+01:00"/>
                             <author>
-                                <reference value="urn:uuid:792b1dbb-5c63-445f-97c2-9dfa96454086"/>
+                                <reference value="urn:uuid:2ddc0292-1204-4b8d-a938-a4c545dc7fda"/>
                             </author>
                             <title value="Liste de médication"/>
                             <confidentiality value="N">
@@ -65,7 +65,7 @@
                                 </extension>
                             </confidentiality>
                             <custodian>
-                                <reference value="urn:uuid:8ec48385-9f07-4cb7-87a9-e03acdfc0f93"/>
+                                <reference value="urn:uuid:983f48b5-538b-4629-96b5-1f7baf02cdc0"/>
                             </custodian>
                             <section>
                                 <title value="Medication List"/>
@@ -79,21 +79,21 @@
                                 <text>
                                     <status value="generated"/>
                                     <div xmlns="http://www.w3.org/1999/xhtml">
-                                        Cette liste de médication a été générée automatiquement par le service eMedication CARA le 8 février 2023 à 09:11:19 UTC. Les paramètres utilisés pour la génération du document sont : les éléments de type Medication Treatment Plan Item, Prescription Item, Dispense Item et PADV sont inclus ; tous les traitements sont considérés.
+                            Cette liste de médication a été générée automatiquement par le service eMedication CARA le 16 février 2023 à 09:12:55 CET. Les paramètres utilisés pour la génération du document sont : les éléments de type Medication Treatment Plan Item, Prescription Item, Dispense Item et PADV sont inclus ; tous les traitements sont considérés.
                                     </div>
                                 </text>
                                 <entry>
-                                    <reference value="urn:uuid:cc9a1427-bd85-4b7f-ad7d-361d31b2607d"/>
+                                    <reference value="urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"/>
                                 </entry>
                                 <entry>
-                                    <reference value="urn:uuid:bb5450e6-4968-4bbe-bc31-da48c4896653"/>
+                                    <reference value="urn:uuid:1f88431a-80e5-46b3-a928-40bc5a63b08e"/>
                                 </entry>
                             </section>
                         </Composition>
                     </resource>
                 </entry>
                 <entry>
-                    <fullUrl value="urn:uuid:15d4b324-a8ea-445b-a07a-8613eff5bdd5"/>
+                    <fullUrl value="urn:uuid:8b91e3cf-85ab-468d-bd4a-2dbe742b7555"/>
                     <resource>
                         <Patient>
                             <identifier>
@@ -105,7 +105,7 @@
                                     </coding>
                                 </type>
                                 <system value="urn:oid:2.16.756.5.30.1.191.1.0.2.1"/>
-                                <value value="e7963774-9098-445f-9cab-5d52234b52c3"/>
+                                <value value="7a4ec59f-a024-4cfb-bc04-3339c53cb9ac"/>
                             </identifier>
                             <identifier>
                                 <use value="secondary"/>
@@ -115,8 +115,63 @@
                                         <code value="MR"/>
                                     </coding>
                                 </type>
-                                <system value="urn:oid:2.16.756.5.30.1.191.1.0.12.3.101"/>
-                                <value value="e04f4689-6402-4b1c-a62e-33cb4d4f32e7"/>
+                                <system value="urn:oid:2.16.756.5.30.1.191.4.1.10.1.3"/>
+                                <value value="L53672539"/>
+                            </identifier>
+                            <identifier>
+                                <use value="secondary"/>
+                                <type>
+                                    <coding>
+                                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                                        <code value="MR"/>
+                                    </coding>
+                                </type>
+                                <system value="urn:oid:2.16.756.5.30.1.196.3.2.1"/>
+                                <value value="MAGMED005"/>
+                            </identifier>
+                            <identifier>
+                                <use value="secondary"/>
+                                <type>
+                                    <coding>
+                                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                                        <code value="MR"/>
+                                    </coding>
+                                </type>
+                                <system value="urn:oid:2.16.756.5.30.1.196.2.2.1"/>
+                                <value value="3486389"/>
+                            </identifier>
+                            <identifier>
+                                <use value="secondary"/>
+                                <type>
+                                    <coding>
+                                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                                        <code value="MR"/>
+                                    </coding>
+                                </type>
+                                <system value="urn:oid:2.16.756.5.30.1.196.3.2.1"/>
+                                <value value="3503409"/>
+                            </identifier>
+                            <identifier>
+                                <use value="secondary"/>
+                                <type>
+                                    <coding>
+                                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                                        <code value="MR"/>
+                                    </coding>
+                                </type>
+                                <system value="urn:oid:2.16.756.5.30.1.196.2.2.1"/>
+                                <value value="3505915"/>
+                            </identifier>
+                            <identifier>
+                                <use value="secondary"/>
+                                <type>
+                                    <coding>
+                                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                                        <code value="MR"/>
+                                    </coding>
+                                </type>
+                                <system value="urn:oid:2.999.756.42.2"/>
+                                <value value="12345678"/>
                             </identifier>
                             <identifier>
                                 <use value="secondary"/>
@@ -127,7 +182,7 @@
                                     </coding>
                                 </type>
                                 <system value="urn:oid:2.16.756.5.30.1.128.4.1.4.2.3.2.1.1.1"/>
-                                <value value="99146299"/>
+                                <value value="99146298"/>
                             </identifier>
                             <identifier>
                                 <use value="secondary"/>
@@ -138,7 +193,7 @@
                                     </coding>
                                 </type>
                                 <system value="urn:oid:2.16.756.5.30.1.196.3.2.1"/>
-                                <value value="MAGMED011"/>
+                                <value value="3475203"/>
                             </identifier>
                             <identifier>
                                 <use value="secondary"/>
@@ -148,21 +203,21 @@
                                         <code value="MR"/>
                                     </coding>
                                 </type>
-                                <system value="urn:oid:2.16.756.5.30.1.196.3.2.1"/>
-                                <value value="MAGMED001"/>
+                                <system value="urn:oid:2.16.756.5.30.1.191.1.0.12.3.101"/>
+                                <value value="02fc1dd1-fc13-4ca0-874c-b8372b7e6cfc"/>
                             </identifier>
                             <active value="true"/>
                             <name>
-                                <family value="NEFF-WINGEIER"/>
-                                <given value="Trong Sang"/>
+                                <family value="Behluli-Qazimi"/>
+                                <given value="Leandra Corina"/>
                             </name>
-                            <gender value="male"/>
-                            <birthDate value="1987-10-08"/>
+                            <gender value="female"/>
+                            <birthDate value="2002-12-21"/>
                         </Patient>
                     </resource>
                 </entry>
                 <entry>
-                    <fullUrl value="urn:uuid:792b1dbb-5c63-445f-97c2-9dfa96454086"/>
+                    <fullUrl value="urn:uuid:2ddc0292-1204-4b8d-a938-a4c545dc7fda"/>
                     <resource>
                         <Device>
                             <deviceName>
@@ -177,16 +232,16 @@
                                 </coding>
                             </type>
                             <version>
-                                <value value="b75f0bc"/>
+                                <value value="d4a1ec2"/>
                             </version>
                             <owner>
-                                <reference value="urn:uuid:8ec48385-9f07-4cb7-87a9-e03acdfc0f93"/>
+                                <reference value="urn:uuid:983f48b5-538b-4629-96b5-1f7baf02cdc0"/>
                             </owner>
                         </Device>
                     </resource>
                 </entry>
                 <entry>
-                    <fullUrl value="urn:uuid:8ec48385-9f07-4cb7-87a9-e03acdfc0f93"/>
+                    <fullUrl value="urn:uuid:983f48b5-538b-4629-96b5-1f7baf02cdc0"/>
                     <resource>
                         <Organization>
                             <identifier>
@@ -194,11 +249,14 @@
                                 <value value="7601001407428"/>
                             </identifier>
                             <name value="Association CARA"/>
+                            <address>
+                                <country value="CH"/>
+                            </address>
                         </Organization>
                     </resource>
                 </entry>
                 <entry>
-                    <fullUrl value="urn:uuid:cc9a1427-bd85-4b7f-ad7d-361d31b2607d"/>
+                    <fullUrl value="urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"/>
                     <resource>
                         <MedicationStatement>
                             <text>
@@ -206,38 +264,38 @@
                                 <div xmlns="http://www.w3.org/1999/xhtml">
                                     <p>
                                         <b>
-                                            Generated Narrative: MedicationStatement
+                                Generated Narrative: MedicationStatement
                                         </b>
                                         <a name="1-3-MedStatTemesta"/>
                                     </p>
                                     <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
                                         <p style="margin-bottom: 0px">
-                                            Resource MedicationStatement "1-3-MedStatTemesta"
+                                Resource MedicationStatement "1-3-MedStatTemesta"
                                         </p>
                                         <p style="margin-bottom: 0px">
-                                            Profile:
+                                Profile:
                                             <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-medicationstatement.html">
-                                                CH EMED MedicationStatement
+                                    CH EMED MedicationStatement
                                             </a>
                                         </p>
                                     </div>
                                     <p>
                                         <b>
-                                            identifier
+                                identifier
                                         </b>
-                                        : id: urn:uuid:cc9a1427-bd85-4b7f-ad7d-361d31b2607d
+                            : id: urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153
                                     </p>
                                     <p>
                                         <b>
-                                            status
+                                status
                                         </b>
-                                        : completed
+                            : completed
                                     </p>
                                     <p>
                                         <b>
-                                            medication
+                                medication
                                         </b>
-                                        :
+                            :
                                         <a name="MedTemesta"/>
                                     </p>
                                     <blockquote>
@@ -247,80 +305,80 @@
                                         </p>
                                         <p>
                                             <b>
-                                                code
+                                    code
                                             </b>
-                                            : TEMESTA Expidet cpr orodisp 1 mg blister 20 pce
+                                : TEMESTA Expidet cpr orodisp 1 mg blister 20 pce
                                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">
-                                                (unknown#7680471020733)
+                                    (unknown#7680471020733)
                                             </span>
                                         </p>
                                         <p>
                                             <b>
-                                                form
+                                    form
                                             </b>
-                                            : Film-coated tablet
+                                : Film-coated tablet
                                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">
-                                                (
+                                    (
                                                 <a href="https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-edqm-standardterms.html">
-                                                    EDQM - Standard Terms
+                                        EDQM - Standard Terms
                                                 </a>
-                                                #10221000)
+                                    #10221000)
                                             </span>
                                         </p>
                                         <p>
                                             <b>
-                                                amount
+                                    amount
                                             </b>
-                                            : 20 Piece(s)
+                                : 20 Piece(s)
                                             <span style="background: LightGoldenRodYellow">
-                                                (Details: UCUM code {Piece} = '{Piece}')
+                                    (Details: UCUM code {Piece} = '{Piece}')
                                             </span>
-                                            /1 Package
+                                /1 Package
                                             <span style="background: LightGoldenRodYellow">
-                                                (Details: UCUM code {Package} = '{Package}')
+                                    (Details: UCUM code {Package} = '{Package}')
                                             </span>
                                         </p>
                                         <h3>
-                                            Ingredients
+                                Ingredients
                                         </h3>
                                         <table class="grid">
                                             <tr>
                                                 <td>
-                                                    -
+                                        -
                                                 </td>
                                                 <td>
                                                     <b>
-                                                        Item[x]
+                                            Item[x]
                                                     </b>
                                                 </td>
                                                 <td>
                                                     <b>
-                                                        Strength
+                                            Strength
                                                     </b>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    *
+                                        *
                                                 </td>
                                                 <td>
-                                                    Lorazépam
+                                        Lorazépam
                                                     <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">
-                                                        (
+                                            (
                                                         <a href="https://browser.ihtsdotools.org/">
-                                                            SNOMED CT
+                                                SNOMED CT
                                                         </a>
-                                                        #387106007 "Lorazepam (substance)")
+                                            #387106007 "Lorazepam (substance)")
                                                     </span>
                                                 </td>
                                                 <td>
-                                                    1 milligram
+                                        1 milligram
                                                     <span style="background: LightGoldenRodYellow">
-                                                        (Details: UCUM code mg = 'mg')
+                                            (Details: UCUM code mg = 'mg')
                                                     </span>
-                                                    /1 Tablet (unit of presentation)
+                                        /1 Tablet (unit of presentation)
                                                     <span style="background: LightGoldenRodYellow">
-                                                        (Details: SNOMED CT code 732936001 = 'Tablet (unit of presentation)')
+                                            (Details: SNOMED CT code 732936001 = 'Tablet (unit of presentation)')
                                                     </span>
                                                 </td>
                                             </tr>
@@ -328,52 +386,52 @@
                                     </blockquote>
                                     <p>
                                         <b>
-                                            subject
+                                subject
                                         </b>
-                                        :
+                            :
                                         <a href="#Patient_MadameDupont">
-                                            See above (Patient/MadameDupont)
+                                See above (Patient/MadameDupont)
                                         </a>
                                     </p>
                                     <p>
                                         <b>
-                                            reasonCode
+                                reasonCode
                                         </b>
-                                        : pour dormir
+                            : pour dormir
                                         <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">
-                                            ()
+                                ()
                                         </span>
                                     </p>
                                     <blockquote>
                                         <p>
                                             <b>
-                                                dosage
+                                    dosage
                                             </b>
                                         </p>
                                         <p>
                                             <b>
-                                                patientInstruction
+                                    patientInstruction
                                             </b>
-                                            : laisser fondre 1 comprimé sous la langue ½ heure avant le coucher 
-            (si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin)
+                                : laisser fondre 1 comprimé sous la langue ½ heure avant le coucher 
+(si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin)
                                         </p>
                                         <p>
                                             <b>
-                                                timing
+                                    timing
                                             </b>
-                                            : Starting 2019-02-12, , ?ngen-6?, Until 2019-02-15
+                                : Starting 2019-02-12, , ?ngen-6?, Until 2019-02-15
                                         </p>
                                         <p>
                                             <b>
-                                                route
+                                    route
                                             </b>
-                                            : Oral use
+                                : Oral use
                                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">
-                                                (
+                                    (
                                                 <a href="https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-edqm-standardterms.html">
-                                                    EDQM - Standard Terms
+                                        EDQM - Standard Terms
                                                 </a>
-                                                #20053000)
+                                    #20053000)
                                             </span>
                                         </p>
                                     </blockquote>
@@ -381,86 +439,86 @@
                                     <blockquote>
                                         <p>
                                             <b>
-                                                Generated Narrative: Medication #MedTemesta
+                                    Generated Narrative: Medication #MedTemesta
                                             </b>
                                             <a name="MedTemesta"/>
                                         </p>
                                         <p>
                                             <b>
-                                                code
+                                    code
                                             </b>
-                                            : TEMESTA Expidet cpr orodisp 1 mg blister 20 pce
+                                : TEMESTA Expidet cpr orodisp 1 mg blister 20 pce
                                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">
-                                                (unknown#7680471020733)
+                                    (unknown#7680471020733)
                                             </span>
                                         </p>
                                         <p>
                                             <b>
-                                                form
+                                    form
                                             </b>
-                                            : Film-coated tablet
+                                : Film-coated tablet
                                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">
-                                                (
+                                    (
                                                 <a href="https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-edqm-standardterms.html">
-                                                    EDQM - Standard Terms
+                                        EDQM - Standard Terms
                                                 </a>
-                                                #10221000)
+                                    #10221000)
                                             </span>
                                         </p>
                                         <p>
                                             <b>
-                                                amount
+                                    amount
                                             </b>
-                                            : 20 Piece(s)
+                                : 20 Piece(s)
                                             <span style="background: LightGoldenRodYellow">
-                                                (Details: UCUM code {Piece} = '{Piece}')
+                                    (Details: UCUM code {Piece} = '{Piece}')
                                             </span>
-                                            /1 Package
+                                /1 Package
                                             <span style="background: LightGoldenRodYellow">
-                                                (Details: UCUM code {Package} = '{Package}')
+                                    (Details: UCUM code {Package} = '{Package}')
                                             </span>
                                         </p>
                                         <h3>
-                                            Ingredients
+                                Ingredients
                                         </h3>
                                         <table class="grid">
                                             <tr>
                                                 <td>
-                                                    -
+                                        -
                                                 </td>
                                                 <td>
                                                     <b>
-                                                        Item[x]
+                                            Item[x]
                                                     </b>
                                                 </td>
                                                 <td>
                                                     <b>
-                                                        Strength
+                                            Strength
                                                     </b>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    *
+                                        *
                                                 </td>
                                                 <td>
-                                                    Lorazépam
+                                        Lorazépam
                                                     <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">
-                                                        (
+                                            (
                                                         <a href="https://browser.ihtsdotools.org/">
-                                                            SNOMED CT
+                                                SNOMED CT
                                                         </a>
-                                                        #387106007 "Lorazepam (substance)")
+                                            #387106007 "Lorazepam (substance)")
                                                     </span>
                                                 </td>
                                                 <td>
-                                                    1 milligram
+                                        1 milligram
                                                     <span style="background: LightGoldenRodYellow">
-                                                        (Details: UCUM code mg = 'mg')
+                                            (Details: UCUM code mg = 'mg')
                                                     </span>
-                                                    /1 Tablet (unit of presentation)
+                                        /1 Tablet (unit of presentation)
                                                     <span style="background: LightGoldenRodYellow">
-                                                        (Details: SNOMED CT code 732936001 = 'Tablet (unit of presentation)')
+                                            (Details: SNOMED CT code 732936001 = 'Tablet (unit of presentation)')
                                                     </span>
                                                 </td>
                                             </tr>
@@ -476,37 +534,37 @@
                                         <div xmlns="http://www.w3.org/1999/xhtml">
                                             <p>
                                                 <b>
-                                                    Generated Narrative: PractitionerRole
+                                        Generated Narrative: PractitionerRole
                                                 </b>
                                                 <a name="DoctorRochat"/>
                                             </p>
                                             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
                                                 <p style="margin-bottom: 0px">
-                                                    Resource PractitionerRole "DoctorRochat"
+                                        Resource PractitionerRole "DoctorRochat"
                                                 </p>
                                                 <p style="margin-bottom: 0px">
-                                                    Profile:
+                                        Profile:
                                                     <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html">
-                                                        CH EMED PractitionerRole
+                                            CH EMED PractitionerRole
                                                     </a>
                                                 </p>
                                             </div>
                                             <p>
                                                 <b>
-                                                    practitioner
+                                        practitioner
                                                 </b>
-                                                :
+                                    :
                                                 <a href="#Practitioner_Rochat">
-                                                    See above (Practitioner/Rochat)
+                                        See above (Practitioner/Rochat)
                                                 </a>
                                             </p>
                                             <p>
                                                 <b>
-                                                    organization
+                                        organization
                                                 </b>
-                                                :
+                                    :
                                                 <a href="#Organization_GeneralPractitioner">
-                                                    See above (Organization/GeneralPractitioner)
+                                        See above (Organization/GeneralPractitioner)
                                                 </a>
                                             </p>
                                         </div>
@@ -527,32 +585,32 @@
                                         <div xmlns="http://www.w3.org/1999/xhtml">
                                             <p>
                                                 <b>
-                                                    Generated Narrative: Practitioner
+                                        Generated Narrative: Practitioner
                                                 </b>
                                                 <a name="Rochat"/>
                                             </p>
                                             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
                                                 <p style="margin-bottom: 0px">
-                                                    Resource Practitioner "Rochat"
+                                        Resource Practitioner "Rochat"
                                                 </p>
                                                 <p style="margin-bottom: 0px">
-                                                    Profile:
+                                        Profile:
                                                     <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html">
-                                                        CH EMED Practitioner
+                                            CH EMED Practitioner
                                                     </a>
                                                 </p>
                                             </div>
                                             <p>
                                                 <b>
-                                                    identifier
+                                        identifier
                                                 </b>
-                                                : id: 7601000201041
+                                    : id: 7601000201041
                                             </p>
                                             <p>
                                                 <b>
-                                                    name
+                                        name
                                                 </b>
-                                                : Dr Rochat
+                                    : Dr Rochat
                                             </p>
                                         </div>
                                     </text>
@@ -575,38 +633,38 @@
                                         <div xmlns="http://www.w3.org/1999/xhtml">
                                             <p>
                                                 <b>
-                                                    Generated Narrative: Organization
+                                        Generated Narrative: Organization
                                                 </b>
                                                 <a name="GeneralPractitioner"/>
                                             </p>
                                             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
                                                 <p style="margin-bottom: 0px">
-                                                    Resource Organization "GeneralPractitioner"
+                                        Resource Organization "GeneralPractitioner"
                                                 </p>
                                                 <p style="margin-bottom: 0px">
-                                                    Profile:
+                                        Profile:
                                                     <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html">
-                                                        CH EMED Organization
+                                            CH EMED Organization
                                                     </a>
                                                 </p>
                                             </div>
                                             <p>
                                                 <b>
-                                                    identifier
+                                        identifier
                                                 </b>
-                                                : id: 7601000201041
+                                    : id: 7601000201041
                                             </p>
                                             <p>
                                                 <b>
-                                                    name
+                                        name
                                                 </b>
-                                                : Médecin de famille
+                                    : Médecin de famille
                                             </p>
                                             <p>
                                                 <b>
-                                                    address
+                                        address
                                                 </b>
-                                                : Krankenstrasse 2 Zürich 8005 CH
+                                    : Krankenstrasse 2 Zürich 8005 CH
                                             </p>
                                         </div>
                                     </text>
@@ -689,37 +747,37 @@
                                         <div xmlns="http://www.w3.org/1999/xhtml">
                                             <p>
                                                 <b>
-                                                    Generated Narrative: PractitionerRole
+                                        Generated Narrative: PractitionerRole
                                                 </b>
                                                 <a name="DoctorRochat"/>
                                             </p>
                                             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
                                                 <p style="margin-bottom: 0px">
-                                                    Resource PractitionerRole "DoctorRochat"
+                                        Resource PractitionerRole "DoctorRochat"
                                                 </p>
                                                 <p style="margin-bottom: 0px">
-                                                    Profile:
+                                        Profile:
                                                     <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html">
-                                                        CH EMED PractitionerRole
+                                            CH EMED PractitionerRole
                                                     </a>
                                                 </p>
                                             </div>
                                             <p>
                                                 <b>
-                                                    practitioner
+                                        practitioner
                                                 </b>
-                                                :
+                                    :
                                                 <a href="#Practitioner_Rochat">
-                                                    See above (Practitioner/Rochat)
+                                        See above (Practitioner/Rochat)
                                                 </a>
                                             </p>
                                             <p>
                                                 <b>
-                                                    organization
+                                        organization
                                                 </b>
-                                                :
+                                    :
                                                 <a href="#Organization_GeneralPractitioner">
-                                                    See above (Organization/GeneralPractitioner)
+                                        See above (Organization/GeneralPractitioner)
                                                 </a>
                                             </p>
                                         </div>
@@ -740,32 +798,32 @@
                                         <div xmlns="http://www.w3.org/1999/xhtml">
                                             <p>
                                                 <b>
-                                                    Generated Narrative: Practitioner
+                                        Generated Narrative: Practitioner
                                                 </b>
                                                 <a name="Rochat"/>
                                             </p>
                                             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
                                                 <p style="margin-bottom: 0px">
-                                                    Resource Practitioner "Rochat"
+                                        Resource Practitioner "Rochat"
                                                 </p>
                                                 <p style="margin-bottom: 0px">
-                                                    Profile:
+                                        Profile:
                                                     <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html">
-                                                        CH EMED Practitioner
+                                            CH EMED Practitioner
                                                     </a>
                                                 </p>
                                             </div>
                                             <p>
                                                 <b>
-                                                    identifier
+                                        identifier
                                                 </b>
-                                                : id: 7601000201041
+                                    : id: 7601000201041
                                             </p>
                                             <p>
                                                 <b>
-                                                    name
+                                        name
                                                 </b>
-                                                : Dr Rochat
+                                    : Dr Rochat
                                             </p>
                                         </div>
                                     </text>
@@ -788,38 +846,38 @@
                                         <div xmlns="http://www.w3.org/1999/xhtml">
                                             <p>
                                                 <b>
-                                                    Generated Narrative: Organization
+                                        Generated Narrative: Organization
                                                 </b>
                                                 <a name="GeneralPractitioner"/>
                                             </p>
                                             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
                                                 <p style="margin-bottom: 0px">
-                                                    Resource Organization "GeneralPractitioner"
+                                        Resource Organization "GeneralPractitioner"
                                                 </p>
                                                 <p style="margin-bottom: 0px">
-                                                    Profile:
+                                        Profile:
                                                     <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html">
-                                                        CH EMED Organization
+                                            CH EMED Organization
                                                     </a>
                                                 </p>
                                             </div>
                                             <p>
                                                 <b>
-                                                    identifier
+                                        identifier
                                                 </b>
-                                                : id: 7601000201041
+                                    : id: 7601000201041
                                             </p>
                                             <p>
                                                 <b>
-                                                    name
+                                        name
                                                 </b>
-                                                : Médecin de famille
+                                    : Médecin de famille
                                             </p>
                                             <p>
                                                 <b>
-                                                    address
+                                        address
                                                 </b>
-                                                : Krankenstrasse 2 Zürich 8005 CH
+                                    : Krankenstrasse 2 Zürich 8005 CH
                                             </p>
                                         </div>
                                     </text>
@@ -836,6 +894,20 @@
                                     </address>
                                 </Organization>
                             </contained>
+                            <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
+                                <extension url="id">
+                                    <valueIdentifier>
+                                        <system value="urn:ietf:rfc:3986"/>
+                                        <value value="urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"/>
+                                    </valueIdentifier>
+                                </extension>
+                                <extension url="externalDocumentId">
+                                    <valueIdentifier>
+                                        <system value="urn:ietf:rfc:3986"/>
+                                        <value value="urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"/>
+                                    </valueIdentifier>
+                                </extension>
+                            </extension>
                             <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author">
                                 <valueReference>
                                     <reference value="#practitioner-role-2"/>
@@ -843,14 +915,14 @@
                             </extension>
                             <identifier>
                                 <system value="urn:ietf:rfc:3986"/>
-                                <value value="urn:uuid:cc9a1427-bd85-4b7f-ad7d-361d31b2607d"/>
+                                <value value="urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"/>
                             </identifier>
                             <status value="completed"/>
                             <medicationReference>
                                 <reference value="#medication-1"/>
                             </medicationReference>
                             <subject>
-                                <reference value="urn:uuid:15d4b324-a8ea-445b-a07a-8613eff5bdd5"/>
+                                <reference value="urn:uuid:8b91e3cf-85ab-468d-bd4a-2dbe742b7555"/>
                             </subject>
                             <informationSource>
                                 <reference value="#practitioner-role-1"/>
@@ -889,7 +961,7 @@
                     </resource>
                 </entry>
                 <entry>
-                    <fullUrl value="urn:uuid:bb5450e6-4968-4bbe-bc31-da48c4896653"/>
+                    <fullUrl value="urn:uuid:1f88431a-80e5-46b3-a928-40bc5a63b08e"/>
                     <resource>
                         <Observation>
                             <text>
@@ -897,85 +969,85 @@
                                 <div xmlns="http://www.w3.org/1999/xhtml">
                                     <p>
                                         <b>
-                                            Generated Narrative: Observation
+                                Generated Narrative: Observation
                                         </b>
                                         <a name="2-1-ObsTemesta"/>
                                     </p>
                                     <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
                                         <p style="margin-bottom: 0px">
-                                            Resource Observation "2-1-ObsTemesta"
+                                Resource Observation "2-1-ObsTemesta"
                                         </p>
                                         <p style="margin-bottom: 0px">
-                                            Profile:
+                                Profile:
                                             <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-observation.html">
-                                                CH EMED Observation (PADV)
+                                    CH EMED Observation (PADV)
                                             </a>
                                         </p>
                                     </div>
                                     <blockquote>
                                         <p>
                                             <b>
-                                                CH EMED Extension Treatment Plan
+                                    CH EMED Extension Treatment Plan
                                             </b>
                                         </p>
                                         <p>
                                             <b>
-                                                value
+                                    value
                                             </b>
-                                            : id: urn:uuid:cc9a1427-bd85-4b7f-ad7d-361d31b2607d
+                                : id: urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153
                                         </p>
                                         <p>
                                             <b>
-                                                value
+                                    value
                                             </b>
-                                            : id: urn:uuid:cc9a1427-bd85-4b7f-ad7d-361d31b2607d
+                                : id: urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153
                                         </p>
                                     </blockquote>
                                     <p>
                                         <b>
-                                            identifier
+                                identifier
                                         </b>
-                                        : id: urn:uuid:bb5450e6-4968-4bbe-bc31-da48c4896653
+                            : id: urn:uuid:1f88431a-80e5-46b3-a928-40bc5a63b08e
                                     </p>
                                     <p>
                                         <b>
-                                            status
+                                status
                                         </b>
-                                        : final
+                            : final
                                     </p>
                                     <p>
                                         <b>
-                                            code
+                                code
                                         </b>
-                                        : CANCEL
+                            : CANCEL
                                         <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">
-                                            (
+                                (
                                             <a href="https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-ihe-pharmaceuticaladvicestatuslist.html">
-                                                IHE Pharmaceutical Advice Status List
+                                    IHE Pharmaceutical Advice Status List
                                             </a>
-                                            #CANCEL)
+                                #CANCEL)
                                         </span>
                                     </p>
                                     <p>
                                         <b>
-                                            subject
+                                subject
                                         </b>
-                                        :
+                            :
                                         <a href="#Patient_MadameDupont">
-                                            See above (Patient/MadameDupont)
+                                See above (Patient/MadameDupont)
                                         </a>
                                     </p>
                                     <p>
                                         <b>
-                                            effective
+                                effective
                                         </b>
-                                        : 2019-02-15 11:00:00+0100
+                            : 2019-02-15 11:00:00+0100
                                     </p>
                                     <p>
                                         <b>
-                                            note
+                                note
                                         </b>
-                                        : selon téléphone avec le médecin, arrêter le traitement car inefficace
+                            : selon téléphone avec le médecin, arrêter le traitement car inefficace
                                     </p>
                                 </div>
                             </text>
@@ -987,37 +1059,37 @@
                                         <div xmlns="http://www.w3.org/1999/xhtml">
                                             <p>
                                                 <b>
-                                                    Generated Narrative: PractitionerRole
+                                        Generated Narrative: PractitionerRole
                                                 </b>
                                                 <a name="Pharmacist"/>
                                             </p>
                                             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
                                                 <p style="margin-bottom: 0px">
-                                                    Resource PractitionerRole "Pharmacist"
+                                        Resource PractitionerRole "Pharmacist"
                                                 </p>
                                                 <p style="margin-bottom: 0px">
-                                                    Profile:
+                                        Profile:
                                                     <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html">
-                                                        CH EMED PractitionerRole
+                                            CH EMED PractitionerRole
                                                     </a>
                                                 </p>
                                             </div>
                                             <p>
                                                 <b>
-                                                    practitioner
+                                        practitioner
                                                 </b>
-                                                :
+                                    :
                                                 <a href="#Practitioner_Pharm">
-                                                    See above (Practitioner/Pharm)
+                                        See above (Practitioner/Pharm)
                                                 </a>
                                             </p>
                                             <p>
                                                 <b>
-                                                    organization
+                                        organization
                                                 </b>
-                                                :
+                                    :
                                                 <a href="#Organization_Pharmacy">
-                                                    See above (Organization/Pharmacy)
+                                        See above (Organization/Pharmacy)
                                                 </a>
                                             </p>
                                         </div>
@@ -1038,32 +1110,32 @@
                                         <div xmlns="http://www.w3.org/1999/xhtml">
                                             <p>
                                                 <b>
-                                                    Generated Narrative: Practitioner
+                                        Generated Narrative: Practitioner
                                                 </b>
                                                 <a name="Pharm"/>
                                             </p>
                                             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
                                                 <p style="margin-bottom: 0px">
-                                                    Resource Practitioner "Pharm"
+                                        Resource Practitioner "Pharm"
                                                 </p>
                                                 <p style="margin-bottom: 0px">
-                                                    Profile:
+                                        Profile:
                                                     <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html">
-                                                        CH EMED Practitioner
+                                            CH EMED Practitioner
                                                     </a>
                                                 </p>
                                             </div>
                                             <p>
                                                 <b>
-                                                    identifier
+                                        identifier
                                                 </b>
-                                                : id: 7601000876546
+                                    : id: 7601000876546
                                             </p>
                                             <p>
                                                 <b>
-                                                    name
+                                        name
                                                 </b>
-                                                : Pharmacien Pharm
+                                    : Pharmacien Pharm
                                             </p>
                                         </div>
                                     </text>
@@ -1085,38 +1157,38 @@
                                         <div xmlns="http://www.w3.org/1999/xhtml">
                                             <p>
                                                 <b>
-                                                    Generated Narrative: Organization
+                                        Generated Narrative: Organization
                                                 </b>
                                                 <a name="Pharmacy"/>
                                             </p>
                                             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
                                                 <p style="margin-bottom: 0px">
-                                                    Resource Organization "Pharmacy"
+                                        Resource Organization "Pharmacy"
                                                 </p>
                                                 <p style="margin-bottom: 0px">
-                                                    Profile:
+                                        Profile:
                                                     <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html">
-                                                        CH EMED Organization
+                                            CH EMED Organization
                                                     </a>
                                                 </p>
                                             </div>
                                             <p>
                                                 <b>
-                                                    identifier
+                                        identifier
                                                 </b>
-                                                : id: 7601000876546
+                                    : id: 7601000876546
                                             </p>
                                             <p>
                                                 <b>
-                                                    name
+                                        name
                                                 </b>
-                                                : Pharmacie
+                                    : Pharmacie
                                             </p>
                                             <p>
                                                 <b>
-                                                    address
+                                        address
                                                 </b>
-                                                : Apothekerstrasse 22 Zürich 8005 CH
+                                    : Apothekerstrasse 22 Zürich 8005 CH
                                             </p>
                                         </div>
                                     </text>
@@ -1141,37 +1213,37 @@
                                         <div xmlns="http://www.w3.org/1999/xhtml">
                                             <p>
                                                 <b>
-                                                    Generated Narrative: PractitionerRole
+                                        Generated Narrative: PractitionerRole
                                                 </b>
                                                 <a name="Pharmacist"/>
                                             </p>
                                             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
                                                 <p style="margin-bottom: 0px">
-                                                    Resource PractitionerRole "Pharmacist"
+                                        Resource PractitionerRole "Pharmacist"
                                                 </p>
                                                 <p style="margin-bottom: 0px">
-                                                    Profile:
+                                        Profile:
                                                     <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html">
-                                                        CH EMED PractitionerRole
+                                            CH EMED PractitionerRole
                                                     </a>
                                                 </p>
                                             </div>
                                             <p>
                                                 <b>
-                                                    practitioner
+                                        practitioner
                                                 </b>
-                                                :
+                                    :
                                                 <a href="#Practitioner_Pharm">
-                                                    See above (Practitioner/Pharm)
+                                        See above (Practitioner/Pharm)
                                                 </a>
                                             </p>
                                             <p>
                                                 <b>
-                                                    organization
+                                        organization
                                                 </b>
-                                                :
+                                    :
                                                 <a href="#Organization_Pharmacy">
-                                                    See above (Organization/Pharmacy)
+                                        See above (Organization/Pharmacy)
                                                 </a>
                                             </p>
                                         </div>
@@ -1192,32 +1264,32 @@
                                         <div xmlns="http://www.w3.org/1999/xhtml">
                                             <p>
                                                 <b>
-                                                    Generated Narrative: Practitioner
+                                        Generated Narrative: Practitioner
                                                 </b>
                                                 <a name="Pharm"/>
                                             </p>
                                             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
                                                 <p style="margin-bottom: 0px">
-                                                    Resource Practitioner "Pharm"
+                                        Resource Practitioner "Pharm"
                                                 </p>
                                                 <p style="margin-bottom: 0px">
-                                                    Profile:
+                                        Profile:
                                                     <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html">
-                                                        CH EMED Practitioner
+                                            CH EMED Practitioner
                                                     </a>
                                                 </p>
                                             </div>
                                             <p>
                                                 <b>
-                                                    identifier
+                                        identifier
                                                 </b>
-                                                : id: 7601000876546
+                                    : id: 7601000876546
                                             </p>
                                             <p>
                                                 <b>
-                                                    name
+                                        name
                                                 </b>
-                                                : Pharmacien Pharm
+                                    : Pharmacien Pharm
                                             </p>
                                         </div>
                                     </text>
@@ -1239,38 +1311,38 @@
                                         <div xmlns="http://www.w3.org/1999/xhtml">
                                             <p>
                                                 <b>
-                                                    Generated Narrative: Organization
+                                        Generated Narrative: Organization
                                                 </b>
                                                 <a name="Pharmacy"/>
                                             </p>
                                             <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
                                                 <p style="margin-bottom: 0px">
-                                                    Resource Organization "Pharmacy"
+                                        Resource Organization "Pharmacy"
                                                 </p>
                                                 <p style="margin-bottom: 0px">
-                                                    Profile:
+                                        Profile:
                                                     <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html">
-                                                        CH EMED Organization
+                                            CH EMED Organization
                                                     </a>
                                                 </p>
                                             </div>
                                             <p>
                                                 <b>
-                                                    identifier
+                                        identifier
                                                 </b>
-                                                : id: 7601000876546
+                                    : id: 7601000876546
                                             </p>
                                             <p>
                                                 <b>
-                                                    name
+                                        name
                                                 </b>
-                                                : Pharmacie
+                                    : Pharmacie
                                             </p>
                                             <p>
                                                 <b>
-                                                    address
+                                        address
                                                 </b>
-                                                : Apothekerstrasse 22 Zürich 8005 CH
+                                    : Apothekerstrasse 22 Zürich 8005 CH
                                             </p>
                                         </div>
                                     </text>
@@ -1287,6 +1359,34 @@
                                     </address>
                                 </Organization>
                             </contained>
+                            <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-pharmaceuticaladvice">
+                                <extension url="id">
+                                    <valueIdentifier>
+                                        <system value="urn:ietf:rfc:3986"/>
+                                        <value value="urn:uuid:63e4ae3d-3a79-476b-bb03-aa23a5e3e7bf"/>
+                                    </valueIdentifier>
+                                </extension>
+                                <extension url="externalDocumentId">
+                                    <valueIdentifier>
+                                        <system value="urn:ietf:rfc:3986"/>
+                                        <value value="urn:uuid:63e4ae3d-3a79-476b-bb03-aa23a5e3e7bf"/>
+                                    </valueIdentifier>
+                                </extension>
+                            </extension>
+                            <extension url="http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan">
+                                <extension url="id">
+                                    <valueIdentifier>
+                                        <system value="urn:ietf:rfc:3986"/>
+                                        <value value="urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"/>
+                                    </valueIdentifier>
+                                </extension>
+                                <extension url="externalDocumentId">
+                                    <valueIdentifier>
+                                        <system value="urn:ietf:rfc:3986"/>
+                                        <value value="urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"/>
+                                    </valueIdentifier>
+                                </extension>
+                            </extension>
                             <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author">
                                 <valueReference>
                                     <reference value="#practitioner-role-4"/>
@@ -1294,7 +1394,7 @@
                             </extension>
                             <identifier>
                                 <system value="urn:ietf:rfc:3986"/>
-                                <value value="urn:uuid:bb5450e6-4968-4bbe-bc31-da48c4896653"/>
+                                <value value="urn:uuid:1f88431a-80e5-46b3-a928-40bc5a63b08e"/>
                             </identifier>
                             <status value="final"/>
                             <code>
@@ -1304,7 +1404,7 @@
                                 </coding>
                             </code>
                             <subject>
-                                <reference value="urn:uuid:15d4b324-a8ea-445b-a07a-8613eff5bdd5"/>
+                                <reference value="urn:uuid:8b91e3cf-85ab-468d-bd4a-2dbe742b7555"/>
                             </subject>
                             <effectiveDateTime value="2019-02-15T11:00:00+01:00"/>
                             <performer>

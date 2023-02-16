@@ -1,19 +1,14 @@
 {
     "resourceType": "Bundle",
-    "meta": {
-        "profile": [
-            "http://example.com/StructureDefinition/pmlDoc"
-        ]
-    },
     "identifier": {
         "system": "urn:ietf:rfc:3986",
-        "value": "urn:uuid:935a9fcc-44f5-4533-8365-bb506e7611f5"
+        "value": "urn:uuid:9e156934-032c-47fb-bdcc-9abd0d56af72"
     },
     "type": "document",
-    "timestamp": "2023-02-08T09:11:19.299+00:00",
+    "timestamp": "2023-02-16T09:12:55.482+01:00",
     "entry": [
         {
-            "fullUrl": "urn:uuid:16c8ec15-cb79-4b96-a9a2-9f301939a4b8",
+            "fullUrl": "urn:uuid:8e151915-1d76-452b-95ad-4c4c54784465",
             "resource": {
                 "resourceType": "Composition",
                 "language": "fr-CH",
@@ -21,13 +16,13 @@
                     {
                         "url": "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient",
                         "valueReference": {
-                            "reference": "urn:uuid:15d4b324-a8ea-445b-a07a-8613eff5bdd5"
+                            "reference": "urn:uuid:8b91e3cf-85ab-468d-bd4a-2dbe742b7555"
                         }
                     }
                 ],
                 "identifier": {
                     "system": "urn:ietf:rfc:3986",
-                    "value": "urn:uuid:935a9fcc-44f5-4533-8365-bb506e7611f5"
+                    "value": "urn:uuid:9e156934-032c-47fb-bdcc-9abd0d56af72"
                 },
                 "status": "final",
                 "type": {
@@ -36,16 +31,21 @@
                             "system": "http://snomed.info/sct",
                             "code": "721912009",
                             "display": "Medication summary document (record artifact)"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "56445-0",
+                            "display": "Medication summary Document"
                         }
                     ]
                 },
                 "subject": {
-                    "reference": "urn:uuid:15d4b324-a8ea-445b-a07a-8613eff5bdd5"
+                    "reference": "urn:uuid:8b91e3cf-85ab-468d-bd4a-2dbe742b7555"
                 },
-                "date": "2023-02-08T09:11:19+00:00",
+                "date": "2023-02-16T09:12:55+01:00",
                 "author": [
                     {
-                        "reference": "urn:uuid:792b1dbb-5c63-445f-97c2-9dfa96454086"
+                        "reference": "urn:uuid:2ddc0292-1204-4b8d-a938-a4c545dc7fda"
                     }
                 ],
                 "title": "Liste de médication",
@@ -67,7 +67,7 @@
                     ]
                 },
                 "custodian": {
-                    "reference": "urn:uuid:8ec48385-9f07-4cb7-87a9-e03acdfc0f93"
+                    "reference": "urn:uuid:983f48b5-538b-4629-96b5-1f7baf02cdc0"
                 },
                 "section": [
                     {
@@ -83,14 +83,14 @@
                         },
                         "text": {
                             "status": "generated",
-                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cette liste de médication a été générée automatiquement par le service eMedication CARA le 8 février 2023 à 09:11:19 UTC. Les paramètres utilisés pour la génération du document sont : les éléments de type Medication Treatment Plan Item, Prescription Item, Dispense Item et PADV sont inclus ; tous les traitements sont considérés.</div>"
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cette liste de médication a été générée automatiquement par le service eMedication CARA le 16 février 2023 à 09:12:55 CET. Les paramètres utilisés pour la génération du document sont : les éléments de type Medication Treatment Plan Item, Prescription Item, Dispense Item et PADV sont inclus ; tous les traitements sont considérés.</div>"
                         },
                         "entry": [
                             {
-                                "reference": "urn:uuid:cc9a1427-bd85-4b7f-ad7d-361d31b2607d"
+                                "reference": "urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"
                             },
                             {
-                                "reference": "urn:uuid:bb5450e6-4968-4bbe-bc31-da48c4896653"
+                                "reference": "urn:uuid:1f88431a-80e5-46b3-a928-40bc5a63b08e"
                             }
                         ]
                     }
@@ -98,14 +98,9 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:15d4b324-a8ea-445b-a07a-8613eff5bdd5",
+            "fullUrl": "urn:uuid:8b91e3cf-85ab-468d-bd4a-2dbe742b7555",
             "resource": {
                 "resourceType": "Patient",
-                "meta": {
-                    "profile": [
-                        "http://hl7.org/fhir/StructureDefinition/Patient"
-                    ]
-                },
                 "identifier": [
                     {
                         "use": "official",
@@ -118,7 +113,7 @@
                             ]
                         },
                         "system": "urn:oid:2.16.756.5.30.1.191.1.0.2.1",
-                        "value": "e7963774-9098-445f-9cab-5d52234b52c3"
+                        "value": "7a4ec59f-a024-4cfb-bc04-3339c53cb9ac"
                     },
                     {
                         "use": "secondary",
@@ -130,8 +125,73 @@
                                 }
                             ]
                         },
-                        "system": "urn:oid:2.16.756.5.30.1.191.1.0.12.3.101",
-                        "value": "e04f4689-6402-4b1c-a62e-33cb4d4f32e7"
+                        "system": "urn:oid:2.16.756.5.30.1.191.4.1.10.1.3",
+                        "value": "L53672539"
+                    },
+                    {
+                        "use": "secondary",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "MR"
+                                }
+                            ]
+                        },
+                        "system": "urn:oid:2.16.756.5.30.1.196.3.2.1",
+                        "value": "MAGMED005"
+                    },
+                    {
+                        "use": "secondary",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "MR"
+                                }
+                            ]
+                        },
+                        "system": "urn:oid:2.16.756.5.30.1.196.2.2.1",
+                        "value": "3486389"
+                    },
+                    {
+                        "use": "secondary",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "MR"
+                                }
+                            ]
+                        },
+                        "system": "urn:oid:2.16.756.5.30.1.196.3.2.1",
+                        "value": "3503409"
+                    },
+                    {
+                        "use": "secondary",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "MR"
+                                }
+                            ]
+                        },
+                        "system": "urn:oid:2.16.756.5.30.1.196.2.2.1",
+                        "value": "3505915"
+                    },
+                    {
+                        "use": "secondary",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "MR"
+                                }
+                            ]
+                        },
+                        "system": "urn:oid:2.999.756.42.2",
+                        "value": "12345678"
                     },
                     {
                         "use": "secondary",
@@ -144,7 +204,7 @@
                             ]
                         },
                         "system": "urn:oid:2.16.756.5.30.1.128.4.1.4.2.3.2.1.1.1",
-                        "value": "99146299"
+                        "value": "99146298"
                     },
                     {
                         "use": "secondary",
@@ -157,7 +217,7 @@
                             ]
                         },
                         "system": "urn:oid:2.16.756.5.30.1.196.3.2.1",
-                        "value": "MAGMED011"
+                        "value": "3475203"
                     },
                     {
                         "use": "secondary",
@@ -169,25 +229,25 @@
                                 }
                             ]
                         },
-                        "system": "urn:oid:2.16.756.5.30.1.196.3.2.1",
-                        "value": "MAGMED001"
+                        "system": "urn:oid:2.16.756.5.30.1.191.1.0.12.3.101",
+                        "value": "02fc1dd1-fc13-4ca0-874c-b8372b7e6cfc"
                     }
                 ],
                 "active": true,
                 "name": [
                     {
-                        "family": "NEFF-WINGEIER",
+                        "family": "Behluli-Qazimi",
                         "given": [
-                            "Trong Sang"
+                            "Leandra Corina"
                         ]
                     }
                 ],
-                "gender": "male",
-                "birthDate": "1987-10-08"
+                "gender": "female",
+                "birthDate": "2002-12-21"
             }
         },
         {
-            "fullUrl": "urn:uuid:792b1dbb-5c63-445f-97c2-9dfa96454086",
+            "fullUrl": "urn:uuid:2ddc0292-1204-4b8d-a938-a4c545dc7fda",
             "resource": {
                 "resourceType": "Device",
                 "deviceName": [
@@ -207,55 +267,44 @@
                 },
                 "version": [
                     {
-                        "value": "b75f0bc"
+                        "value": "d4a1ec2"
                     }
                 ],
                 "owner": {
-                    "reference": "urn:uuid:8ec48385-9f07-4cb7-87a9-e03acdfc0f93"
+                    "reference": "urn:uuid:983f48b5-538b-4629-96b5-1f7baf02cdc0"
                 }
             }
         },
         {
-            "fullUrl": "urn:uuid:8ec48385-9f07-4cb7-87a9-e03acdfc0f93",
+            "fullUrl": "urn:uuid:983f48b5-538b-4629-96b5-1f7baf02cdc0",
             "resource": {
                 "resourceType": "Organization",
-                "meta": {
-                    "profile": [
-                        "http://hl7.org/fhir/StructureDefinition/Organization"
-                    ]
-                },
                 "identifier": [
                     {
                         "system": "urn:oid:2.51.1.3",
                         "value": "7601001407428"
                     }
                 ],
-                "name": "Association CARA"
+                "name": "Association CARA",
+                "address": [
+                    {
+                        "country": "CH"
+                    }
+                ]
             }
         },
         {
-            "fullUrl": "urn:uuid:cc9a1427-bd85-4b7f-ad7d-361d31b2607d",
+            "fullUrl": "urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153",
             "resource": {
                 "resourceType": "MedicationStatement",
-                "meta": {
-                    "profile": [
-                        "http://hl7.org/fhir/StructureDefinition/MedicationStatement"
-                    ]
-                },
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"1-3-MedStatTemesta\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;1-3-MedStatTemesta&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-medicationstatement.html\">CH EMED MedicationStatement</a></p></div><p><b>identifier</b>: id: urn:uuid:cc9a1427-bd85-4b7f-ad7d-361d31b2607d</p><p><b>status</b>: completed</p><p><b>medication</b>: <a name=\"MedTemesta\"> </a></p><blockquote><p/><p><a name=\"MedTemesta\"> </a></p><p><b>code</b>: TEMESTA Expidet cpr orodisp 1 mg blister 20 pce <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#7680471020733)</span></p><p><b>form</b>: Film-coated tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-edqm-standardterms.html\">EDQM - Standard Terms</a>#10221000)</span></p><p><b>amount</b>: 20 Piece(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {Piece} = '{Piece}')</span>/1 Package<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {Package} = '{Package}')</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>Lorazépam <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#387106007 &quot;Lorazepam (substance)&quot;)</span></td><td>1 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet (unit of presentation)<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT code 732936001 = 'Tablet (unit of presentation)')</span></td></tr></table></blockquote><p><b>subject</b>: <a href=\"#Patient_MadameDupont\">See above (Patient/MadameDupont)</a></p><p><b>reasonCode</b>: pour dormir <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><blockquote><p><b>dosage</b></p><p><b>patientInstruction</b>: laisser fondre 1 comprimé sous la langue ½ heure avant le coucher \n(si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin)</p><p><b>timing</b>: Starting 2019-02-12, , ?ngen-6?, Until 2019-02-15</p><p><b>route</b>: Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-edqm-standardterms.html\">EDQM - Standard Terms</a>#20053000)</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Medication #MedTemesta</b><a name=\"MedTemesta\"> </a></p><p><b>code</b>: TEMESTA Expidet cpr orodisp 1 mg blister 20 pce <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#7680471020733)</span></p><p><b>form</b>: Film-coated tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-edqm-standardterms.html\">EDQM - Standard Terms</a>#10221000)</span></p><p><b>amount</b>: 20 Piece(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {Piece} = '{Piece}')</span>/1 Package<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {Package} = '{Package}')</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>Lorazépam <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#387106007 &quot;Lorazepam (substance)&quot;)</span></td><td>1 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet (unit of presentation)<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT code 732936001 = 'Tablet (unit of presentation)')</span></td></tr></table></blockquote></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"1-3-MedStatTemesta\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;1-3-MedStatTemesta&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-medicationstatement.html\">CH EMED MedicationStatement</a></p></div><p><b>identifier</b>: id: urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153</p><p><b>status</b>: completed</p><p><b>medication</b>: <a name=\"MedTemesta\"> </a></p><blockquote><p/><p><a name=\"MedTemesta\"> </a></p><p><b>code</b>: TEMESTA Expidet cpr orodisp 1 mg blister 20 pce <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#7680471020733)</span></p><p><b>form</b>: Film-coated tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-edqm-standardterms.html\">EDQM - Standard Terms</a>#10221000)</span></p><p><b>amount</b>: 20 Piece(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {Piece} = '{Piece}')</span>/1 Package<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {Package} = '{Package}')</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>Lorazépam <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#387106007 &quot;Lorazepam (substance)&quot;)</span></td><td>1 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet (unit of presentation)<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT code 732936001 = 'Tablet (unit of presentation)')</span></td></tr></table></blockquote><p><b>subject</b>: <a href=\"#Patient_MadameDupont\">See above (Patient/MadameDupont)</a></p><p><b>reasonCode</b>: pour dormir <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><blockquote><p><b>dosage</b></p><p><b>patientInstruction</b>: laisser fondre 1 comprimé sous la langue ½ heure avant le coucher \n(si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin)</p><p><b>timing</b>: Starting 2019-02-12, , ?ngen-6?, Until 2019-02-15</p><p><b>route</b>: Oral use <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-edqm-standardterms.html\">EDQM - Standard Terms</a>#20053000)</span></p></blockquote><hr/><blockquote><p><b>Generated Narrative: Medication #MedTemesta</b><a name=\"MedTemesta\"> </a></p><p><b>code</b>: TEMESTA Expidet cpr orodisp 1 mg blister 20 pce <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#7680471020733)</span></p><p><b>form</b>: Film-coated tablet <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-edqm-standardterms.html\">EDQM - Standard Terms</a>#10221000)</span></p><p><b>amount</b>: 20 Piece(s)<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {Piece} = '{Piece}')</span>/1 Package<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {Package} = '{Package}')</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td>-</td><td><b>Item[x]</b></td><td><b>Strength</b></td></tr><tr><td>*</td><td>Lorazépam <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#387106007 &quot;Lorazepam (substance)&quot;)</span></td><td>1 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg = 'mg')</span>/1 Tablet (unit of presentation)<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT code 732936001 = 'Tablet (unit of presentation)')</span></td></tr></table></blockquote></div>"
                 },
                 "contained": [
                     {
                         "resourceType": "PractitionerRole",
                         "id": "practitioner-role-2",
-                        "meta": {
-                            "profile": [
-                                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole",
-                                "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
-                            ]
-                        },
                         "text": {
                             "status": "generated",
                             "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"DoctorRochat\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;DoctorRochat&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html\">CH EMED PractitionerRole</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_Rochat\">See above (Practitioner/Rochat)</a></p><p><b>organization</b>: <a href=\"#Organization_GeneralPractitioner\">See above (Organization/GeneralPractitioner)</a></p></div>"
@@ -270,15 +319,9 @@
                     {
                         "resourceType": "Practitioner",
                         "id": "practitioner-2",
-                        "meta": {
-                            "profile": [
-                                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner",
-                                "http://hl7.org/fhir/StructureDefinition/Practitioner"
-                            ]
-                        },
                         "text": {
                             "status": "generated",
-                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"Rochat\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;Rochat&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html\">CH EMED Practitioner</a></p></div><p><b>identifier</b>: id: 7601000201041</p><p><b>name</b>: Dr Rochat </p></div>"
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"Rochat\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;Rochat&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html\">CH EMED Practitioner</a></p></div><p><b>identifier</b>: id: 7601000201041</p><p><b>name</b>: Dr Rochat </p></div>"
                         },
                         "identifier": [
                             {
@@ -301,15 +344,9 @@
                     {
                         "resourceType": "Organization",
                         "id": "organization-2",
-                        "meta": {
-                            "profile": [
-                                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-organization",
-                                "http://hl7.org/fhir/StructureDefinition/Organization"
-                            ]
-                        },
                         "text": {
                             "status": "generated",
-                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"GeneralPractitioner\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;GeneralPractitioner&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html\">CH EMED Organization</a></p></div><p><b>identifier</b>: id: 7601000201041</p><p><b>name</b>: Médecin de famille</p><p><b>address</b>: Krankenstrasse 2 Zürich 8005 CH </p></div>"
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"GeneralPractitioner\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;GeneralPractitioner&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html\">CH EMED Organization</a></p></div><p><b>identifier</b>: id: 7601000201041</p><p><b>name</b>: Médecin de famille</p><p><b>address</b>: Krankenstrasse 2 Zürich 8005 CH </p></div>"
                         },
                         "identifier": [
                             {
@@ -332,12 +369,6 @@
                     {
                         "resourceType": "Medication",
                         "id": "medication-1",
-                        "meta": {
-                            "profile": [
-                                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-medication",
-                                "http://hl7.org/fhir/StructureDefinition/Medication"
-                            ]
-                        },
                         "code": {
                             "coding": [
                                 {
@@ -403,12 +434,6 @@
                     {
                         "resourceType": "PractitionerRole",
                         "id": "practitioner-role-1",
-                        "meta": {
-                            "profile": [
-                                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole",
-                                "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
-                            ]
-                        },
                         "text": {
                             "status": "generated",
                             "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"DoctorRochat\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;DoctorRochat&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html\">CH EMED PractitionerRole</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_Rochat\">See above (Practitioner/Rochat)</a></p><p><b>organization</b>: <a href=\"#Organization_GeneralPractitioner\">See above (Organization/GeneralPractitioner)</a></p></div>"
@@ -423,15 +448,9 @@
                     {
                         "resourceType": "Practitioner",
                         "id": "practitioner-1",
-                        "meta": {
-                            "profile": [
-                                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner",
-                                "http://hl7.org/fhir/StructureDefinition/Practitioner"
-                            ]
-                        },
                         "text": {
                             "status": "generated",
-                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"Rochat\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;Rochat&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html\">CH EMED Practitioner</a></p></div><p><b>identifier</b>: id: 7601000201041</p><p><b>name</b>: Dr Rochat </p></div>"
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"Rochat\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;Rochat&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html\">CH EMED Practitioner</a></p></div><p><b>identifier</b>: id: 7601000201041</p><p><b>name</b>: Dr Rochat </p></div>"
                         },
                         "identifier": [
                             {
@@ -454,15 +473,9 @@
                     {
                         "resourceType": "Organization",
                         "id": "organization-1",
-                        "meta": {
-                            "profile": [
-                                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-organization",
-                                "http://hl7.org/fhir/StructureDefinition/Organization"
-                            ]
-                        },
                         "text": {
                             "status": "generated",
-                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"GeneralPractitioner\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;GeneralPractitioner&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html\">CH EMED Organization</a></p></div><p><b>identifier</b>: id: 7601000201041</p><p><b>name</b>: Médecin de famille</p><p><b>address</b>: Krankenstrasse 2 Zürich 8005 CH </p></div>"
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"GeneralPractitioner\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;GeneralPractitioner&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html\">CH EMED Organization</a></p></div><p><b>identifier</b>: id: 7601000201041</p><p><b>name</b>: Médecin de famille</p><p><b>address</b>: Krankenstrasse 2 Zürich 8005 CH </p></div>"
                         },
                         "identifier": [
                             {
@@ -494,7 +507,7 @@
                 "identifier": [
                     {
                         "system": "urn:ietf:rfc:3986",
-                        "value": "urn:uuid:cc9a1427-bd85-4b7f-ad7d-361d31b2607d"
+                        "value": "urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"
                     }
                 ],
                 "status": "completed",
@@ -502,7 +515,7 @@
                     "reference": "#medication-1"
                 },
                 "subject": {
-                    "reference": "urn:uuid:15d4b324-a8ea-445b-a07a-8613eff5bdd5"
+                    "reference": "urn:uuid:8b91e3cf-85ab-468d-bd4a-2dbe742b7555"
                 },
                 "informationSource": {
                     "reference": "#practitioner-role-1"
@@ -551,28 +564,17 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:bb5450e6-4968-4bbe-bc31-da48c4896653",
+            "fullUrl": "urn:uuid:1f88431a-80e5-46b3-a928-40bc5a63b08e",
             "resource": {
                 "resourceType": "Observation",
-                "meta": {
-                    "profile": [
-                        "http://hl7.org/fhir/StructureDefinition/Observation"
-                    ]
-                },
                 "text": {
                     "status": "extensions",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"2-1-ObsTemesta\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;2-1-ObsTemesta&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-observation.html\">CH EMED Observation (PADV)</a></p></div><blockquote><p><b>CH EMED Extension Treatment Plan</b></p><p><b>value</b>: id: urn:uuid:cc9a1427-bd85-4b7f-ad7d-361d31b2607d</p><p><b>value</b>: id: urn:uuid:cc9a1427-bd85-4b7f-ad7d-361d31b2607d</p></blockquote><p><b>identifier</b>: id: urn:uuid:bb5450e6-4968-4bbe-bc31-da48c4896653</p><p><b>status</b>: final</p><p><b>code</b>: CANCEL <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-ihe-pharmaceuticaladvicestatuslist.html\">IHE Pharmaceutical Advice Status List</a>#CANCEL)</span></p><p><b>subject</b>: <a href=\"#Patient_MadameDupont\">See above (Patient/MadameDupont)</a></p><p><b>effective</b>: 2019-02-15 11:00:00+0100</p><p><b>note</b>: selon téléphone avec le médecin, arrêter le traitement car inefficace</p></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"2-1-ObsTemesta\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;2-1-ObsTemesta&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-observation.html\">CH EMED Observation (PADV)</a></p></div><blockquote><p><b>CH EMED Extension Treatment Plan</b></p><p><b>value</b>: id: urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153</p><p><b>value</b>: id: urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153</p></blockquote><p><b>identifier</b>: id: urn:uuid:1f88431a-80e5-46b3-a928-40bc5a63b08e</p><p><b>status</b>: final</p><p><b>code</b>: CANCEL <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//CodeSystem-ihe-pharmaceuticaladvicestatuslist.html\">IHE Pharmaceutical Advice Status List</a>#CANCEL)</span></p><p><b>subject</b>: <a href=\"#Patient_MadameDupont\">See above (Patient/MadameDupont)</a></p><p><b>effective</b>: 2019-02-15 11:00:00+0100</p><p><b>note</b>: selon téléphone avec le médecin, arrêter le traitement car inefficace</p></div>"
                 },
                 "contained": [
                     {
                         "resourceType": "PractitionerRole",
                         "id": "practitioner-role-4",
-                        "meta": {
-                            "profile": [
-                                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole",
-                                "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
-                            ]
-                        },
                         "text": {
                             "status": "generated",
                             "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"Pharmacist\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;Pharmacist&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html\">CH EMED PractitionerRole</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_Pharm\">See above (Practitioner/Pharm)</a></p><p><b>organization</b>: <a href=\"#Organization_Pharmacy\">See above (Organization/Pharmacy)</a></p></div>"
@@ -587,15 +589,9 @@
                     {
                         "resourceType": "Practitioner",
                         "id": "practitioner-4",
-                        "meta": {
-                            "profile": [
-                                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner",
-                                "http://hl7.org/fhir/StructureDefinition/Practitioner"
-                            ]
-                        },
                         "text": {
                             "status": "generated",
-                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"Pharm\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;Pharm&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html\">CH EMED Practitioner</a></p></div><p><b>identifier</b>: id: 7601000876546</p><p><b>name</b>: Pharmacien Pharm </p></div>"
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"Pharm\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;Pharm&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html\">CH EMED Practitioner</a></p></div><p><b>identifier</b>: id: 7601000876546</p><p><b>name</b>: Pharmacien Pharm </p></div>"
                         },
                         "identifier": [
                             {
@@ -615,15 +611,9 @@
                     {
                         "resourceType": "Organization",
                         "id": "organization-4",
-                        "meta": {
-                            "profile": [
-                                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-organization",
-                                "http://hl7.org/fhir/StructureDefinition/Organization"
-                            ]
-                        },
                         "text": {
                             "status": "generated",
-                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"Pharmacy\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;Pharmacy&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html\">CH EMED Organization</a></p></div><p><b>identifier</b>: id: 7601000876546</p><p><b>name</b>: Pharmacie</p><p><b>address</b>: Apothekerstrasse 22 Zürich 8005 CH </p></div>"
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"Pharmacy\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;Pharmacy&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html\">CH EMED Organization</a></p></div><p><b>identifier</b>: id: 7601000876546</p><p><b>name</b>: Pharmacie</p><p><b>address</b>: Apothekerstrasse 22 Zürich 8005 CH </p></div>"
                         },
                         "identifier": [
                             {
@@ -646,12 +636,6 @@
                     {
                         "resourceType": "PractitionerRole",
                         "id": "practitioner-role-3",
-                        "meta": {
-                            "profile": [
-                                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitionerrole",
-                                "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
-                            ]
-                        },
                         "text": {
                             "status": "generated",
                             "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"Pharmacist\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;Pharmacist&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html\">CH EMED PractitionerRole</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_Pharm\">See above (Practitioner/Pharm)</a></p><p><b>organization</b>: <a href=\"#Organization_Pharmacy\">See above (Organization/Pharmacy)</a></p></div>"
@@ -666,15 +650,9 @@
                     {
                         "resourceType": "Practitioner",
                         "id": "practitioner-3",
-                        "meta": {
-                            "profile": [
-                                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-practitioner",
-                                "http://hl7.org/fhir/StructureDefinition/Practitioner"
-                            ]
-                        },
                         "text": {
                             "status": "generated",
-                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"Pharm\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;Pharm&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html\">CH EMED Practitioner</a></p></div><p><b>identifier</b>: id: 7601000876546</p><p><b>name</b>: Pharmacien Pharm </p></div>"
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"Pharm\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;Pharm&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitioner.html\">CH EMED Practitioner</a></p></div><p><b>identifier</b>: id: 7601000876546</p><p><b>name</b>: Pharmacien Pharm </p></div>"
                         },
                         "identifier": [
                             {
@@ -694,15 +672,9 @@
                     {
                         "resourceType": "Organization",
                         "id": "organization-3",
-                        "meta": {
-                            "profile": [
-                                "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-organization",
-                                "http://hl7.org/fhir/StructureDefinition/Organization"
-                            ]
-                        },
                         "text": {
                             "status": "generated",
-                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"Pharmacy\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;Pharmacy&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html\">CH EMED Organization</a></p></div><p><b>identifier</b>: id: 7601000876546</p><p><b>name</b>: Pharmacie</p><p><b>address</b>: Apothekerstrasse 22 Zürich 8005 CH </p></div>"
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"Pharmacy\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;Pharmacy&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-organization.html\">CH EMED Organization</a></p></div><p><b>identifier</b>: id: 7601000876546</p><p><b>name</b>: Pharmacie</p><p><b>address</b>: Apothekerstrasse 22 Zürich 8005 CH </p></div>"
                         },
                         "identifier": [
                             {
@@ -725,6 +697,25 @@
                 ],
                 "extension": [
                     {
+                        "url": "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan",
+                        "extension": [
+                            {
+                                "url": "id",
+                                "valueIdentifier": {
+                                    "system": "urn:ietf:rfc:3986",
+                                    "value": "urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"
+                                }
+                            },
+                            {
+                                "url": "externalDocumentId",
+                                "valueIdentifier": {
+                                    "system": "urn:ietf:rfc:3986",
+                                    "value": "urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"
+                                }
+                            }
+                        ]
+                    },
+                    {
                         "url": "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author",
                         "valueReference": {
                             "reference": "#practitioner-role-4"
@@ -734,7 +725,7 @@
                 "identifier": [
                     {
                         "system": "urn:ietf:rfc:3986",
-                        "value": "urn:uuid:bb5450e6-4968-4bbe-bc31-da48c4896653"
+                        "value": "urn:uuid:1f88431a-80e5-46b3-a928-40bc5a63b08e"
                     }
                 ],
                 "status": "final",
@@ -747,7 +738,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "urn:uuid:15d4b324-a8ea-445b-a07a-8613eff5bdd5"
+                    "reference": "urn:uuid:8b91e3cf-85ab-468d-bd4a-2dbe742b7555"
                 },
                 "effectiveDateTime": "2019-02-15T11:00:00+01:00",
                 "performer": [
