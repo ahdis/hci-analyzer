@@ -9,8 +9,9 @@
   - [Authors](#authors)
     - [Author of the document](#author-of-the-document)
     - [Author of the medical decision](#author-of-the-medical-decision)
-  - [Patient](#patient)
+  - [Patient (Subject)](#patient-subject)
     - [Identifier](#identifier)
+    - [Determine Patient](#determine-patient)
   - [Info Input Document](#info-input-document)
     - [Input Document Source](#input-document-source-1)
     - [Input Document Type](#input-document-type)
@@ -91,6 +92,8 @@ In order to map the author of the medical decision, the following procedure is f
          * PMP3: see [schematic illustration](PR-UCs-PMP3.jpg)     
          * **Note**: If there is a changed MedicationStatement (PADV CHANGE) without informationSource, take the Observation.performer, from where the changed MedicationStatement is referenced (see PMP1 UC). 
       * TODO (https://github.com/ahdis/hci-analyzer/issues/7): MedicationRequest.requester -> PractitionerRole (PractitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input
+         * [PMP4 IN](Parameters-PMP4-Input-Analyzer.json.html)   
+           [PMP4 OUT]()
 
    2. Composition.section.author   
       * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input
@@ -105,9 +108,15 @@ In order to map the author of the medical decision, the following procedure is f
          * [1-1 PatAuthor IN](Parameters-1-1-PatAuthor-Input-Analyzer.json.html): AuthorMonikaWegmueller =>   
            [1-1 PatAuthor OUT](Bundle-1-1-PatAuthor-ConsolidatedMedicationCard.json.html): AuthorMonikaWegmueller  
 
-#### Patient
+#### Patient (Subject)
 ##### Identifier
 If there is the same patient with different identifiers (e.g. '1234' and '5678') in the [input documents](Parameters-A7-Input-Analyzer.json.html), then all identifiers will be listed with the patient in the [output document](Bundle-A7-ConsolidatedMedicationCard.json.html).
+
+##### Determine Patient
+To determine the single patient - which will be set as reference for the Subject property for all resources of type MedicationStatement, MedicationRequest, MedicationDispense, Observation as well as the header MedicationStatement – the analyzer does following:
+* Take the newest bundle (according to the Timestamp property)
+* Resolve the patient reference in the composition subject
+* Get all patients referenced as subject in the compositions of the remaining bundles and add their identifiers, if they are not already contained. Each System/Value pair will only be contained once; it is possible that identifiers contain different values for the same System if these are not coherent across the different bundles
 
 #### Info Input Document
 The extension [Info Input Document](StructureDefinition-infoinputdocument.html) represents the information of the input document (source, type, date, id). This complexe extension contains these 4 extensions:
