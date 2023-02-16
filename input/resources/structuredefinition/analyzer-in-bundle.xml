@@ -16,7 +16,7 @@
     <element id="Bundle">
       <path value="Bundle"/>
       <short value="Analyzer IN Bundle"/>
-      <constraint>
+      <!--<constraint>
         <key value="analyzer-in-document"/>
         <severity value="warning"/>
         <human value="The Bundle needs to conform to the requirements of the CH EMED documents"/>
@@ -26,7 +26,7 @@
           conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-pharmaceuticaladvice') or 
           conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationlist') or 
           conformsTo('http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationcard')"/>
-      </constraint>
+      </constraint>-->
     </element>
     <element id="Bundle.entry">
       <path value="Bundle.entry"/>
