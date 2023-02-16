@@ -10,7 +10,7 @@
    <kind value="resource"/>
    <abstract value="false"/>
    <type value="Patient"/>
-   <baseDefinition value="http://chmed.emediplan.ch/fhir/StructureDefinition/chmed-patient"/>
+   <baseDefinition value="http://chmed.emediplan.ch/fhir/StructureDefinition/chmed-pre-patient"/>
    <derivation value="constraint"/>
    <differential>
       <element id="Patient">
