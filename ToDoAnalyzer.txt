@@ -1,42 +1,44 @@
 To do's for a manually adapted Input Document
 ------------------------------------------------------------------------------------------
-- Only for IG: change meta.profile: http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters
+- Put each Bundle in a Parameter (Parameters.parameter.name ="ch-emed-doc"), , incl. id for IG
 - Only for IG: add bundle profile for validation: http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-document-medicationlist
-- Put each Bundle in a Parameter (Parameters.parameter.name ="ch-emed-doc")
 - Add Composition.extension:inputdocumentsource
-
-CH EMED:
-- Remove .text elements
-- Add Composition.extension:inputdocumentsource (http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource)
+- Remove .meta.profile elements
+- CH EMED documents: Remove .text elements (generetad through IG publisher)
 
 
 To do's for a manually adapted consolidated Medciation Card document (from Input Document)
 ------------------------------------------------------------------------------------------
+- Remove Resource.text elements
 - Only for IG: update fullUrls/id's 
 - Set a new Bundle.identifier & Composition.identifier
 - Set a new Bundle.timestamp & Composition.date
-- Remove from Composition: language, ext:inputdocumentsource, ext:informationRecipient, confidentiality, custodian
-- Change Composition.type to SCT#721912009 "Medication summary document (record artifact)"
-- Change Composition.author to Device/Analyzer
+- Remove from Composition: 
+  - language
+  - ext:inputdocumentsource
+  - ext:informationRecipient (maybe with entry)
+  - confidentiality
+  - custodian (maybe with entry)
+- Change Composition.type to SCT#721912009
+- Change Composition.author to Device/Analyzer (incl. adding entry)
 - Change Composition.title to "Medikationsplan"
 - Change Composition.section -> only set the reference(s) to the 'Header MedicationStatement'
-- From Input Document: Composition.author/Composition.section.author -> Patient/Practitioner (author of medical decision)
-  - Header MedicationStatement.informationSource
-  - Original MedicationStatement.informationSource
-  - Original MedicationDispense.performer.actor
-  - Original MedicationRequest.performer
-  - Original Observation.performer
-- Header MedicationStatement
+
+- Original entries
+  - add extension infoinputdocument
+  - add category (not for obs)
+  - add informationSource (MedicationStatement.informationSource / MedicationDispense.performer.actor / MedicationRequest.requester / Observation.performer)
+  - remove narrativeLink extension
+
+- Header MedicationStatement (below original entries)
+  - copy MedStat
   - add category
-  - add informationSource (see above)
+  - add informationSource (MedicationStatement.informationSource / MedicationDispense.performer.actor / MedicationRequest.requester / Observation.performer)
   - add derivedFrom (history)
   - remove reasonCode
   - remove narrativeLink extension
   - change identifier
   - stopped medication: remove dosage (add dosage[nonstructured].text = "-") 
-- Original entries
-  - add extension infoinputdocument
-  - add category (not for obs)
-  - add informationSource (see above)
-  - remove narrativeLink extension
+  - status = 'unknown'
+
 - Observation History  
