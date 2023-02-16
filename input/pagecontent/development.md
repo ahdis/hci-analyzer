@@ -9,6 +9,7 @@
   - [Authors](#authors)
     - [Author of the document](#author-of-the-document)
     - [Author of the medical decision](#author-of-the-medical-decision)
+  - [PractitionerRole (Practitioner \& Organization)](#practitionerrole-practitioner--organization)
   - [Patient (Subject)](#patient-subject)
     - [Identifier](#identifier)
     - [Determine Patient](#determine-patient)
@@ -107,6 +108,10 @@ In order to map the author of the medical decision, the following procedure is f
       * -> Patient => the resource can be taken from the input   
          * [1-1 PatAuthor IN](Parameters-1-1-PatAuthor-Input-Analyzer.json.html): AuthorMonikaWegmueller =>   
            [1-1 PatAuthor OUT](Bundle-1-1-PatAuthor-ConsolidatedMedicationCard.json.html): AuthorMonikaWegmueller  
+
+
+#### PractitionerRole (Practitioner & Organization)
+A distinct is made based on the GLN of the referenced Practitioner and Organization. Thus a PractitionerRole is inserted only once if these two GLNs match.
 
 #### Patient (Subject)
 ##### Identifier
