@@ -161,8 +161,10 @@ Die in diesem Abschnitt abgebildeten Anwendungsfälle basieren auf Elementen des
 
 #### CHANGE
 Cetirizine: 0-0-1-0 => 1-0-1-0
-* [PMP1 Input Analyzer](Parameters-PMP1-Input-Analyzer.html)
+* [PMP1 VAR1 Input Analyzer](Parameters-PMP1-VAR1-Input-Analyzer.html)
    * Inputdokument: Medication List document vom PMP
+* [PMP1 VAR2 Input Analyzer](Parameters-PMP1-VAR2-Input-Analyzer.html)
+   * Inputdokument: Medication List document vom PMP (als Testfall adaptiert)
 * [PMP1 Consolidated Medication Card document](Bundle-PMP1-ConsolidatedMedicationCard.html) 
 
 {% include img.html img="uc_pmp-1.png" caption="Fig.: Schematic illustration of the input and output documents" width="80%" %}
