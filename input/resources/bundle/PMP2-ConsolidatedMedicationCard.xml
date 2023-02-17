@@ -185,24 +185,24 @@
 
     <!-- PractitionerRole 1/2 (MedStat) -->
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/practitioner-role-2"/>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/practitioner-role-1"/>
         <resource>
             <PractitionerRole>
-                <id value="practitioner-role-2"/>
+                <id value="practitioner-role-1"/>
                 <practitioner>
-                    <reference value="Practitioner/practitioner-2"/>
+                    <reference value="Practitioner/practitioner-1"/>
                 </practitioner>
                 <organization>
-                    <reference value="Organization/organization-2"/>
+                    <reference value="Organization/organization-1"/>
                 </organization>
             </PractitionerRole>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Practitioner/practitioner-2"/>
+        <fullUrl value="http://test.fhir.ch/r4/Practitioner/practitioner-1"/>
         <resource>
             <Practitioner>
-                <id value="practitioner-2"/>
+                <id value="practitioner-1"/>
                 <identifier>
                     <system value="urn:oid:2.51.1.3"/>
                     <value value="7601000201041"/>
@@ -216,10 +216,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Organization/organization-2"/>
+        <fullUrl value="http://test.fhir.ch/r4/Organization/organization-1"/>
         <resource>
             <Organization>
-                <id value="organization-2"/>
+                <id value="organization-1"/>
                 <identifier>
                     <system value="urn:oid:2.51.1.3"/>
                     <value value="7601000201041"/>
@@ -227,6 +227,57 @@
                 <name value="Médecin de famille"/>
                 <address>
                     <line value="Krankenstrasse 2"/>
+                    <city value="Zürich"/>
+                    <postalCode value="8005"/>
+                    <country value="CH"/>
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+
+        <!-- PractitionerRole 3/4 (Obs) -->
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/practitioner-role-3"/>
+        <resource>
+            <PractitionerRole>
+                <id value="practitioner-role-3"/>
+                <practitioner>
+                    <reference value="Practitioner/practitioner-3"/>
+                </practitioner>
+                <organization>
+                    <reference value="Organization/organization-3"/>
+                </organization>
+            </PractitionerRole>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Practitioner/practitioner-3"/>
+        <resource>
+            <Practitioner>
+                <id value="practitioner-3"/>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601000876546"/>
+                </identifier>
+                <name>
+                    <family value="Pharm"/>
+                    <given value="Pharmacien"/>
+                </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="http://test.fhir.ch/r4/Organization/organization-4"/>
+        <resource>
+            <Organization>
+                <id value="organization-3"/>
+                <identifier>
+                    <system value="urn:oid:2.51.1.3"/>
+                    <value value="7601000876546"/>
+                </identifier>
+                <name value="Pharmacie"/>
+                <address>
+                    <line value="Apothekerstrasse 22"/>
                     <city value="Zürich"/>
                     <postalCode value="8005"/>
                     <country value="CH"/>
@@ -248,9 +299,9 @@
                             <coding>
                                 <system value="urn:oid:2.51.1.1"/>
                                 <code value="7680471020733"/>
-                                <display value="TEMESTA Expidet cpr orodisp 1 mg blister 20 pce"/>
+                                <display value="Temesta Expidet Schmelztabl 1 mg 20 Stk"/>
                             </coding>
-                            <text value="TEMESTA Expidet cpr orodisp 1 mg blister 20 pce"/>
+                            <text value="TEMESTA Expidet Schmelztabl 1 mg"/>
                         </code>
                         <form>
                             <coding>
@@ -301,7 +352,7 @@
                 </contained>
                 <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument">
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
-                        <valueString value="PMP" />
+                        <valueString value="PMP"/>
                     </extension>
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype">
                         <valueCodeableConcept>
@@ -313,12 +364,12 @@
                         </valueCodeableConcept>
                     </extension>
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
-                        <valueDateTime value="2023-02-16T09:12:55.482+01:00" />
+                        <valueDateTime value="2023-02-16T09:12:55.482+01:00"/>
                     </extension>
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid">
                         <valueIdentifier>
-                            <system value="urn:ietf:rfc:3986" />
-                            <value value="urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153" />
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"/>
                         </valueIdentifier>
                     </extension>
                 </extension>
@@ -348,9 +399,9 @@
                 <status value="completed"/>
                 <category>
                     <coding>
-                        <system value="http://www.whocc.no/atc" />
-                        <code value="N" />
-                        <display value="Nervensystem" />
+                        <system value="http://www.whocc.no/atc"/>
+                        <code value="N"/>
+                        <display value="Nervensystem"/>
                     </coding>
                 </category>
                 <medicationReference>
@@ -360,7 +411,7 @@
                     <reference value="Patient/MAGMED005"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/practitioner-role-2"/>
+                    <reference value="PractitionerRole/practitioner-role-1"/>
                 </informationSource>
                 <reasonCode>
                     <text value="pour dormir"/>
@@ -396,56 +447,7 @@
         </resource>
     </entry>
 
-    <!-- PractitionerRole 3/4 (Obs) -->
-    <entry>
-        <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/practitioner-role-4"/>
-        <resource>
-            <PractitionerRole>
-                <id value="practitioner-role-4"/>
-                <practitioner>
-                    <reference value="Practitioner/practitioner-4"/>
-                </practitioner>
-                <organization>
-                    <reference value="Organization/organization-4"/>
-                </organization>
-            </PractitionerRole>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Practitioner/practitioner-4"/>
-        <resource>
-            <Practitioner>
-                <id value="practitioner-4"/>
-                <identifier>
-                    <system value="urn:oid:2.51.1.3"/>
-                    <value value="7601000876546"/>
-                </identifier>
-                <name>
-                    <family value="Pharm"/>
-                    <given value="Pharmacien"/>
-                </name>
-            </Practitioner>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Organization/organization-4"/>
-        <resource>
-            <Organization>
-                <id value="organization-4"/>
-                <identifier>
-                    <system value="urn:oid:2.51.1.3"/>
-                    <value value="7601000876546"/>
-                </identifier>
-                <name value="Pharmacie"/>
-                <address>
-                    <line value="Apothekerstrasse 22"/>
-                    <city value="Zürich"/>
-                    <postalCode value="8005"/>
-                    <country value="CH"/>
-                </address>
-            </Organization>
-        </resource>
-    </entry>
+
 
     <!-- Observation -->
     <entry>
@@ -455,7 +457,7 @@
                 <id value="PMP2-Obs-Analyzer"/>
                 <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument">
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
-                        <valueString value="PMP" />
+                        <valueString value="PMP"/>
                     </extension>
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype">
                         <valueCodeableConcept>
@@ -467,12 +469,12 @@
                         </valueCodeableConcept>
                     </extension>
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
-                        <valueDateTime value="2023-02-16T09:12:55.482+01:00" />
+                        <valueDateTime value="2023-02-16T09:12:55.482+01:00"/>
                     </extension>
                     <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid">
                         <valueIdentifier>
-                            <system value="urn:ietf:rfc:3986" />
-                            <value value="urn:uuid:63e4ae3d-3a79-476b-bb03-aa23a5e3e7bf" />
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:63e4ae3d-3a79-476b-bb03-aa23a5e3e7bf"/>
                         </valueIdentifier>
                     </extension>
                 </extension>
@@ -525,7 +527,7 @@
                 </subject>
                 <effectiveDateTime value="2019-02-15T11:00:00+01:00"/>
                 <performer>
-                    <reference value="PractitionerRole/practitioner-role-4"/>
+                    <reference value="PractitionerRole/practitioner-role-3"/>
                 </performer>
                 <note>
                     <text value="selon téléphone avec le médecin, arrêter le traitement car inefficace"/>
@@ -547,9 +549,9 @@
                             <coding>
                                 <system value="urn:oid:2.51.1.1"/>
                                 <code value="7680471020733"/>
-                                <display value="TEMESTA Expidet cpr orodisp 1 mg blister 20 pce"/>
+                                <display value="Temesta Expidet Schmelztabl 1 mg 20 Stk"/>
                             </coding>
-                            <text value="TEMESTA Expidet cpr orodisp 1 mg blister 20 pce"/>
+                            <text value="TEMESTA Expidet Schmelztabl 1 mg"/>
                         </code>
                         <form>
                             <coding>
@@ -605,9 +607,9 @@
                 <status value="unknown"/>
                 <category>
                     <coding>
-                        <system value="http://www.whocc.no/atc" />
-                        <code value="N" />
-                        <display value="Nervensystem" />
+                        <system value="http://www.whocc.no/atc"/>
+                        <code value="N"/>
+                        <display value="Nervensystem"/>
                     </coding>
                 </category>
                 <medicationReference>
@@ -617,7 +619,7 @@
                     <reference value="Patient/MAGMED005"/>
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/practitioner-role-4"/>
+                    <reference value="PractitionerRole/practitioner-role-3"/>
                 </informationSource>
                 <derivedFrom>
                     <reference value="MedicationStatement/PMP2-MedStat-Analyzer" />
