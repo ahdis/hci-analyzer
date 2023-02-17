@@ -33,7 +33,7 @@ To do's for a manually adapted consolidated Medciation Card document (from Input
 - Header MedicationStatement (below original entries)
   - copy MedStat
   - add category
-  - add informationSource (MedicationStatement.informationSource / MedicationDispense.performer.actor / MedicationRequest.requester / Observation.performer)
+  - add informationSource from the latest derivedFrom-entry (MedicationStatement.informationSource / MedicationDispense.performer.actor / MedicationRequest.requester / Observation.performer)
   - add derivedFrom (history)
   - remove reasonCode
   - remove narrativeLink extension
