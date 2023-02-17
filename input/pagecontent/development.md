@@ -18,6 +18,7 @@
     - [Input Document Type](#input-document-type)
     - [Parent Document Id](#parent-document-id)
   - [History Changes](#history-changes)
+  - [Contained Resources](#contained-resources)
 - [FHIR Implementation Guide](#fhir-implementation-guide)
   - [Naming](#naming)
 
@@ -229,6 +230,16 @@ Type of Change | is same substance | is same genericGroupCode12 | is same dosage
 **changeGalenic**      | TRUE | - | - | - | - | FALSE | - | - | - | - | 
 **stop**               | - | - | - | - | - | - | - | - | - | TRUE | 
 **comment**            | - | - | - | - | TRUE | - | - | - | - | FALSE | 
+
+
+#### Contained Resources
+Contained resources in the input bundle are listed in the output bundle as entry (i.e. no longer contained) (except Medication).
+Currently the analyzer only searches for the references of the contained resources within the container resource (references start with '#').
+At a further point in time, this functionality could be extended so that referenced contained resources outside the container are also found. 
+
+See also FHIR specification about contained resources:
+* [R4](https://hl7.org/fhir/references.html#contained): _References to contained resources are never resolved outside the container resource. Specifically, resolution stops at the elements Bundle.entry.resource and Parameters.parameter.resource, but not at DomainResource.contained._
+* [R5](https://build.fhir.org/references.html#contained): _Fragment-only URL References to contained resources are never resolved outside the container resource. Specifically, resolution stops at the elements Bundle.entry.resource and Parameters.parameter.resource, but not at DomainResource.contained. To reference a contained resource in a different entry within a Parameters or Bundle (or anywhere else), the reference must include the containing resource. E.g. Observation/123#pat._
 
 
 ### FHIR Implementation Guide
