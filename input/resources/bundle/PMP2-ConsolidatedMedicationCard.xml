@@ -267,7 +267,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://test.fhir.ch/r4/Organization/organization-4"/>
+        <fullUrl value="http://test.fhir.ch/r4/Organization/organization-3"/>
         <resource>
             <Organization>
                 <id value="organization-3"/>
@@ -389,7 +389,7 @@
                 </extension>
                 <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author">
                     <valueReference>
-                        <reference value="PractitionerRole/practitioner-role-2"/>
+                        <reference value="PractitionerRole/practitioner-role-1"/>
                     </valueReference>
                 </extension>
                 <identifier>
@@ -508,7 +508,7 @@
                 </extension>
                 <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author">
                     <valueReference>
-                        <reference value="PractitionerRole/practitioner-role-4"/>
+                        <reference value="PractitionerRole/practitioner-role-3"/>
                     </valueReference>
                 </extension>
                 <identifier>
