@@ -42,6 +42,22 @@
       <description value="Test"/>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/PMP4-MTP"/>
+      </reference>
+      <name value="Test PMP4-MTP"/>
+      <description value="Test"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/PMP4-PRE"/>
+      </reference>
+      <name value="Test PMP4-PRE"/>
+      <description value="Test"/>
+      <exampleBoolean value="false"/>
+    </resource>
 
     <!-- IN/OUT Examples Parameters -->
     <resource>
@@ -494,6 +510,23 @@
         <reference value="Bundle/PMP3-ConsolidatedMedicationCard"/>
       </reference>
       <name value="PMP3 Output Analyzer"/>
+      <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
+    </resource>
+
+    <resource>
+      <reference>
+        <reference value="Parameters/PMP4-Input-Analyzer"/>
+      </reference>
+      <name value="PMP4 Input Analyzer"/>
+      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
+      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/PMP4-ConsolidatedMedicationCard"/>
+      </reference>
+      <name value="PMP4 Output Analyzer"/>
       <description value="Example of OUT Bundle 'cons-medicationcard' (Consolidated Medication Card document)"/>
       <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-out-bundle"/>
     </resource>

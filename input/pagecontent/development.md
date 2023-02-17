@@ -87,15 +87,12 @@ In the [Header MedicationStatement](StructureDefinition-analyzer-medicationstate
 In order to map the author of the medical decision, the following procedure is followed to get the information from the input document(s) - take the information from where you first get it from:
    1. MedicationStatement.informationSource / MedicationDispense.performer.actor / MedicationRequest.requester / Observation.performer   
       * MedicationStatement.informationSource -> PractitionerRole (PractitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input   
-         * [PMP1 IN](Parameters-PMP1-Input-Analyzer.json.html): urn:uuid:3656263a-8f15-4175-975a-13524d922ce4 (PractitionerRole) -> urn:uuid:f2854370-f9b0-4893-87d2-09b6098ed641 (Practitioner) =>    
-           [PMP1 OUT](Bundle-PMP1-ConsolidatedMedicationCard.json.html): PractitionerRole/Hopital -> Practitioner/DocteurHopital
-            * see [schematic illustration](PR-UCs-PMP1.jpg)
+         * PMP1: see [schematic illustration](PR-UCs-PMP1.jpg)
          * PMP2: see [schematic illustration](PR-UCs-PMP2.jpg)
          * PMP3: see [schematic illustration](PR-UCs-PMP3.jpg)     
          * **Note**: If there is a changed MedicationStatement (PADV CHANGE) without informationSource, take the Observation.performer, from where the changed MedicationStatement is referenced (see PMP1 UC). 
-      * TODO (https://github.com/ahdis/hci-analyzer/issues/7): MedicationRequest.requester -> PractitionerRole (PractitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input
-         * [PMP4 IN](Parameters-PMP4-Input-Analyzer.json.html)   
-           [PMP4 OUT]()
+      * MedicationRequest.requester -> PractitionerRole (PractitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input
+         * PMP4
 
    2. Composition.section.author   
       * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input
