@@ -387,11 +387,6 @@
                         </valueIdentifier>
                     </extension>
                 </extension>
-                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author">
-                    <valueReference>
-                        <reference value="PractitionerRole/practitioner-role-1"/>
-                    </valueReference>
-                </extension>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"/>
@@ -505,11 +500,6 @@
                             <value value="urn:uuid:7ade729c-a8c6-4b23-8daa-2c78a22ce153"/>
                         </valueIdentifier>
                     </extension>
-                </extension>
-                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author">
-                    <valueReference>
-                        <reference value="PractitionerRole/practitioner-role-3"/>
-                    </valueReference>
                 </extension>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>

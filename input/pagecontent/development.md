@@ -6,6 +6,7 @@
     - [Elements allowed](#elements-allowed)
   - [Dosage](#dosage)
   - [DerivedFrom Entries](#derivedfrom-entries)
+    - [Extensions](#extensions)
   - [Id \& Identifier](#id--identifier)
   - [Status](#status)
   - [Authors](#authors-1)
@@ -61,6 +62,14 @@ In the [Header MedicationStatement](StructureDefinition-analyzer-medicationstate
 #### DerivedFrom Entries
 Resources of type MedicationStatement, MedicationRequest, MedicationDispense and Observation are newly created when creating the output document and all properties which are wanted are explicitly taken over.
 
+##### Extensions
+* MedicationStatement/MedicationDispense/MedicationRequest
+   * insert InfoInputDocumentUrl 
+   * overtake ExternalDocumentIdUrl 
+* Observation
+   * insert InfoInputDocumentUrl
+   * overtake ExternalDocumentIdUrl 
+   * overtake MedicationStatementChangedUrl (if set in Input)
 
 #### Id & Identifier
 

@@ -29,6 +29,7 @@ To do's for a manually adapted consolidated Medciation Card document (from Input
   - add category (not for obs)
   - add informationSource (MedicationStatement.informationSource / MedicationDispense.performer.actor / MedicationRequest.requester / Observation.performer)
   - remove narrativeLink extension
+  - remove ch-ext-author
 
 - Header MedicationStatement (below original entries)
   - copy MedStat
