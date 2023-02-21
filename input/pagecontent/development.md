@@ -1,12 +1,14 @@
 - [Input Document](#input-document)
-  - [Input Document Source](#input-document-source)
+  - [Document Source](#document-source)
+  - [Authors](#authors)
 - [Output Document - Consolidated Medication Card document](#output-document---consolidated-medication-card-document)
   - [Header MedicationStatement](#header-medicationstatement)
     - [Elements allowed](#elements-allowed)
-    - [Dosage](#dosage)
+  - [Dosage](#dosage)
+  - [DerivedFrom Entries](#derivedfrom-entries)
   - [Id \& Identifier](#id--identifier)
   - [Status](#status)
-  - [Authors](#authors)
+  - [Authors](#authors-1)
     - [Author of the document](#author-of-the-document)
     - [Author of the medical decision](#author-of-the-medical-decision)
   - [PractitionerRole (Practitioner \& Organization)](#practitionerrole-practitioner--organization)
@@ -14,7 +16,7 @@
     - [Identifier](#identifier)
     - [Determine Patient](#determine-patient)
   - [Info Input Document](#info-input-document)
-    - [Input Document Source](#input-document-source-1)
+    - [Input Document Source](#input-document-source)
     - [Input Document Type](#input-document-type)
     - [Parent Document Id](#parent-document-id)
   - [History Changes](#history-changes)
@@ -24,8 +26,13 @@
 
 ### Input Document
 
-#### Input Document Source
+#### Document Source
 See section [here](#input-document-source-1).
+
+#### Authors
+Authors can be listed in various places in the input document. In addition, a differentiation is made between the document author and the author of the medical decision (see details [here](http://fhir.ch/ig/ch-emed/different-authors.html)).   
+In the Analyzer output document, only the **author of the medical decision** is relevant. The handling in the Analyzer is described in this [section](#authors-1).
+
 
 ### Output Document - Consolidated Medication Card document
 
@@ -33,22 +40,26 @@ See section [here](#input-document-source-1).
 
 ##### Elements allowed
 In the [Header MedicationStatement](StructureDefinition-analyzer-medicationstatement-header.html), only the following elements are taken over or set:
-* contained
-* identifier (new)
-* status
-* category 
-* medicationReference
-* subject
-* informationSource
+* contained {medication} (taken over)
+* identifier (set new)
+* status (set `unknown`)
+* category (set)
+* medicationReference (taken over)
+* subject (taken over)
+* informationSource (taken over)
 * derivedFrom (set)
-* dosage (taken over, see below)
+* dosage (taken over)
 
-##### Dosage
+#### Dosage
 * There must be **at least one dosage element**.
 * The dosage element (1..*) is set according to this scheme:
    1.  If the last Observation (which isn’t necessarily the last resource) is a CHANGE (= Observation.code, see also [ConceptMap](ConceptMap-ihe-padv-to-analyzer-history-changes.html)), use the dosages contained in the resource, referenced by its `"url": "id"`-extension, if it contains a dosage.
    2. If the last Observation (which isn’t necessarily the last resource) is a CANCEL, set a constant dosage with `"text" : "-"`.
    3. Take the dosage from the newest (last) resource (MedicationStatement/MedicationDispense/MedicationRequest) having a dosage.
+
+
+#### DerivedFrom Entries
+Resources of type MedicationStatement, MedicationRequest, MedicationDispense and Observation are newly created when creating the output document and all properties which are wanted are explicitly taken over.
 
 
 #### Id & Identifier
@@ -77,7 +88,7 @@ In the [Header MedicationStatement](StructureDefinition-analyzer-medicationstate
      (e.g. [1-1 OUT](Bundle-1-1-ConsolidatedMedicationCard.json.html): Device/Analyzer)
 
 ##### Author of the medical decision
-* The author of the medical decision in the output document is mapped in these elements:
+* The author of the medical decision (PractitionerRole &#0124; Patient) in the output document is mapped in these elements:
    * Header MedicationStatement.informationSource ([profile](StructureDefinition-analyzer-medicationstatement-header.html))
    * MedicationStatement.informationSource ([profile](StructureDefinition-analyzer-medicationstatement.html))
    * MedicationDispense.performer.actor ([profile](StructureDefinition-analyzer-medicationdispense.html))
@@ -85,7 +96,8 @@ In the [Header MedicationStatement](StructureDefinition-analyzer-medicationstate
    * Observation.performer ([profile](StructureDefinition-analyzer-observationpadv.html))
 
 In order to map the author of the medical decision, the following procedure is followed to get the information from the input document(s) - take the information from where you first get it from:
-   1. MedicationStatement.informationSource / MedicationDispense.performer.actor / MedicationRequest.requester / Observation.performer   
+
+   1. **MedicationStatement.informationSource / MedicationDispense.performer.actor / MedicationRequest.requester / Observation.performer** (PractitionerRole)   
       * MedicationStatement.informationSource -> PractitionerRole (PractitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input   
          * PMP1: see [schematic illustration](PR-UCs-PMP1.jpg)
          * PMP2: see [schematic illustration](PR-UCs-PMP2.jpg)
@@ -94,12 +106,12 @@ In order to map the author of the medical decision, the following procedure is f
       * MedicationRequest.requester -> PractitionerRole (PractitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input
          * PMP4
 
-   2. Composition.section.author   
+   2. **Composition.section.author** (PractitionerRole &#0124; Patient &#0124; <span style="color:red">RelatedPerson</span>)   
       * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input
          * [1-1 SectionAuthor IN](Parameters-1-1-SectionAuthor-Input-Analyzer.json.html): AuthorSectionPractitionerRole -> AuthorSection &#0124; AuthorSectionOrganization =>   
            [1-1 SectionAuthor OUT](Bundle-1-1-SectionAuthor-ConsolidatedMedicationCard.json.html): AuthorSectionPractitionerRole -> AuthorSection &#0124; AuthorSectionOrganization         
 
-   3. Composition.author   
+   3. **Composition.author** (PractitionerRole &#0124; Patient &#0124; <span style="color:red">RelatedPerson</span>)   
       * -> PractitionerRole (PractitionerRole.practitioner -> Practitioner &#0124; PractitionerRole.organization -> Organization) => all resources can be taken from the input    
          * [1-1 IN](Parameters-1-1-Input-Analyzer.json.html): FamilienHausarztAtHausarzt -> FamilienHausarzt &#0124; Hausarzt =>   
            [1-1 OUT](Bundle-1-1-ConsolidatedMedicationCard.json.html): FamilienHausarztAtHausarzt -> FamilienHausarzt &#0124; Hausarzt   
@@ -107,6 +119,9 @@ In order to map the author of the medical decision, the following procedure is f
          * [1-1 PatAuthor IN](Parameters-1-1-PatAuthor-Input-Analyzer.json.html): AuthorMonikaWegmueller =>   
            [1-1 PatAuthor OUT](Bundle-1-1-PatAuthor-ConsolidatedMedicationCard.json.html): AuthorMonikaWegmueller  
 
+The analyzer can handle resources with a local reference to a contained resource (#) or resources with a reference that has to be resolved externally (Bundle entry). See also section [here](#contained-resources).   
+
+<span style="color:red">Note: In the case of the RelatedPerson resource type, the handling has not yet been evaluated/implemented.</span>
 
 #### PractitionerRole (Practitioner & Organization)
 A distinct is made based on the GLN of the referenced Practitioner and Organization. Thus a PractitionerRole is inserted only once if these two GLNs match.
@@ -131,7 +146,7 @@ The extension [Info Input Document](StructureDefinition-infoinputdocument.html) 
 The extension **Info Input Document** is set on each 'derivedFrom'-entry ([MedicationStatement](StructureDefinition-analyzer-medicationstatement.html), [MedicationRequest](StructureDefinition-analyzer-medicationrequest.html), [MedicationDispense](StructureDefinition-analyzer-medicationdispense.html), [Observation](StructureDefinition-analyzer-observationpadv.html)), but not on the [Header MedicationStatement](StructureDefinition-analyzer-medicationstatement-header.html).
 
 ##### Input Document Source
-* **Analyzer Input**: This information is set or overwritten by the backend in each input document (see [Analyzer IN Composition](StructureDefinition-analyzer-in-composition.html)). (Note: This requirement must be considered if it is a different backend.)
+* **Analyzer Input**: This information is set or overwritten by the backend in each input document (see [Analyzer IN Composition](StructureDefinition-analyzer-in-composition.html)). (<span style="color:red">Note: This requirement must be considered if it is a different backend.</span>)
 * **Analyzer Output**: This information (from the input) is set on each 'derivedFrom'-entry, but not on the Header MedicationStatement.
 
 ##### Input Document Type
