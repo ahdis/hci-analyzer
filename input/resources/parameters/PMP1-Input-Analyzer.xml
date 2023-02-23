@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Parameters xmlns="http://hl7.org/fhir">
     <!-- The parameter resource actually has no ID. Here the ID is used to show the resource in the IG. -->
-    <id value="PMP1-VAR2-Input-Analyzer"/>
+    <id value="PMP1-Input-Analyzer"/>
     <parameter>
         <name value="ch-emed-doc"/>
         <resource>
@@ -1374,6 +1374,9 @@
                                 <system value="urn:ietf:rfc:3986"/>
                                 <value value="urn:uuid:0b015b1d-2e25-441a-bb4c-95c39e1de4ad"/>
                             </identifier>
+                            <partOf>
+                                <reference value="urn:uuid:1339a426-b61e-4c99-acac-450724fcf6d9"/>
+                            </partOf>
                             <status value="completed"/>
                             <medicationReference>
                                 <reference value="#medication-2"/>

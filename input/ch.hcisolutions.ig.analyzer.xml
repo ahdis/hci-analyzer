@@ -465,17 +465,9 @@
 
     <resource>
       <reference>
-        <reference value="Parameters/PMP1-VAR1-Input-Analyzer"/>
+        <reference value="Parameters/PMP1-Input-Analyzer"/>
       </reference>
-      <name value="PMP1 VAR1 Input Analyzer"/>
-      <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
-      <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Parameters/PMP1-VAR2-Input-Analyzer"/>
-      </reference>
-      <name value="PMP1 VAR2 Input Analyzer"/>
+      <name value="PMP1 Input Analyzer"/>
       <description value="Example of IN Parameters 'ch-emed-doc' (eMedication documents according to CH EMED)"/>
       <exampleCanonical value="http://hcisolutions.ch/ig/analyzer/StructureDefinition/analyzer-in-parameters"/>
     </resource>

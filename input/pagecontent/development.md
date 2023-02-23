@@ -28,7 +28,7 @@
 ### Input Document
 
 #### Document Source
-See section [here](#input-document-source-1).
+See section [here](#input-document-source).
 
 #### Authors
 Authors can be listed in various places in the input document. In addition, a differentiation is made between the document author and the author of the medical decision (see details [here](http://fhir.ch/ig/ch-emed/different-authors.html)).   
