@@ -501,6 +501,9 @@
                 <subject>
                     <reference value="Patient/MAGMED011"/>
                 </subject>
+                <informationSource>
+                    <reference value="PractitionerRole/practitioner-role-1"/>
+                </informationSource>
                 <reasonCode>
                     <text value="allergie"/>
                 </reasonCode>
