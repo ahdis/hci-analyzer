@@ -412,8 +412,7 @@
                                             <b>
                                     patientInstruction
                                             </b>
-                                : laisser fondre 1 comprimé sous la langue ½ heure avant le coucher 
-(si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin)
+                                : laisser fondre 1 comprimé sous la langue ½ heure avant le coucher (si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin)
                                         </p>
                                         <p>
                                             <b>
@@ -931,7 +930,7 @@
                                 <text value="pour dormir"/>
                             </reasonCode>
                             <dosage id="#dosage-1">
-                                <patientInstruction value="laisser fondre 1 comprimé sous la langue ½ heure avant le coucher &#xA;(si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin)"/>
+                                <patientInstruction value="laisser fondre 1 comprimé sous la langue ½ heure avant le coucher (si aucune amélioration au bout de 4 jours, reprendre contact avec le médecin)"/>
                                 <timing>
                                     <repeat>
                                         <boundsPeriod>
