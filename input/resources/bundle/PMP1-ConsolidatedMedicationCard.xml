@@ -288,8 +288,8 @@
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
-                        <code value="N"/>
-                        <display value="Nervensystem"/>
+                        <code value="R"/>
+                        <display value="Respirationstrakt"/>
                     </coding>
                 </category>
                 <medicationReference>
@@ -491,8 +491,8 @@
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
-                        <code value="N"/>
-                        <display value="Nervensystem"/>
+                        <code value="R"/>
+                        <display value="Respirationstrakt"/>
                     </coding>
                 </category>
                 <medicationReference>
@@ -609,8 +609,8 @@
                 <category>
                     <coding>
                         <system value="http://www.whocc.no/atc"/>
-                        <code value="N"/>
-                        <display value="Nervensystem"/>
+                        <code value="R"/>
+                        <display value="Respirationstrakt"/>
                     </coding>
                 </category>
                 <medicationReference>
