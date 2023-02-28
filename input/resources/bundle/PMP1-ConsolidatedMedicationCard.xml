@@ -483,6 +483,29 @@
                         </ingredient>
                     </Medication>
                 </contained>
+                <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/infoinputdocument">
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentsource">
+                        <valueString value="PMP"/>
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="http://loinc.org"/>
+                                <code value="56445-0"/>
+                            </coding>
+                            <text value="Medication List"/>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumentdate">
+                        <valueDateTime value="2023-02-17T15:45:49.030+00:00"/>
+                    </extension>
+                    <extension url="http://hcisolutions.ch/ig/analyzer/StructureDefinition/parentdocumentid">
+                        <valueIdentifier>
+                            <system value="urn:ietf:rfc:3986"/>
+                            <value value="urn:uuid:ccda7c69-4fbb-4114-8532-fc8752788722"/>
+                        </valueIdentifier>
+                    </extension>
+                </extension>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:0b015b1d-2e25-441a-bb4c-95c39e1de4ad"/>
