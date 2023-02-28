@@ -43,3 +43,4 @@ To do's for a manually adapted consolidated Medciation Card document (from Input
   - status = 'unknown'
 
 - Observation History  
+
