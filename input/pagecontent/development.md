@@ -222,7 +222,8 @@ The identifier is taken from the input document as follows:
 * Input document = MTP/PRE/DIS/PADV/CARD => **Bundle.identifier** 
    * If the additional information for CARD `"text" : "Medication Card"` (`http://hcisolutions.ch/ig/analyzer/StructureDefinition/inputdocumenttype`) is missing, then follow the rules for LIST. It may happen that the externalDocumentId of another document (e.g. MTP) is used. This must be tolerated at the moment, as long as no other differentiation CARD/LIST is possible (<https://github.com/hl7ch/ch-emed/issues/140>). The drug will be referenced correctly in any case, e.g. in a later PADV.
 * Input document = LIST
-   * MedicationStatement => extension.url = **"externalDocumentId"** (valueIdentifier) from this extension: `http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan`
+   * MedicationStatement => extension.url = **"externalDocumentId"** (valueIdentifier) from this extension: `http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentplan`   
+      * **Note**: If there is a changed MedicationStatement (PADV CHANGE) take the extension.url = **"externalDocumentId"** (valueIdentifier) from this extension: `http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-pharmaceuticaladvice` from the Observation, from where the changed MedicationStatement is referenced (see PMP1 UC). 
    * MedicationDispense => extension.url = **"externalDocumentId"** (valueIdentifier) from this extension: `http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-dispense`
    * MedicationRequest => extension.url = **"externalDocumentId"** (valueIdentifier) from this extension: `http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-prescription`
    * Observation => extension.url = **"externalDocumentId"** (valueIdentifier) from this extension: `http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-pharmaceuticaladvice`
