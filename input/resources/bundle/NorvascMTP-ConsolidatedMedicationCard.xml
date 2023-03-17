@@ -2,18 +2,18 @@
     <id value="NorvascMTP-ConsolidatedMedicationCard" />
     <identifier>
         <system value="urn:ietf:rfc:3986" />
-        <value value="urn:uuid:900ea8f8-652f-4006-8fa9-cde6504d8fc7" />
+        <value value="urn:uuid:51828553-03d0-4397-aa55-5cbdf76770c2" />
     </identifier>
     <type value="document" />
-    <timestamp value="2023-02-14T08:02:12.6777712+00:00" />
+    <timestamp value="2023-03-17T09:49:01.2234322+00:00" />
     <entry>
-        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/Composition/900ea8f8-652f-4006-8fa9-cde6504d8fc7" />
+        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/Composition/51828553-03d0-4397-aa55-5cbdf76770c2" />
         <resource>
             <Composition>
-                <id value="900ea8f8-652f-4006-8fa9-cde6504d8fc7" />
+                <id value="51828553-03d0-4397-aa55-5cbdf76770c2" />
                 <identifier>
                     <system value="urn:ietf:rfc:3986" />
-                    <value value="urn:uuid:900ea8f8-652f-4006-8fa9-cde6504d8fc7" />
+                    <value value="urn:uuid:51828553-03d0-4397-aa55-5cbdf76770c2" />
                 </identifier>
                 <status value="final" />
                 <type>
@@ -23,16 +23,16 @@
                     </coding>
                 </type>
                 <subject>
-                    <reference value="Patient/d8535a5d-3ecd-4f47-9add-463a93edf9dd" />
+                    <reference value="Patient/9e3c3607-0db5-4b0f-814b-8c53cfc166ba" />
                 </subject>
-                <date value="2023-02-14T08:02:12.677+00:00" />
+                <date value="2023-03-17T09:49:01.223+00:00" />
                 <author>
                     <reference value="Device/Analyzer" />
                 </author>
                 <title value="Medikationsplan" />
                 <section>
                     <entry>
-                        <reference value="MedicationStatement/d4b31650-35c9-43ef-a90b-9d4753d395b6" />
+                        <reference value="MedicationStatement/b325443e-f3f0-4c69-9c06-1c67b0cb94c9" />
                     </entry>
                 </section>
             </Composition>
@@ -54,10 +54,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/Patient/d8535a5d-3ecd-4f47-9add-463a93edf9dd" />
+        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/Patient/9e3c3607-0db5-4b0f-814b-8c53cfc166ba" />
         <resource>
             <Patient>
-                <id value="d8535a5d-3ecd-4f47-9add-463a93edf9dd" />
+                <id value="9e3c3607-0db5-4b0f-814b-8c53cfc166ba" />
                 <identifier>
                     <type>
                         <coding>
@@ -84,24 +84,24 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/PractitionerRole/7c31d882-a636-4fe3-8aa3-07567a292110" />
+        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/PractitionerRole/73fa5fd3-3278-4776-8d67-1b8f543c9979" />
         <resource>
             <PractitionerRole>
-                <id value="7c31d882-a636-4fe3-8aa3-07567a292110" />
+                <id value="73fa5fd3-3278-4776-8d67-1b8f543c9979" />
                 <practitioner>
-                    <reference value="Practitioner/3a82480a-bd21-4eb4-9a3f-400e2b739571" />
+                    <reference value="Practitioner/f079b8eb-896c-4436-b188-15116df04b67" />
                 </practitioner>
                 <organization>
-                    <reference value="Organization/a3d2da9c-b548-4b33-854d-c70cae801202" />
+                    <reference value="Organization/be62fbe3-848b-48d8-a716-a8291b8d138e" />
                 </organization>
             </PractitionerRole>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/Practitioner/3a82480a-bd21-4eb4-9a3f-400e2b739571" />
+        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/Practitioner/f079b8eb-896c-4436-b188-15116df04b67" />
         <resource>
             <Practitioner>
-                <id value="3a82480a-bd21-4eb4-9a3f-400e2b739571" />
+                <id value="f079b8eb-896c-4436-b188-15116df04b67" />
                 <identifier>
                     <system value="urn:oid:2.51.1.3" />
                     <value value="7601000234438" />
@@ -114,10 +114,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/Organization/a3d2da9c-b548-4b33-854d-c70cae801202" />
+        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/Organization/be62fbe3-848b-48d8-a716-a8291b8d138e" />
         <resource>
             <Organization>
-                <id value="a3d2da9c-b548-4b33-854d-c70cae801202" />
+                <id value="be62fbe3-848b-48d8-a716-a8291b8d138e" />
                 <identifier>
                     <system value="urn:oid:2.51.1.3" />
                     <value value="7601000234438" />
@@ -133,10 +133,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/MedicationStatement/50617193-b209-4e0f-b248-83aede93ff1e" />
+        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/MedicationStatement/dcb67c7b-6b44-4790-b627-3e3317ae4b90" />
         <resource>
             <MedicationStatement>
-                <id value="50617193-b209-4e0f-b248-83aede93ff1e" />
+                <id value="dcb67c7b-6b44-4790-b627-3e3317ae4b90" />
                 <contained>
                     <Medication>
                         <id value="med" />
@@ -233,10 +233,10 @@
                     <reference value="#med" />
                 </medicationReference>
                 <subject>
-                    <reference value="Patient/d8535a5d-3ecd-4f47-9add-463a93edf9dd" />
+                    <reference value="Patient/9e3c3607-0db5-4b0f-814b-8c53cfc166ba" />
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/7c31d882-a636-4fe3-8aa3-07567a292110" />
+                    <reference value="PractitionerRole/73fa5fd3-3278-4776-8d67-1b8f543c9979" />
                 </informationSource>
                 <reasonCode>
                     <text value="Bluthochdruck" />
@@ -272,10 +272,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/MedicationStatement/d4b31650-35c9-43ef-a90b-9d4753d395b6" />
+        <fullUrl value="https://int.documedis.hcisolutions.ch/CE/mda/2020-01/MedicationStatement/b325443e-f3f0-4c69-9c06-1c67b0cb94c9" />
         <resource>
             <MedicationStatement>
-                <id value="d4b31650-35c9-43ef-a90b-9d4753d395b6" />
+                <id value="b325443e-f3f0-4c69-9c06-1c67b0cb94c9" />
                 <contained>
                     <Medication>
                         <id value="med" />
@@ -336,7 +336,7 @@
                 </contained>
                 <identifier>
                     <system value="urn:ietf:rfc:3986" />
-                    <value value="urn:uuid:d4b31650-35c9-43ef-a90b-9d4753d395b6" />
+                    <value value="urn:uuid:b325443e-f3f0-4c69-9c06-1c67b0cb94c9" />
                 </identifier>
                 <status value="unknown" />
                 <category>
@@ -350,13 +350,13 @@
                     <reference value="#med" />
                 </medicationReference>
                 <subject>
-                    <reference value="Patient/d8535a5d-3ecd-4f47-9add-463a93edf9dd" />
+                    <reference value="Patient/9e3c3607-0db5-4b0f-814b-8c53cfc166ba" />
                 </subject>
                 <informationSource>
-                    <reference value="PractitionerRole/7c31d882-a636-4fe3-8aa3-07567a292110" />
+                    <reference value="PractitionerRole/73fa5fd3-3278-4776-8d67-1b8f543c9979" />
                 </informationSource>
                 <derivedFrom>
-                    <reference value="MedicationStatement/50617193-b209-4e0f-b248-83aede93ff1e" />
+                    <reference value="MedicationStatement/dcb67c7b-6b44-4790-b627-3e3317ae4b90" />
                 </derivedFrom>
                 <dosage>
                     <patientInstruction value="-" />
