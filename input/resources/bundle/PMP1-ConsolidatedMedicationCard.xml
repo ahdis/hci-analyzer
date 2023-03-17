@@ -128,46 +128,6 @@
         <resource>
             <PractitionerRole>
                 <id value="871b4f73-fc54-47eb-9d77-090d9cb6ed24" />
-                <text>
-                    <status value="generated" />
-                    <div xmlns="http://www.w3.org/1999/xhtml">
-                        <p>
-                            <b>
-                                        Generated Narrative: PractitionerRole
-                            </b>
-                            <a name="DoctorHospital" />
-                        </p>
-                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
-                            <p style="margin-bottom: 0px">
-                                        Resource PractitionerRole "DoctorHospital"
-                            </p>
-                            <p style="margin-bottom: 0px">
-                                        Profile:
-                                <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html">
-                                            CH EMED PractitionerRole
-                                </a>
-                            </p>
-                        </div>
-                        <p>
-                            <b>
-                                        practitioner
-                            </b>
-                                    :
-                            <a href="#Practitioner_Hopital">
-                                        See above (Practitioner/Hopital)
-                            </a>
-                        </p>
-                        <p>
-                            <b>
-                                        organization
-                            </b>
-                                    :
-                            <a href="#Organization_Hospital">
-                                        See above (Organization/Hospital)
-                            </a>
-                        </p>
-                    </div>
-                </text>
                 <practitioner>
                     <reference value="Practitioner/3700581c-1b3f-45f1-a51a-8a7378089354" />
                 </practitioner>

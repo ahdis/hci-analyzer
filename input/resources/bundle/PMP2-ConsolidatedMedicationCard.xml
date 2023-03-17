@@ -183,46 +183,6 @@
         <resource>
             <PractitionerRole>
                 <id value="0d79f981-910b-478c-a446-31714990cfd1" />
-                <text>
-                    <status value="generated" />
-                    <div xmlns="http://www.w3.org/1999/xhtml">
-                        <p>
-                            <b>
-                                        Generated Narrative: PractitionerRole
-                            </b>
-                            <a name="DoctorRochat" />
-                        </p>
-                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
-                            <p style="margin-bottom: 0px">
-                                        Resource PractitionerRole "DoctorRochat"
-                            </p>
-                            <p style="margin-bottom: 0px">
-                                        Profile:
-                                <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html">
-                                            CH EMED PractitionerRole
-                                </a>
-                            </p>
-                        </div>
-                        <p>
-                            <b>
-                                        practitioner
-                            </b>
-                                    :
-                            <a href="#Practitioner_Rochat">
-                                        See above (Practitioner/Rochat)
-                            </a>
-                        </p>
-                        <p>
-                            <b>
-                                        organization
-                            </b>
-                                    :
-                            <a href="#Organization_GeneralPractitioner">
-                                        See above (Organization/GeneralPractitioner)
-                            </a>
-                        </p>
-                    </div>
-                </text>
                 <practitioner>
                     <reference value="Practitioner/e49b963b-4de0-400a-9df5-2940c4c98ad0" />
                 </practitioner>
@@ -273,46 +233,6 @@
         <resource>
             <PractitionerRole>
                 <id value="17f6bcad-6062-4141-96d4-1847bbb3516e" />
-                <text>
-                    <status value="generated" />
-                    <div xmlns="http://www.w3.org/1999/xhtml">
-                        <p>
-                            <b>
-                                        Generated Narrative: PractitionerRole
-                            </b>
-                            <a name="Pharmacist" />
-                        </p>
-                        <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
-                            <p style="margin-bottom: 0px">
-                                        Resource PractitionerRole "Pharmacist"
-                            </p>
-                            <p style="margin-bottom: 0px">
-                                        Profile:
-                                <a href="https://build.fhir.org/ig/hl7ch/ch-emed//StructureDefinition-ch-emed-practitionerrole.html">
-                                            CH EMED PractitionerRole
-                                </a>
-                            </p>
-                        </div>
-                        <p>
-                            <b>
-                                        practitioner
-                            </b>
-                                    :
-                            <a href="#Practitioner_Pharm">
-                                        See above (Practitioner/Pharm)
-                            </a>
-                        </p>
-                        <p>
-                            <b>
-                                        organization
-                            </b>
-                                    :
-                            <a href="#Organization_Pharmacy">
-                                        See above (Organization/Pharmacy)
-                            </a>
-                        </p>
-                    </div>
-                </text>
                 <practitioner>
                     <reference value="Practitioner/6e2e570c-5788-4e1a-9fda-3b5d80bfbc78" />
                 </practitioner>
