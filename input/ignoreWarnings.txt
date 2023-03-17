@@ -1,8 +1,5 @@
 == Suppressed Messages ==
 
-# IG publisher issue with jurisdiction code (CH -> CHE)
-Error parsing response message: This does not appear to be a FHIR resource (wrong namespace '') (@ /)
-
 # The following code systems/value sets are external and not supported by terminology server
 Code System URI 'urn:oid:2.51.1.1' is unknown so the code cannot be validated
 
